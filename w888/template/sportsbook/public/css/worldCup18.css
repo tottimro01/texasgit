@@ -1,0 +1,958 @@
+/* worldcup-2018__match-bar */
+
+.worldCup18-matchBar, .wc_semisfinals-matchBar {
+	max-width: 1314px;
+	width: calc( 100% - 8px);
+	margin: 4px;
+	height: 57px;
+	background: #2a7dd9;
+	border-radius: 4px;
+	font-family: "Arial", "Tahoma", "pmingliu", "æ–°ç´°æ˜Žé«”";/* -- matches -- */ 
+}
+.worldCup18-matchBar *, .wc_semisfinals-matchBar * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.worldCup18-matchBar .worldCup18-matchBar__title {
+	background-image: url(../images/WorldCup2018/WCbar-title-en.png);
+}
+.wc_semisfinals-matchBar .wc_semisfinals-matchBar__title {
+	background-image: url(../images/WorldCup2018/WCbar-final-title-en.png);
+}
+.worldCup18-matchBar__title, .wc_semisfinals-matchBar__title {
+	border-radius: 3px 0px 0px 3px;
+	overflow: hidden;
+	height: 57px;
+	float: left;
+}
+.worldCup18-matchBar__rearPic, .wc_semisfinals-matchBar__rearPic {
+	border-radius: 0px 3px 3px 0px;
+}
+.worldCup18-matchBar .worldCup18__container, .wc_semisfinals-matchBar .worldCup18__container {
+	position: relative;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background: #fff;
+	border-radius: 0px 3px 3px 0px !important;
+}
+.worldCup18-matchBar .worldCup18__control, .wc_semisfinals-matchBar .worldCup18__control {
+	width: 100%;
+	height: 57px;
+	padding: 0 20px;
+}
+.worldCup18-matchBar .worldCup18__item, .wc_semisfinals-matchBar .worldCup18__item {
+	width: 20%;
+	cursor: pointer;
+	float: left;
+}
+.worldCup18-matchBar .worldCup18__item .worldcup__group, .wc_semisfinals-matchBar .worldCup18__item .worldcup__group {
+	height: 47px;
+	width: 100%;
+	min-width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	margin: 5px 0 !important;
+	border-left: 1px solid #b8b8b8;
+}
+.worldCup18-matchBar .worldCup18__item:hover, .wc_semisfinals-matchBar .worldCup18__item:hover {
+	background: #FFEDA4;
+}
+.worldCup18-matchBar .worldCup18__item:hover .worldcup__group, .wc_semisfinals-matchBar .worldCup18__item:hover .worldcup__group {
+	border-left: 1px solid #FFEDA4;
+}
+.worldCup18-matchBar .worldCup18__item:first-child .worldcup__group, .wc_semisfinals-matchBar .worldCup18__item:first-child .worldcup__group {
+	border-left: 1px solid rgba(255, 255, 255, 0);
+}
+.worldCup18-matchBar .worldCup18__item:hover + .worldCup18__item .worldcup__group, .wc_semisfinals-matchBar .worldCup18__item:hover + .worldCup18__item .worldcup__group {
+	border-left: 1px solid #f0f0f0;
+}
+.worldcup {
+	font-family: "Tahoma", "Arial", "pmingliu", "æ–°ç´°æ˜Žé«”";
+}
+.worldcup__group {
+	padding: 1.5% 7%;
+}
+.worldcup__moment {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	width: 100%;
+	font-size: 12px;
+	padding-bottom: 2px;
+}
+.worldcup__moment .worldcup__date {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	white-space: nowrap;
+	font-weight: bold;
+	color: #545454;
+}
+.worldcup__moment .worldcup__time {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+.worldcup__time {
+	font-size: 12px;
+	text-align: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+	white-space: nowrap;
+	color: #b53f39;
+}
+.worldcup__match {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	width: 100%;
+}
+.worldcup__match .worldcup__time {
+	font-weight: bold;
+	font-size: 14px;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+.worldcup__country {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+.worldcup__country .text {
+	padding: 0 auto;
+	text-transform: uppercase;
+	color: #545454;
+	font-size: 12px;
+}
+.worldcup__country:last-of-type {
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+.worldcup__country .flag + .text {
+  margin-left: 5%;
+}
+
+.worldcup__country .text + .flag {
+  margin-left: 5%;
+}
+.worldcup__score {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	white-space: nowrap;
+	font-size: 17px;
+	font-weight: bold;
+	-ms-flex-item-align: center;
+	align-self: center;
+	text-align: center;
+	color: #545454;
+}
+.worldcup__title {
+	color: white;
+	background-color: #2a7dd9;
+	position: relative;
+ top: -.25rem;
+ padding: 0 .75rem;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	height: 16px;
+	text-align: center;
+	line-height: 1.2em;
+}
+.worldcup__title::before, .worldcup__title::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+.worldcup__title::before {
+	left: -10px;
+	border-width: 0px 10px 16px 0px;
+	border-color: transparent #2a7dd9 transparent transparent;
+}
+.worldcup__title::after {
+	right: -10px;
+	border-width: 0px 0px 16px 10px;
+	border-color: transparent transparent transparent #2a7dd9;
+}
+.worldCup18-matchBar__title {
+	width: 175px;
+}
+.worldCup18-matchBar .worldCup18-btn-prev, .worldCup18-matchBar .worldCup18-btn-next {
+	width: 21px;
+	height: 57px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+	background: url(../Images/WorldCup2018/WC2018-arrow.png);
+	-webkit-box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 0.25);
+}
+.worldCup18-matchBar .worldCup18-btn-prev:hover, .worldCup18-matchBar .worldCup18-btn-next:hover {
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+.worldCup18-matchBar .worldCup18-btn-prev:hover::after, .worldCup18-matchBar .worldCup18-btn-next:hover::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.02);
+}
+.worldCup18-matchBar .worldCup18-btn-prev.disable, .worldCup18-matchBar .worldCup18-btn-next.disable {
+	background: url(../Images/WorldCup2018/WC2018-arrow.png);
+	cursor: default;
+	background-position: 0px -57px;
+	opacity: 1;
+}
+.worldCup18-matchBar .worldCup18-btn-prev.disable:hover::after, .worldCup18-matchBar .worldCup18-btn-next.disable:hover::after {
+	background: transparent;
+}
+.worldCup18-matchBar .worldCup18-btn-next {
+	right: 0;
+	left: auto;
+	background-position: -21px 0px;
+	-webkit-box-shadow: -1px 0px 3px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: -1px 0px 3px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 0px 3px 3px 0px;
+}
+.worldCup18-matchBar .worldCup18-btn-next.disable {
+	background-position: -21px -57px;
+}
+.worldcup__country {
+/* - flag - */ }
+.worldcup__country .flag {
+	width: 30px;
+	height: 20px;
+	background-image: url(../Images/WorldCup2018/flag.png);
+	background-size: cover;
+	-webkit-box-flex: 0;
+	-ms-flex: none;
+	flex: none;
+	border: 1px solid #b8b8b8;
+}
+.worldcup__country .flag-rus {
+	background-position: 0px 0px;
+}
+.worldcup__country .flag-ksa {
+	background-position: 0px -21px;
+}
+.worldcup__country .flag-egy {
+	background-position: 0px -42px;
+}
+.worldcup__country .flag-uru {
+	background-position: 0px -63px;
+}
+.worldcup__country .flag-por {
+	background-position: 0px -83px;
+}
+.worldcup__country .flag-esp {
+	background-position: 0px -104px;
+}
+.worldcup__country .flag-mar {
+	background-position: 0px -125px;
+}
+.worldcup__country .flag-irn {
+	background-position: 0px -146px;
+}
+.worldcup__country .flag-fra {
+	background-position: 0px -167px;
+}
+.worldcup__country .flag-aus {
+	background-position: 0px -187px;
+}
+.worldcup__country .flag-per {
+	background-position: 0px -208px;
+}
+.worldcup__country .flag-den {
+	background-position: 0px -229px;
+}
+.worldcup__country .flag-arg {
+	background-position: 0px -249px;
+}
+.worldcup__country .flag-isl {
+	background-position: 0px -269px;
+}
+.worldcup__country .flag-cro {
+	background-position: 0px -290px;
+}
+.worldcup__country .flag-nga {
+	background-position: 0px -311px;
+}
+.worldcup__country .flag-bra {
+	background-position: 0px -332px;
+}
+.worldcup__country .flag-sui {
+	background-position: 0px -352px;
+}
+.worldcup__country .flag-crc {
+	background-position: 0px -373px;
+}
+.worldcup__country .flag-srb {
+	background-position: 0px -393px;
+}
+.worldcup__country .flag-ger {
+	background-position: 0px -414px;
+}
+.worldcup__country .flag-mex {
+	background-position: 0px -435px;
+}
+.worldcup__country .flag-swe {
+	background-position: 0px -456px;
+}
+.worldcup__country .flag-kor {
+	background-position: 0px -477px;
+}
+.worldcup__country .flag-bel {
+	background-position: 0px -497px;
+}
+.worldcup__country .flag-pan {
+	background-position: 0px -518px;
+}
+.worldcup__country .flag-tun {
+	background-position: 0px -539px;
+}
+.worldcup__country .flag-eng {
+	background-position: 0px -559px;
+}
+.worldcup__country .flag-pol {
+	background-position: 0px -580px;
+}
+.worldcup__country .flag-sen {
+	background-position: 0px -601px;
+}
+.worldcup__country .flag-col {
+	background-position: 0px -621px;
+}
+.worldcup__country .flag-jpn {
+	background-position: 0px -642px;
+}
+.wc_semisfinals-matchBar {
+/* -- matches -- */
+  /* - flag - */ }
+.wc_semisfinals-matchBar__title {
+	width: 192px;
+}
+.wc_semisfinals-matchBar__rearPic {
+	width: 322px;
+	height: 57px;
+	float: right;
+	background: url(../Images/WorldCup2018/WC2018-final-bg.png);
+}
+.wc_semisfinals-matchBar .worldCup18__container {
+	margin-right: 5px;
+	padding: 5px 0;
+	height: 57px;
+	background: rgba(255, 255, 255, 0);
+	border-radius: 0pX;
+}
+.wc_semisfinals-matchBar .worldCup18__control {
+	height: 100%;
+	padding: 0px;
+	background: #fff;
+	border-radius: 2px;
+	overflow: hidden;
+}
+.wc_semisfinals-matchBar .worldCup18__item {
+	width: 50%;
+	height: 100%;
+}
+.wc_semisfinals-matchBar .worldCup18__item .worldcup__group {
+	height: 40px;
+	padding: 0% 10%;
+	text-align: center;
+	margin: 4px 0px 0px !important;
+	border-left: 1px solid #b8b8b8;
+}
+.wc_semisfinals-matchBar .worldCup18__item:hover .worldcup__group {
+	border-left: 1px solid #b8b8b8;
+}
+.wc_semisfinals-matchBar .worldCup18__item:first-child .worldcup__group {
+	border-left: 1px solid rgba(255, 255, 255, 0);
+}
+.wc_semisfinals-matchBar .worldCup18__item:hover + .worldCup18__item .worldcup__group {
+	border-left: 1px solid #b8b8b8;
+}
+.wc_semisfinals-matchBar .worldcup__moment {
+  /* width: auto; */
+  margin-top: -2px;
+}
+.wc_semisfinals-matchBar .worldcup__match {
+  /* width: auto; */
+  margin-top: -1px;
+}
+.wc_semisfinals-matchBar .worldcup__match .worldcup__time {
+	padding: 0 2%;
+	font-weight: normal;
+	font-size: 13px;
+}
+.wc_semisfinals-matchBar .worldcup__country .text {
+  font-size: 18px;
+  padding: 0 10%;
+}
+.wc_semisfinals-matchBar .worldcup__score {
+	font-size: 26px;
+	/* padding: 0 3%; */
+	line-height: 22px !important;
+}
+.wc_semisfinals-matchBar .flag {
+	width: 35px;
+	height: 23px;
+}
+.wc_semisfinals-matchBar .flag-rus {
+	background-position: 0px 0px;
+}
+.wc_semisfinals-matchBar .flag-ksa {
+	background-position: 0px -25px;
+}
+.wc_semisfinals-matchBar .flag-egy {
+	background-position: 0px -50px;
+}
+.wc_semisfinals-matchBar .flag-uru {
+	background-position: 0px -74px;
+}
+.wc_semisfinals-matchBar .flag-por {
+	background-position: 0px -98px;
+}
+.wc_semisfinals-matchBar .flag-esp {
+	background-position: 0px -123px;
+}
+.wc_semisfinals-matchBar .flag-mar {
+	background-position: 0px -148px;
+}
+.wc_semisfinals-matchBar .flag-irn {
+	background-position: 0px -172px;
+}
+.wc_semisfinals-matchBar .flag-fra {
+	background-position: 0px -197px;
+}
+.wc_semisfinals-matchBar .flag-aus {
+	background-position: 0px -221px;
+}
+.wc_semisfinals-matchBar .flag-per {
+	background-position: 0px -246px;
+}
+.wc_semisfinals-matchBar .flag-den {
+	background-position: 0px -271px;
+}
+.wc_semisfinals-matchBar .flag-arg {
+	background-position: 0px -294px;
+}
+.wc_semisfinals-matchBar .flag-isl {
+	background-position: 0px -318px;
+}
+.wc_semisfinals-matchBar .flag-cro {
+	background-position: 0px -342px;
+}
+.wc_semisfinals-matchBar .flag-nga {
+	background-position: 0px -367px;
+}
+.wc_semisfinals-matchBar .flag-bra {
+	background-position: 0px -391px;
+}
+.wc_semisfinals-matchBar .flag-sui {
+	background-position: 0px -415px;
+}
+.wc_semisfinals-matchBar .flag-crc {
+	background-position: 0px -440px;
+}
+.wc_semisfinals-matchBar .flag-srb {
+	background-position: 0px -465px;
+}
+.wc_semisfinals-matchBar .flag-ger {
+	background-position: 0px -488px;
+}
+.wc_semisfinals-matchBar .flag-mex {
+	background-position: 0px -513px;
+}
+.wc_semisfinals-matchBar .flag-swe {
+	background-position: 0px -537px;
+}
+.wc_semisfinals-matchBar .flag-kor {
+	background-position: 0px -562px;
+}
+.wc_semisfinals-matchBar .flag-bel {
+	background-position: 0px -587px;
+}
+.wc_semisfinals-matchBar .flag-pan {
+	background-position: 0px -611px;
+}
+.wc_semisfinals-matchBar .flag-tun {
+	background-position: 0px -635px;
+}
+.wc_semisfinals-matchBar .flag-eng {
+	background-position: 0px -660px;
+}
+.wc_semisfinals-matchBar .flag-pol {
+	background-position: 0px -684px;
+}
+.wc_semisfinals-matchBar .flag-sen {
+	background-position: 0px -708px;
+}
+.wc_semisfinals-matchBar .flag-col {
+	background-position: 0px -733px;
+}
+.wc_semisfinals-matchBar .flag-jpn {
+	background-position: 0px -757px;
+}
+.wc_semisfinals-matchBar.final .worldCup18__item {
+	width: 100%;
+}
+.wc_semisfinals-matchBar.final .worldcup__group {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 0% 16%;
+}
+.wc_semisfinals-matchBar.final .worldcup__moment {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: auto;
+	margin: 0 1rem;
+}
+.wc_semisfinals-matchBar.final .worldcup__title {
+	/* min-width: 10rem; */
+}
+.wc_semisfinals-matchBar.final .worldcup__country {
+	-webkit-box-flex: 2;
+	-ms-flex: 2;
+	flex: 2;
+}
+.wc_semisfinals-matchBar.final .worldcup__country .text {
+	font-size: 24px;
+}
+.wc_semisfinals-matchBar.final .worldcup__score {
+	font-size: 35px;
+	padding: 0 3%;
+}
+.wc_semisfinals-matchBar.final .worldcup__time {
+	font-size: 19px;
+	/* padding: 0 5%; */
+}
+.wc_semisfinals-matchBar.final .flag {
+	width: 48px;
+	height: 31px;
+}
+.wc_semisfinals-matchBar.final .flag-rus {
+	background-position: 0px 0px;
+}
+.wc_semisfinals-matchBar.final .flag-ksa {
+	background-position: 0px -35px;
+}
+.wc_semisfinals-matchBar.final .flag-egy {
+	background-position: 0px -70px;
+}
+.wc_semisfinals-matchBar.final .flag-uru {
+	background-position: 0px -103px;
+}
+.wc_semisfinals-matchBar.final .flag-por {
+	background-position: 0px -137px;
+}
+.wc_semisfinals-matchBar.final .flag-esp {
+	background-position: 0px -171px;
+}
+.wc_semisfinals-matchBar.final .flag-mar {
+	background-position: 0px -206px;
+}
+.wc_semisfinals-matchBar.final .flag-irn {
+	background-position: 0px -240px;
+}
+.wc_semisfinals-matchBar.final .flag-fra {
+	background-position: 0px -274px;
+}
+.wc_semisfinals-matchBar.final .flag-aus {
+	background-position: 0px -308px;
+}
+.wc_semisfinals-matchBar.final .flag-per {
+	background-position: 0px -340px;
+}
+.wc_semisfinals-matchBar.final .flag-den {
+	background-position: 0px -377px;
+}
+.wc_semisfinals-matchBar.final .flag-arg {
+	background-position: 0px -410px;
+}
+.wc_semisfinals-matchBar.final .flag-isl {
+	background-position: 0px -443px;
+}
+.wc_semisfinals-matchBar.final .flag-cro {
+	background-position: 0px -477px;
+}
+.wc_semisfinals-matchBar.final .flag-nga {
+	background-position: 0px -511px;
+}
+.wc_semisfinals-matchBar.final .flag-bra {
+	background-position: 0px -545px;
+}
+.wc_semisfinals-matchBar.final .flag-sui {
+	background-position: 0px -579px;
+}
+.wc_semisfinals-matchBar.final .flag-crc {
+	background-position: 0px -613px;
+}
+.wc_semisfinals-matchBar.final .flag-srb {
+	background-position: 0px -647px;
+}
+.wc_semisfinals-matchBar.final .flag-ger {
+	background-position: 0px -680px;
+}
+.wc_semisfinals-matchBar.final .flag-mex {
+	background-position: 0px -714px;
+}
+.wc_semisfinals-matchBar.final .flag-swe {
+	background-position: 0px -749px;
+}
+.wc_semisfinals-matchBar.final .flag-kor {
+	background-position: 0px -783px;
+}
+.wc_semisfinals-matchBar.final .flag-bel {
+	background-position: 0px -817px;
+}
+.wc_semisfinals-matchBar.final .flag-pan {
+	background-position: 0px -852px;
+}
+.wc_semisfinals-matchBar.final .flag-tun {
+	background-position: 0px -885px;
+}
+.wc_semisfinals-matchBar.final .flag-eng {
+	background-position: 0px -920px;
+}
+.wc_semisfinals-matchBar.final .flag-pol {
+	background-position: 0px -953px;
+}
+.wc_semisfinals-matchBar.final .flag-sen {
+	background-position: 0px -988px;
+}
+.wc_semisfinals-matchBar.final .flag-col {
+	background-position: 0px -1021px;
+}
+.wc_semisfinals-matchBar.final .flag-jpn {
+	background-position: 0px -1055px;
+}
+
+
+/*--IE10--*/
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.worldCup18-matchBar .worldcup__country,
+	.worldCup18-matchBar .worldcup__score,
+	.worldCup18-matchBar .worldcup__match .worldcup__time {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	}
+	.wc_semisfinals-matchBar .worldcup__score {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	}
+}
+/*-- IE10--*/
+
+@media screen and (max-width: 1290px) {
+  .wc_semisfinals-matchBar .worldCup18__item .worldcup__group {
+    padding: 0% 5%;
+  }
+  .wc_semisfinals-matchBar.final .worldcup__group {
+    padding: 0% 10%;
+  }
+  .wc_semisfinals-matchBar__rearPic{
+	width: 260px;
+	background-position: -19px 0px;
+  }
+}
+
+@media screen and (max-width: 1219px) {
+  .wc_semisfinals-matchBar .worldCup18__item .worldcup__group {
+    padding: 0% 8%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .worldCup18-matchBar .worldCup18__item {
+    width: 25% !important;
+  }
+  .wc_semisfinals-matchBar .worldCup18__item .worldcup__group {
+    padding: 0% 4%;
+  }
+  .wc_semisfinals-matchBar.final .worldcup__group {
+    padding: 0% 6%;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  .wc_semisfinals-matchBar__rearPic {
+    display: none;
+  }
+  .wc_semisfinals-matchBar .worldCup18__item .worldcup__group {
+    padding: 0% 10%;
+  }
+	.wc_semisfinals-matchBar.final .worldCup18__item .worldcup__group {
+		padding: 0% 17%;
+	}
+}
+
+ @media screen and (max-width: 1024px) {
+.worldCup18-matchBar, .wc_semisfinals-matchBar {
+	width: 1012px;
+	box-sizing: border-box;
+}
+.worldCup18-matchBar .worldCup18__item {
+	width: 25%;
+}
+.wc_semisfinals-matchBar .worldCup18__item {
+	width: 50%;
+}
+.worldCup18-matchBar .worldCup18__item .worldcup__group {
+	padding: 2% 5%;
+}
+.wc_semisfinals-matchBar__rearPic {
+	display: none;
+}
+.wc_semisfinals-matchBar .worldCup18__item .worldcup__group {
+	padding: 0% 8%;
+}
+.wc_semisfinals-matchBar.final .worldCup18__item .worldcup__group {
+	padding: 0% 17%;
+}
+}
+
+
+
+/*--WC countdown--*/
+figure, figcaption {
+	display: block;
+}
+.transition {
+	-webkit-transition: top 400ms linear;
+	-moz-transition: top 400ms linear;
+	-ms-transition: top 400ms linear;
+	-o-transition: top 400ms linear;
+	transition: top 400ms linear;
+}
+.timeTo {
+	line-height: 108%;
+	font-weight: bold;
+	width: 141px;
+	height: 28px;
+	padding: 2px;
+	text-align: center;
+	background: #2c2b2c;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #242424 0%, #383738 35%, #111112 37%);
+	/* FF3.6+ */
+	background: -webkit-linear-gradient(top, #242424 0%, #383738 35%, #111112 37%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #242424 0%, #383738 35%, #111112 37%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #242424 0%, #383738 35%, #111112 37%);
+	/* IE10+ */
+	background: -webkit-gradient(linear, left top, left bottom, from(#242424), color-stop(35%, #383738), color-stop(37%, #111112));
+	background: linear-gradient(to bottom, #242424 0%, #383738 35%, #111112 37%);
+	/* W3C */
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ @-webkit-keyframes blinking {
+ 49% {
+ color: transparent;
+}
+ 50% {
+ color: #fff;
+}
+}
+ @keyframes blinking {
+ 49% {
+ color: transparent;
+}
+ 50% {
+ color: #fff;
+}
+}
+.timeTo span {
+	font-family: 'Century Gothic', 'sans-serif';
+	vertical-align: top;
+	font-size: 12px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+	-webkit-animation: blinking 1s linear infinite;
+	animation: blinking 1s linear infinite;
+	opacity: .7;
+}
+.timeTo.timeTo-black div {
+	color: white;
+	background: transparent;
+	font-family: 'Century Gothic', 'sans-serif';
+	width: 9px !important;
+	height: 16px !important;
+	margin: 0 !important;
+}
+.timeTo figure {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	position: relative;
+	max-width: 34px !important;
+}
+.timeTo figure:first-child {
+	width: 35px !important;
+	margin-right: 3px;
+	border-right: 1px solid rgba(54, 54, 53, 0.6);
+}
+.timeTo figure:first-child:after {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	right: -2px;
+}
+.timeTo figcaption {
+	padding: 0 !important;
+	text-align: center;
+	font-size: 12px;
+	font-family: 'Arial', 'sans-serif';
+	line-height: 80%;
+	font-weight: normal;
+	color: #fff;
+	-webkit-transform: scale(0.6);
+	-ms-transform: scale(0.6);
+	transform: scale(0.6);
+}
+.timeTo div {
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	height: 30px;
+	/* border-top: 1px solid silver;
+	border-right: 1px solid silver;
+	border-bottom: 1px solid silver; */
+	overflow: hidden;
+}
+.timeTo div.first {
+/* border-left: 1px solid silver; */
+}
+.timeTo ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0 !important;
+}
+.timeTo ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#countdown-3:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+body[lang="vn"] .worldCup18-matchBar .worldCup18-matchBar__title {
+	background-image: url(../images/WorldCup2018/WCbar-title-vn.png);
+}
+body[lang="cs"] .worldCup18-matchBar .worldCup18-matchBar__title, body[lang="zhcn"] .worldCup18-matchBar .worldCup18-matchBar__title {
+	background-image: url(../images/WorldCup2018/WCbar-title-cs.png);
+}
+body[lang="ch"] .worldCup18-matchBar .worldCup18-matchBar__title {
+	background-image: url(../images/WorldCup2018/WCbar-title-ch.png);
+}
+body[lang="vn"] .wc_semisfinals-matchBar .wc_semisfinals-matchBar__title {
+	background-image: url(../images/WorldCup2018/WCbar-final-title-vn.png);
+}
+body[lang="cs"] .wc_semisfinals-matchBar .wc_semisfinals-matchBar__title, body[lang="zhcn"] .wc_semisfinals-matchBar .wc_semisfinals-matchBar__title {
+	background-image: url(../images/WorldCup2018/WCbar-final-title-cs.png);
+}
+body[lang="ch"] .wc_semisfinals-matchBar .wc_semisfinals-matchBar__title {
+	background-image: url(../images/WorldCup2018/WCbar-final-title-ch.png);
+}
+/*--WC countdownBar--*/
+.worldCup18-matchBar .WC_countdown {
+	height: 57px;
+	width: 175px;
+	background: url(../images/WorldCup2018/WCtime-en-bg.png);
+	border-radius: 3px;
+	padding-left: 43px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	cursor: pointer;
+}
+body[lang="vn"] .worldCup18-matchBar .WC_countdown {
+	background-image: url(../images/WorldCup2018/WCtime-vn-bg.png);
+}
+body[lang="cs"] .worldCup18-matchBar .WC_countdown, body[lang="zhcn"] .worldCup18-matchBar .WC_countdown {
+	background-image: url(../images/WorldCup2018/WCtime-cs-bg.png);
+}
+body[lang="ch"] .worldCup18-matchBar .WC_countdown {
+	background-image: url(../images/WorldCup2018/WCtime-ch-bg.png);
+}
+.worldCup18-matchBar .WC_countdown .timeTo {
+	width: 121px;
+	margin-top: 21px;
+	height: 30px;
+}
+.worldCup18-matchBar .WC_countdown figure:first-child {
+	width: 29px !important;
+	max-width: 29px !important;
+}
+.worldCup18-matchBar .WC_countdown figure:first-child figcaption {
+	margin-left: -3px;
+}
+.worldCup18-matchBar .WC_countdown figure {
+	max-width: 25px !important;
+}
+.worldCup18-matchBar .WC_countdown figure figcaption {
+	margin-left: -2px;
+}
+.worldCup18-matchBar .WC_countdown figure:last-child figcaption {
+	margin-left: -4px;
+}
+/*--WC countdown--*/

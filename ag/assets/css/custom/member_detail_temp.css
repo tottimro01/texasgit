@@ -1,0 +1,40 @@
+.input-group {
+        width:100px;
+    }
+    .input-group-addon {
+        width: 40px;
+    }
+    .sl-width {
+        width: 80px;
+    }
+    .tabbable input[type="text"] {
+        width: 85px;
+    }
+    .col-md-4 {
+        float: '' !important;
+    }
+    .numeric {
+        height: 30px;
+    }
+    .label-sm {
+        padding: 0px !important;
+    }
+
+    @media (max-width: 990px) { 
+       /* .sBtForm{
+          display: none;
+        }*/
+        .form-group div,label{
+          padding-top: 2px;
+        }
+        .maxall
+        {
+            float: inherit;
+            padding: 0;
+        }
+    }
+    @media (min-width: 990px) {
+        .sBtFormMobile{
+            display: none;
+        }
+    }

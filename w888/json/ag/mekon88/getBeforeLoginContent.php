@@ -1,0 +1,2 @@
+
+<div id='EventsPop' class='EventsPop contentArea'><ul id='EventList' class='list' onMouseOver='EventStop(event);' onMouseOut='EventStart(event);'><li id="event1" class="" onclick="EventOpen(event, 'event1');"><img src="login/mbc/common/images/beforeLogin/events_125.jpg?v=20190821" /><div class="title">SLOTS GAME</div><div class="txt"> MORE THAN 100+ SLOTS GAME AVAILABLE<br />PLAY AND WIN NOW!!<br /> </div><div id="EventBack" style="display:block" class="back" onclick="EventClose(event);">Back</div></li></ul></div>

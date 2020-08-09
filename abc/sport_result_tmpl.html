@@ -1,0 +1,212 @@
+<script id="sportResult_Tmpl" type="text/x-jsrender">
+<table class="sport-match-header small">
+  <thead>
+    <tr class="sport-league-head">
+      <th class="px-2 py-1">{{:zone_name}}</th>
+    </tr>
+  </thead>
+</table>
+<table class="sport-match-table sport-match-table-sizer sp_result w-100 table-fixed small">  
+  <tbody>
+    {{for matches}}
+    <!-- /////////////////////// MATCH ROW /////////////////////// -->
+    <tr class="match_row {{:match_id}} {{if match_end}}match_end{{/if}} {{if is_score_empty}}score_empty{{/if}}" data-bid="{{:match_id}}">
+      <td> <!-- Match time -->
+        <table class="w-100">
+          <tr>
+            <td>
+              <div class="text-center">
+                <form action="process/updateResultValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}}" data-onsuccess="updateIdThScoreCallback,toastSaveSuccess" data-onfail="toastSaveError">
+                  <fieldset>
+                    <input type="hidden" name="match_id" value="{{:match_id}}" />
+                    <input type="hidden" name="match_add" value="{{:match_add}}" />
+                    <input type="hidden" name="update_date_check" value="1" />
+                    <div class="chk-item">
+                      <input type="checkbox" id="checkDate_{{:match_id}}" name="chk_date" value="1" {{if date_check==1}}checked="true"{{/if}} />
+                      <label for="checkDate_{{:match_id}}" class="checkmark"></label>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </td>
+            <td class="pl-1">
+              <div>{{:play_date}}</div>
+              <div>ID: {{:match_id}}</div>
+              <!-- <div>TH: {{:match_id_thscore}}</div> -->
+              <div>
+                <form action="process/updateResultValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}}" data-onsuccess="updateIdThScoreCallback,toastSaveSuccess" data-onfail="toastSaveError">
+                  <fieldset>
+                    <label for="">TH: </label>
+                    <input type="hidden" name="match_id" value="{{:match_id}}" />
+                    <input type="hidden" name="match_add" value="{{:match_add}}" />
+                    <input type="text" name="id_th_score" id="id_thscore_{{:match_id}}_{{:match_add}}" value="{{:match_id_thscore}}" class="w-50 inputFilter id_thscore_{{:match_id}} {{if !match_id_thscore}}bg-light{{/if}}" data-filter-type="numeric" maxlength="10" autocomplete="off" />
+                    <a href="#" onclick="$('#id_thscore_{{:match_id}}_{{:match_add}}').focus(); return false;">
+                        <i class="fas fa-edit"></i>
+                    </a>
+                    <input type="submit" name="submit" />
+                  </fieldset>
+                </form>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+
+      <td> <!-- Match team 1 -->
+        <div class="text-center">
+          <span class="team_name">{{:team_home}}</span>
+        </div>
+      </td>
+
+      <td class="c-y"> <!-- TH Score 1H -->
+        <div class="text-center">
+          <span>{{:th_score_half}}</span>
+        </div>
+      </td>
+
+      <td class="c-gry"> <!-- TH Score FT -->
+        <div class="text-center">
+          <span>{{:th_score_half}}</span>
+        </div>
+      </td>
+
+      <td class="c-org"> <!-- !Live -->
+        <div class="text-center">
+          <span>{{if live_text!=""}}{{:live_text}}'{{/if}}</span>
+        </div>
+      </td>
+
+      <td class="c-p spCellTriggerForm"> <!-- 1H -->
+        <div class="text-center">
+          <form action="process/updateResultValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}}" data-onsuccess="toastSaveSuccess" data-onfail="toastSaveError">
+            <fieldset>
+              <input type="hidden" name="match_id" value="{{:match_id}}" />
+              <input type="hidden" name="match_add" value="{{:match_add}}" />
+              <input type="text" name="run_score_half" value="{{:score_half}}" autocomplete="off" />
+              <input type="submit" name="submit" />
+            </fieldset>
+          </form>
+        </div>
+      </td>
+
+      <td class="c-b spCellTriggerForm"> <!-- FT -->
+        <div class="text-center">
+          <form action="process/updateResultValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}}" data-onsuccess="toastSaveSuccess" data-onfail="toastSaveError">
+            <fieldset>
+              <input type="hidden" name="match_id" value="{{:match_id}}" />
+              <input type="hidden" name="match_add" value="{{:match_add}}" />
+              <input type="text" name="run_score_full" value="{{:score_full}}" autocomplete="off" />
+              <input type="submit" name="submit" />
+            </fieldset>
+          </form>
+        </div>
+      </td>
+
+      <td> <!-- Match team 2 -->
+        <div class="text-center">
+          <span class="team_name">{{:team_away}}</span>
+        </div>
+      </td>
+
+      <td>
+        <form action="process/matchLiveScore.php" method="get" class="formGetVal" data-onsuccess="loadLiveScoreCallback">
+          <input type="hidden" name="match_id" value="{{:match_id}}" />
+          <input type="hidden" name="match_add" value="{{:match_add}}" />
+          <input type="submit" class="btn btn-sm p-1 btn-danger badge-pill small--1" value="Live score" />
+        </form>
+      </td>
+      
+      <td>
+        {{if match_status=="Cancel"}}
+        <div class="text-center">
+          <form action="process/updateResultValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}}" data-onsuccess="toastSaveSuccess" data-onfail="toastSaveError">
+            <fieldset>
+              <input type="hidden" name="match_id" value="{{:match_id}}" />
+              <input type="hidden" name="match_add" value="{{:match_add}}" />
+              <input type="hidden" name="update_score_check" value="1" />
+              <span class="text-danger">ยกเลิก</span>
+              <div class="chk-item">
+                <input type="checkbox" id="checkEnd_{{:match_id}}" name="chk_score" value="1" {{if score_check==1}}checked="true"{{/if}} />
+                <label for="checkEnd_{{:match_id}}" class="checkmark"></label>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        {{else match_end}}
+        <div class="text-center">
+          <form action="process/updateResultValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}}" data-onsuccess="toastSaveSuccess" data-onfail="toastSaveError">
+            <fieldset>
+              <input type="hidden" name="match_id" value="{{:match_id}}" />
+              <input type="hidden" name="match_add" value="{{:match_add}}" />
+              <input type="hidden" name="update_score_check" value="1" />
+              <span class="text-success">จบ</span>
+              <div class="chk-item">
+                <input type="checkbox" id="checkEnd_{{:match_id}}" name="chk_score" value="1" {{if score_check==1}}checked="true"{{/if}} />
+                <label for="checkEnd_{{:match_id}}" class="checkmark"></label>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        {{/if}}
+      </td>
+
+    </tr>
+    <!-- /////////////////////// END MATCH ROW /////////////////////// -->
+    {{/for}}
+  </tbody>
+</table>
+</script>
+
+<script id="sportResultEmpty_Tmpl" type="text/x-jsrender">
+  <table class="w-100">
+    <tr>
+      <td>
+        <div class="text-center py-3 bd-m-1 border-top-0">
+          <span>ไม่มีข้อมูลผลบอล</span>
+        </div>
+      </td>
+    </tr>
+  </table>
+</script>
+
+<script id="sportLiveScoreTable_Tmpl" type="text/x-jsrender">
+    <table class="w-100 fixed-table">
+      <tr class="border">
+        <td class="py-2">
+            <div class="pl-2" style="float: left;">{{:info.live_txt}}</div>
+            <div class="text-right font-weight-bold">{{:info.team_1}}</div>
+        </td>
+        <td style="width: 40px;">
+            <div class="text-center">{{:info._ft}}</div>
+        </td>
+        <td>
+            <div class="text-left font-weight-bold">{{:info.team_2}}</div>
+        </td>
+      </tr>
+      <tr class="border">
+        <td class="py-2">
+            <div class="text-right">ครึ่งเวลา</div>
+        </td>
+        <td>
+            <div class="text-center">{{:info._1h}}</div>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+    <div class="pl-2 py-1 bg-secondary text-white">
+        ผลคะแนน
+    </div>
+    <table class="w-100 fixed-table">
+        {{for score}}
+            <tr class="border">
+                <td class="py-2 pl-2">
+                    <div>{{:time_min}}'</div>
+                </td>
+                <td style="width: 40px;">
+                    <div class="text-center">{{:score}}</div>
+                </td>
+                <td></td>
+            </tr>
+        {{/for}}
+    </table>
+  </script>

@@ -1,0 +1,122 @@
+ .widget-body .table {
+    border: 1px solid #E5E5E5;
+ }
+
+ .table-responsive
+ {
+     border: 0px;
+ }
+
+#tnumber{
+    float: left;
+    width: 50%;
+    text-align: left!important;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+.input-box
+ {
+   margin: 0 5px;  
+   float: left;
+ }
+ .label-1
+ {
+    float: left;
+    margin-left: 15px;
+ }
+
+#ttype
+{
+    min-width: 200px;
+    float: left;
+}
+
+.lot_num
+{
+    font: left;
+}
+ @media (max-width: 1322px) { 
+
+    .form-group div,label{
+      padding-top: 8px;
+    }
+    
+    .button-box
+    {
+        width: 100%;
+    }    
+}
+
+@media (max-width: 1143px) { 
+    #ttype
+    {
+        width: 100px;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 991px) { 
+   .button-box {
+        width: auto;
+        padding-top: 0!important;
+    }
+
+    #tnumber {
+      
+      max-width: 140px;
+    }
+}
+
+@media (max-width: 803px) { 
+     .button-box {
+        width: 100%;
+        max-width: 100%!important;
+        padding-top: 8px!important;
+    }
+}
+
+@media (max-width: 748px) { 
+   .input-box
+   {
+    max-width: 150px!important;
+   }
+
+   .button-box {
+        width: 100%;
+        max-width: 100%!important;
+        padding-top: 8px!important;
+    }
+}
+
+@media (max-width: 524px) { 
+   #tsum , #ttype
+   {
+        width: 100%;
+        clear: both;
+        margin: 5px 0;
+        max-width: 100%!important;
+   }
+   #tnumber
+   {
+    float: right;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+   }
+
+   .form-horizontal .form-group
+   {
+    margin: 0;
+   }
+   .label-1
+   {
+    margin-left: 0px;
+   }
+   .button-box
+   {
+    text-align: right;
+    margin: 10px 0;
+    padding-top: 0px!important;
+   }
+}

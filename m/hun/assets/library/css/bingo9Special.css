@@ -1,0 +1,361 @@
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+    -webkit-border-radius: 6px;
+}
+
+#closetime
+{
+	color: red;
+	display: inline-block;
+}
+
+#bingo9data ,#bingo9datafoot
+{	
+	text-align: center;
+	width: 100.3%;
+	border-collapse: collapse;
+	border: 1px solid #b7b7b7;
+}
+
+#showResuleBet
+{
+	background-color: #fff!important;
+	height: 97%;
+	margin: 5px;
+	border-radius: 8px;
+	overflow-x: auto;
+}
+#showResuleBet img
+{
+	position: absolute;
+    right: 5px;
+	width: 40px;
+	margin-top: -20px;
+}
+
+#Resultval
+{
+	text-align: center;
+	margin-top: 20px;
+}
+#BetCellTitle img ,.Betfooter img
+{
+	display: inline-block;
+	width: 30px;
+    margin-left: -20px;
+    margin-top: -3px;
+    float: left;
+}
+.BetTitletext
+{
+	display: inline-block;
+	width: 50%;
+    margin-left: 25%;
+}
+.Betfooter
+{
+	color: #fff
+}
+
+
+
+input[readonly] ,input[readonly]:focus
+{
+    background-color: #aaaaaa!important;
+    border:solid 1px #bbbbbb!important;
+}
+
+
+
+.readonly{
+	background-image: none!important;;
+	background-color: #aaaaaa!important;
+}
+#BetCellTitle td
+{
+	background-color: #6e6e6f;
+	color: #fff;
+	height:40px;
+	border: 1px solid white;
+}
+
+
+.leftTitle
+{
+	padding-right: 0.5px;
+}
+/*---------------------------------*/
+
+#includePage1
+{
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	width: 100%;
+}
+
+/*---------------------------------*/
+#FullBody
+{
+	height: auto;
+	min-height: 87%;
+	border: none;
+	
+	   
+}
+#FullBigotitle
+{
+	border-left:  1px solid #b7b7b7;
+	border-right:  1px solid #b7b7b7;
+	/*border-top:  0.5px solid #b7b7b7;*/
+	width: 99.5%;
+}
+.BetInput span input[type="tel" i]
+{
+	display: inline-block!important;
+
+}
+.BetInput span input[type="tel" i]
+{
+	width: 75%!important;
+	margin-right: 5px!important;
+	
+}
+
+
+.Betfooter 
+{
+	border-style:hidden;
+	background-image: url("http://m.lotzx.com/hun/assets/library/img/bet-footer-bg.png");
+	background-size: 100% 100%;
+	height: 45px;
+
+}
+.Betfooter td
+{
+	border: 0;
+}
+.fleft
+{
+	border-bottom-left-radius: 8px;
+}
+ .fright
+{
+	border-bottom-right-radius: 8px;
+}
+
+
+#savebtn
+{
+	width: 70%;
+	background-image: url(http://m.lotzx.com/hun/assets/library/img/submit-login.png);
+	background-size: 100% 100%;
+	height: 45px;
+	border-radius: 30px;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+#cancelbtn
+{
+	width: 30%;
+	background-image: url("http://m.lotzx.com/hun/assets/library/img/bet-cancel-bg.png");
+	background-size: 100% 100%;
+	/*background-color: red;*/
+	height: 45px;
+	border-radius: 30px;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+
+.BetInput input[type=checkbox] {
+	display:none;
+	float: left;
+}
+
+.BetInput  input[type=checkbox] + label
+{
+	height: 30px;
+	width: 30px;
+	background-image: url(http://m.lotzx.com/hun/assets/library/img/icon_off_koo.png);
+	background-size: 100% 100%;
+	display:inline-block;
+	padding: 0 0 0 0px;
+	float: left;
+	margin-left: 20px;
+}
+.BetInput  input[type=checkbox]:checked + label
+{
+	
+	height: 30px;
+	width: 30px;
+	background-image: url(http://m.lotzx.com/hun/assets/library/img/icon_on_koo.png);
+	background-size: 100% 100%;
+	display:inline-block;
+	padding: 0 0 0 0px;
+	float: left;
+	margin-left: 20px;
+}
+#selectIinput
+{
+	background-color: #df9492;
+}
+.Itext
+{
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+#btnSelectI
+{
+	background-image: url(http://m.lotzx.com/hun/assets/library/img/submit-login.png);
+	background-size: 100% 100%;
+	height: 30px;
+	border-radius: 30px;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 10px;
+	margin: 2px;
+	color: blue;
+}
+
+
+/*-------------------------------------*/
+.textTitle
+{
+	text-align: left;
+	background-color: #6e6e6f;
+	color: #fff;
+	margin-left: 5px;
+	height: 25px;
+}
+.spacialGroup1
+{
+	text-align: center;
+	width: 32.2%;
+	display: inline-block;
+
+}
+.spacialGroup2
+{
+	width: 45%;
+	display: inline-block;
+}
+input[type="tel" i]:focus
+{
+	box-shadow: none!important;
+	background-color: #e2d7d7;
+	border-color: #fb3f3f;
+	caret-color: #ff367b;
+	outline: none;
+}
+
+input[type="tel" i]
+{
+	border-radius: 5px;
+	width: 95%;
+	border:solid 1px #c0bebe;
+	height: 30px;
+	margin-bottom:5px;
+	outline: none;
+	font-weight: bold;
+	text-align: center;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+@media (min-device-width:768px) and (max-device-width:1024px)
+{
+
+	.spacialGroup1 , .spacialGroup2
+	{
+		 margin-top: 15px;
+   		 margin-bottom: 15px;
+	}
+}
+
+@media only screen and (max-width: 325px)
+{
+	input[type="tel" i]
+	{
+		width: 80%;
+	}
+	.spacialGroup2  input[type="tel" i]
+	{
+		width: 70%;
+	}
+
+}
+
+@media only screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
+	
+	#showResuleBet
+	{
+		background-color: #fff!important;
+		height: 95%;
+		margin: 5px;
+	}
+
+	#bingo9data ,#bingo9datafoot
+	{	
+
+		width: 100%;
+		
+	}
+
+	.marginBotTable
+	{
+		display: none;
+	}
+
+	
+}
+
+
+@media all and (orientation: landscape) {
+
+	input[type="tel" i] {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+	    /*iphon 5*/
+  @media (min-device-width:0px) and (max-device-width:568px)
+  {
+
+	input[type="tel" i]
+	{
+		margin-left: 15%;
+		width: 70%!important;
+		display: block;
+	}
+
+	#bingo9data, #bingo9datafoot {
+    	width: 99.9%;
+	}
+
+ }
+
+     @media (min-device-width:1024px) and (max-device-width:1366px)
+	{
+		.spacialGroup1 , .spacialGroup2
+		{
+			 margin-top: 15px;
+   			 margin-bottom: 15px;
+		}
+		
+	}
+}

@@ -1,0 +1,30 @@
+#tbSportBill tbody tr.trbill:hover,tr.alt:hover{
+    background: transparent !important;
+}
+#tbSportBill tbody tr.trbill>td:hover,tr>td.alt:hover{
+    background: #a0a0a0 !important;
+}
+#tbSportBill tfoot tr{
+    background: #e6e6e6;
+}
+#tbSportBillDetail thead tr:hover,tr.alt:hover,#tbSportBillDetail thead tr{
+    background: #e6e3e3  !important;
+    color:#000;
+}
+#tbSportBillDetail tfoot tr{
+    background: #e6e6e6;
+}
+
+.mobile-padding
+{
+	margin-bottom: 10px;
+}
+
+#loadData span
+{
+	cursor: pointer;
+}
+
+.cg {
+    color: #06a706;
+}

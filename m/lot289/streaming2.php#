@@ -1,0 +1,38 @@
+<?
+	session_start();
+	// echo $_SESSION["streaming"];
+	
+?>
+
+<!DOCTYPE html>
+<html lang="<?=$_COOKIE['lang'];?>">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>:: OHO 99 ::</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.0.3/video.min.js"></script> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.0.3/video-js.min.css">
+	<link rel="stylesheet" href="library/css/style.css?v=<?=$cache_v;?>" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<style>
+		body {
+			background-color: #000000;
+		}
+		.video-js {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<!-- <video src="http://61.91.12.34:1935/live/smil:tv5adaptive.smil/media_w1954026934_b1024000_66265.ts"></video> -->
+	<!-- <video src="http://61.91.12.34:1935/live/smil:tv5adaptive.smil/playlist.m3u8"></video> -->
+	<video width="100%" height="100%" controls autoplay playsinline>
+    <source src="http://202.162.78.181:81/live/myd/index.m3u8" type="application/x-mpegURL">
+</video>
+</body>
+</html>
+<script>
+
+</script>

@@ -1,0 +1,25 @@
+.jsui .ui-datepicker-trigger img{
+ margin-top: -5px;
+}
+
+.jsui .ui-state-highlight, .jsui .ui-widget-content .ui-state-highlight, .jsui .ui-widget-header .ui-state-highlight {
+  border: 1px solid #8e2a1f;
+  background: #fff1f0;
+  color: #333;
+}
+
+.jsui .ui-widget-header {
+    border: 1px solid #8e2a1f;
+    background: #fff1f0;
+}
+
+.jsui .ui-state-hover,.jsui .ui-widget-content .ui-state-hover,.jsui .ui-widget-header .ui-state-hover,.jsui .ui-state-focus,.jsui .ui-widget-content .ui-state-focus,.jsui .ui-widget-header .ui-state-focus,.jsui .ui-button:hover,.jsui .ui-button:focus{
+    background-color: #fff1f0;
+    border: 1px solid #8e2a1f;
+}
+
+.jsui .ui-state-active, .jsui .ui-widget-content .ui-state-active, .jsui .ui-widget-header .ui-state-active, a.jsui .ui-button:active, .jsui .ui-button:active, .jsui .ui-button.ui-state-active:hover{
+  background-color: #d45147;
+  border: 1px solid #8e2a1f;
+  color: #ffffff;
+}

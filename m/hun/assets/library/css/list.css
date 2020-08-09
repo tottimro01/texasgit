@@ -1,0 +1,268 @@
+#homeBody
+{
+	margin:0px;
+	background: #fff;
+    border-radius: 0px;
+}
+
+
+#homeTitle
+{
+	border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    height: 110px;
+    font-size: 14px;
+    font-weight: normal;
+}
+#SwitchBillLayout
+{
+	width: 100%;
+
+}
+.boxRightContainer{
+	float: right;
+	margin-right:5px;
+	margin-top: 5px;
+}
+.billBtn1{
+	cursor: pointer;
+	display: inline-block;
+	height: 28px;
+    padding-top: 9px;
+	width: 120px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	text-align: center;
+	border: solid 1px  #989898;
+	margin-right: -6px;
+	font-size: 16px;
+	color: #777;
+	background-color: #e5e5e5;
+}
+.billBtn2{
+	cursor: pointer;
+	display: inline-block;
+	height: 28px;
+    padding-top: 9px;
+	width: 120px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	text-align: center;
+	border: solid 1px  #989898;
+	font-size: 16px;
+	color: #777;
+	background-color: #e5e5e5;
+}
+.billactive
+{
+	background-image: url(http://m.lotzx.com/hun/assets/library/img/submit-login.png);
+    background-size: 100% 100%;
+    border-color: #f0ac21;
+	color: #333;
+}
+.billactive:hover
+{
+	background-image: url(http://m.lotzx.com/hun/assets/library/img/submit-login-hover.png);
+    background-size: 100% 100%;
+    border-color: #bd8e29;
+	color: #333;
+
+}
+.swiperBox
+{
+	width: 33%;
+}
+.swiper-slide
+{
+	margin-top: 0px;
+	background-color: #fff;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet
+{
+	margin-top: 2px;
+}
+.phide
+{
+	display: none;
+}
+.lhide
+	{
+		display: inline-block;
+	}
+
+
+/* แสดงข้อมูล */
+.listBoxData{
+	width: 100%;
+	overflow-y:auto;
+}
+.listBoxData table
+{
+	width: 100%;
+	border-spacing: 2px 5px;
+}
+.listBoxData table th
+{
+	background-image: url(http://m.lotzx.com/hun/assets/library/img/listth-bg.png);
+    background-size: 100% 100%;
+	font-size: 11px;
+	height: 30px;
+}
+.listBoxData table td
+{
+	background-image: url(http://m.lotzx.com/hun/assets/library/img/listtd-bg.png);
+    background-size: 100% 100%;
+	font-size: 11px;
+	height: 45px;
+}
+.listBoxData table td li
+{
+	list-style-type: none;
+	text-align: left;
+}
+.numberCircle
+{
+	height: 15px;
+	width: 20px;
+	background-color: #cccaca;
+	text-align: center;
+	border: 1px solid #adadad;
+	border-radius: 10px;
+	/*position: absolute;*/
+	margin-top: -5px;
+	padding-top: 5px;
+	background-image: url(http://m.lotzx.com/hun/assets/library/img/cricle-bg.png);
+    background-size: 100% 100%;
+    float: left;
+
+}
+.list-time{
+	text-align: right
+}
+.td-li3
+{
+	text-align: center!important;
+}
+
+.listBoxData table .left
+{
+	border-top-left-radius: 5px;
+}
+.listBoxData table .right
+{
+	border-top-right-radius: 5px;
+}
+.listBoxData table tfoot tr td
+{
+	background-image: url(http://m.lotzx.com/hun/assets/library/img/listth-bg.png);
+    background-size: 100% 100%;
+    height: 30px;
+}
+.listBoxData table tfoot tr .fleft
+{
+	border-bottom-left-radius: 5px;
+}
+
+.listBoxData table tfoot tr .fright
+{
+	border-bottom-right-radius: 5px;
+}
+
+/*iphon 5*/
+@media (min-device-width:0px) and (max-device-width:320px)
+{
+  	.listBoxData
+  	{
+  		margin-bottom: 40px;
+  	}
+  }	
+  
+@media all and (orientation: landscape) 
+{
+
+	.billBtn1{
+		height: 25px;
+	    padding-top: 5px;
+	
+	}
+	.billBtn2{
+		height: 25px;
+	    padding-top: 5px;
+	 }
+	#homeTitle
+	{
+		height: 35px;
+	}
+	#landscapeSelectDate
+	{
+		width: 30%;
+	}
+	.phide
+	{
+		display: inline-block;
+	}
+	.lhide
+	{
+		display: none;
+	}
+	.swiperBox
+	{
+		width: 20%;
+	}
+	.swiperPText {
+    	display: inline-block;
+    	position: absolute;
+    	top: 2px;
+    	font-size: 13px;
+	}
+	.SlidePagination
+	{
+		margin-left: 0;
+		width: 75%;
+	}
+	.swiper-pagination-clickable .swiper-pagination-bullet
+	{
+		margin-top: -5px;
+	}
+	#DateselectBoxL
+	{
+		    font-size: 12px;
+	}
+	.swiper-pagination
+	{
+		z-index: 5;
+	}
+	.selectBoxStyle
+	{
+		padding-left: 10%;
+
+	}
+
+
+	.listBoxData table th
+	{
+		
+		font-size: 13px;
+		height: 30px;
+	}
+	.listBoxData table td
+	{
+		
+		font-size: 13px;
+		height: 40px;
+	}
+	.listBoxData table th , .listBoxData table tfoot tr td
+	{
+		height: 35px;
+	}
+
+	/*iphon 5*/
+  @media (min-device-width:0px) and (max-device-width:568px)
+  {
+  	.listBoxData
+  	{
+  		margin-bottom: 40px;
+  	}
+  }	
+	
+}

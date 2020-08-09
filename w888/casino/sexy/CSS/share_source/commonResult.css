@@ -1,0 +1,231 @@
+.popResult-sprite, .btnResult-Close, .btnResult-Replay, .btnResult-VideoStop, .btnResult-VideoPlay, .boxVideoNotice p { background-image: url('/images/share_source/commonResult/popResult.png'); background-repeat: no-repeat; }
+
+.poker-sprite, .s101, .s01, .s102, .s02, .s103, .s03, .s104, .s04, .s105, .s05, .s106, .s06, .s107, .s07, .s108, .s08, .s109, .s09, .s110, .s10, .s111, .s11, .s112, .s12, .s113, .s13, .s201, .h01, .s202, .h02, .s203, .h03, .s204, .h04, .s205, .h05, .s206, .h06, .s207, .h07, .s208, .h08, .s209, .h09, .s210, .h10, .s211, .h11, .s212, .h12, .s213, .h13, .s301, .c01, .s302, .c02, .s303, .c03, .s304, .c04, .s305, .c05, .s306, .c06, .s307, .c07, .s308, .c08, .s309, .c09, .s310, .c10, .s311, .c11, .s312, .c12, .s313, .c13, .s401, .d01, .s402, .d02, .s403, .d03, .s404, .d04, .s405, .d05, .s406, .d06, .s407, .d07, .s408, .d08, .s409, .d09, .s410, .d10, .s411, .d11, .s412, .d12, .s413, .d13  { background-image: url('/images/share_source/commonResult/poker.png'); background-repeat: no-repeat; }
+
+.bauCua-sprite, .bauCua1, .bauCua2, .bauCua3, .bauCua4, .bauCua5, .bauCua6 { background-image: url('/images/share_source/commonResult/bauCua.png'); background-repeat: no-repeat; }
+
+.diceRed-sprite, .dice1.red, .dice2.red, .dice3.red, .dice4.red, .dice5.red, .dice6.red { background-image: url('/images/share_source/commonResult/diceRed.png'); background-repeat: no-repeat; }
+
+.diceBlack-sprite, .dice1.black, .dice2.black, .dice3.black, .dice4.black, .dice5.black, .dice6.black { background-image: url('/images/share_source/commonResult/diceBlack.png'); background-repeat: no-repeat; }
+
+* { margin: 0; padding: 0; }
+
+html, body { font-family: Arial, Helvetica,  sans-serif; }
+
+.overHidden { overflow: hidden; }
+
+.target:not(:target) { display: none; }
+.target:target { display: flex; }
+
+.btnResult-Close, .btnResult-Replay, .btnResult-VideoStop, .btnResult-VideoPlay { display: block; font-size: 0; text-indent: -99999px; background-position: -61px -24px; height: 24px; width: 24px; }
+.btnResult-Close:hover, .btnResult-Replay:hover, .btnResult-VideoStop:hover, .btnResult-VideoPlay:hover, .btnResult-Close.btnClose-hover, .btnClose-hover.btnResult-Replay, .btnClose-hover.btnResult-VideoStop, .btnClose-hover.btnResult-VideoPlay { background-position: -61px 0; }
+
+.btnResult-Replay { background-position: 0 -72px; height: 24px; width: 85px; }
+.btnResult-Replay:hover, .btnResult-Replay.btnReplay-hover { background-position: 0 -48px; }
+
+.btnResult-VideoStop { background-position: -25px -216px; height: 40px; width: 60px; }
+.btnResult-VideoStop:hover, .btnResult-VideoStop.btnVideoStop-hover { background-position: -25px -176px; }
+
+.btnResult-VideoPlay { background-position: -25px -136px; height: 40px; width: 60px; }
+.btnResult-VideoPlay:hover, .btnResult-VideoPlay.btnVideoPlay-hover { background-position: -25px -96px; }
+
+.popResult-pokerIn, .popResult-dice, .popResult-compass { display: flex; justify-content: center; text-align: center; color: #fff; }
+
+.popResultBK { display: flex; justify-content: center; align-items: center; position: absolute; top: 0; left: 0; z-index: 10000; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); }
+
+.popResult { position: relative; min-width: 600px; box-sizing: border-box; background-color: #000; box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5); }
+.popResult .btnResult-Replay { position: absolute; right: 10px; bottom: 10px; }
+
+.popResult-header { display: flex; justify-content: space-between; align-items: center; height: 40px; padding: 0 10px; background-image: linear-gradient(-90deg, #141414 0%, #363636 100%); }
+.popResult-header h2 { border-bottom: none; padding: 0; background: none; font-size: 24px; font-weight: normal; color: #fff; }
+.popResult-header h2 span { margin-top: 6px; margin-left: 10px; font-size: 15px; color: #F6A623; }
+
+.popResult-content { display: flex; justify-content: center; padding: 30px 20px; }
+
+.popResult-poker { display: flex; flex-direction: column; align-items: center; }
+.popResult-poker p { padding: 8px 16px; border-style: solid; border-width: 2px; background-color: #1f1f1f; font-size: 32px; font-weight: bold; }
+
+.popResult-pokerIn > div { width: 220px; margin-right: 10px; }
+.popResult-pokerIn > div:last-child { margin-right: 0; }
+.popResult-pokerIn > div h4 { border-bottom-width: 1px; border-bottom-style: solid; }
+.popResult-pokerIn h3 { font-size: 18px; font-weight: normal; line-height: 32px; color: #fff; }
+.popResult-pokerIn h4 { font-size: 48px; font-weight: normal; line-height: 70px; }
+.popResult-pokerIn ul { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px 0; }
+.popResult-pokerIn li { height: 125px; width: 85px; font-size: 0; text-indent: -99999px; list-style: none; }
+.popResult-pokerIn li:nth-child(1) { margin-right: 3px; }
+.popResult-pokerIn li:nth-child(3) { margin-top: -16px; transform: rotate(90deg); }
+
+.boxRed h3 { background-color: #860C1B; }
+.boxRed h4 { border-color: #860C1B; color: #C61329; }
+
+.boxBlue h3 { background-color: #1E589C; }
+.boxBlue h4 { border-color: #1E589C; color: #2C7DDB; }
+
+p.boxRed { border-color: #860C1B; color: #d91029; }
+
+p.boxBlue { border-color: #1E589C; color: #2072d1; }
+
+p.boxGreen { border-color: #0f6d16; color: #077f10; }
+
+.popResult-Video { position: relative; overflow: hidden; width: 700px; height: 457px; margin-left: 16px; background-color: #333; }
+.popResult-Video p { font-size: 30px; color: #fff; }
+
+.boxVideoPlay { position: absolute; right: 0; bottom: 0; display: flex; justify-content: center; align-items: center; height: 40px; width: 100%; background-color: rgba(0, 0, 0, 0.7); }
+
+.boxVideoNotice { position: absolute; right: 0; top: 0; z-index: 100; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; background-color: #333; }
+.boxVideoNotice p { padding-left: 45px; font-size: 30px; line-height: 50px; background-position: -45px -256px; }
+
+.popResult-dice dl { width: 160px; margin: 0 auto 10px; }
+.popResult-dice dt { border-bottom: 1px solid #666; font-size: 90px; line-height: 90px; }
+.popResult-dice dd { padding: 10px 0; font-size: 26px; }
+.popResult-dice ul { display: flex; }
+.popResult-dice li { width: 100px; height: 100px; margin-right: 15px; list-style: none; font-size: 0; text-indent: -99999px; }
+.popResult-dice li:last-child { margin: 0; }
+
+.popResult-compass p { width: 180px; height: 200px; padding: 10px 0; font-size: 100px; }
+
+.compassRed { background-image: linear-gradient(0deg, #B72936 0%, #50000C 100%); }
+
+.compassBlack { background-image: linear-gradient(0deg, #414141 2%, #1A1A1A 92%); }
+
+.compassGreen { background-image: linear-gradient(-179deg, #004827 0%, #248000 100%); }
+
+li.s101, li.s01 { background-position: 0 0; }
+
+li.s102, li.s02 { background-position: 0 -125px; }
+
+li.s103, li.s03 { background-position: 0 -250px; }
+
+li.s104, li.s04 { background-position: 0 -375px; }
+
+li.s105, li.s05 { background-position: 0 -500px; }
+
+li.s106, li.s06 { background-position: 0 -625px; }
+
+li.s107, li.s07 { background-position: 0 -750px; }
+
+li.s108, li.s08 { background-position: 0 -875px; }
+
+li.s109, li.s09 { background-position: 0 -1000px; }
+
+li.s110, li.s10 { background-position: 0 -1125px; }
+
+li.s111, li.s11 { background-position: 0 -1250px; }
+
+li.s112, li.s12 { background-position: 0 -1375px; }
+
+li.s113, li.s13 { background-position: 0 -1500px; }
+
+li.s201, li.h01 { background-position: 0 -1625px; }
+
+li.s202, li.h02 { background-position: 0 -1750px; }
+
+li.s203, li.h03 { background-position: 0 -1875px; }
+
+li.s204, li.h04 { background-position: 0 -2000px; }
+
+li.s205, li.h05 { background-position: 0 -2125px; }
+
+li.s206, li.h06 { background-position: 0 -2250px; }
+
+li.s207, li.h07 { background-position: 0 -2375px; }
+
+li.s208, li.h08 { background-position: 0 -2500px; }
+
+li.s209, li.h09 { background-position: 0 -2625px; }
+
+li.s210, li.h10 { background-position: 0 -2750px; }
+
+li.s211, li.h11 { background-position: 0 -2875px; }
+
+li.s212, li.h12 { background-position: 0 -3000px; }
+
+li.s213, li.h13 { background-position: 0 -3125px; }
+
+li.s301, li.c01 { background-position: 0 -3250px; }
+
+li.s302, li.c02 { background-position: 0 -3375px; }
+
+li.s303, li.c03 { background-position: 0 -3500px; }
+
+li.s304, li.c04 { background-position: 0 -3625px; }
+
+li.s305, li.c05 { background-position: 0 -3750px; }
+
+li.s306, li.c06 { background-position: 0 -3875px; }
+
+li.s307, li.c07 { background-position: 0 -4000px; }
+
+li.s308, li.c08 { background-position: 0 -4125px; }
+
+li.s309, li.c09 { background-position: 0 -4250px; }
+
+li.s310, li.c10 { background-position: 0 -4375px; }
+
+li.s311, li.c11 { background-position: 0 -4500px; }
+
+li.s312, li.c12 { background-position: 0 -4625px; }
+
+li.s313, li.c13 { background-position: 0 -4750px; }
+
+li.s401, li.d01 { background-position: 0 -4875px; }
+
+li.s402, li.d02 { background-position: 0 -5000px; }
+
+li.s403, li.d03 { background-position: 0 -5125px; }
+
+li.s404, li.d04 { background-position: 0 -5250px; }
+
+li.s405, li.d05 { background-position: 0 -5375px; }
+
+li.s406, li.d06 { background-position: 0 -5500px; }
+
+li.s407, li.d07 { background-position: 0 -5625px; }
+
+li.s408, li.d08 { background-position: 0 -5750px; }
+
+li.s409, li.d09 { background-position: 0 -5875px; }
+
+li.s410, li.d10 { background-position: 0 -6000px; }
+
+li.s411, li.d11 { background-position: 0 -6125px; }
+
+li.s412, li.d12 { background-position: 0 -6250px; }
+
+li.s413, li.d13 { background-position: 0 -6375px; }
+
+.dice1.red { background-position: 0 0; }
+
+.dice2.red { background-position: 0 -100px; }
+
+.dice3.red { background-position: 0 -200px; }
+
+.dice4.red { background-position: 0 -300px; }
+
+.dice5.red { background-position: 0 -400px; }
+
+.dice6.red { background-position: 0 -500px; }
+
+.dice1.black { background-position: 0 0; }
+
+.dice2.black { background-position: 0 -100px; }
+
+.dice3.black { background-position: 0 -200px; }
+
+.dice4.black { background-position: 0 -300px; }
+
+.dice5.black { background-position: 0 -400px; }
+
+.dice6.black { background-position: 0 -500px; }
+
+.bauCua1 { background-position: 0 0; }
+
+.bauCua2 { background-position: 0 -101px; }
+
+.bauCua3 { background-position: 0 -201px; }
+
+.bauCua4 { background-position: 0 -301px; }
+
+.bauCua5 { background-position: 0 -401px; }
+
+.bauCua6 { background-position: 0 -501px; }

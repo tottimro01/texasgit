@@ -1,0 +1,42 @@
+#sportContainer_body.ui-droppable{
+  border: 0px solid transparent;
+}
+
+#sportContainer_body.ui-droppable-hover{
+  position: relative;
+}
+
+#sportContainer_body.ui-droppable-hover:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #2196f3;
+}
+
+.ui-datepicker-trigger img{
+ margin-top: -5px;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+	border: 1px solid #d3a728;
+    background: #fff2c5;
+    color: #333;
+}
+
+.ui-widget-header {
+    border: 1px solid #d3a728;
+    background: #fff2c5;
+}
+
+.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus,.ui-button:hover,.ui-button:focus {
+    background-color: #fde592;
+    border: 1px solid #fbce4b;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+	background-color: #d4a12d;
+    border: 1px solid #8b691c;
+}

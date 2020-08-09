@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	      <!-- Flowplayer skin -->
+<link href="https://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+  <script src="video.js"></script>
+	<script src="videojs-contrib-hls.min.js"></script>
+
+
+</head>
+
+<body>
+<!--<video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" autoplay width="455" height="300" data-setup='{}'>
+  <source src="http://202.162.78.181:81/live/myd/index.m3u8" type='application/x-mpegURL'>
+</video> -->
+	
+	
+	<video id=example-video width=960 height=540 class="video-js vjs-default-skin" controls>
+  <source
+     src="http://202.162.78.181:81/live/myd/index.m3u8"
+     type="application/x-mpegURL">
+</video>
+<script>
+var player = videojs('example-video');
+player.play();
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+	background-color: #499bea;
+    background: -moz-linear-gradient(right, #499bea 0%, #01579b 100%);
+    background: -webkit-linear-gradient(left, #499bea 0%, #01579b 100%);
+    background: -o-linear-gradient(left, #499bea 0%, #01579b 100%);
+    background: linear-gradient(to left, #499bea 0%, #01579b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#01579b', GradientType=0 );
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.login-wrapper {
+	width: 100%;
+	padding: 0 30px;
+}
+
+.login-wrapper h1 {
+	font-size: 20px;
+	text-align: center;
+}
+
+.login-wrapper img {
+	width: 70%;
+	max-width: 400px;
+	margin: 0 auto 30px auto;
+	display: block;
+}
+
+.login-wrapper form {
+	width: 100%;
+}
+
+.login-wrapper form input[type=text],
+.login-wrapper form input[type=password] {
+	width: 100%;
+    max-width: 400px;
+    margin-right: auto;
+    margin-bottom: 8px;
+    margin-left: auto;
+    line-height: 40px;
+    text-align: center;
+    border: 0px solid;
+    border-radius: 4px;
+    outline: none;
+    display: block;
+    font-size: 16px;
+}
+
+.login-wrapper form input[type=submit]
+{
+	min-width: 140px;
+    display: block;
+    margin: 10px auto;
+    border: 0px solid;
+    line-height: 36px;
+    border-radius: 20px;
+    font-weight: 600;
+    outline: none;
+    background-color: #989898;
+    background: -moz-linear-gradient(#ffffff 0%, #a5a5a5 50%, #989898 100%);
+    background: -webkit-linear-gradient(#ffffff 0%, #a5a5a5 50%, #989898 100%);
+    background: -o-linear-gradient(#ffffff 0%, #a5a5a5 50%, #989898 100%);
+    background: linear-gradient(#ffffff 0%, #a5a5a5 50%, #989898 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#989898', GradientType=0 );
+}

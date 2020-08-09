@@ -1,0 +1,9 @@
+{
+	"setup": {
+  		"secret": "oho*kink@oho&sc",
+  		"issuer": "http://ag.ohoking.com",
+  		"algorithm": "HS256",
+  		"timeToExpire": "60",
+  		"timeToExpire_refresh": "604800"
+	}
+}

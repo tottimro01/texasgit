@@ -1,0 +1,63 @@
+
+1.โหลดภาษา www.ohoking.com/android/casino2019/lang_app.php?lang=th&mid=
+ *** หมายเหตุ ***
+ แอพทำรองรับโหลดไฟล์ไว้ ยังไม่ใช้งาน โหลดภาษาจาก Server จริง
+
+========================================
+
+2.เข้าสู่ระบบ www.ohoking.com/android/casino2019/check_login.php
+  *** POST ***
+  user = abcd
+  pass = 1234
+  lang = th
+
+========================================
+
+3.เข้าเล่นเกมส์
+
+  3.1 ดึงข้อมูลเหรียญ http://www.ohoking.com/android/casino2019/list_chips.php?mid=1
+      *** หมายเหตุ ***
+      โหลดเฉพาะครั้งแรกที่เข้าเกมส์เท่านั้น โหลดเสร็จเก็บไว้ใช้ทุกเกมส์
+
+  3.2 เช็กเวลาเหลือให้แทง http://www.ohoking.com/android/casino2019/check_time.php
+      *** POST ***
+      type = 1 ==> ประเภทเกมส์ที่ได้จาก Login
+      room = 1 ==> ห้องเกมส์ที่ได้จาก Login
+      mid = 1
+      lang = th
+
+  3.3 ดึงข้อมูลสถิติ http://www.ohoking.com/android/casino2019/get_stat.php
+      *** POST ***
+      type = 1 ==> ประเภทเกมส์ที่ได้จาก Login
+      room = 1 ==> ห้องเกมส์ที่ได้จาก Login
+      mid = 1
+      lang = th
+
+  3.4 ส่งข้อมูลแทง http://www.ohoking.com/android/casino2019/save_bet.php
+      *** POST ***
+      type = 1 ==> ประเภทเกมส์ที่ได้จาก Login
+      room = 1 ==> ห้องเกมส์ที่ได้จาก Login
+      rob_bet = 44 ==> หมายเลขรอบที่ได้จาก เช็กเวลาเหลือให้แทง
+      txt_bet = 1-20000,2-20000,3-20000 ==> ข้อมูลแทง(ประเภทแทงตัวที่1-ยอดแทงตัวที่1,ประเภทแทงตัวที่2-ยอดแทงตัวที่2,ประเภทแทงตัวที่3-ยอดแทงตัวที่3)
+      mid = 1
+      lang = th
+
+  3.5 ดึงข้อมูลผลเกมส์ http://www.ohoking.com/android/casino2019/check_win.php
+      *** POST ***
+      type = 1 ==> ประเภทเกมส์ที่ได้จาก Login
+      room = 1 ==> ห้องเกมส์ที่ได้จาก Login
+      rob_bet = 44 ==> หมายเลขรอบที่ได้จาก เช็กเวลาเหลือให้แทง
+      mid = 1
+      lang = th
+
+      *** หมายเหตุ ***
+      เริ่ม --> เช็กเวลา --> นับเวลาเสร็จ --> ส่งบันทึก(ถ้ามียอดแทง) --> วนลูปเช็กผลที่ออก(ทุก 1 วิ) --> เช็กเวลา(ถ้าผลออกแล้ว)
+
+========================================
+
+4. รายการ http://www.ohoking.com/android/casino2019/get_list_play.php
+      *** POST ***
+      from_date = 12/07/2019 00:00
+      to_date = 12/07/2019 23:59
+      mid = 1
+      lang = th

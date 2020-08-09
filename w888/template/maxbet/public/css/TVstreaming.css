@@ -1,0 +1,599 @@
+@charset "utf-8";
+
+.streamingHeadArea{
+	width: 795px;
+	position: relative;
+}
+.streamingMenuArea{
+	position: absolute;
+	top:44px;
+	right:5px;
+}
+.TVLogo{
+	width: 26px;
+	height: 35px;
+	background: url(../images/TV/TVLogo.png) no-repeat 0 0;
+	display: none;
+}
+.topMenuArea{
+	position: absolute;
+	right:10px;
+	top: 15px;
+}
+.streamingtopMenu li{
+	float: left;
+	padding-left: 7px;
+	color: #7d7d7d;
+}
+.streamingtopMenu li a{
+	color: #2E4A7A;
+	font-weight: bold;
+}
+.streamingtopMenu li a:hover{
+	color: #f99144;
+}
+.StreamingMenuArea{
+	position: absolute;
+	top: 44px;
+	right: 10px;
+}
+.StreamingMenuArea .mainMenu > li a {
+	width: auto;
+    min-width: 90px;
+    }
+
+.blueArea{
+	/*background: #4f6ea0;*/
+	background: #897232;
+	height: 4px;
+	width: 100%;
+}
+#SportsContainer{
+	margin: 8px 0 0 7px;
+	width:797px;
+}
+#containerleft{
+	padding: 0 0 7px 10px;
+	width: 252px;
+}
+.streamingLeftTitle {
+	background: url(../images/layout/btn_UI03.png) no-repeat 0 0;
+	margin: 0;
+	height: 24px;
+}
+.streamingLeftTitle > span {
+	height: 20px;
+	display: block;
+	background: url(../images/layout/btn_UI03.png) no-repeat right 0;
+	margin: 0 -4px 0 4px;
+	padding: 4px 3px 0 0;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 12px;
+}
+.iconLeft{
+	background: url(../images/layout/icon_UI02.png) no-repeat 0px 0px;
+	width:15px;
+	height:15px;
+	margin-right:4px;
+	float:left;
+}
+.iconLeft.arrowDown{
+	background-position: -16px 0px;
+}
+.iconRightArea{
+	float:right;
+	margin-right: 4px;
+}
+.icon{
+	background: url(../images/layout/btn_UI01.png) no-repeat 0px -36px;
+	width: 16px;
+	height: 16px;
+	margin-left: 4px;
+	float: left;
+	cursor: pointer;
+}
+.icon:hover{
+	background-position: 0px -18px;
+}
+.icon span{
+	background: url(../images/layout/icon_UI01.png) no-repeat 0px 0px;
+	width: 16px;
+	height: 16px;
+}
+.icon span.refresh{
+	background-position: -4px -36px;
+}
+.icon span.refresh:hover{
+	background-position: -4px -18px;
+}
+.containerRight{
+	margin-left: 20px;
+	display: inline-block;
+}
+.containerRight .titleBar{
+	margin-top: 2px;
+	margin-bottom: 8px;
+	width: inherit;
+}
+.manbox {
+	/*width: 480px;*/
+	background-color: #e8ebf3;
+	margin-left: 3px;
+}
+.TVTilte {
+	background: url(../images/layout/oddsTable_th.png) no-repeat right 0;
+	height: 14px;
+	margin-left: -3px;
+	border-radius: 2px 2px 0 0;
+	color: #ffffff;	
+	padding: 5px 7px;
+	/*width: 470px;*/
+}
+.TVType{
+	font-weight: bold;
+	float: left;
+	padding-right: 10px;
+}
+.TVInfo{
+	padding-right: 10px;
+	float: left;
+}
+.TVTeam{
+	float: left;
+}
+.manbox .leftBoxbody {
+	margin-left: -3px;
+	width: inherit;
+	min-height: 425px;
+	border-bottom-width: 1px;
+	padding-bottom: 1px;
+	border-radius: 0 0 2px 2px;
+}
+.streamingAllBG{
+	/*background: #FFFFFF;*/
+	/*background:#E2E9F1;*/
+	background:#f5f1e5;
+	min-height: 381px;
+}
+.pad5 {margin: 10px;}
+.maxText { display: none; visibility: hidden;}
+.maxImage {display: none; visibility: hidden;}
+.TVIcon{
+	height: 19px;
+	background: url(../images/layout/StreamingIcon.png) no-repeat 0px 0px;
+	padding-left: 15px;
+	cursor: pointer;
+}
+.TVIcon.min {
+	background-position: 1px 3px;
+}
+.TVIcon.min:hover {
+	background-position: 1px -18px;
+}
+.TVIcon.max {
+	background-position: 1px -34px;
+}
+.TVIcon.max:hover {
+	background-position: 1px -56px;
+}
+.reflashIcon{
+	height: 19px;
+	width: 14px;
+	background: url(../images/layout/StreamingIcon.png) no-repeat -1px -77px;
+	cursor: pointer;
+}
+.reflashIcon:hover{
+	background-position: -1px -97px;
+}
+.tabbg{
+	background-image: url(../../public/images/TV/TV_bg.jpg);
+	background-repeat: repeat-x;
+	margin-top: 0px;
+	width:800px;
+}
+/**left **/
+#containerleft .leftBoxbody{
+	/*margin-left:-4px;*/
+	width: 252px;
+	border-bottom-width: 1px;
+	padding-bottom: 1px;
+	border-radius: 0 0 2px 2px;
+}
+.leftbox {
+	background-color: #fafafa;
+}
+.title {
+	font-size: 15px;
+	color: #262626;
+	font-weight: bold;
+}
+#footer {
+	clear:both;
+	width: 100%;
+	color: #666666;
+	background: #e4e7ee;
+	border-top: 1px solid #ffffff;
+	padding: 12px 0;
+}
+.footerContainer {
+	/*width: 795px;*/
+	text-align: center;
+}
+#footer a {
+	color: #666666;
+}
+#footer a:hover {
+	color: #f99144;
+}
+.buttonOut {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #294983;
+	cursor: hand;
+	margin-right: 2px;
+	margin-left: 2px;
+	height: 18px;
+	font-weight: normal;
+	background-image: url(../../public/images/TV/btn_bu.gif);
+	border: 1px solid #6b91ab;
+	background-color: #c5d4de;
+	line-height: 16px;
+}
+#newtopmenu.topmenu {
+	font-size: 11px;
+	width: 450px;
+	color: #2e4a7a;
+	position: relative;
+	font-weight: bold;
+	height: 40px;
+}
+#newtopmenu.topmenu a{color: #2e4a7a;text-decoration: none;}
+#newtopmenu.topmenu a:hover {color: #6699CC!important;text-decoration: none;}
+#newtopmenu.topmenu a:visited{color: #2e4a7a;text-decoration: none;}
+
+.sc td{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+.Channel1 {
+	width:23px;
+	font-weight: bold;
+	background-image: url(/template/public/TV/SCannel_iconB.gif);
+	height: 25px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.Channel1 a {
+	color: #000000;
+	text-decoration:none;
+	display: block;
+}
+.Channel1 a:hover {
+    color: #000000;
+    cursor:default;
+}
+
+.Channel2 {
+    color: #8d8d8d;
+	width:23px;
+	font-weight: bold;
+	background-image: url(/template/public/TV/SCannel_iconG.gif);
+	height: 25px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.Channel2 a {
+	color: #8d8d8d;text-decoration:none;display: block;
+}
+.Channel2 a:hover {
+	color: #000000;
+}
+.sctext{font-size:11px;color: #8d8d8d;}
+
+.TVmenu{
+	height: 49px;
+	width: 800px;
+	background-color: #d8e6f3;
+}
+
+.RacingFrame{
+	width: 100%;
+	background-color: #d8e6f3;
+	display: block;
+	height: 530px;
+	align: center;
+}
+.scheduleArea {	
+	background: #fafafa url(../images/TV/ScheduleBGBottom.png) no-repeat 0 bottom;
+	height: 455px;
+}
+#scheduleOption {
+	padding: 4px 0px 0px 5px;
+	background: #eaedf2;
+	height: 23px;
+}
+#scheduleOption .button.select.SEvent{
+	width: 102px;
+	text-align: left;
+}
+#scheduleOption .button.select.SDate{
+	width: 67px;
+	text-align: left;
+}
+#latestSchedule {
+	background: url(../images/TV/ScheduleBGUpper.png) no-repeat 0px 0px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 429px; 
+}
+.contlist{
+	padding: 12px 13px;
+	border-bottom: 1px solid #e7e7e7;
+	border-top: 1px solid #ffffff;
+	line-height: 16px;
+}
+.title-deepbk { 
+	color: #777777; 
+	font-weight: bold;
+}
+.contrd { 
+	color: #777777;
+}
+.cont-deepbk { 
+	color: #375383;
+	padding: 2px 0;
+	display: block;
+}
+.cont-deepbk a, .containerQA .contrd a{ 
+	color: #375383;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.cont-deepbk a:hover, .containerQA .contrd a:hover{
+	text-decoration: none;
+}
+
+.G11{
+	color: #777777;
+	background: #e8e8e8;
+	padding: 0px 3px;
+	display: block;
+	margin-top: 5px;
+	border-radius: 2px;
+}
+.Streamingbg {
+	background: #e9ecf3 url(../images/TV/MsgMAXBETLogo.png) no-repeat 104px 105px; 
+	height:425px;
+	width:480px;
+	position: relative;
+}
+.Streamingbg.bong88 {
+	background: #e9ecf3 url(/template/bong88/public/images/layout/logo_bong88_TV.png) no-repeat 115px 105px;
+}
+
+.Streamingbg.ibet888 {
+	background: #e9ecf3 url(/template/ibet888/public/images/layout/logo_ibet888_TV.png) no-repeat 115px 105px;
+}
+
+.Streamingtext{
+	height: 94px;
+	width: 276px;
+	border-right: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	border-radius: 2px;
+	-moz-box-shadow: -1px -1px 1px 0px #cbced6;
+	-webkit-box-shadow: -1px -1px 1px 0px #cbced6;
+	box-shadow: -1px -1px 1px 0px #cbced6;
+	position: absolute;
+	left: 38px;
+	bottom: 38px;
+	background: #e1e5ee url(../images/TV/MsgIcon.png) no-repeat 23px 23px;
+	padding: 19px 18px 0px 110px;
+	color: #39598e;
+	font-size: 14px;
+}
+.StreamingLoadingText{
+	height: 94px;
+	width: 420px;
+	position: absolute;
+	left: 29px;
+	top: 267px;
+	color: #CDD2E0;
+	font-size: 24px;
+	font-weight: lighter;
+	text-align: center;
+}
+.containerQA {
+	background: url(../images/TV/ScheduleBGUpper.png) no-repeat 0px 0px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 455px; 
+}
+.containerQABottom {
+	background: url(../images/TV/ScheduleBGBottom.png) no-repeat 0px bottom;
+}
+.containerQA .title-deepbk, .containerQA .contrd{
+	padding-bottom: 10px;
+}
+.containerQA .contrd a,.containerQA .contrd a:hover, .containerQA .contrd a:active{ 
+	word-wrap: break-word;
+}
+.containerQA .contrd ul{
+	list-style: inside disc;
+	margin: 5px;
+}
+.QAGoTop{
+	margin: 10px;
+	display: block;
+	height: 16px;
+	width: 30px;
+	float: right;
+}
+/* change to double streaming */
+body.double iframe[name="FrameValidation"] { width:1005px;}
+body.double .streamingHeadArea, body.maxWin .streamingHeadArea { width:100%;}
+body.double #SportsContainer{ width:1317px;}
+body.double.miniWin #SportsContainer{ width:1045px;}
+body.maxWin.miniWin #SportsContainer{ width:725px;}
+body.wbWin.miniWin #SportsContainer{ width:625px;}
+body.miniWin #SportsContainer{ width:520px;}
+body.maxWin #SportsContainer{ width:980px;}
+body.wbWin #SportsContainer{ width:890px;}
+
+/* stand-alone player remove padding */
+body.miniWin .containerRight,
+body.miniWin #SportsContainer, 
+body.miniWin.double #SportsContainer, 
+body.miniWin.maxWin #SportsContainer,
+body.miniWin.wbWin #SportsContainer{ 
+	width:auto;
+	margin:0;
+}
+
+/* logo streamingLogoArea */
+.streamingLogoArea { min-width:210px; height:70px; position: relative;}
+.streamingLogoArea img[src*="maxbet"] { width:210px; height:70px; background: url(/template/maxbet/public/images/layout/logo.png) no-repeat 18px 7px;}
+.streamingLogoArea img[src*="maxbet"] + .TVLogo { margin: 0 0 6px -4px;}
+
+.streamingLogoArea img[src*="bong88"] { width:190px; height:55px; margin: 5px 0 0 10px; background: url(/template/bong88/public/images/layout/logo_bong88.png) 0 0;}
+.streamingLogoArea img[src*="bong88"] + .TVLogo { margin: 0 0 -5px -20px;}
+
+/**Language Fix**/
+body[lang="fr"] #scheduleOption .button.select { max-width:111px;}
+body[lang="fr"] #scheduleOption .button.select ul  { position:absolute;}
+body[lang="pt"] #scheduleOption .button.select { max-width:111px;}
+body[lang="pt"] #scheduleOption .button.select ul  { position:absolute;}
+body[lang="es"] #scheduleOption .button.select { max-width:111px;}
+body[lang="es"] #scheduleOption .button.select ul  { position:absolute;}
+body[lang="vn"] #scheduleOption .button.select { max-width:111px;}
+body[lang="vn"] #scheduleOption .button.select ul  { position:absolute;}
+
+/* IE8 only */
+@media \0screen {#minimgdiv { position:relative;} #mintxtdiv { max-width:175px; position: absolute; right:0;}}
+
+/* Double NumberGame Streaming */
+.streamingAllBG { min-height:425px;}
+.streamingAllBG:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+.streamingNumberGame { float:left;}
+.streamingNumberGame +.streamingNumberGame { float:right;}
+
+
+/* Number Game Streaming
+-----------------------------------*/
+.ng-streaming {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+	font-family: Arial;
+	padding: 2px 0;
+}
+
+.ng-streaming__player {
+    margin: 0 4px;
+    border: 1px solid #634685;
+    border-radius: 4px 4px 0 0;
+}
+
+.ng-streaming__title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    height: 26px;
+    color: #fff;
+    background-image: linear-gradient(to top, #3d285a 25%, #634685 100%);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.ng-streaming__provide {
+    width: 480px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.ng-streaming__text {
+    padding: 0 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+[class*="ng-streaming__title-"] {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 0;
+    height: 100%;
+    color: hsl(267, 30%, 61%);
+    background-color: hsl(265, 29%, 19%);
+    cursor: pointer;
+}
+
+[class*="ng-streaming__title-"]:hover {
+    color: hsl(267, 30%, 76%);
+    background-color: hsl(265, 29%, 24%);
+}
+
+[class*="ng-streaming__title-"].ng-selected,
+[class*="ng-streaming__title-"].ng-selected:hover {
+    color: currentColor;
+    background-color: transparent;
+    cursor: default;
+}
+
+.ng-streaming__title-1 {
+    border-top-left-radius: 2px;
+}
+
+.ng-streaming__title-2 {
+    border-top-right-radius: 2px;
+}
+
+
+/* fix bingoStreaming <br> height */
+.ng-streaming [id*=bingoStreaming] {
+    margin-top: -14px;
+    margin-left: 0;
+}
+
+
+/* ng-streaming__icon */
+@font-face {
+  font-family: 'ng-streaming__icon';
+  src: url(data:application/font-ttf;charset=utf-8;base64,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BwUDBQMGCgQEBQMKFQsCAgIKEwkCAgUELlQjJUIiAQIBIUEjDBcLMkIeGmcJCwYCBAMCBQQCAwEFCAIDAwUHBQYVCwcKB1gDBAMMEAwDBQMDBQEFBQMLDwsDAwMEBQQDBAIDBAMGCAXPCw4KBQgGBQcEAccBCgkDAwMHCAIDAT5VDCpBEgQGAwMGAgICAQEHCQgMDwsREw0FCAUJDAoDBAQDAQEDAgUMBwYJBQQEAgMpP1ItQmQVHjgaWAcKAwIDAQICAQQDAQERIhIIDgQKDgsCBgQGCQYCAwECAgIFBgcRDAgPBwgLAwQCAQECAQIEAwIGBAMIBAECAgUHAwIDAwMDCgcUAQIBAQIEAgECAQMDASMBAQEBAgMCBQICAwEBAQEDAgIEAgIDAf4wAQEBAwMCBQIDAwEBBAICBQICBAEBxAQGBQEBAQEBAQMCAgMCAgIBAgEDAwQGBAUEAQMEAwkEBQkFAwUCAQMGAQMGAwEBAwQCAQEBAgIJAwQHBAUGAQQDBQkFBAkEAgUCAQMBBwMCAwECAy5Qaj04ZScBBAgEAQIBAwUDAgQBAQEBBQYEAQEBAQECAgIDAgICAgEBAQMDBQcGBAQFBAUJBQQJBAMDAQIBBQECBQMCBQMCBQICBAMDBgMDBQIBAQcCAwYDBQUCAwQJBAUIBAMDAgECCAMDBgIDBQECAgELDS5PazxEdCjmAQICBwsDAwMBBAQECgYGCgQDBAIBCw4LAQEDAwQHBQQHAgIDAQMDAgoHAgMBCxIHBggBAQYGBxEKBgwEBQ0EAgMHBQULBwgPCAcMBAQDAQQDAwkGBg0JUwkJBQYEBAQEBAQGBVcGDAYGCQQDBQICAgEDAwQKBwYQCAgOBgYMCgQGDQcMEwcFBQEKBwgRCgYLBQQKAQwGBgwHHQQDBAoHBgoEBAMEBAQKBgYKAwQE8AIEAQIDAQEBAgICAwICAwEBAQICARQDAwMDAggEBQgDAwMCAwMHBQUIAwEnAwUDBwoHCg4LxQUIBgQFAwIEASYECQQBAQEDAgMEAwIDAQEBAwMDCREIAwUDAQULBgECAQsQCwEBIRsDBwMBAQEMFBABAQEGCAYBAQIFBwYDBAMGBgUDBgMHDwgIDQcCBAMHDQcIEgoOHA0EHxkPKBUCAgEWKA4KFQsRWTgmQhjiDxUPAwYDAgYDBQcFBAoEBAkFAwUDFicUAwUDMAQGBAcJBwUHBhEhEgIDAg0SDQICAQUFBQECAgQFBAMFBJwFBQQDBQIHCgcAAAABAAAAAQAAAg2HTV8PPPUACwQAAAAAANWgjWQAAAAA1aCNZAAA/8sEiwOLAAAACAACAAAAAAAAAAEAAAPA/8AAAAVVAAAAAASLAAEAAAAAAAAAAAAAAAAAAAAHBAAAAAAAAAAAAAAAAgAAAAQAAAAFVQDLBAAAVgAAAAAACgAUAB4AjgE8Bl4AAQAAAAcDlAASAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA4ArgABAAAAAAABAAcAAAABAAAAAAACAAcAYAABAAAAAAADAAcANgABAAAAAAAEAAcAdQABAAAAAAAFAAsAFQABAAAAAAAGAAcASwABAAAAAAAKABoAigADAAEECQABAA4ABwADAAEECQACAA4AZwADAAEECQADAA4APQADAAEECQAEAA4AfAADAAEECQAFABYAIAADAAEECQAGAA4AUgADAAEECQAKADQApGljb21vb24AaQBjAG8AbQBvAG8AblZlcnNpb24gMS4wAFYAZQByAHMAaQBvAG4AIAAxAC4AMGljb21vb24AaQBjAG8AbQBvAG8Abmljb21vb24AaQBjAG8AbQBvAG8AblJlZ3VsYXIAUgBlAGcAdQBsAGEAcmljb21vb24AaQBjAG8AbQBvAG8AbkZvbnQgZ2VuZXJhdGVkIGJ5IEljb01vb24uAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ng-streaming__icon {
+    flex: 0 0 auto;
+    font-family: 'ng-streaming__icon' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1;
+    margin-left: 8px;
+    margin-right: -4px;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ng-streaming__icon--numbergame::before {
+    content: "\e9ba";
+}
+.ng-streaming__icon--turbo-numbergame::before {
+    content: "\e96f";
+}
+.ng-streaming__icon--lucky3::before {
+    content: "\e985";
+}

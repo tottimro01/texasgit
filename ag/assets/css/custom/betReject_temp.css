@@ -1,0 +1,17 @@
+  tbody tr>td.tdNoHover:hover{
+        background: #fff !important;
+    }
+    tbody tr>td.tdNoHover thead tr:hover{
+        background: #8E8E8E !important;
+    }
+    @media (max-width: 990px) { 
+        .form-group label,input,select{
+          padding-top: 8px;
+        }
+        #suser,#suser1,#search{
+            margin-top: 5px;
+        }
+    }
+    #sdate{
+        height: 30px;
+    }

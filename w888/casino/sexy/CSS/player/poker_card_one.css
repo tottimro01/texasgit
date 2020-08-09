@@ -1,0 +1,178 @@
+#banker1stCardAnime.flipped, 
+#banker2ndCardAnime.flipped,
+#player1stCardAnime.flipped,
+#player2ndCardAnime.flipped {
+  -webkit-transform: translateX( -100% ) rotateY( -180deg );
+     -moz-transform: translateX( -100% ) rotateY( -180deg );
+       -o-transform: translateX( -100% ) rotateY( -180deg );
+          transform: translateX( -100% ) rotateY( -180deg );
+}
+
+#banker3rdCardAnime.flipped,
+#player3rdCardAnime.flipped {
+  -webkit-transform: rotate( -90deg ) rotateY( -180deg );
+     -moz-transform: rotate( -90deg ) rotateY( -180deg );
+       -o-transform: rotate( -90deg ) rotateY( -180deg );
+          transform: rotate( -90deg ) rotateY( -180deg );
+}
+
+#banker1stCardAnime,
+#banker2ndCardAnime,
+#player1stCardAnime,
+#player2ndCardAnime {
+  -webkit-transition: -webkit-transform 1s;
+     -moz-transition: -moz-transform 1s;
+       -o-transition: -o-transform 1s;
+          transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: right center;
+     -moz-transform-origin: right center;
+       -o-transform-origin: right center;
+          transform-origin: right center;
+}
+
+#banker3rdCardAnime,
+#player3rdCardAnime {
+  -webkit-transition: -webkit-transform 1s;
+     -moz-transition: -moz-transform 1s;
+       -o-transition: -o-transform 1s;
+          transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: center;
+     -moz-transform-origin: center;
+       -o-transform-origin: center;
+          transform-origin: center;
+}
+
+#banker1stCardAnime p,
+#banker2ndCardAnime p,
+#banker3rdCardAnime p,
+#player1stCardAnime p,
+#player2ndCardAnime p,
+#player3rdCardAnime p {
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+       -o-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+#banker1stCardAnime .front,
+#banker2ndCardAnime .front,
+#banker3rdCardAnime .front,
+#player1stCardAnime .front,
+#player2ndCardAnime .front,
+#player3rdCardAnime .front {
+
+}
+
+#banker1stCardAnime .back,
+#banker2ndCardAnime .back,
+#player1stCardAnime .back,
+#player2ndCardAnime .back {
+  -webkit-transform: rotateY( 180deg );
+     -moz-transform: rotateY( 180deg );
+       -o-transform: rotateY( 180deg );
+}
+#banker3rdCardAnime .back,
+#player3rdCardAnime .back {
+  -webkit-transform: rotate( 180deg ) rotateY( 180deg );
+     -moz-transform: rotate( 180deg ) rotateY( 180deg );
+       -o-transform: rotate( 180deg ) rotateY( 180deg );
+          transform: rotate( 180deg ) rotateY( 180deg );
+}
+
+/* For QuickBet */
+#banker1stCardAnimeQuickBet.flipped, 
+#banker2ndCardAnimeQuickBet.flipped,
+#player1stCardAnimeQuickBet.flipped,
+#player2ndCardAnimeQuickBet.flipped {
+  -webkit-transform: translateX( -100% ) rotateY( -180deg );
+     -moz-transform: translateX( -100% ) rotateY( -180deg );
+       -o-transform: translateX( -100% ) rotateY( -180deg );
+          transform: translateX( -100% ) rotateY( -180deg );
+}
+
+#banker3rdCardAnimeQuickBet.flipped,
+#player3rdCardAnimeQuickBet.flipped {
+  -webkit-transform: rotateY( -180deg );
+     -moz-transform: rotateY( -180deg );
+       -o-transform: rotateY( -180deg );
+          transform: rotateY( -180deg );
+}
+
+#banker1stCardAnimeQuickBet,
+#banker2ndCardAnimeQuickBet,
+#player1stCardAnimeQuickBet,
+#player2ndCardAnimeQuickBet {
+  -webkit-transition: -webkit-transform 1s;
+     -moz-transition: -moz-transform 1s;
+       -o-transition: -o-transform 1s;
+          transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: right center;
+     -moz-transform-origin: right center;
+       -o-transform-origin: right center;
+          transform-origin: right center;
+}
+
+#banker3rdCardAnimeQuickBet,
+#player3rdCardAnimeQuickBet {
+  -webkit-transition: -webkit-transform 1s;
+     -moz-transition: -moz-transform 1s;
+       -o-transition: -o-transform 1s;
+          transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: center;
+     -moz-transform-origin: center;
+       -o-transform-origin: center;
+          transform-origin: center;
+}
+
+#banker1stCardAnimeQuickBet p,
+#banker2ndCardAnimeQuickBet p,
+#banker3rdCardAnimeQuickBet p,
+#player1stCardAnimeQuickBet p,
+#player2ndCardAnimeQuickBet p,
+#player3rdCardAnimeQuickBet p {
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+       -o-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+#banker1stCardAnimeQuickBet .front,
+#banker2ndCardAnimeQuickBet .front,
+#banker3rdCardAnimeQuickBet .front,
+#player1stCardAnimeQuickBet .front,
+#player2ndCardAnimeQuickBet .front,
+#player3rdCardAnimeQuickBet .front {
+
+}
+
+#banker1stCardAnimeQuickBet .back,
+#banker2ndCardAnimeQuickBet .back,
+#player1stCardAnimeQuickBet .back,
+#player2ndCardAnimeQuickBet .back {
+  -webkit-transform: rotateY( 180deg );
+     -moz-transform: rotateY( 180deg );
+       -o-transform: rotateY( 180deg );
+}
+#banker3rdCardAnimeQuickBet .back,
+#player3rdCardAnimeQuickBet .back {
+  -webkit-transform: rotateY( 180deg );
+     -moz-transform: rotateY( 180deg );
+       -o-transform: rotateY( 180deg );
+          transform: rotateY( 180deg );
+}

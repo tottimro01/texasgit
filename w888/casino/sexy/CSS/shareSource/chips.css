@@ -1,0 +1,746 @@
+.chips2d-all {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-all.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-noSelect {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-noSelect.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-set {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-set.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-user {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-user.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-1 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-1.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-2 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-2.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-5 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-5.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-10 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-10.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-20 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-20.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-50 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-50.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-100 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-100.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-200 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-200.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-500 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-500.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-1k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-1k.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-2k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-2k.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-5k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-5k.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-10k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-10k.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-20k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-20k.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-50k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-50k.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-100k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-100k.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-200k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-200k.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-500k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-500k.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-1m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-1m.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-2m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-2m.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-5m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-5m.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-10m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-10m.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-20m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-20m.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-50m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-50m.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-100m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-100m.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-200m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-200m.svg);
+  text-align: center;
+  color: #333; }
+
+.chips2d-500m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-500m.svg);
+  text-align: center;
+  color: #333; }
+
+.chips3d-all {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-all.svg); }
+
+.chips3d-noSelect {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-noSelect.svg); }
+
+.chips3d-set {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-set.svg); }
+
+.chips3d-user {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-user.svg); }
+
+.chips3d-1 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-1.svg); }
+
+.chips3d-2 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-2.svg); }
+
+.chips3d-5 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-5.svg); }
+
+.chips3d-10 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-10.svg); }
+
+.chips3d-20 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-20.svg); }
+
+.chips3d-50 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-50.svg); }
+
+.chips3d-100 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-100.svg); }
+
+.chips3d-200 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-200.svg); }
+
+.chips3d-500 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-500.svg); }
+
+.chips3d-1k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-1k.svg); }
+
+.chips3d-2k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-2k.svg); }
+
+.chips3d-5k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-5k.svg); }
+
+.chips3d-10k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-10k.svg); }
+
+.chips3d-20k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-20k.svg); }
+
+.chips3d-50k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-50k.svg); }
+
+.chips3d-100k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-100k.svg); }
+
+.chips3d-200k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-200k.svg); }
+
+.chips3d-500k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-500k.svg); }
+
+.chips3d-1m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-1m.svg); }
+
+.chips3d-2m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-2m.svg); }
+
+.chips3d-5m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-5m.svg); }
+
+.chips3d-10m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-10m.svg); }
+
+.chips3d-20m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-20m.svg); }
+
+.chips3d-50m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-50m.svg); }
+
+.chips3d-100m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-100m.svg); }
+
+.chips3d-200m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-200m.svg); }
+
+.chips3d-500m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-500m.svg); }
+
+.betZone {
+  position: relative; }
+
+.chips3dArea {
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: calc(100% - 18px);
+  text-align: center; }
+
+.chips3dArea-in {
+  display: flex;
+  justify-content: center; }
+.chips3dArea-in div {
+  position: absolute; }
+.chips3dArea-in div:nth-child(1n) {
+  bottom: -3px;
+  z-index: 1; }
+.chips3dArea-in div:nth-child(2n) {
+  bottom: 3px;
+  z-index: 2; }
+.chips3dArea-in div:nth-child(3n) {
+  bottom: 9px;
+  z-index: 3; }
+.chips3dArea-in div:nth-child(4n) {
+  bottom: 15px;
+  z-index: 4; }
+.chips3dArea-in div:nth-child(5n) {
+  bottom: 21px;
+  z-index: 5; }
+.chips3dArea-in div:nth-child(6n) {
+  bottom: 27px;
+  z-index: 6; }
+.chips3dArea-in div:nth-child(7n) {
+  bottom: 33px;
+  z-index: 7; }
+.chips3dArea-in div:nth-child(8n) {
+  bottom: 39px;
+  z-index: 8; }
+.chips3dArea-in div:nth-child(9n) {
+  bottom: 45px;
+  z-index: 9; }
+.chips3dArea-in div:nth-child(10n) {
+  bottom: 51px;
+  z-index: 10; }
+.chips3dArea-in div:nth-child(11n) {
+  bottom: 57px;
+  z-index: 11; }
+.chips3dArea-in div:nth-child(12n) {
+  bottom: 63px;
+  z-index: 12; }
+.chips3dArea-in div:nth-child(13n) {
+  bottom: 69px;
+  z-index: 13; }
+.chips3dArea-in div:nth-child(14n) {
+  bottom: 75px;
+  z-index: 14; }
+.chips3dArea-in div:nth-child(15n) {
+  bottom: 81px;
+  z-index: 15; }
+.chips3dArea-in div:nth-child(16n) {
+  bottom: 87px;
+  z-index: 16; }
+.chips3dArea-in div:nth-child(17n) {
+  bottom: 93px;
+  z-index: 17; }
+.chips3dArea-in div:nth-child(18n) {
+  bottom: 99px;
+  z-index: 18; }
+.chips3dArea-in div:nth-child(19n) {
+  bottom: 105px;
+  z-index: 19; }
+.chips3dArea-in div:nth-child(20n) {
+  bottom: 111px;
+  z-index: 20; }
+.chips3dArea-in .chips3d-1 {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-1k {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-1m {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-2 {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-2k {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-2m {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-5 {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-5k {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-5m {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-10 {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-10k {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-10m {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-20 {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-20k {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-20m {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-50 {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-50k {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-50m {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-100 {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-100k {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-100m {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-200 {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-200k {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-200m {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-500 {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-500k {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-500m {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-set {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .chips3d-user {
+  width: 43px;
+  height: 40px; }
+.chips3dArea-in .amount, .chips3dArea-in .amountBeen {
+  min-width: 50px;
+  margin-bottom: 8px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 0 5px;
+  background-color: #EFB807;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  line-height: 20px;
+  color: #000; }
+.chips3dArea-in .amountBeen {
+  min-width: 40px;
+  height: 18px;
+  background-color: #252525;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fabe00; }
+.chips3dArea-in .btnCheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 22px;
+  margin-bottom: 26px;
+  border-radius: 4px;
+  border: 1px solid #181818;
+  cursor: pointer;
+  background: linear-gradient(0deg, #CE9500 0%, #FFC300 100%); }
+.chips3dArea-in .btnCheck:hover {
+  background: linear-gradient(0deg, #E6A700 0%, #FFEE00 100%); }
+.chips3dArea-in .btnCheck:after {
+  content: "";
+  width: 14px;
+  height: 11px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="29"><path fill="%23000000" fill-rule="evenodd" d="M7.945 14.963L2.018 9.065 0 11.059l7.945 7.907L25 1.994 22.996 0 7.946 14.963"/></svg>'); }
+.chips3dArea-in.modeChecking .amount, .chips3dArea-in.modeChecking .amountBeen {
+  background-color: #252525;
+  color: #fff; }
+.chips3dArea-in.modeAddChips .addChipsBox {
+  position: absolute;
+  display: flex;
+  justify-content: center; }
+.chips3dArea-in.modeAddChips .addChipsBox .amount, .chips3dArea-in.modeAddChips .addChipsBox .amountBeen {
+  background-color: #252525;
+  color: #fff; }
+.chips3dArea-in.modeAddChips .amountBeen {
+  bottom: -4px;
+  z-index: 20; }
+
+.clearfix:after, .set_chips ul:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.clearfix, .set_chips ul {
+  zoom: 1; }
+
+.clear {
+  clear: both; }
+
+.set_chips {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.88);
+  justify-content: center;
+  align-items: center; }
+.set_chips .con {
+  width: 490px; }
+.set_chips .con ul p {
+  background: url(../../images/share_source/chips/chips2d/chips-noSelect.svg);
+  background-size: 100% 100%; }
+.set_chips .con ul .select .chips2d-All {
+  background-image: url(../../images/share_source/chips/chips2d/chips-All.svg); }
+.set_chips .con ul .select .chips2d-1 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-1.svg); }
+.set_chips .con ul .select .chips2d-2 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-2.svg); }
+.set_chips .con ul .select .chips2d-5 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-5.svg); }
+.set_chips .con ul .select .chips2d-10 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-10.svg); }
+.set_chips .con ul .select .chips2d-20 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-20.svg); }
+.set_chips .con ul .select .chips2d-50 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-50.svg); }
+.set_chips .con ul .select .chips2d-100 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-100.svg); }
+.set_chips .con ul .select .chips2d-200 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-200.svg); }
+.set_chips .con ul .select .chips2d-500 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-500.svg); }
+.set_chips .con ul .select .chips2d-1k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-1k.svg); }
+.set_chips .con ul .select .chips2d-2k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-2k.svg); }
+.set_chips .con ul .select .chips2d-5k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-5k.svg); }
+.set_chips .con ul .select .chips2d-10k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-10k.svg); }
+.set_chips .con ul .select .chips2d-20k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-20k.svg); }
+.set_chips .con ul .select .chips2d-50k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-50k.svg); }
+.set_chips .con ul .select .chips2d-100k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-100k.svg); }
+.set_chips .con ul .select .chips2d-200k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-200k.svg); }
+.set_chips .con ul .select .chips2d-500k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-500k.svg); }
+.set_chips .con ul .select .chips2d-1m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-1m.svg); }
+.set_chips .con ul .select .chips2d-2m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-2m.svg); }
+.set_chips .con ul .select .chips2d-5m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-5m.svg); }
+.set_chips .con ul .select .chips2d-10m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-10m.svg); }
+.set_chips .con ul .select .chips2d-20m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-20m.svg); }
+.set_chips .con ul .select .chips2d-50m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-50m.svg); }
+.set_chips .con ul .select .chips2d-100m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-100m.svg); }
+.set_chips .con ul .select .chips2d-200m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-200m.svg); }
+.set_chips .con ul .select .chips2d-500m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-500m.svg); }
+.set_chips .con ul .select .chips2d-user {
+  background-image: url(../../images/share_source/chips/chips2d/chips-user.svg); }
+.set_chips h3 {
+  color: #EFB807;
+  font-size: 38px;
+  font-weight: normal; }
+.set_chips h4 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #CDCDCD;
+  margin-top: 5px; }
+.set_chips h4 strong {
+  color: #fff; }
+.set_chips ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px; }
+.set_chips ul li, .set_chips ul dt, .set_chips ul dd {
+  display: block;
+  float: left; }
+.set_chips li {
+  display: flex;
+  width: 95px;
+  height: 95px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+.set_chips li:hover span {
+  border: 2px #CECECE solid;
+  transition: all .20s linear; }
+.set_chips li.select span {
+  background: #000;
+  border: 3px #FFCE00 solid; }
+.set_chips .user_set {
+  display: flex;
+  border-top: 1px #464646 solid;
+  border-bottom: 1px #464646 solid;
+  padding: 10px 45px;
+  margin-bottom: 10px; }
+.set_chips .user_set.select .user_chip {
+  background: #000;
+  border: 3px #FFCE00 solid; }
+.set_chips dl {
+  flex: 1;
+  background: url(../../images/share_source/chips/bg_arrow.png) right center no-repeat;
+  padding-right: 15px; }
+.set_chips dt {
+  font-size: 16px;
+  color: #FFCE00;
+  padding: 5px 0;
+  text-align: left; }
+.set_chips dd {
+  display: flex;
+  padding-top: 5px; }
+.set_chips dd input {
+  width: 175px;
+  height: 40px;
+  background: #FAFAFA;
+  border: 1px solid #EFB807;
+  color: #212121;
+  font-size: 33px;
+  padding: 0 10px;
+  margin-top: 8px;
+  text-align: right; }
+.set_chips dd .note {
+  flex: 1;
+  color: #fff;
+  font-size: 33px;
+  text-align: center; }
+.set_chips dd .note span {
+  display: inline;
+  font-size: 16px; }
+.set_chips dd .note p {
+  color: #DDDDDD;
+  font-size: 11px;
+  width: auto;
+  height: auto; }
+.set_chips .user_chip {
+  display: flex;
+  width: 95px;
+  height: 95px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+  cursor: pointer;
+  margin-left: 10px;
+  color: #000; }
+.set_chips .user_chip:hover {
+  border: 2px #CECECE solid;
+  transition: all .20s linear; }
+.set_chips .user_chip p {
+  width: 85px;
+  height: 85px;
+  background-image: url(../../images/share_source/chips/chips2d/chips-user.svg);
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  text-align: center; }
+.set_chips span {
+  display: flex;
+  width: 95px;
+  height: 95px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px; }
+.set_chips p {
+  display: flex;
+  width: 85px;
+  height: 85px;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 26px; }
+.set_chips .lot_word {
+  font-size: 20px; }
+.set_chips .btn_con {
+  text-align: right; }
+.set_chips .btn_con input {
+  width: 123px;
+  height: 42px;
+  margin-left: 5px;
+  font-size: 21px;
+  color: #D2D2D2;
+  background-image: linear-gradient(-180deg, #8B8B8B 0%, #575757 100%);
+  border: 1px solid #181818;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center; }
+.set_chips .btn_con input:hover {
+  border: 1px #fff solid; }
+.set_chips .btn_con .focus {
+  background-image: linear-gradient(0deg, #CE9500 0%, #FFC300 100%);
+  color: #1B1B1B; }

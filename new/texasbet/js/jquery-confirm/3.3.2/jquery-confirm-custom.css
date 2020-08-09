@@ -1,0 +1,144 @@
+.jconfirm.jconfirm *{
+	box-sizing: border-box;
+}
+
+.jconfirm.jconfirm-oho .jconfirm-box{
+	border-radius: 3px;
+	/*max-width: 800px;*/
+	padding: 0;
+    -webkit-box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 0px 0px 2px 2px;
+    font-size: 0;
+    background-color: transparent;
+}
+
+.jconfirm.jconfirm-oho .jconfirm-box .jconfirm-title-c{
+	background-color: #383838;
+	font-size: 12px;
+    background: url(popup.png) no-repeat 0 0;
+    display: block;
+    padding: 5px;
+    height: 27px;
+    color: #fff;
+    margin: 0;
+    background-size: 100% 100%;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+}
+
+.jconfirm.jconfirm-oho .jconfirm-box .jconfirm-title-c .jconfirm-title{
+	display: inline;
+	float: left;
+}
+
+.jconfirm.jconfirm-oho .jconfirm-box div.jconfirm-closeIcon{
+	float: right;
+    cursor: pointer;
+    background: url(btn_UI04.png) no-repeat 0 0;
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    right: 5px;
+	font-size: 0!important; 
+}
+
+.jconfirm.jconfirm-oho .jconfirm-box div.jconfirm-closeIcon:hover{
+	background-position: 0 -20px;
+	opacity: 1;
+}
+
+.jconfirm.jconfirm-oho .jconfirm-box div.jconfirm-content-pane {
+    border-left: 1px solid #383838; 
+    border-right: 1px solid #383838; 
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+.jconfirm.jconfirm-oho .jconfirm-box .jconfirm-content{
+	font-size: 13px;
+	padding: 15px;
+}
+
+.jconfirm.jconfirm-oho .jconfirm-box .jconfirm-buttons{
+	display: flex;
+    justify-content: flex-end;
+    border-right: 1px solid #383838; 
+    border-left: 1px solid #383838; 
+    padding-left: 15px;
+    padding-right: 15px;
+    /*margin-right: -4px;*/
+    background-color: #fff;
+}
+
+.jconfirm.jconfirm-oho .jconfirm-box .jconfirm-buttons.oho-btns *{
+	box-sizing: content-box!important;
+}
+
+.jconfirm.jconfirm-oho .jconfirm-box .jconfirm-buttons button.oho-btn{
+    background-color: #a22c32;
+    border-radius: 2px;
+    border: 1px solid #781307;
+    padding: 0 6px;
+    /*height: 20px;*/
+    transition: none;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin-left: 4px;
+    margin-right: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    /*line-height: 20px;*/
+    /*background: url(../../../Images/mainsmart/pic/tab.jpg?v=00004) repeat-x;*/
+}
+
+.jconfirm.jconfirm-oho .jconfirm-box .jconfirm-buttons button.oho-btn._close{
+    background-color: #ffffff;
+    border: 1px solid #c7c7c7;
+	color: #000;
+}
+
+.jconfirm.jconfirm-oho .jconfirm-box .jconfirm-buttons button.oho-btn:hover{
+    border-color: #781307;
+    background-color: #a22c32;
+}
+
+.jconfirm.jconfirm-oho .jconfirm-box .jconfirm-buttons button.oho-btn._close:hover{
+    color: #fff;
+}
+
+.jconfirm.jconfirm-oho .jconfirm-box .jconfirm-clear{
+    height: 5px;
+    border-bottom: 1px solid #383838;
+    border-left: 1px solid #383838;
+    border-right: 1px solid #383838;
+    border-radius: 0 0 2px 2px;
+    background-color: #fff;
+}
+
+.jquery-confirm-form{
+	max-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 13px;
+}
+
+.jquery-confirm-form select,
+.jquery-confirm-form input{
+	width: 100%;
+	border: 1px solid #bbbbbb;
+    height: 22px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.chkLgeLB-c{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    font-size: 12px;
+    margin-bottom: 5px;
+}

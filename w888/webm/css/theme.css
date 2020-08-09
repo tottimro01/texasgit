@@ -1,0 +1,270 @@
+select.no-outline:focus, 
+textarea.no-outline:focus, 
+textarea.form-control.no-outline:focus, 
+input.form-control.no-outline:focus, 
+button.btn.no-outline:focus, 
+input[type=text].no-outline:focus, 
+input[type=password].no-outline:focus, 
+input[type=email].no-outline:focus, 
+input[type=number].no-outline:focus, 
+input[type=checkbox].no-outline:focus, 
+input[type=radio].no-outline:focus, 
+input[type=submit].no-outline:focus, 
+[type=text].form-control.no-outline:focus, 
+[type=password].form-control.no-outline:focus, 
+[type=email].form-control.no-outline:focus, 
+[type=tel].form-control.no-outline:focus, 
+[type=checkbox].form-control.no-outline:focus, 
+[type=radio].form-control.no-outline:focus, 
+[type=submit].form-control.no-outline:focus, 
+[contenteditable].form-control.no-outline:focus,
+.custom-control-input.no-outline:focus~.custom-control-label::before{
+  box-shadow: none!important;
+}
+
+select.control-sc:focus, 
+textarea.control-sc:focus, 
+textarea.form-control.control-sc:focus, 
+input.form-control.control-sc:focus, 
+button.btn.control-sc:focus, 
+input[type=text].control-sc:focus, 
+input[type=password].control-sc:focus, 
+input[type=email].control-sc:focus, 
+input[type=number].control-sc:focus, 
+input[type=checkbox].control-sc:focus, 
+input[type=radio].control-sc:focus, 
+input[type=submit].control-sc:focus, 
+[type=text].form-control.control-sc:focus, 
+[type=password].form-control.control-sc:focus, 
+[type=email].form-control.control-sc:focus, 
+[type=tel].form-control.control-sc:focus, 
+[type=checkbox].form-control.control-sc:focus, 
+[type=radio].form-control.control-sc:focus, 
+[type=submit].form-control.control-sc:focus, 
+[contenteditable].form-control.control-sc:focus,
+.custom-control-input.control-sc:focus~.custom-control-label::before{
+  border-color: #cd8110;
+  box-shadow: 0 0 0 0.2rem rgba(201, 136, 34, 0.4);
+}
+.custom-control-input.control-sc:checked~.custom-control-label::before {
+  border-color: #cd8110;
+  background-color: #cd8110;
+}
+
+input[type=submit].control-sc, 
+[type=submit].form-control.control-sc, 
+button.control-sc{
+  background-color: #861a0e;
+}
+input[type=submit].control-sc:hover, 
+[type=submit].form-control.control-sc:hover, 
+button.control-sc:hover{
+  background-color: #9e1f10;
+}
+.control-sc.btn:focus,
+.control-sc.btn.focus
+input[type=submit].control-sc:focus, 
+[type=submit].form-control.control-sc:focus, 
+button.control-sc:focus{
+  box-shadow: 0 0 0 0.2rem rgba(201, 136, 34, 0.4);
+}
+
+input[type=submit].control-sc,
+input[type=submit].control-sc:hover,
+input[type=submit].control-sc:focus,
+[type=submit].form-control.control-sc,
+[type=submit].form-control.control-sc:hover,
+[type=submit].form-control.control-sc:focus,
+button.control-sc,
+button.control-sc:hover,
+button.control-sc:focus{
+  color: #fff;
+}
+
+input[type=submit].control-sc.sc-gd, 
+[type=submit].form-control.control-sc.sc-gd, 
+button.control-sc.sc-gd{
+  background: #861a0e;
+background: -moz-linear-gradient(top,  #ad463d 0%, #861a0e 100%);
+background: -webkit-linear-gradient(top,  #ad463d 0%,#861a0e 100%);
+background: linear-gradient(to bottom,  #ad463d 0%,#861a0e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ad463d', endColorstr='#861a0e',GradientType=0 );
+border: 1px solid #c78116;
+text-shadow: 1px 1px #6b1309;
+color: #fff;
+}
+input[type=submit].control-sc.sc-gd:hover, 
+[type=submit].form-control.control-sc.sc-gd:hover, 
+button.control-sc.sc-gd:hover{
+  background: #9e1f10;
+background: -moz-linear-gradient(top, #c14f45 0%, #9e1f10 100%);
+background: -webkit-linear-gradient(top, #c14f45 0%,#9e1f10 100%);
+background: linear-gradient(to bottom, #c14f45 0%,#9e1f10  100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eada85', endColorstr='#9e1f10',GradientType=0 );
+/*border: 1px solid #9e1f10;*/
+}
+
+input[type=submit].form-control.control-sc.sc-gd,
+input[type=submit].form-control.control-sc.sc-gd:hover,
+input[type=submit].form-control.control-sc.sc-gd:focus,
+button.control-sc.sc-gd,
+button.control-sc.sc-gd:hover,
+button.control-sc.sc-gd:focus{
+  color: #444;
+}
+
+.checkbox-checkmark{
+  font-size: .8rem;
+}
+
+.checkbox-checkmark > input.hideInput{
+  position: absolute;
+  opacity: 0;
+  width: 0;
+}
+
+.checkbox-checkmark > .checkmark > .onCheck{
+	display: none;
+}
+
+.checkbox-checkmark > input:checked ~ .checkmark .onCheck{
+	display: inline;
+}
+
+.checkbox-checkmark > input ~ .checkmark .onUncheck.d_block,
+.checkbox-checkmark > input:checked ~ .checkmark .onCheck.d_block{
+  display: block;
+}
+
+.checkbox-checkmark > input ~ .checkmark .onUncheck.d_inline_block,
+.checkbox-checkmark > input:checked ~ .checkmark .onCheck.d_inline_block{
+  display: inline-block;
+}
+
+.checkbox-checkmark > input:checked ~ .checkmark .onUncheck{
+	display: none;
+}
+
+.m_bg{
+    background-color: #8e2b20;
+}
+
+.m_bg_gd{
+    background-color:#861a0e;
+    background: -moz-linear-gradient(top, #ad463d 0%, #861a0e 100%);
+    background: -webkit-linear-gradient(top, #ad463d 0%,#861a0e 100%);
+    background: linear-gradient(to bottom, #ad463d 0%,#861a0e 100%);
+}
+
+
+.m_color{
+    color: #8e2b20!important;
+}
+
+.m_bd_color,
+.list-group-item{
+    border-color: #105191!important;
+}
+
+.m_bd_color td, .m_bd_color th {
+    border-color:  #105191;
+}
+
+tr.flex-item{
+	display: table-row;
+  padding: 0;
+  border: 0;
+}
+
+tr.flex-item th{
+ border: 1px solid #6B6345;
+}
+
+td.flex-item{
+	display: table-cell;
+  padding: 0;
+}
+
+.tf_tbody > tr {
+    /*border-top: 4px solid transparent;*/
+    /*border-bottom: 4px solid transparent;*/
+}
+
+.tf_tbody > tr > td{
+    border: 1px solid #6B6345;
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px 0!important;
+    /*background-color: #eaeaea;*/
+}
+
+.tf_tbody > tr.sum > td{
+    background-color: #c7c7c7;
+}
+
+.tf_tbody > tr > td.date{
+    vertical-align: bottom;
+    position: relative;
+}
+
+.tf_tbody > tr > td.date > .time{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.tf_tbody > tr > td.date > .no{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    padding: 0 5px;
+    border: 1px solid #b58436;
+    border-radius: 2px;
+    background-color: #d7b346;
+    color: #000;
+}
+
+.toast-bottom-center{
+    bottom: 60px;
+}
+.m-loader {
+  position: fixed;
+  display: none;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 99999;
+}
+
+.onPageLoad .m-loader{
+  display: flex;
+}
+
+.m-loader-wrapper {
+  width: 50px;
+  height: 50px;
+}
+
+.m-loading {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  border-top-color: #105191;
+  
+  -o-animation: load-spin 0.7s infinite linear;
+  -moz-animation: load-spin 0.7s infinite linear;
+  -webkit-animation: load-spin 0.7s infinite linear;
+  animation: load-spin 0.7s infinite linear;
+}
+
+@-o-keyframes load-spin { 100% { transform: rotate(360deg); } }
+@-moz-keyframes load-spin { 100% { transform: rotate(360deg); } }
+@-webkit-keyframes load-spin { 100% { transform: rotate(360deg); } }
+@keyframes load-spin { 100% { transform: rotate(360deg); } }

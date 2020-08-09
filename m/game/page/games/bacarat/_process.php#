@@ -1,0 +1,378 @@
+<? ob_start(); if (!isset($_SESSION)) { session_start(); } ?>
+<?
+require('../inc/conn.php');
+require('../inc/function.php');
+
+  
+  header ("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
+header("Expires: Tue, 03 Jul 2001 06:00:00 GMT");
+header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+ header("Pragma-directive: no-cache");
+    header("Cache-directive: no-cache");
+    header("Cache-control: no-cache");
+    header("Pragma: no-cache");
+    header("Expires: 0");
+  
+
+ 
+
+  $url_filec="json/bacarat_close.txt";
+$date2_jsc=file_get_contents2($url_filec);
+$date2_betc = json_decode($date2_jsc, true);
+$bet_close=$date2_betc[0][con_bacara_close];
+
+if($bet_close==0){
+	exit();
+	}
+	
+	_process_bacarat();
+	
+	function _process_bacarat(){
+	
+	global $ex_sc;
+	global $ex_big;
+	global $ex_yai;
+	global $ex_pai ;
+
+
+shuffle($ex_pai);
+shuffle($ex_pai);
+shuffle($ex_pai);
+shuffle($ex_pai);
+
+	
+#$ex_sc = array("a1"=>1,"a2"=>2,"a3"=>3,"a4"=>4,"a5"=>5,"a6"=>6,"a7"=>7,"a8"=>8,"a9"=>9,"a10"=>0,"a11"=>0,"a12"=>0,"a13"=>0,"b1"=>1,"b2"=>2,"b3"=>3,"b4"=>4,"b5"=>5,"b6"=>6,"b7"=>7,"b8"=>8,"b9"=>9,"b10"=>0,"b11"=>0,"b12"=>0,"b13"=>0,"c1"=>1,"c2"=>2,"c3"=>3,"c4"=>4,"c5"=>5,"c6"=>6,"c7"=>7,"c8"=>8,"c9"=>9,"c10"=>0,"c11"=>0,"c12"=>0,"c13"=>0,"d1"=>1,"d2"=>2,"d3"=>3,"d4"=>4,"d5"=>5,"d6"=>6,"d7"=>7,"d8"=>8,"d9"=>9,"d10"=>0,"d11"=>0,"d12"=>0,"d13"=>0);
+
+#$ex_big = array("a1"=>1,"a2"=>2,"a3"=>3,"a4"=>4,"a5"=>5,"a6"=>6,"a7"=>7,"a8"=>8,"a9"=>9,"a10"=>10,"a11"=>11,"a12"=>12,"a13"=>13,"b1"=>1,"b2"=>2,"b3"=>3,"b4"=>4,"b5"=>5,"b6"=>6,"b7"=>7,"b8"=>8,"b9"=>9,"b10"=>10,"b11"=>11,"b12"=>12,"b13"=>13,"c1"=>1,"c2"=>2,"c3"=>3,"c4"=>4,"c5"=>5,"c6"=>6,"c7"=>7,"c8"=>8,"c9"=>9,"c10"=>10,"c11"=>11,"c12"=>12,"c13"=>13,"d1"=>1,"d2"=>2,"d3"=>3,"d4"=>4,"d5"=>5,"d6"=>6,"d7"=>7,"d8"=>8,"d9"=>9,"d10"=>10,"d11"=>11,"d12"=>12,"d13"=>13);
+
+#$ex_yai = array("a1"=>1.4,"a2"=>2.4,"a3"=>3.4,"a4"=>4.4,"a5"=>5.4,"a6"=>6.4,"a7"=>7.4,"a8"=>8.4,"a9"=>9.4,"a10"=>10.4,"a11"=>11.4,"a12"=>12.4,"a13"=>13.4,"b1"=>1.3,"b2"=>2.3,"b3"=>3.3,"b4"=>4.3,"b5"=>5.3,"b6"=>6.3,"b7"=>7.3,"b8"=>8.3,"b9"=>9.3,"b10"=>10.3,"b11"=>11.3,"b12"=>12.3,"b13"=>13.3,"c1"=>1.2,"c2"=>2.2,"c3"=>3.2,"c4"=>4.2,"c5"=>5.2,"c6"=>6.2,"c7"=>7.2,"c8"=>8.2,"c9"=>9.2,"c10"=>10.2,"c11"=>11.2,"c12"=>12.2,"c13"=>13.2,"d1"=>1.1,"d2"=>2.1,"d3"=>3.1,"d4"=>4.1,"d5"=>5.1,"d6"=>6.1,"d7"=>7.1,"d8"=>8.1,"d9"=>9.1,"d10"=>10.1,"d11"=>11.1,"d12"=>12.1,"d13"=>13.1);
+
+$url_filei="json/bacarat_id.txt";
+$date2_jsi=file_get_contents2($url_filei);
+$date2_beti = json_decode($date2_jsi, true);
+$bet_id=$date2_beti[0][id];
+
+
+	
+
+		
+$ok1a=$ex_pai[1];
+$ok2a=$ex_pai[2];
+$ok3a=$ex_pai[3];
+$ok4a=$ex_pai[4];
+
+	
+	
+	
+	
+	
+
+$cc1a=($ex_sc[$ok1a]+$ex_sc[$ok2a])%10;
+$cc2a=($ex_sc[$ok3a]+$ex_sc[$ok4a])%10;
+
+if($cc1a>=$cc2a){
+$ok1b=$ok1a;
+$ok2b=$ok2a;
+$ok3b=$ok3a;
+$ok4b=$ok4a;
+	}else{
+$ok1b=$ok4a;
+$ok2b=$ok3a;
+$ok3b=$ok2a;
+$ok4b=$ok1a;
+		}
+
+$sql="select * from pha_tb_config where con_id=1 ";
+$rec=sql_array($sql);
+
+#$abc = array_merge(range('a','d'));
+
+if($rec[con_bacara]>0){
+	
+	if($rec[con_bacara]==1){
+$ok1=$ok1b;
+$ok2=$ok2b;
+$ok3=$ok3b;
+$ok4=$ok4b;
+	}else{
+$ok1=$ok4b;
+$ok2=$ok3b;
+$ok3=$ok2b;
+$ok4=$ok1b;
+		}
+	
+	$sql="update pha_tb_config set  con_bacara=0 where con_id=1 ";
+	sql_query($sql);
+	
+}else{
+	
+
+	
+if($rec[con_win]==3 or $rec[con_win_big]==3){
+####################ไม่โกง
+$ok1=$ok1a;
+$ok2=$ok2a;
+$ok3=$ok3a;
+$ok4=$ok4a;
+	
+
+$sql="update pha_tb_config set  con_win=1, con_win_big=1 where con_id=1 ";
+sql_query($sql);
+
+$sql="update pha_tb_config set  con_win=1 where con_id=1 and con_win>4 ";
+sql_query($sql);
+$sql="update pha_tb_config set  con_win_big=1 where con_id=1 and con_win_big>4 ";
+sql_query($sql);
+	
+}else{
+
+$sql="select * from pha_tb_casino_bet where bet_id='$bet_id' ";
+$rew=sql_array($sql);
+
+if($rew[bet_count_2]>=$rew[bet_count_1]){
+$new1=$rew[bet_count_2]-$rew[bet_count_1];
+}else{
+$new1=$rew[bet_count_1]-$rew[bet_count_2];
+	}
+
+if($rew[bet_count_4]>=$rew[bet_count_5]){
+$new2=$rew[bet_count_4]-$rew[bet_count_5];
+}else{
+$new2=$rew[bet_count_5]-$rew[bet_count_4];
+	}
+	
+####################โกง Big Small
+if($new2>$new1){
+	
+$ex_paibb1 = array("a10","a11","a12","a13","b10","b11","b12","b13","c10","c11","c12","c13","d10","d11","d12","d13");
+$ex_paibb2 = array("a5","a6","a7","a8","a9","b5","b6","b7","b8","b9","c5","c6","c7","c8","c9","d5","d6","d7","d8","d9");
+$ex_paibb3 = array("a1","a2","a3","a4","b1","b2","b3","b4","c1","c2","c3","c4","d1","d2","d3","d4");
+
+shuffle($ex_paibb1);
+shuffle($ex_paibb1);
+
+shuffle($ex_paibb2);
+shuffle($ex_paibb2);
+
+shuffle($ex_paibb3);
+shuffle($ex_paibb3);
+
+
+	if($rew[bet_count_4]>=$rew[bet_count_5]){
+		########เจ้ามือมากกว่า
+$ok1=$ex_paibb2[1];
+$ok2=$ex_paibb3[1];
+$ok3=$ex_paibb1[1];
+$ok4=$ex_paibb3[2];
+	}else{
+$ok1=$ex_paibb2[1];
+$ok2=$ex_paibb3[1];
+$ok3=$ex_paibb2[2];
+$ok4=$ex_paibb1[1];
+}
+
+#$ok1='a1';
+#$ok2='a2';
+#$ok3='a3';
+#$ok4='a4';
+	
+$sql="update pha_tb_config set  con_win_big=con_win_big+1 where con_id=1 ";
+sql_query($sql);
+	
+
+	
+	####################โกง Big Small
+	}else{ #####################โกง Big Small
+	
+
+
+if($rew[bet_count_2]>=$rew[bet_count_1]){
+$ok1=$ok1b;
+$ok2=$ok2b;
+$ok3=$ok3b;
+$ok4=$ok4b;
+	}else{
+$ok1=$ok4b;
+$ok2=$ok3b;
+$ok3=$ok2b;
+$ok4=$ok1b;
+}
+		
+	$sql="update pha_tb_config set  con_win=con_win+1 where con_id=1 ";
+	sql_query($sql);
+	
+	
+	}
+	
+		
+}#if($rec[con_win]==5){
+
+}
+
+
+$sql="select  con_ba_bingo_1,con_ba_bingo_2,con_ba_bingo_3,con_ba_bingo_4  from pha_tb_config where con_id=1";
+$recxt=sql_array($sql);
+if($recxt[con_ba_bingo_1]!="" or $recxt[con_ba_bingo_2]!="" or $recxt[con_ba_bingo_3]!="" or $recxt[con_ba_bingo_4]!=""){
+	####################A
+	if($recxt[con_ba_bingo_1]!=""){
+		$ok1m=$recxt[con_ba_bingo_1];
+		}else{
+		$ok1m=$ok1;
+			}
+	####################B
+	if($recxt[con_ba_bingo_2]!=""){
+		$ok2m=$recxt[con_ba_bingo_2];
+		}else{
+		$ok2m=$ok2;
+			}
+	####################C
+	if($recxt[con_ba_bingo_3]!=""){
+		$ok3m=$recxt[con_ba_bingo_3];
+		}else{
+	$ok3m=$ok3;
+			}
+	####################D
+	if($recxt[con_ba_bingo_4]!=""){
+		$ok4m=$recxt[con_ba_bingo_4];
+		}else{
+	  $ok4m=$ok4;
+			}
+			
+}else{
+$ok1m=$ok1;
+$ok2m=$ok2;
+$ok3m=$ok3;
+$ok4m=$ok4;
+	
+	}
+
+
+$cc1=($ex_sc[$ok1m]+$ex_sc[$ok2m])%10;
+$cc2=($ex_sc[$ok3m]+$ex_sc[$ok4m])%10;
+############################################บันทึก
+$x_win="win,$ok1m,$ok2m,$ok3m,$ok4m";
+$sc_win="sc,$cc1,$cc2";
+$sql="update pha_tb_casino_bet set  bet_win='$x_win',bet_win_score='$sc_win'    where bet_id='$bet_id' and bet_win=''";
+sql_query($sql);
+$sql="update pha_tb_casino_bill_play set  bet_win='$x_win'    where bill_id='$bet_id' and bet_win=''";
+sql_query($sql);
+
+$url_filed="json/bacarat_win.txt";
+$js1=array();
+$js1[]=array("1"=>"$ok1m","2"=>"$ok2m");
+$js1[]=array("3"=>"$ok3m","4"=>"$ok4m");
+$txt11=json_encode($js1);
+write($url_filed ,$txt11,"w+"); 
+
+
+
+
+####################เช็คชนะ
+if($cc1>$cc2){
+	
+$sql="update pha_tb_casino_bill_play set  play_status=1    where bill_id='$bet_id' and play_status=7 and play_bet=1";
+sql_query($sql);
+	
+}elseif($cc1<$cc2){
+$sql="update pha_tb_casino_bill_play set  play_status=1    where bill_id='$bet_id' and play_status=7 and play_bet=2";
+sql_query($sql);
+	
+}elseif($cc1==$cc2){
+	
+$sql="update pha_tb_casino_bill_play set  play_status=1    where bill_id='$bet_id' and play_status=7 and play_bet=3";
+sql_query($sql);
+
+$cc11=$ex_big[$ok1m];
+$cc22=$ex_big[$ok2m];
+$cc33=$ex_big[$ok3m];
+$cc44=$ex_big[$ok4m];
+if(($cc11>$cc33 and $cc11>$cc44) or ($cc22>$cc33 and $cc22>$cc44)){
+$sql="update pha_tb_casino_bill_play set  play_status=1    where bill_id='$bet_id' and play_status=7 and play_bet=1";
+sql_query($sql);
+}elseif(($cc33>$cc11 and $cc33>$cc22) or ($cc44>$cc11 and $cc44>$cc22)){
+$sql="update pha_tb_casino_bill_play set  play_status=1    where bill_id='$bet_id' and play_status=7 and play_bet=2";
+sql_query($sql);
+}else{
+$cc11y=($ex_yai[$ok1m]+$ex_yai[$ok2m])%10;
+$cc22y=($ex_yai[$ok3m]+$ex_yai[$ok4m])%10;
+if($cc11y>$cc22y){
+$sql="update pha_tb_casino_bill_play set  play_status=1    where bill_id='$bet_id' and play_status=7 and play_bet=1";
+sql_query($sql);	
+}else{
+$sql="update pha_tb_casino_bill_play set  play_status=1    where bill_id='$bet_id' and play_status=7 and play_bet=2";
+sql_query($sql);
+	}
+
+
+	}
+		
+}
+
+#############################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+#############################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+#####################สูง
+if($cc2>=6){
+$sql="update pha_tb_casino_bill_play set  play_status=1    where bill_id='$bet_id' and play_status=7 and play_bet=4";
+sql_query($sql);
+	}else{
+################ต่ำ
+$sql="update pha_tb_casino_bill_play set  play_status=1    where bill_id='$bet_id' and play_status=7 and play_bet=5";
+sql_query($sql);
+}
+
+################
+if($ex_sc[$ok1m]==$ex_sc[$ok2m]){
+#####################################ผู้เล่นแต้มเสมอ
+$sql="update pha_tb_casino_bill_play set  play_status=1    where bill_id='$bet_id' and play_status=7 and play_bet=6";
+sql_query($sql);
+	}
+if($ex_sc[$ok3m]==$ex_sc[$ok4m]){
+#####################################เจ้ามือแต้มเสมอ
+$sql="update pha_tb_casino_bill_play set  play_status=1    where bill_id='$bet_id' and play_status=7 and play_bet=7";
+sql_query($sql);
+	}
+	
+######################เสีย
+$sql="update pha_tb_casino_bill_play set  play_status=4    where bill_id='$bet_id' and play_status=7 ";
+sql_query($sql);	
+#############################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+#############################&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+	###########################คืนเงิน
+$sql="select * from pha_tb_casino_bill_play where play_status='1' and bill_id='$bet_id' and lock_pay=0  order by play_id desc";
+$re=sql_query($sql);
+while($rs=mysql_fetch_array($re)){
+$sumbet=$rs[b_total]*$rs[play_pay];
+$sql="update pha_tb_member set m_count=m_count+$sumbet  where m_id='$rs[m_id]' ";
+sql_query($sql);	
+$sql="update pha_tb_casino_bill_play set lock_pay=1, b_bonus=$sumbet,  br_bonus=$sumbet  where play_id='$rs[play_id]'  ";
+sql_query($sql);
+
+}
+
+}
+
+
+
+
+/*
+function _process_bet(){
+$url_file="json/bacarat_id.txt";
+$date2_js=file_get_contents2($url_file);
+$date2_bet = json_decode($date2_js, true);
+$bet_id=$date2_bet[0][id];
+	
+	###########################คืนเงิน
+$sql="select * from pha_tb_casino_bill_play where play_status='1' and bill_id='$bet_id' and lock_pay=0  order by play_id desc";
+$re=sql_query($sql);
+while($rs=mysql_fetch_array($re)){
+$sumbet=$rs[b_total]*$rs[play_pay];
+echo'<br>'.$sql="update pha_tb_member set m_count=m_count+$sumbet  where m_id='$rs[m_id]' ";
+sql_query($sql);	
+$sql="update pha_tb_casino_bill_play set lock_pay=1, b_bonus=$sumbet,  br_bonus=$sumbet  where play_id='$rs[play_id]'  ";
+sql_query($sql);
+
+}
+	}
+*/
+?>

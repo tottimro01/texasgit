@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>โปรแกรมโต๊ะบอล</title>
+    <script type="text/javascript">
+var timeInSecs;
+var ticker;
+function startTimer(secs){
+timeInSecs = parseInt(secs)-1;
+ticker = setInterval("tick()",1000);   // every second
+}
+function tick() {
+var secs = timeInSecs;
+if (secs>0) {
+timeInSecs--;
+}
+else {
+clearInterval(ticker); 
+window.location='block_run.php';
+}
+document.getElementById("countdown").innerHTML = secs;
+}
+startTimer(180);
+</script> 
+<style type="text/css">
+body {
+	font: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background-color: #CCC;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+</style>  
+</head>
+
+<body>
+<div align="center">
+<p><img src="img/loding.gif" /></p>
+<h3>คุณได้ถูกระงับการเข้าระบบ 3 นาที เนื่องจาก เข้าระบบผิดเกิน 5 ครั้ง</h3>
+<p><h3><div style="background:url(img/load.gif) no-repeat; width:160px; height:20px; color:#f00;"><br><span id="countdown" >180</span></div></h3>
+</p><br>
+หากสงสัยติดต่อ Call Center</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+h1{
+text-align:center;
+}
+#stock{
+margin:0 auto;
+border:1px #333 solid;
+border-radius:5px;
+}
+#stock td{
+border:0px #000 solid;
+padding:20px;
+text-align:center;
+}
+#stock tr:hover{
+background-color:#ececec;
+}
+#stock th{
+background-color:#ececec;
+border:0px #000 solid;
+padding:20px;
+text-align:center;
+text-decoration:underline;
+}

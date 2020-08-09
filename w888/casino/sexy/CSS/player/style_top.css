@@ -1,0 +1,272 @@
+.flex-start,.left_list ol{
+    display:flex;
+    justify-content:flex-start
+}
+.space-between,.top{
+    display:flex;
+    justify-content:space-between
+}
+.clearfix:after,.right_function:after,.sound dl:after{
+    content:"";
+    display:block;
+    clear:both
+}
+.clearfix,.right_function,.sound dl{
+    zoom:1
+}
+.clear{
+    clear:both
+}
+.float-L,.left_list h1,.left_list ol,.baccarat_mode strong,.cockfighting_mode strong,.baccarat_mode .multi_mode,.cockfighting_mode .multi_mode,.baccarat_mode .single_mode,.cockfighting_mode .single_mode{
+    float:left
+}
+.float-R{
+    float:right
+}
+.right_function,.sound dl{
+    display:block
+}
+.right_function li,.sound dl li,.right_function dt,.sound dl dt,.right_function dd,.sound dl dd{
+    display:block;
+    float:left
+}
+.top{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    color:#FF8100;
+    /*width:1440px;*/
+    margin:0 auto;
+    background:#000;
+    align-items:center;
+    height:46px;
+    border-bottom:1px solid #3E2B0A;
+    clear:both
+}
+.left_list h1{
+    display:block;
+    width:118px;
+    height:36px;
+    background:url(../../images/header/logo.png) 0 0 no-repeat;
+    text-indent:-9999px;
+    margin:5px 35px 5px 15px
+}
+.left_list ol{
+    padding:14px 0;
+    list-style:none
+}
+.left_list ol li{
+    padding-left:25px;
+    background:url(../../images/header/ico_top.png) 0 0 no-repeat;
+    margin-right:30px
+}
+.left_list ol .credit{
+    background:url(../../images/header/ico_top.png) 0 -51px no-repeat
+}
+.left_list ol li.no_icon {
+     background: none;
+}
+.left_list ol .credit span{
+    color:#fff;
+    margin:0 20px 0 5px
+}
+.right_function{
+    height:46px;
+    font-size:15px;
+    color:#000
+}
+.language{
+    position:relative
+}
+.language a{
+    display:block;
+    width:160px;
+    height:46px;
+    line-height:46px;
+    text-indent:20px;
+    color:#FF8100;
+    border-left:1px solid #5F331C;
+    border-right:1px solid #5F331C;
+    background:url(../../images/header/ico_top.png) right -90px no-repeat;
+    text-align:left
+}
+.language .lg_list{
+    position:absolute;
+    z-index:10
+}
+.language .lg_list a{
+    background:#000
+}
+.language .lg_list a:hover{
+    background-image:linear-gradient(-180deg, #160800 0%, #522605 99%)
+}
+.language .lg_list li{
+    border-bottom:1px solid #5F331C
+}
+.language .lg_list li:last-child{
+    border-bottom:1px solid #5F331C
+}
+.language .lg_list:not(:target){
+    display:none
+}
+.language .lg_list:target{
+    display:block
+}
+.nav{
+    position:relative
+}
+.nav a{
+    display:block;
+    width:48px;
+    height:46px;
+    background:url(../../images/header/ico_top.png) 14px -130px no-repeat;
+    text-indent:-9999px;
+    padding:0 10px
+}
+.nav a:focus{
+    background:#E26B00 url(../../images/header/ico_top.png) 14px -376px no-repeat
+}
+.nav.on a{
+    background:#E26B00 url(../../images/header/ico_top.png) 14px -376px no-repeat
+}
+.nav .nav_list{
+    position:absolute;
+    z-index:500;
+    background:#E26B00;
+    right:0px
+}
+.nav .nav_list a{
+    display:block;
+    width:190px;
+    height:39px;
+    background:none;
+    text-indent:15px;
+    color:#000;
+    line-height:38px;
+    background:none;
+    text-indent:0px
+}
+.nav .nav_list a:hover{
+    color:#E26B00;
+    background-image:linear-gradient(-180deg, #000 50%, #2B0F00 99%)
+}
+.nav .nav_list li{
+    float:none;
+    border-bottom:1px solid #CB591D
+}
+.nav .nav_list li:last-child{
+    border-bottom:1px solid #602E14
+}
+.nav .nav_list:not(:target){
+    display:none
+}
+.nav .nav_list:target{
+    display:block
+}
+.home a,.sound a{
+    display:block;
+    width:48px;
+    height:46px;
+    background:url(../../images/header/ico_top.png) 14px -429px no-repeat;
+    text-indent:-9999px
+}
+.sound{
+    position:relative
+}
+.sound a{
+    background:url(../../images/header/ico_top.png) 14px -489px no-repeat
+}
+.sound dl{
+    display:none;
+    width:245px;
+    background:rgba(0,0,0,0.9);
+    box-shadow:0 3px 5px 0 rgba(0,0,0,0.5);
+    position:absolute;
+    right:0px;
+    top:46px;
+    z-index:999;
+    padding:10px
+}
+.sound dt{
+    width:70%;
+    height:35px;
+    line-height:35px;
+    color:#E2E2E2;
+    font-size:15px;
+    padding-left:15px;
+    text-align:left
+}
+.sound dt.layer2{
+    color:#DCC9AE;
+    padding-left:25px
+}
+.sound dd{
+    width:30%;
+    height:35px;
+    cursor:pointer;
+    background-position:center center;
+    background-repeat:no-repeat;
+    padding-right:10px;
+    text-indent:-9999px
+}
+.sound dd.switch_on{
+    background-image:url(../../images/player/switch_on.png)
+}
+.sound dd.switch_off{
+    background-image:url(../../images/player/switch_off.png)
+}
+.sound.now dl{
+    display:block
+}
+.baccarat_mode,.cockfighting_mode{
+    color:#000;
+    background-image:linear-gradient(0deg, #F39101 0%, #FFC300 100%)
+}
+.baccarat_mode strong,.cockfighting_mode strong{
+    display:flex;
+    width:72px;
+    height:46px;
+    background:#FFC200;
+    text-align:center;
+    padding:0 5px;
+    font-size:13px;
+    line-height:18px;
+    justify-content:center;
+    align-items:center
+}
+.baccarat_mode .multi_mode,.cockfighting_mode .multi_mode,.baccarat_mode .single_mode,.cockfighting_mode .single_mode{
+    width:112px;
+    height:46px;
+    background:url(../../images/header/ico_top.png) 12px -182px no-repeat;
+    cursor:pointer;
+    display:flex;
+    align-items:center
+}
+.baccarat_mode .multi_mode span,.cockfighting_mode .multi_mode span,.baccarat_mode .single_mode span,.cockfighting_mode .single_mode span{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:13px;
+    margin:0 0 0 60px
+}
+.baccarat_mode .single_mode,.cockfighting_mode .single_mode{
+    background:url(../../images/header/ico_top.png) 15px -240px no-repeat
+}
+.baccarat_mode .single_mode span,.cockfighting_mode .single_mode span{
+    margin:0 0 0 50px
+}
+.cockfighting_mode .multi_mode,.cockfighting_mode .single_mode{
+    background:url(../../images/header/ico_top.png) 17px -287px no-repeat
+}
+.cockfighting_mode .multi_mode span,.cockfighting_mode .single_mode span{
+    margin:8px 0 0 60px
+}
+.cockfighting_mode .single_mode{
+    background:url(../../images/header/ico_top.png) 17px -330px no-repeat
+}
+.venus .left_list h1{
+    width:88px;
+    height:43px;
+    margin:5px 15px 5px 15px;
+    background:url(../../images/header/logo_venus.png) center center no-repeat
+}
+ 

@@ -1,0 +1,247 @@
+body {
+  background-color: #f7edd1;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+}
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+}
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+p {
+  margin-bottom: 5px;
+}
+a {
+  height: 40px;
+  color: #00e;
+  line-height: 5px;
+}
+.button {
+  display: inline-block;
+  padding: 4px 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.img-logo {
+  display: block;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.text-username {
+  margin-top: 5px;
+  margin-right: 10px;
+  float: left;
+  font-weight: 400;
+}
+.box-username {
+  width: 150px;
+  height: 35px;
+  margin-right: 20px;
+  float: left;
+  border: 1px solid #dbdbdb;
+}
+.box-pass {
+  width: 150px;
+  height: 35px;
+  margin-right: 10px;
+  float: left;
+  border: 1px solid #dbdbdb;
+}
+.text-pass {
+  margin-top: 5px;
+  margin-right: 10px;
+  float: left;
+  color: #50648a;
+  font-weight: 400;
+}
+.login {
+  height: 30px;
+  margin-top: 2px;
+  padding-right: 20px;
+  padding-left: 20px;
+  float: left;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(#ca9a2b, #8b691c);
+  background-image: linear-gradient(#ca9a2b, #8b691c);
+  line-height: 9px;
+}
+.form-login {
+  padding-top: 20px;
+  float:right;
+}
+.sec-head {
+  margin-top: 20px;
+}
+.navbar {
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(#ca9a2b, #8b691c);
+  background-image: linear-gradient(#ca9a2b, #8b691c);
+}
+.nav-menu {
+  float: left;
+}
+.menu {
+  color: white;
+}
+.sec-top {
+  margin-top: 20px;
+}
+.textlink-top {
+  height: 0px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  float: right;
+  color: #295196;
+  text-decoration: none;
+}
+.slider {
+  height: 255px;
+  border: 10px solid #e7ca71;
+}
+.cl1-slide {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.img-slide1 {
+  height: 100%;
+}
+.box-callcenter {
+  height: 255px;
+  border: 10px solid #e7ca71;
+}
+.cl2-callcenter {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.row-slide {
+  margin-top: 20px;
+}
+.row-game-more {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.linkbox-gamemore {
+  width: 145px;
+  height: 110px;
+  border: 1px solid white;
+}
+.row-in-gamemore {
+  padding: 10px;
+  background-color: #e7ca71;
+}
+.linkbox-service {
+  width: 100%;
+  height: 130px;
+  border: 10px solid #e7ca71;
+  background-image: url('../images/img_5.jpg');
+  background-size: cover;
+}
+.box-clear {
+  height: 1px;
+  background-color: #aebbcf;
+}
+.para-footer {
+  margin-top: 5px;
+  color: #123766;
+  font-size: 12px;
+  text-align: center;
+}
+.para-footer.copy {
+  color: #7a7a7a;
+}
+.link-footer {
+  color: #123766;
+  text-decoration: none;
+}
+.icon-thong {
+  width: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+}
+.drop-pasa {
+ /* height: 23px;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+  border: 1px solid #bdbdbd;
+  background-color: white;
+  color: white;*/
+   margin-top: 7px;
+  margin-right: 7px;
+  float: right;
+}
+.text-pasa {
+  color: #3d3d3d;
+}
+.droptogle {
+  height: 25px;
+  padding-top: 2px;
+  padding-right: 40px;
+  padding-bottom: 0px;
+}
+.text-drop {
+  height: 25px;
+  background-color: #dbdbdb;
+  color: #0c0c0d;
+}
+.demoselect{
+	/*color:#000;*/
+      color: #333;
+    border: 1px solid;
+    height: 26px;
+    padding: 0 6px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+	}
+.cr{ 
+color:#F00;
+}
+.cfr{
+float:right;	
+	}
+@media (max-width: 991px) {
+}

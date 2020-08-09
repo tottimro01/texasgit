@@ -1,0 +1,17 @@
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
+{
+   border-top: 2px solid #b68600;
+}
+tbody tr>td.tdNoHover:hover{
+    background: #fff !important;
+   /* padding-top: 10px;
+    padding-left: 10px;*/
+}
+tbody tr>td.tdNoHover thead tr:hover{
+    background: #8E8E8E !important;
+}
+@media (max-width: 990px) { 
+    .form-group label{
+      padding-top: 8px;
+    }
+}

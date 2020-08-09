@@ -1,0 +1,1068 @@
+<script id="sportLeagueBoxTmpl" type="text/x-jsrender">
+<div class="sport-league-box {{:league_id}} small-1" id="sportLeagueBox_{{:league_id}}" data-skey="{{:league_id}}">
+  <div class="sport-league-head {{:league_id}} b py-1 text-center position-relative">
+    <span class="league-name-text" title="ดับเบิลคลิกเพื่อคัดลอก">Loading...</span> <!-- Top league name --> 
+    <!--<form action="process/updateLeagueNum.php" method="post" class="formUpdateVal l-{{:league_id}} ml-2" style="display: none;">
+      <fieldset>
+        <input type="hidden" name="league_id" value="{{:league_id}}" />
+        <select name="league_num" class="rounded px-0">
+          {{for start=1 end=60 itemVar='~num'}}
+          <option value="{{:~num}}">ที่ {{:~num}}</option>
+          {{/for}}
+          <option value="0">เรียงลีก</option>
+        </select>
+      </fieldset>
+    </form> -->
+    <div class="position-absolute px-1" style="top: 4px; right: 4px;">
+        <a href="#" class="collapseLeagueBtn text-dark d-inline-block mx-1" data-league-id="{{:league_id}}">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-up"></i>
+        </a>
+        <a href="#" class="dismissLeagueBtn text-dark d-inline-block mx-1" data-league-id="{{:league_id}}">
+          <i class="fas fa-times"></i>
+        </a>
+        <!--<button class="dismissLeagueBtn bg-transparent" data-league-id="{{:league_id}}"><i class="fas fa-times"></i></button>-->
+    </div>
+  </div>
+  <div class="sport-league-body" id="SportLeagueBody_{{:league_id}}">
+    <div class="text-center py-2 bd-c-1 match_preloader">Loading...</div>
+  </div>
+</div>
+</script>
+
+<script id="sportMatchTmpl_wrapper" type="text/x-jsrender">
+<table class="sport-match-table-wrapper s_{{:sport}} p_{{:sport_page}}">
+</table>
+</script>
+
+<script id="sportMatchTmpl_head_sp_hdc_goal" type="text/x-jsrender">
+<table class="sport-match-header sport-match-table-sizer s_{{:sport}} p_{{:sport_page}}">
+  <thead class="text-center small">
+    <tr>
+      <th class="bd-m-1 text-white bg-m-1">Time</th>
+      <th class="bd-m-1 text-white bg-m-1">NB</th>
+      <th class="bd-m-1 text-white bg-m-1">M</th>
+      <th class="bd-m-1 text-white bg-m-1">ST</th>
+      <th class="bd-m-1 text-white bg-m-1">เจ้าบ้าน</th>
+      <th class="bd-m-1 text-white bg-m-1">%</th>
+      <th class="bd-m-1 text-white bg-m-1">HDC</th>
+      <th class="bd-m-1 text-white bg-m-1">จ่าย</th>
+      <th class="bd-m-1 text-white bg-m-1">จ่าย</th>
+      <th class="bd-m-1 text-white bg-m-1">ยอด</th>
+      <th class="bd-m-1 text-white bg-m-1">สรุป</th>
+      <th class="bd-m-1 text-white bg-m-1">ทีมเยือน</th>
+      <th class="bd-m-1 text-white bg-m-1">%</th>
+      <th class="bd-m-1 text-white bg-m-1">Goal</th>
+      <th class="bd-m-1 text-white bg-m-1">สูง</th>
+      <th class="bd-m-1 text-white bg-m-1">ต่ำ</th>
+      <th class="bd-m-1 text-white bg-m-1">ยอด</th>
+      <th class="bd-m-1 text-white bg-m-1">สรุป</th>
+      <th class="bd-m-1 text-white bg-m-1">Live</th>
+      <th class="bd-m-1 text-white bg-m-1">Score</th>
+      <th class="bd-m-1 text-white bg-m-1"></th>
+    </tr>
+  </thead>
+</table>
+</script>
+
+<script id="sportMatchTmpl_sp_hdc_goal" type="text/x-jsrender">
+<tr class="match_key_{{:match_id}} match_order_{{:match_order}} market_{{:match_market}} {{if match_end}}m_end{{/if}} {{if match_1h_end}}m_1h_end{{/if}} live_{{:live_status}} {{if hide_by_filter}}d-none{{/if}}" id="match_{{:match_id}}_{{:match_order}}">
+
+  <td class="p-0 border-0">
+    <table class="sport-match-table sport-match-table-sizer w-100 table-fixed p_{{:sport_page}}">
+      
+      <tbody>
+        <!-- /////////////////////// MATCH ROW /////////////////////// -->
+        <!-- /////////////////////// FT /////////////////////// -->
+        
+        <tr class="match_row _ft {{:match_id}}">
+          <td rowspan="2"> <!-- Match time -->
+            <table class="w-100">
+              <tr>
+                <td>
+                  <div class="text-center">
+                    <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                      <fieldset>
+                        <input type="hidden" name="match_id" value="{{:match_id}}" />
+                        <input type="hidden" name="match_add" value="{{:match_add}}" />
+                          <input type="hidden" name="update_active" value="1" />
+                        <div class="chk-item">
+                          <input type="checkbox" id="checkTime_{{:match_id}}_{{:match_order}}" {{if b_active==1}}checked="checked"{{/if}} name="chk_atv" value="1" />
+                          <label for="checkTime_{{:match_id}}_{{:match_order}}" class="checkmark"></label>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </div>
+                </td>
+                <td class="p-0">
+                  <div class="text-center live_text">{{:live_text}}</div>
+                  <div class="text-center time_text">{{:time_text}}</div>
+                </td>
+              </tr>
+            </table>
+          </td>
+
+          <td rowspan="2" class="c-pp">
+            <div class="text-center">
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="hidden" name="update_no_bet" value="1" />
+                  <div class="chk-item">
+                    <input type="checkbox" id="checkNoBet_{{:match_id}}_{{:match_order}}" name="chk_no_bet" {{if no_bet==0}}checked="checked"{{/if}} value="0" />
+                    <label for="checkNoBet_{{:match_id}}_{{:match_order}}" class="checkmark"></label>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </td>
+
+          <td rowspan="2" class="c-pp"> <!-- Manual -->
+            <div class="text-center">
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="hidden" name="update_manual" value="1" />
+                  <div class="chk-item">
+                    <input type="checkbox" id="checkM_{{:match_id}}_{{:match_order}}" name="chk_manual" {{if manual==1}}checked="checked"{{/if}} value="1" />
+                    <label for="checkM_{{:match_id}}_{{:match_order}}" class="checkmark"></label>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </td>
+
+          <td rowspan="2" class="c-pp"> <!-- Step -->
+            <div class="text-center">
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="hidden" name="update_b_step" value="1" />
+                  <div class="chk-item">
+                    <input type="checkbox" id="checkBStep_{{:match_id}}_{{:match_order}}" name="chk_b_step" {{if b_step==2}}checked="checked"{{/if}} value="2" />
+                    <label for="checkBStep_{{:match_id}}_{{:match_order}}" class="checkmark"></label>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </td>
+
+          <td class="b"> <!-- Match team 1 -->
+            <table class="w-100">
+              <tr>
+                <td class="p-0" style="width: 18px;"><div class="sportTimeBox _ft"></div></td>
+                <td class="p-0">
+                  <div class="text-center">
+                    {{if team_1_card_r!=0}}
+                      <span class="card_gif red">{{:team_1_card_r}}</span>
+                    {{/if}}
+                    {{if team_1_card_y!=0}}
+                      <span class="card_gif yellow">{{:team_1_card_y}}</span>
+                    {{/if}}
+                    <a href="javascript:editMatchData({{:match_id}}, {{:match_order}}, {{:league_id}}, 'ft')" class="team_name {{if team_big==1}} team_big {{/if}}">{{:team_1_name}}</a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+
+          <td class="c-w"> <!-- PERCENT 1 -->
+            <div class="text-center">
+              {{if !match_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="percent_1" value="{{:_percent_1}}" autocomplete="off" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+          <td class="c-b"> <!-- HDC -->
+            <div class="text-center">
+              {{if !match_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="hdc" value="{{:_hdc}}" autocomplete="off" />
+                  <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+          <td class="c-g"> <!-- HDC 1 -->
+            <div class="text-center">
+              {{if !match_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="hdc_1" value="{{:_hdc_1}}" class="{{if _hdc_1 < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                  <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+          <td class="c-g"> <!-- HDC 2 -->
+            <div class="text-center">
+              {{if !match_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="hdc_2" value="{{:_hdc_2}}" class="{{if _hdc_2 < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                  <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+
+          <td class="c-org">
+            <div class="text-center">
+              <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', 'ft', 1)">{{:_bet_1}}</a>
+              <span>-</span>
+              <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', 'ft', 2)">{{:_bet_2}}</a>
+            </div>
+          </td>
+          <td class="c-w">
+            <div class="text-center">
+              <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'total', 'ft', 1)" class="{{if _bet_total_1 < 0.00}}txt-red{{/if}}">{{:_bet_total_1}}</a>
+            </div>
+          </td>
+
+          <td class="b"> <!-- Match team 2 -->
+            <table class="w-100">
+              <tr>
+                <td class="p-0">
+                  <div class="text-center">
+                    {{if team_2_card_r!=0}}
+                      <span class="card_gif red">{{:team_2_card_r}}</span>
+                    {{/if}}
+                    {{if team_2_card_y!=0}}
+                      <span class="card_gif yellow">{{:team_2_card_y}}</span>
+                    {{/if}}
+                    <a href="javascript:editMatchData({{:match_id}}, {{:match_order}}, {{:league_id}}, 'ft')" class="team_name {{if team_big==2}} team_big {{/if}}">{{:team_2_name}}</a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+          
+          <td class="c-w"> <!-- PERCENT 2 -->
+            <div class="text-center">
+              {{if !match_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off"> 
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="percent_2" value="{{:_percent_2}}" autocomplete="off" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+
+          <td class="c-b"> <!-- GOAL -->
+            <div class="text-center">
+              {{if !match_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="goal" value="{{:_goal}}" autocomplete="off" />
+                  <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+          <td class="c-g"> <!-- GOAL 1 -->
+            <div class="text-center">
+              {{if !match_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="goal_1" value="{{:_goal_1}}" class="{{if _goal_1 < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                  <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+          <td class="c-g"> <!-- GOAL 2 -->
+            <div class="text-center">
+              {{if !match_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="goal_2" value="{{:_goal_2}}" class="{{if _goal_2 < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                  <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+
+          <td class="c-org">
+            <div class="text-center">
+              <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', 'ft', 3)">{{:_bet_3}}</a>
+              <span>-</span>
+              <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', 'ft', 4)">{{:_bet_4}}</a>
+            </div>
+          </td>
+          <td class="c-w">
+            <div class="text-center">
+              <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'total', 'ft', 2)" class="{{if _bet_total_2 < 0.00}}txt-red{{/if}}">{{:_bet_total_2}}</a>
+            </div>
+          </td>
+
+          <td class="c-pp">
+            {{if match_market == 'live'}}
+            <div class="text-center">
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <div class="chk-item">
+                    <input type="checkbox" id="checkLive_ft_{{:match_id}}_{{:match_order}}_ft" name="chk_ft_live" value="1" />
+                    <label for="checkLive_ft_{{:match_id}}_{{:match_order}}_ft" class="checkmark"></label>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            {{/if}}
+          </td>
+          <td class="c-b">
+            <!-- {{if match_market == 'live'}}
+              {{if !match_end}}
+                <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                  <fieldset>
+                    <input type="hidden" name="match_id" value="{{:match_id}}" />
+                    <input type="hidden" name="match_add" value="{{:match_add}}" />
+                    <input type="text" name="run_score_full" value="{{:run_score_full}}" autocomplete="off" />
+                    <input type="submit" name="submit" />
+                  </fieldset>
+                </form>
+              {{/if}}
+            {{/if}} -->
+            {{if display_ft_score}}
+                <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                  <fieldset>
+                    <input type="hidden" name="match_id" value="{{:match_id}}" />
+                    <input type="hidden" name="match_add" value="{{:match_add}}" />
+                    <input type="text" name="run_score_full" value="{{:run_score_full}}" autocomplete="off" />
+                    <input type="submit" name="submit" />
+                  </fieldset>
+                </form>
+            {{/if}}
+          </td>
+          <td rowspan="2" class="c-w text-center {{if match_order == 1}}add-hider border-bottom-0{{else}}border-top-0{{/if}}">
+            {{if match_order == 1}}
+            <a href="javascript:createMatchData({{:match_id}}, {{:match_order}}, {{:league_id}})" class="text-success" style="font-size: 1.2em;"><i class="fas fa-plus-circle"></i></a>
+           {{/if}}  
+        </td>
+        </tr>
+
+        <!-- /////////////////////// 1H /////////////////////// -->
+        
+        <tr class="match_row _1h {{:match_id}}">
+          <td class="b"> <!-- Match team 1 -->
+            <table class="w-100">
+              <tr>
+                <td class="p-0" style="width: 18px;"><div class="sportTimeBox _1h"></div></td>
+                <td class="p-0">
+                  <div class="text-center">
+                    {{if team_1_card_r!=0}}
+                      <span class="card_gif red">{{:team_1_card_r}}</span>
+                    {{/if}}
+                    {{if team_1_card_y!=0}}
+                      <span class="card_gif yellow">{{:team_1_card_y}}</span>
+                    {{/if}}
+                    <a href="javascript:editMatchData({{:match_id}}, {{:match_order}}, {{:league_id}}, '1h')" class="team_name {{if team_big==1}} team_big {{/if}}">{{:team_1_name}}</a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+
+          <td class="c-w"> <!-- 1H PERCENT 1 -->
+            <div class="text-center">
+              {{if !match_end && !match_1h_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="1h_percent_1" value="{{:_1h_percent_1}}" autocomplete="off" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+
+          <td class="c-b"> <!-- 1H HDC -->
+            <div class="text-center">
+              {{if !match_end && !match_1h_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="1h_hdc" value="{{:_1h_hdc}}" autocomplete="off" />
+                  <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+          <td class="c-g"> <!-- 1H HDC 1 -->
+            <div class="text-center">
+              {{if !match_end && !match_1h_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="1h_hdc_1" value="{{:_1h_hdc_1}}" class="{{if _1h_hdc_1 < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                  <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+          <td class="c-g"> <!-- 1H HDC 2 -->
+            <div class="text-center">
+              {{if !match_end && !match_1h_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="1h_hdc_2" value="{{:_1h_hdc_2}}" class="{{if _1h_hdc_2 < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                  <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+
+          <td class="c-org">
+            <div class="text-center">
+              <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', '1h', 1)">{{:_1h_bet_1}}</a>
+              <span>-</span>
+              <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', '1h', 2)">{{:_1h_bet_2}}</a>
+            </div>
+          </td>
+          <td class="c-w">
+            <div class="text-center">
+              <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'total', '1h', 1)" class="{{if _1h_bet_total_1 < 0.00}}txt-red{{/if}}">{{:_1h_bet_total_1}}</a>
+            </div>
+          </td>
+
+          <td class="b"> <!-- Match team 2 -->
+            <table class="w-100">
+              <tr>
+                <td class="p-0">
+                  <div class="text-center">
+                    {{if team_2_card_r!=0}}
+                      <span class="card_gif red">{{:team_2_card_r}}</span>
+                    {{/if}}
+                    {{if team_2_card_y!=0}}
+                      <span class="card_gif yellow">{{:team_2_card_y}}</span>
+                    {{/if}}
+                    <a href="javascript:editMatchData({{:match_id}}, {{:match_order}}, {{:league_id}}, '1h')" class="team_name {{if team_big==2}} team_big {{/if}}">{{:team_2_name}}</a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+          
+          <td class="c-w"> <!-- 1H PERCENT 1 -->
+            <div class="text-center">
+              {{if !match_end && !match_1h_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="1h_percent_2" value="{{:_1h_percent_2}}" autocomplete="off" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+
+          <td class="c-b"> <!-- 1H GOAL -->
+            <div class="text-center">
+              {{if !match_end && !match_1h_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="1h_goal" value="{{:_1h_goal}}" autocomplete="off" />
+                  <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+          <td class="c-g"> <!-- 1H GOAL 1 -->
+            <div class="text-center">
+              {{if !match_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="1h_goal_1" value="{{:_1h_goal_1}}" class="{{if _1h_goal_1 < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                  <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+          <td class="c-g"> <!-- 1H GOAL 2 -->
+            <div class="text-center">
+              {{if !match_end && !match_1h_end}}
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <input type="text" name="1h_goal_2" value="{{:_1h_goal_2}}" class="{{if _1h_goal_2 < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                  <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                  <input type="submit" name="submit" />
+                </fieldset>
+              </form>
+              {{/if}}
+            </div>
+          </td>
+
+          <td class="c-org">
+            <div class="text-center">
+              <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', '1h', 3)">{{:_1h_bet_3}}</a>
+              <span>-</span>
+              <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', '1h', 4)">{{:_1h_bet_4}}</a>
+            </div>
+          </td>
+          <td class="c-w">
+            <div class="text-center">
+              <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'total', '1h', 2)" class="{{if _1h_bet_total_2 < 0.00}}txt-red{{/if}}">{{:_1h_bet_total_2}}</a>
+            </div>
+          </td>
+          
+          <td class="c-pp">
+            {{if match_market == 'live'}}
+            <div class="text-center">
+              <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                <fieldset>
+                  <input type="hidden" name="match_id" value="{{:match_id}}" />
+                  <input type="hidden" name="match_add" value="{{:match_add}}" />
+                  <div class="chk-item">
+                    <input type="checkbox" id="checkLive_1h_{{:match_id}}_{{:match_order}}_1h" name="chk_1h_live" value="1" />
+                    <label for="checkLive_1h_{{:match_id}}_{{:match_order}}_1h" class="checkmark"></label>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            {{/if}}
+          </td>
+          <td class="c-b">
+            <!-- {{if match_market == 'live'}}
+              {{if !match_end && !match_1h_end}}
+                <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                  <fieldset>
+                    <input type="hidden" name="match_id" value="{{:match_id}}" />
+                    <input type="hidden" name="match_add" value="{{:match_add}}" />
+                    <input type="text" name="run_score_half" value="{{:run_score_half}}" autocomplete="off" />
+                    <input type="submit" name="submit" />
+                  </fieldset>
+                </form>
+              {{/if}}
+            {{/if}} -->
+            {{if display_1h_score}}
+                <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                  <fieldset>
+                    <input type="hidden" name="match_id" value="{{:match_id}}" />
+                    <input type="hidden" name="match_add" value="{{:match_add}}" />
+                    <input type="text" name="run_score_half" value="{{:run_score_half}}" autocomplete="off" />
+                    <input type="submit" name="submit" />
+                  </fieldset>
+                </form>
+            {{/if}}
+          </td>
+        </tr>
+        <!-- /////////////////////// END MATCH ROW /////////////////////// -->
+      </tbody>
+    </table>
+  </td>
+</tr>
+</script>
+
+<script id="sportMatchTmpl_head_sp_1x2_oe" type="text/x-jsrender">
+<table class="sport-match-header sport-match-table-sizer s_{{:sport}} p_{{:sport_page}}">
+  <thead class="text-center small">
+    <tr>
+      <th class="bd-m-1 text-white bg-m-1" colspan="2">Time</th>
+      <th class="bd-m-1 text-white bg-m-1">NB</th>
+      <th class="bd-m-1 text-white bg-m-1">UP</th>
+      <th class="bd-m-1 text-white bg-m-1">ST</th>
+      <th class="bd-m-1 text-white bg-m-1">เจ้าบ้าน</th>
+      <th class="bd-m-1 text-white bg-m-1">1</th>
+      <th class="bd-m-1 text-white bg-m-1">X</th>
+      <th class="bd-m-1 text-white bg-m-1">2</th>
+      <th class="bd-m-1 text-white bg-m-1">ยอด</th>
+      <th class="bd-m-1 text-white bg-m-1">สรุป</th>
+      <th class="bd-m-1 text-white bg-m-1">ทีมเยือน</th>
+      {{if !sport_step}}
+      <th class="bd-m-1 text-white bg-m-1">%</th>
+      <th class="bd-m-1 text-white bg-m-1">คี่</th>
+      <th class="bd-m-1 text-white bg-m-1">คู่</th>
+      <th class="bd-m-1 text-white bg-m-1">ยอด</th>
+      <th class="bd-m-1 text-white bg-m-1">สรุป</th>
+      {{/if}}
+      <th class="bd-m-1 text-white bg-m-1"></th>
+    </tr>
+  </thead>
+</table>
+</script>
+
+<script id="sportMatchTmpl_sp_1x2_oe" type="text/x-jsrender">
+<tr class="match_key_{{:match_id}} match_order_{{:match_order}} market_{{:match_market}} {{if match_end}}m_end{{/if}} {{if match_1h_end}}m_1h_end{{/if}} {{if hide_by_filter}}d-none{{/if}}" id="match_{{:match_id}}_{{:match_order}}">
+
+
+  <td class="p-0 border-0">
+    <table class="sport-match-table sport-match-table-sizer w-100 table-fixed p_{{:sport_page}}">
+      <tbody>
+      <!-- /////////////////////// MATCH ROW /////////////////////// -->
+      <!-- /////////////////////// FT /////////////////////// -->
+      <tr class="match_row _ft {{:match_id}}">
+        <td rowspan="2"> <!-- Match time -->
+          <table class="w-100">
+            <tr>
+              <td>
+                <div class="text-center">
+                  <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+                    <fieldset>
+                      <input type="hidden" name="match_id" value="{{:match_id}}" />
+                      <input type="hidden" name="match_add" value="{{:match_add}}" />
+                        <input type="hidden" name="update_active" value="1" />
+                      <div class="chk-item">
+                        <input type="checkbox" id="checkTime_{{:match_id}}_{{:match_order}}" {{if b_active==1}}checked="checked"{{/if}} name="chk_atv" value="1" />
+                        <label for="checkTime_{{:match_id}}_{{:match_order}}" class="checkmark"></label>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </td>
+              <td class="p-0">
+                <div class="text-center live_text">{{:live_text}}</div>
+                <div class="text-center time_text">{{:time_text}}</div>
+              </td>
+            </tr>
+          </table>
+        </td>
+        
+        <td rowspan="2" class="c-pp"> <!-- No Bet -->
+          <div class="text-center">
+            <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+              <fieldset>
+                <input type="hidden" name="match_id" value="{{:match_id}}" />
+                <input type="hidden" name="match_add" value="{{:match_add}}" />
+                <input type="hidden" name="update_no_bet" value="1" />
+                <div class="chk-item">
+                  <input type="checkbox" id="checkNoBet_{{:match_id}}_{{:match_order}}" name="chk_no_bet" {{if no_bet==0}}checked="checked"{{/if}} value="0" />
+                  <label for="checkNoBet_{{:match_id}}_{{:match_order}}" class="checkmark"></label>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </td>
+
+        <td rowspan="2" class="c-pp"> <!-- Manual -->
+          <div class="text-center">
+            <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+              <fieldset>
+                <input type="hidden" name="match_id" value="{{:match_id}}" />
+                <input type="hidden" name="match_add" value="{{:match_add}}" />
+                <input type="hidden" name="update_manual" value="1" />
+                <div class="chk-item">
+                  <input type="checkbox" id="checkM_{{:match_id}}_{{:match_order}}" name="chk_manual" {{if manual==1}}checked="checked"{{/if}} value="1" />
+                  <label for="checkM_{{:match_id}}_{{:match_order}}" class="checkmark"></label>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </td>
+
+        <td rowspan="2" class="c-pp"> <!-- Step -->
+          <div class="text-center">
+            <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+              <fieldset>
+                <input type="hidden" name="match_id" value="{{:match_id}}" />
+                <input type="hidden" name="match_add" value="{{:match_add}}" />
+                <input type="hidden" name="update_b_step" value="1" />
+                <div class="chk-item">
+                  <input type="checkbox" id="checkBStep_{{:match_id}}_{{:match_order}}" name="chk_b_step" {{if b_step==2}}checked="checked"{{/if}} value="2" />
+                  <label for="checkBStep_{{:match_id}}_{{:match_order}}" class="checkmark"></label>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </td>
+
+        <td class="b"> <!-- Match team 1 -->
+          <table class="w-100">
+            <tr>
+              <td class="p-0" style="width: 18px;"><div class="sportTimeBox _ft"></div></td>
+              <td class="p-0">
+                <div class="text-center">
+                  {{if team_1_card_r!=0}}
+                    <span class="card_gif red">{{:team_1_card_r}}</span>
+                  {{/if}}
+                  {{if team_1_card_y!=0}}
+                    <span class="card_gif yellow">{{:team_1_card_y}}</span>
+                  {{/if}}
+                  <a href="javascript:editMatchData({{:match_id}}, {{:match_order}}, {{:league_id}}, 'ft')" class="team_name {{if team_big==1}} team_big {{/if}}">{{:team_1_name}}</a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+        
+        <td class="c-g"> <!-- 1X2 1 -->
+          <div class="text-center">
+            {{if !match_end}}
+            <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+              <fieldset>
+                <input type="hidden" name="match_id" value="{{:match_id}}" />
+                <input type="hidden" name="match_add" value="{{:match_add}}" />
+                <input type="text" name="1x2_1" value="{{:_1x2_1}}" class="{{if _1x2_1 < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                <input type="submit" name="submit" />
+              </fieldset>
+            </form>
+            {{/if}}
+          </div>
+        </td>
+
+        <td class="c-b"> <!-- 1X2 X -->
+          <div class="text-center">
+            {{if !match_end}}
+            <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+              <fieldset>
+                <input type="hidden" name="match_id" value="{{:match_id}}" />
+                <input type="hidden" name="match_add" value="{{:match_add}}" />
+                <input type="text" name="1x2_x" value="{{:_1x2_x}}" autocomplete="off" />
+                <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                <input type="submit" name="submit" />
+              </fieldset>
+            </form>
+            {{/if}}
+          </div>
+        </td>
+
+        <td class="c-g"> <!-- 1X2 2 -->
+          <div class="text-center">
+            {{if !match_end}}
+            <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+              <fieldset>
+                <input type="hidden" name="match_id" value="{{:match_id}}" />
+                <input type="hidden" name="match_add" value="{{:match_add}}" />
+                <input type="text" name="1x2_2" value="{{:_1x2_2}}" class="{{if _1x2_2 < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                <input type="submit" name="submit" />
+              </fieldset>
+            </form>
+            {{/if}}
+          </div>
+        </td>
+
+        <td class="c-org">
+          <div class="text-center">
+            <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', 'ft', 7)">{{:_bet_7}}</a>
+            <span>-</span>
+            <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', 'ft', 8)">{{:_bet_8}}</a>
+            <span>-</span>
+            <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', 'ft', 9)">{{:_bet_9}}</a>
+          </div>
+        </td>
+        <td class="c-w">
+          <div class="text-center">
+            <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'total', 'ft', 3)" {{if _bet_total_3 < 0.00}}txt-red{{/if}}>{{:_bet_total_3}}</a>
+          </div>
+        </td>
+
+        <td class="b"> <!-- Match team 2 -->
+          <table class="w-100">
+            <tr>
+              <td class="p-0">
+                <div class="text-center">
+                  {{if team_2_card_r!=0}}
+                    <span class="card_gif red">{{:team_2_card_r}}</span>
+                  {{/if}}
+                  {{if team_2_card_y!=0}}
+                    <span class="card_gif yellow">{{:team_2_card_y}}</span>
+                  {{/if}}
+                  <a href="javascript:editMatchData({{:match_id}}, {{:match_order}}, {{:league_id}}, 'ft')" class="team_name {{if team_big==2}} team_big {{/if}}">{{:team_2_name}}</a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+        
+        {{if !sport_step}}
+        <td class="c-w"> <!-- PERCENT 3 -->
+          <div class="text-center">
+            {{if !match_end}}
+            <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+              <fieldset>
+                <input type="hidden" name="match_id" value="{{:match_id}}" />
+                <input type="hidden" name="match_add" value="{{:match_add}}" />
+                <input type="text" name="percent_3" value="{{:_percent_3}}" autocomplete="off" />
+                <input type="submit" name="submit" />
+              </fieldset>
+            </form>
+            {{/if}}
+          </div>
+        </td>
+
+        <td class="c-g"> <!-- ODD -->
+          <div class="text-center">
+            {{if !match_end}}
+            <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+              <fieldset>
+                <input type="hidden" name="match_id" value="{{:match_id}}" />
+                <input type="hidden" name="match_add" value="{{:match_add}}" />
+                <input type="text" name="odd" value="{{:_odd}}" class="{{if _odd < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                <input type="submit" name="submit" />
+              </fieldset>
+            </form>
+            {{/if}}
+          </div>
+        </td>
+
+        <td class="c-g"> <!-- EVEN -->
+          <div class="text-center">
+            {{if !match_end}}
+            <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+              <fieldset>
+                <input type="hidden" name="match_id" value="{{:match_id}}" />
+                <input type="hidden" name="match_add" value="{{:match_add}}" />
+                <input type="text" name="even" value="{{:_even}}" class="{{if _even < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                <input type="submit" name="submit" />
+              </fieldset>
+            </form>
+            {{/if}}
+          </div>
+        </td>
+
+        <td class="c-org">
+          <div class="text-center">
+            <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', 'ft', 5)">{{:_bet_5}}</a>
+            <span>-</span>
+            <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', 'ft', 6)">{{:_bet_6}}</a>
+          </div>
+        </td>
+        <td class="c-w">
+          <div class="text-center">
+            <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'total', 'ft', 4)" class="{{if _bet_total_4 < 0.00}}txt-red{{/if}}">{{:_bet_total_4}}</a>
+          </div>
+        </td>
+        {{/if}}
+
+        <td rowspan="2" class="c-w text-center {{if match_order == 1}}border-bottom-0{{else}}border-top-0{{/if}}">
+          {{if match_order == 1}}
+          <a href="javascript:createMatchData({{:match_id}}, {{:match_order}}, {{:league_id}})" class="text-success" style="font-size: 1.2em;"><i class="fas fa-plus-circle"></i></a>
+          {{/if}}
+        </td>
+      </tr>
+
+      <!-- /////////////////////// 1H /////////////////////// -->
+      
+      <tr class="match_row _1h {{:match_id}}">
+        <td class="b"> <!-- Match team 1 -->
+          <table class="w-100">
+            <tr>
+              <td class="p-0" style="width: 18px;"><div class="sportTimeBox _1h"></div></td>
+              <td class="p-0">
+                <div class="text-center">
+                  {{if team_1_card_r!=0}}
+                    <span class="card_gif red">{{:team_1_card_r}}</span>
+                  {{/if}}
+                  {{if team_1_card_y!=0}}
+                    <span class="card_gif yellow">{{:team_1_card_y}}</span>
+                  {{/if}}
+                  <a href="javascript:editMatchData({{:match_id}}, {{:match_order}}, {{:league_id}}, '1h')" class="team_name {{if team_big==1}} team_big {{/if}}">{{:team_1_name}}</a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+
+        <td class="c-g"> <!-- 1H 1X2 1 -->
+          <div class="text-center">
+            {{if !match_end && !match_1h_end}}
+            <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+              <fieldset>
+                <input type="hidden" name="match_id" value="{{:match_id}}" />
+                <input type="hidden" name="match_add" value="{{:match_add}}" />
+                <input type="text" name="1h_1x2_1" value="{{:_1h_1x2_1}}" class="{{if _1h_1x2_1 < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                <input type="submit" name="submit" />
+              </fieldset>
+            </form>
+            {{/if}}
+          </div>
+        </td>
+
+        <td class="c-b"> <!-- 1H 1X2 X -->
+          <div class="text-center">
+            {{if !match_end && !match_1h_end}}
+            <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+              <fieldset>
+                <input type="hidden" name="match_id" value="{{:match_id}}" />
+                <input type="hidden" name="match_add" value="{{:match_add}}" />
+                <input type="text" name="1h_1x2_x" value="{{:_1h_1x2_x}}" autocomplete="off" />
+                <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                <input type="submit" name="submit" />
+              </fieldset>
+            </form>
+            {{/if}}
+          </div>
+        </td>
+
+        <td class="c-g"> <!-- 1H 1X2 2 -->
+          <div class="text-center">
+            {{if !match_end && !match_1h_end}}
+            <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+              <fieldset>
+                <input type="hidden" name="match_id" value="{{:match_id}}" />
+                <input type="hidden" name="match_add" value="{{:match_add}}" />
+                <input type="text" name="1h_1x2_2" value="{{:_1h_1x2_2}}" class="{{if _1h_1x2_2 < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                <input type="hidden" name="step" value="{{if sport_step}}1{{else}}0{{/if}}" />
+                <input type="submit" name="submit" />
+              </fieldset>
+            </form>
+            {{/if}}
+          </div>
+        </td>
+
+        <td class="c-org">
+          <div class="text-center">
+            <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', '1h', 7)">{{:_1h_bet_7}}</a>
+            <span>-</span>
+            <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', '1h', 8)">{{:_1h_bet_8}}</a>
+            <span>-</span>
+            <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', '1h', 9)">{{:_1h_bet_9}}</a>
+          </div>
+        </td>
+        <td class="c-w">
+          <div class="text-center">
+            <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'total', '1h', 3)" class="{{if _1h_bet_total_3 < 0.00}}txt-red{{/if}}">{{:_1h_bet_total_3}}</a>
+          </div>
+        </td>
+
+        <td class="b"> <!-- Match team 2 -->
+          <table class="w-100">
+            <tr>
+              <td class="p-0">
+                <div class="text-center">
+                  {{if team_2_card_r!=0}}
+                    <span class="card_gif red">{{:team_2_card_r}}</span>
+                  {{/if}}
+                  {{if team_2_card_y!=0}}
+                    <span class="card_gif yellow">{{:team_2_card_y}}</span>
+                  {{/if}}
+                  <a href="javascript:editMatchData({{:match_id}}, {{:match_order}}, {{:league_id}}, '1h')" class="team_name {{if team_big==2}} team_big {{/if}}">{{:team_2_name}}</a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+        
+        {{if !sport_step}}
+        <td class="c-w"> <!-- 1H PERCENT 3 -->
+          <div class="text-center">
+            {{if !match_end && !match_1h_end}}
+            <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+              <fieldset>
+                <input type="hidden" name="match_id" value="{{:match_id}}" />
+                <input type="hidden" name="match_add" value="{{:match_add}}" />
+                <input type="text" name="1h_percent_3" value="{{:_1h_percent_3}}" autocomplete="off" />
+                <input type="submit" name="submit" />
+              </fieldset>
+            </form>
+            {{/if}}
+          </div>
+        </td>
+
+        <td class="c-g"> <!-- ODD -->
+          <div class="text-center">
+            {{if !match_end && !match_1h_end}}
+            <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+              <fieldset>
+                <input type="hidden" name="match_id" value="{{:match_id}}" />
+                <input type="hidden" name="match_add" value="{{:match_add}}" />
+                <input type="text" name="1h_odd" value="{{:_1h_odd}}" class="{{if _1h_odd < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                <input type="submit" name="submit" />
+              </fieldset>
+            </form>
+            {{/if}}
+          </div>
+        </td>
+
+        <td class="c-g"> <!-- EVEN -->
+          <div class="text-center">
+            {{if !match_end && !match_1h_end}}
+            <form action="process/updateValue.php" method="post" class="formUpdateVal sp_cell m-{{:match_id}} l-{{:league_id}}" data-onsuccess="resetSpCellInput" data-onfail="toastSaveError" " data-loader="off">
+              <fieldset>
+                <input type="hidden" name="match_id" value="{{:match_id}}" />
+                <input type="hidden" name="match_add" value="{{:match_add}}" />
+                <input type="text" name="1h_even" value="{{:_1h_even}}" class="{{if _1h_even < 0.00}} txt-red {{/if}}" autocomplete="off" />
+                <input type="submit" name="submit" />
+              </fieldset>
+            </form>
+            {{/if}}
+          </div>
+        </td>
+
+        <td class="c-org">
+          <div class="text-center">
+            <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', '1h', 5)">{{:_1h_bet_5}}</a>
+            <span>-</span>
+            <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'bet', '1h', 6)">{{:_1h_bet_6}}</a>
+          </div>
+        </td>
+        <td class="c-w">
+          <div class="text-center">
+            <a href="javascript:showBetSummary({{:match_id}}, {{:match_add}}, 'total', '1h', 4)" class="{{if _1h_bet_total_4 < 0.00}}txt-red{{/if}}">{{:_1h_bet_total_4}}</a></span>
+          </div>
+        </td>
+        {{/if}}
+      </tr>
+
+      <!-- /////////////////////// END MATCH ROW /////////////////////// -->
+      </tbody>
+    </table>
+  </td>
+</tr>
+</script>

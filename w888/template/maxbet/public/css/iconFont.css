@@ -1,0 +1,86 @@
+/*icon-font*/
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?t3ir9e');
+    src: url('fonts/icomoon.eot?t3ir9e#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?t3ir9e') format('truetype'), url('fonts/icomoon.woff?t3ir9e') format('woff'), url('fonts/icomoon.svg?t3ir9e#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow_fixed_up:before {
+    content: "\e907";
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.icon-arrow_fixed:before {
+    content: "\e904";
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.icon-one_col:before {
+    content: "\e905";
+}
+
+.icon-two_col:before {
+    content: "\e906";
+}
+
+/*ariel-add 180314*/
+.icon-thumbtack:before {
+  content: "\e908";
+}
+/*.icon-liveScoreIcon:before {
+  content: "\e909";
+}*/
+.icon-grayBadminton:before {
+  content: "\e90a";
+}
+.icon-grayBasketball:before {
+  content: "\e90b";
+}
+.icon-grayMore:before {
+  content: "\e90c";
+}
+.icon-graySoccer:before {
+  content: "\e90d";
+}
+.icon-grayTennis:before {
+  content: "\e90e";
+}
+.icon-grayWhatsHot:before {
+  content: "\e903";
+}
+.icon-collapse:before {
+  content: "\e900";
+}
+.icon-unfold:before {
+  content: "\e902";
+}
+.icon-serve:before {
+  content: "\e901";
+}
+.icon-tick3:before {
+  content: "\e938";
+}
+
+/*ariel-add 180314*/
+/*icon-font*/

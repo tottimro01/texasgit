@@ -1,0 +1,69 @@
+text{
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:11px;
+    pointer-events:none;
+}
+#chart{
+    /*position:absolute;*/
+    margin: 0 auto;
+    width:450px;
+    height:450px;
+    top:0;
+    left:0;
+}
+
+#spin_win{
+    background-image: url(img/spin_bg_win.gif);
+}
+#spin_lose{
+    background-image: url(img/spin_bg_lose.gif);
+}
+.spin_res{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    cursor: pointer;
+}
+.spin_res .t_text{
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 210px;
+    width: 100%;
+    color: #fff;
+    text-shadow: 0 0 4px #4e2800;
+}
+.spin_res#spin_lose .t_text{
+    top: 180px;
+    color: #f00;
+    text-shadow: 0 0 4px #d06b5f;
+}
+.spin_res .t_text .t{
+    font-size: 16px;
+}
+.spin_res .t_text .m{
+    font-size: 40px;
+}
+
+.close-spin-res{
+    position: absolute;
+    top: 295px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.spin_res#spin_lose .close-spin-res{
+    top: 290px;
+}
+.close-spin-res > button{
+    border: 1px solid #979797;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}

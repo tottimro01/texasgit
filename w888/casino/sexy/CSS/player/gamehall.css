@@ -1,0 +1,1678 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-collapse: collapse; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000; }
+body.one_type1 article {
+  background: #000;
+  position: relative; }
+body.three_type article {
+  background: linear-gradient(-180deg, #204548 0%, #040F0C 80%);
+  position: relative; }
+body.mobile {
+  background: #0C3723; }
+body.mobile_gamehall article {
+  overflow: inherit; }
+
+article {
+  /*width: 1440px;
+  height: 854px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;*/ }
+
+a {
+  text-decoration: none;
+  outline: none;
+  hlbr: expression(this.onFocus=this.blur()); }
+
+li {
+  list-style: none; }
+
+.clearfix:after, .info dl:after, .trans_history .seach_day:after, .table_box .table_con dl dd .limit_list:after, .set_box .set_chips_half ul:after, .history .road_set:after, .game_guide .good_road_list:after, .table_all:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.clearfix, .info dl, .trans_history .seach_day, .table_box .table_con dl dd .limit_list, .set_box .set_chips_half ul, .history .road_set, .game_guide .good_road_list, .table_all {
+  zoom: 1; }
+
+.clear, .table_all h2 {
+  clear: both; }
+
+.float-L, .tool_btn, .limit_view, .history .small_road, .history .cockroch_road, .trans_history table, .game_guide .good_road_list dl, .table_box, .table_box .table_con .road_play span, .table_box .table_con .road_play p, .set_box .set_limit dl {
+  float: left; }
+
+.float-R, .trans_history .scroll_bar, .trans_history tbody .bet p, .trans_history .video a, .aside_box .game_box li a span {
+  float: right; }
+
+.align-L, .trans_history tbody .bet, .game_guide .con table.road_table, .table_all h2, .table_box .table_con dl dt {
+  text-align: left; }
+
+.align-R {
+  text-align: right; }
+
+.align-C, .maintenance p, .one_table_chips ul .money, .many_one_table_chips ul .money, .one_table_chips ul.add .old_money, .many_one_table_chips ul.add .old_money, .history .change_mode li p, .history .bead_road .banker, .history .bead_road .player, .history .bead_road .tie, .history .bead_road .big_road .tie_top, .history .big_road .bead_road .tie_top, .history .bead_road .big_road .tie_down, .history .big_road .bead_road .tie_down, .history .big_road p, .history .bigeye_road .banker, .history .small_road .banker, .history .bigeye_road .player, .history .small_road .player, .info ul li, .info dl dd, .trans_history thead td, .trans_history tbody td, .game_guide .con table, .top_message, .btn_con, .btn_con input, .error_message {
+  text-align: center; }
+
+.scroll_bar span, .one_table_chips ul .check_btn, .many_one_table_chips ul .check_btn, .one_table_chips ul li, .many_one_table_chips ul li, .one_table_chips ul div, .many_one_table_chips ul div, .desk_sound_on, .desk_sound_off, .desk_refresh, .change_line, .history .road_basic .pair_banker, .history .bead_road .pair_banker, .history .big_road .pair_banker, .history .bigeye_road .pair_banker, .history .small_road .pair_banker, .history .cockroch_road .pair_banker, .history .road_basic .pair_player, .history .bead_road .pair_player, .history .big_road .pair_player, .history .bigeye_road .pair_player, .history .small_road .pair_player, .history .cockroch_road .pair_player, .history .big_road .banker, .history .big_road .player, .history .big_road .tie, .history .big_road .tie_top, .history .big_road .tie_down, .history .bigeye_road .banker, .history .small_road .banker, .history .bigeye_road .bead_road .tie, .history .bead_road .bigeye_road .tie, .history .small_road .bead_road .tie, .history .bead_road .small_road .tie, .history .bigeye_road .player, .history .small_road .player, .history .cockroch_road .banker, .history .cockroch_road .bead_road .tie, .history .bead_road .cockroch_road .tie, .history .cockroch_road .player, .history .go_left, .history .go_right, .trans_history .close, .trans_history tbody a, .trans_history tbody .bet p, .trans_history .video a, .game_guide .close, .table_box .table_con dl dd .limit_list li.close {
+  font-size: 0;
+  text-indent: -99999px; }
+
+/*--Hide Long Word Set--*/
+/*--Pop Up Shadow Set--*/
+.one_table_chips ul .check_btn, .many_one_table_chips ul .check_btn {
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4); }
+
+article, .one_table_chips ul .money, .many_one_table_chips ul .money, .one_table_chips ul.add .old_money, .many_one_table_chips ul.add .old_money, .trans_history .video {
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7); }
+
+/*--Horizontal List--*/
+.info dl, .trans_history .seach_day, .table_box .table_con dl dd .limit_list, .set_box .set_chips_half ul {
+  display: block; }
+.info dl li, .trans_history .seach_day li, .table_box .table_con dl dd .limit_list li, .set_box .set_chips_half ul li, .info dl dt, .trans_history .seach_day dt, .table_box .table_con dl dd .limit_list dt, .set_box .set_chips_half ul dt, .info dl dd, .trans_history .seach_day dd, .table_box .table_con dl dd .limit_list dd, .set_box .set_chips_half ul dd {
+  display: block;
+  float: left; }
+
+/*--flex 全置中--*/
+/*--end--*/
+/*--上下左右置中--*/
+.sicbo .history .dot-1 p, .sicbo .history .dot-2 p, .sicbo .history .dot-3 p, .sicbo .history .dot-4 p, .sicbo .history .dot-5 p, .sicbo .history .dot-6 p, .sicbo .history .dot-chicken p, .sicbo .history .dot-crab p, .sicbo .history .dot-deer p, .sicbo .history .dot-fish p, .sicbo .history .dot-gourd p, .sicbo .history .dot-prawn p {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%); }
+
+/*--上下置中--*/
+/*--end--*/
+/*--左右置中--*/
+/*--end--*/
+@keyframes twinkling {
+  0% {
+    opacity: 0.7; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.7; } }
+.history .bead_road .banker.ask .animated2, .history .bead_road .ask.player .animated2, .history .bead_road .ask.tie .animated2, .history .bead_road .big_road .ask.tie_top .animated2, .history .big_road .bead_road .ask.tie_top .animated2, .history .bead_road .big_road .ask.tie_down .animated2, .history .big_road .bead_road .ask.tie_down .animated2, .history .big_road .banker.ask .animated2, .history .big_road .ask.player .animated2, .history .bigeye_road .banker.ask .animated2, .history .small_road .banker.ask .animated2, .history .bigeye_road .ask.player .animated2, .history .small_road .ask.player .animated2, .history .cockroch_road .banker.ask .animated2, .history .cockroch_road .ask.player .animated2 {
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+@keyframes twinkling2 {
+  0% {
+    opacity: 0.2; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
+.scroll_bar {
+  width: 10px;
+  height: 845px;
+  padding: 2px;
+  background: #000;
+  position: relative; }
+.scroll_bar span {
+  display: block;
+  height: 105px;
+  background-image: linear-gradient(-180deg, #E6E6E6 0%, #C3C3C3 100%); }
+
+.set_box .set_chips_half ul li.select .chips_All {
+  background-image: url(../../images/player/chips/chipsAll.svg); }
+.set_box .set_chips_half ul li.select .chips_1 {
+  background-image: url(../../images/player/chips/chips1.svg); }
+.set_box .set_chips_half ul li.select .chips_2 {
+  background-image: url(../../images/player/chips/chips2.svg); }
+.set_box .set_chips_half ul li.select .chips_5 {
+  background-image: url(../../images/player/chips/chips5.svg); }
+.set_box .set_chips_half ul li.select .chips_10 {
+  background-image: url(../../images/player/chips/chips10.svg); }
+.set_box .set_chips_half ul li.select .chips_20 {
+  background-image: url(../../images/player/chips/chips20.svg); }
+.set_box .set_chips_half ul li.select .chips_50 {
+  background-image: url(../../images/player/chips/chips50.svg); }
+.set_box .set_chips_half ul li.select .chips_100 {
+  background-image: url(../../images/player/chips/chips100.svg); }
+.set_box .set_chips_half ul li.select .chips_200 {
+  background-image: url(../../images/player/chips/chips200.svg); }
+.set_box .set_chips_half ul li.select .chips_500 {
+  background-image: url(../../images/player/chips/chips500.svg); }
+.set_box .set_chips_half ul li.select .chips_1k {
+  background-image: url(../../images/player/chips/chips1k.svg); }
+.set_box .set_chips_half ul li.select .chips_2k {
+  background-image: url(../../images/player/chips/chips2k.svg); }
+.set_box .set_chips_half ul li.select .chips_5k {
+  background-image: url(../../images/player/chips/chips5k.svg); }
+.set_box .set_chips_half ul li.select .chips_10k {
+  background-image: url(../../images/player/chips/chips10k.svg); }
+.set_box .set_chips_half ul li.select .chips_20k {
+  background-image: url(../../images/player/chips/chips20k.svg); }
+.set_box .set_chips_half ul li.select .chips_50k {
+  background-image: url(../../images/player/chips/chips50k.svg); }
+.set_box .set_chips_half ul li.select .chips_100k {
+  background-image: url(../../images/player/chips/chips100k.svg); }
+.set_box .set_chips_half ul li.select .chips_200k {
+  background-image: url(../../images/player/chips/chips200k.svg); }
+.set_box .set_chips_half ul li.select .chips_500k {
+  background-image: url(../../images/player/chips/chips500k.svg); }
+.set_box .set_chips_half ul li.select .chips_1m {
+  background-image: url(../../images/player/chips/chips1m.svg); }
+.set_box .set_chips_half ul li.select .chips_2m {
+  background-image: url(../../images/player/chips/chips2m.svg); }
+.set_box .set_chips_half ul li.select .chips_5m {
+  background-image: url(../../images/player/chips/chips5m.svg); }
+.set_box .set_chips_half ul li.select .chips_10m {
+  background-image: url(../../images/player/chips/chips10m.svg); }
+.set_box .set_chips_half ul li.select .chips_20m {
+  background-image: url(../../images/player/chips/chips20m.svg); }
+.set_box .set_chips_half ul li.select .chips_50m {
+  background-image: url(../../images/player/chips/chips50m.svg); }
+.set_box .set_chips_half ul li.select .chips_100m {
+  background-image: url(../../images/player/chips/chips100m.svg); }
+.set_box .set_chips_half ul li.select .chips_200m {
+  background-image: url(../../images/player/chips/chips200m.svg); }
+.set_box .set_chips_half ul li.select .chips_500m {
+  background-image: url(../../images/player/chips/chips500m.svg); }
+.set_box .set_chips_half ul li.select .chips_user {
+  background-image: url(../../images/player/chips/chipsuser.svg); }
+
+/**loading**/
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+@-moz-keyframes loading {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+@-o-keyframes loading {
+  from {
+    -o-transform: rotate(0deg); }
+  to {
+    -o-transform: rotate(360deg); } }
+@keyframes loading {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.loading {
+  border: 1px solid #EFB807;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-radius: 50%;
+  -webkit-animation: loading 1s infinite linear;
+  -moz-animation: loading 1s infinite linear;
+  -o-animation: loading 1s infinite linear;
+  animation: loading 1s infinite linear;
+  background: #191919; }
+
+.abgne-loading {
+  position: relative;
+  height: 85px;
+  width: 85px; }
+
+.loading {
+  height: 100%;
+  width: 100%; }
+
+.loading_text {
+  display: flex;
+  color: #EFB807;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100; }
+
+/**loading end**/
+/**maintenance**/
+.maintenance p {
+  background: url(../../images/player/icon_maintenance.png) center top no-repeat;
+  padding-top: 80px;
+  color: #EFB807;
+  font-size: 25px; }
+
+/**maintenance end**/
+.one_table_chips ul, .many_one_table_chips ul {
+  position: absolute;
+  width: 57px;
+  height: 0px; }
+.one_table_chips ul .money, .many_one_table_chips ul .money {
+  width: 57px;
+  height: 19px;
+  line-height: 18px;
+  background: #FABE00;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  color: #050505;
+  text-indent: 0px;
+  font-size: 15px;
+  margin-bottom: 17px;
+  display: block; }
+.one_table_chips ul .check_btn, .many_one_table_chips ul .check_btn {
+  display: none;
+  width: 50px;
+  height: 25px;
+  margin-bottom: 32px;
+  left: calc(50% - 25px);
+  background: url(../../images/player/icon_ok_01.png) center center no-repeat, linear-gradient(0deg, #CE9500 0%, #FFC300 100%);
+  border: 1px solid #181818;
+  border-radius: 4px;
+  cursor: pointer;
+  pointer-events: inherit; }
+.one_table_chips ul .check_btn:hover, .many_one_table_chips ul .check_btn:hover {
+  background: url(../../images/player/icon_ok_01.png) center center no-repeat, linear-gradient(0deg, #E6A700 0%, #FFEE00 100%); }
+.one_table_chips ul.unconfirmed .check_btn, .many_one_table_chips ul.unconfirmed .check_btn {
+  display: block; }
+.one_table_chips ul.unconfirmed .money, .many_one_table_chips ul.unconfirmed .money {
+  background: #252525;
+  color: #fff; }
+.one_table_chips ul.add .check_btn, .many_one_table_chips ul.add .check_btn {
+  display: block; }
+.one_table_chips ul.add .old_money, .many_one_table_chips ul.add .old_money {
+  background: #252525;
+  color: #fabe00;
+  bottom: 10px;
+  font-size: 12px;
+  height: 17px;
+  line-height: 16px;
+  z-index: 20;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  text-indent: 0px;
+  display: block; }
+.one_table_chips ul.add .add_chips .money, .many_one_table_chips ul.add .add_chips .money {
+  background: #252525;
+  color: #fff; }
+.one_table_chips ul li, .many_one_table_chips ul li {
+  pointer-events: none; }
+.one_table_chips ul li, .many_one_table_chips ul li, .one_table_chips ul div, .many_one_table_chips ul div {
+  width: 57px;
+  height: 55px;
+  position: absolute;
+  background-size: 100% 100%; }
+.one_table_chips ul li:nth-child(1n), .many_one_table_chips ul li:nth-child(1n), .one_table_chips ul div:nth-child(1n), .many_one_table_chips ul div:nth-child(1n) {
+  bottom: 0px;
+  z-index: 1; }
+.one_table_chips ul li:nth-child(2n), .many_one_table_chips ul li:nth-child(2n), .one_table_chips ul div:nth-child(2n), .many_one_table_chips ul div:nth-child(2n) {
+  bottom: 6px;
+  z-index: 2; }
+.one_table_chips ul li:nth-child(3n), .many_one_table_chips ul li:nth-child(3n), .one_table_chips ul div:nth-child(3n), .many_one_table_chips ul div:nth-child(3n) {
+  bottom: 12px;
+  z-index: 3; }
+.one_table_chips ul li:nth-child(4n), .many_one_table_chips ul li:nth-child(4n), .one_table_chips ul div:nth-child(4n), .many_one_table_chips ul div:nth-child(4n) {
+  bottom: 18px;
+  z-index: 4; }
+.one_table_chips ul li:nth-child(5n), .many_one_table_chips ul li:nth-child(5n), .one_table_chips ul div:nth-child(5n), .many_one_table_chips ul div:nth-child(5n) {
+  bottom: 24px;
+  z-index: 5; }
+.one_table_chips ul li:nth-child(6n), .many_one_table_chips ul li:nth-child(6n), .one_table_chips ul div:nth-child(6n), .many_one_table_chips ul div:nth-child(6n) {
+  bottom: 30px;
+  z-index: 6; }
+.one_table_chips ul li:nth-child(7n), .many_one_table_chips ul li:nth-child(7n), .one_table_chips ul div:nth-child(7n), .many_one_table_chips ul div:nth-child(7n) {
+  bottom: 36px;
+  z-index: 7; }
+.one_table_chips ul li:nth-child(8n), .many_one_table_chips ul li:nth-child(8n), .one_table_chips ul div:nth-child(8n), .many_one_table_chips ul div:nth-child(8n) {
+  bottom: 42px;
+  z-index: 8; }
+.one_table_chips ul li:nth-child(9n), .many_one_table_chips ul li:nth-child(9n), .one_table_chips ul div:nth-child(9n), .many_one_table_chips ul div:nth-child(9n) {
+  bottom: 48px;
+  z-index: 9; }
+.one_table_chips ul li:nth-child(10n), .many_one_table_chips ul li:nth-child(10n), .one_table_chips ul div:nth-child(10n), .many_one_table_chips ul div:nth-child(10n) {
+  bottom: 54px;
+  z-index: 10; }
+.one_table_chips ul li:nth-child(11n), .many_one_table_chips ul li:nth-child(11n), .one_table_chips ul div:nth-child(11n), .many_one_table_chips ul div:nth-child(11n) {
+  bottom: 60px;
+  z-index: 11; }
+.one_table_chips ul li:nth-child(12n), .many_one_table_chips ul li:nth-child(12n), .one_table_chips ul div:nth-child(12n), .many_one_table_chips ul div:nth-child(12n) {
+  bottom: 66px;
+  z-index: 12; }
+.one_table_chips ul li:nth-child(13n), .many_one_table_chips ul li:nth-child(13n), .one_table_chips ul div:nth-child(13n), .many_one_table_chips ul div:nth-child(13n) {
+  bottom: 72px;
+  z-index: 13; }
+.one_table_chips ul li:nth-child(14n), .many_one_table_chips ul li:nth-child(14n), .one_table_chips ul div:nth-child(14n), .many_one_table_chips ul div:nth-child(14n) {
+  bottom: 78px;
+  z-index: 14; }
+.one_table_chips ul li:nth-child(15n), .many_one_table_chips ul li:nth-child(15n), .one_table_chips ul div:nth-child(15n), .many_one_table_chips ul div:nth-child(15n) {
+  bottom: 84px;
+  z-index: 15; }
+.one_table_chips ul li:nth-child(16n), .many_one_table_chips ul li:nth-child(16n), .one_table_chips ul div:nth-child(16n), .many_one_table_chips ul div:nth-child(16n) {
+  bottom: 90px;
+  z-index: 16; }
+.one_table_chips ul li:nth-child(17n), .many_one_table_chips ul li:nth-child(17n), .one_table_chips ul div:nth-child(17n), .many_one_table_chips ul div:nth-child(17n) {
+  bottom: 96px;
+  z-index: 17; }
+.one_table_chips ul li:nth-child(18n), .many_one_table_chips ul li:nth-child(18n), .one_table_chips ul div:nth-child(18n), .many_one_table_chips ul div:nth-child(18n) {
+  bottom: 102px;
+  z-index: 18; }
+.one_table_chips ul li:nth-child(19n), .many_one_table_chips ul li:nth-child(19n), .one_table_chips ul div:nth-child(19n), .many_one_table_chips ul div:nth-child(19n) {
+  bottom: 108px;
+  z-index: 19; }
+.one_table_chips ul li:nth-child(20n), .many_one_table_chips ul li:nth-child(20n), .one_table_chips ul div:nth-child(20n), .many_one_table_chips ul div:nth-child(20n) {
+  bottom: 114px;
+  z-index: 20; }
+.one_table_chips ul .chips_All, .many_one_table_chips ul .chips_All {
+  background-image: url(../../images/player/chips_table/chipsAll.svg); }
+.one_table_chips ul .chips_1, .many_one_table_chips ul .chips_1 {
+  background-image: url(../../images/player/chips_table/chips1.svg); }
+.one_table_chips ul .chips_2, .many_one_table_chips ul .chips_2 {
+  background-image: url(../../images/player/chips_table/chips2.svg); }
+.one_table_chips ul .chips_5, .many_one_table_chips ul .chips_5 {
+  background-image: url(../../images/player/chips_table/chips5.svg); }
+.one_table_chips ul .chips_10, .many_one_table_chips ul .chips_10 {
+  background-image: url(../../images/player/chips_table/chips10.svg); }
+.one_table_chips ul .chips_20, .many_one_table_chips ul .chips_20 {
+  background-image: url(../../images/player/chips_table/chips20.svg); }
+.one_table_chips ul .chips_50, .many_one_table_chips ul .chips_50 {
+  background-image: url(../../images/player/chips_table/chips50.svg); }
+.one_table_chips ul .chips_100, .many_one_table_chips ul .chips_100 {
+  background-image: url(../../images/player/chips_table/chips100.svg); }
+.one_table_chips ul .chips_200, .many_one_table_chips ul .chips_200 {
+  background-image: url(../../images/player/chips_table/chips200.svg); }
+.one_table_chips ul .chips_500, .many_one_table_chips ul .chips_500 {
+  background-image: url(../../images/player/chips_table/chips500.svg); }
+.one_table_chips ul .chips_1k, .many_one_table_chips ul .chips_1k {
+  background-image: url(../../images/player/chips_table/chips1k.svg); }
+.one_table_chips ul .chips_2k, .many_one_table_chips ul .chips_2k {
+  background-image: url(../../images/player/chips_table/chips2k.svg); }
+.one_table_chips ul .chips_5k, .many_one_table_chips ul .chips_5k {
+  background-image: url(../../images/player/chips_table/chips5k.svg); }
+.one_table_chips ul .chips_10k, .many_one_table_chips ul .chips_10k {
+  background-image: url(../../images/player/chips_table/chips10k.svg); }
+.one_table_chips ul .chips_20k, .many_one_table_chips ul .chips_20k {
+  background-image: url(../../images/player/chips_table/chips20k.svg); }
+.one_table_chips ul .chips_50k, .many_one_table_chips ul .chips_50k {
+  background-image: url(../../images/player/chips_table/chips50k.svg); }
+.one_table_chips ul .chips_100k, .many_one_table_chips ul .chips_100k {
+  background-image: url(../../images/player/chips_table/chips100k.svg); }
+.one_table_chips ul .chips_200k, .many_one_table_chips ul .chips_200k {
+  background-image: url(../../images/player/chips_table/chips200k.svg); }
+.one_table_chips ul .chips_500k, .many_one_table_chips ul .chips_500k {
+  background-image: url(../../images/player/chips_table/chips500k.svg); }
+.one_table_chips ul .chips_1m, .many_one_table_chips ul .chips_1m {
+  background-image: url(../../images/player/chips_table/chips1m.svg); }
+.one_table_chips ul .chips_2m, .many_one_table_chips ul .chips_2m {
+  background-image: url(../../images/player/chips_table/chips2m.svg); }
+.one_table_chips ul .chips_5m, .many_one_table_chips ul .chips_5m {
+  background-image: url(../../images/player/chips_table/chips5m.svg); }
+.one_table_chips ul .chips_10m, .many_one_table_chips ul .chips_10m {
+  background-image: url(../../images/player/chips_table/chips10m.svg); }
+.one_table_chips ul .chips_20m, .many_one_table_chips ul .chips_20m {
+  background-image: url(../../images/player/chips_table/chips20m.svg); }
+.one_table_chips ul .chips_50m, .many_one_table_chips ul .chips_50m {
+  background-image: url(../../images/player/chips_table/chips50m.svg); }
+.one_table_chips ul .chips_100m, .many_one_table_chips ul .chips_100m {
+  background-image: url(../../images/player/chips_table/chips100m.svg); }
+.one_table_chips ul .chips_200m, .many_one_table_chips ul .chips_200m {
+  background-image: url(../../images/player/chips_table/chips200m.svg); }
+.one_table_chips ul .chips_500m, .many_one_table_chips ul .chips_500m {
+  background-image: url(../../images/player/chips_table/chips500m.svg); }
+.one_table_chips ul .chips_user, .many_one_table_chips ul .chips_user {
+  background-image: url(../../images/player/chips_table/chipsuser.svg); }
+
+.many_one_table_chips ul li, .many_one_table_chips ul div {
+  width: 40px;
+  height: 36px; }
+.many_one_table_chips ul li:nth-child(1n), .many_one_table_chips ul div:nth-child(1n) {
+  bottom: 0px; }
+.many_one_table_chips ul li:nth-child(2n), .many_one_table_chips ul div:nth-child(2n) {
+  bottom: 5px; }
+.many_one_table_chips ul li:nth-child(3n), .many_one_table_chips ul div:nth-child(3n) {
+  bottom: 10px; }
+.many_one_table_chips ul li:nth-child(4n), .many_one_table_chips ul div:nth-child(4n) {
+  bottom: 15px; }
+.many_one_table_chips ul li:nth-child(5n), .many_one_table_chips ul div:nth-child(5n) {
+  bottom: 20px; }
+.many_one_table_chips ul li:nth-child(6n), .many_one_table_chips ul div:nth-child(6n) {
+  bottom: 25px; }
+.many_one_table_chips ul li:nth-child(7n), .many_one_table_chips ul div:nth-child(7n) {
+  bottom: 30px; }
+.many_one_table_chips ul li:nth-child(8n), .many_one_table_chips ul div:nth-child(8n) {
+  bottom: 35px; }
+.many_one_table_chips ul li:nth-child(9n), .many_one_table_chips ul div:nth-child(9n) {
+  bottom: 40px; }
+.many_one_table_chips ul li:nth-child(10n), .many_one_table_chips ul div:nth-child(10n) {
+  bottom: 45px; }
+.many_one_table_chips ul li:nth-child(11n), .many_one_table_chips ul div:nth-child(11n) {
+  bottom: 50px; }
+.many_one_table_chips ul li:nth-child(12n), .many_one_table_chips ul div:nth-child(12n) {
+  bottom: 55px; }
+.many_one_table_chips ul li:nth-child(13n), .many_one_table_chips ul div:nth-child(13n) {
+  bottom: 60px; }
+.many_one_table_chips ul li:nth-child(14n), .many_one_table_chips ul div:nth-child(14n) {
+  bottom: 65px; }
+.many_one_table_chips ul li:nth-child(15n), .many_one_table_chips ul div:nth-child(15n) {
+  bottom: 70px; }
+.many_one_table_chips ul li:nth-child(16n), .many_one_table_chips ul div:nth-child(16n) {
+  bottom: 75px; }
+.many_one_table_chips ul li:nth-child(17n), .many_one_table_chips ul div:nth-child(17n) {
+  bottom: 80px; }
+.many_one_table_chips ul li:nth-child(18n), .many_one_table_chips ul div:nth-child(18n) {
+  bottom: 85px; }
+.many_one_table_chips ul li:nth-child(19n), .many_one_table_chips ul div:nth-child(19n) {
+  bottom: 90px; }
+.many_one_table_chips ul li:nth-child(20n), .many_one_table_chips ul div:nth-child(20n) {
+  bottom: 95px; }
+.many_one_table_chips ul .money {
+  width: 45px;
+  font-size: 13px;
+  margin-bottom: 9px;
+  left: calc(100% - 60px); }
+.many_one_table_chips ul .check_btn {
+  width: 40px;
+  margin-bottom: 24px;
+  left: calc(50% - 29px); }
+.many_one_table_chips ul.add .check_btn {
+  left: calc(50% - 19px); }
+.many_one_table_chips ul.add .add_chips .money {
+  left: calc(100% - 43px); }
+
+.tool_btn {
+  width: 46px;
+  margin-right: 5px;
+  padding-top: 12px; }
+
+.desk_sound_on, .desk_sound_off, .desk_refresh, .change_line {
+  display: block;
+  width: 46px;
+  height: 27px;
+  border-radius: 2px;
+  border: 1px solid #A6CF93;
+  background: url(../../images/player/icon_sound_on.png) center center no-repeat, linear-gradient(0deg, #0D241A 0%, #315344 99%);
+  margin-bottom: 3px; }
+.desk_sound_on:hover, .desk_sound_off:hover, .desk_refresh:hover, .change_line:hover {
+  border: 1px #dfd394 solid; }
+
+.desk_sound_off {
+  background: url(../../images/player/icon_sound_off.png) center center no-repeat, linear-gradient(0deg, #0D241A 0%, #315344 99%); }
+
+.desk_refresh {
+  background: url(../../images/player/icon_refresh.png) center center no-repeat, linear-gradient(0deg, #0D241A 0%, #315344 99%); }
+
+.change_line {
+  background: url(../../images/player/icon_signal.png) 5px center no-repeat, linear-gradient(0deg, #0D241A 0%, #315344 99%);
+  text-indent: 0px;
+  font-size: 18px;
+  color: #B5DBA4;
+  line-height: 25px;
+  padding-left: 27px; }
+
+.limit_view {
+  display: block;
+  height: 31px;
+  line-height: 30px;
+  border-radius: 2px;
+  border: 1px solid #A6CF93;
+  font-size: 15px;
+  color: #B5DBA4;
+  margin: 23px 5px 0 0;
+  padding: 0 10px 0 25px;
+  background: url(../../images/player/icon_limit.png) 5px center no-repeat, linear-gradient(0deg, #0D241A 0%, #315344 99%); }
+.limit_view:hover {
+  border: 1px #dfd394 solid; }
+
+.trans_history, .game_guide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.88);
+  justify-content: center;
+  align-items: center; }
+.trans_history h3, .game_guide h3 {
+  color: #EFB807;
+  font-size: 38px;
+  font-weight: normal; }
+.trans_history h4, .game_guide h4 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #CDCDCD;
+  margin-top: 5px; }
+.trans_history h4 strong, .game_guide h4 strong {
+  color: #fff; }
+
+.history_frame {
+  width: calc(100% - 45px);
+  height: 155px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border: none; }
+
+.history {
+  background: #fff;
+  display: flex;
+  /****bead_road****/
+  /****bead_road end****/
+  /****big_road****/
+  /****big_road end****/
+  /****bigeye_road****/
+  /****bigeye_road end****/
+  /****small_road****/
+  /****small_road end****/
+  /****cockroch_road****/
+  /****cockroch_road end****/ }
+.history .change_mode {
+  flex: 0.172;
+  height: 100%;
+  background: #DBDBDB; }
+.history .change_mode li {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #676767;
+  cursor: pointer; }
+.history .change_mode li.now {
+  background: #293930;
+  box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.5);
+  color: #FFD215; }
+.history .road_all {
+  display: flex;
+  flex: 1; }
+.history .road_con {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+.history table {
+  table-layout: fixed; }
+.history td {
+  width: 25px;
+  height: 25px;
+  border-right: 1px #E6E6E6 solid;
+  border-bottom: 1px #E6E6E6 solid;
+  padding: 1px;
+  position: relative; }
+.history td.good_banker {
+  background: #B80909; }
+.history td.good_banker p {
+  color: #fff; }
+.history td.good_banker .banker, .history td.good_banker .bead_road .player, .history .bead_road td.good_banker .player, .history td.good_banker .bead_road .tie, .history .bead_road td.good_banker .tie, .history td.good_banker .bead_road .big_road .tie_top, .history .bead_road .big_road td.good_banker .tie_top, .history td.good_banker .big_road .bead_road .tie_top, .history .big_road .bead_road td.good_banker .tie_top, .history td.good_banker .bead_road .big_road .tie_down, .history .bead_road .big_road td.good_banker .tie_down, .history td.good_banker .big_road .bead_road .tie_down, .history .big_road .bead_road td.good_banker .tie_down, .history td.good_banker .big_road .player, .history .big_road td.good_banker .player, .history td.good_banker .bigeye_road .player, .history .bigeye_road td.good_banker .player, .history td.good_banker .small_road .player, .history .small_road td.good_banker .player, .history td.good_banker .cockroch_road .player, .history .cockroch_road td.good_banker .player, .history td.good_banker .player {
+  border: 2px #fff solid !important; }
+.history td.good_player {
+  background: #216BB0; }
+.history td.good_player p {
+  color: #fff; }
+.history td.good_player .banker, .history td.good_player .bead_road .player, .history .bead_road td.good_player .player, .history td.good_player .bead_road .tie, .history .bead_road td.good_player .tie, .history td.good_player .bead_road .big_road .tie_top, .history .bead_road .big_road td.good_player .tie_top, .history td.good_player .big_road .bead_road .tie_top, .history .big_road .bead_road td.good_player .tie_top, .history td.good_player .bead_road .big_road .tie_down, .history .bead_road .big_road td.good_player .tie_down, .history td.good_player .big_road .bead_road .tie_down, .history .big_road .bead_road td.good_player .tie_down, .history td.good_player .big_road .player, .history .big_road td.good_player .player, .history td.good_player .bigeye_road .player, .history .bigeye_road td.good_player .player, .history td.good_player .small_road .player, .history .small_road td.good_player .player, .history td.good_player .cockroch_road .player, .history .cockroch_road td.good_player .player, .history td.good_player .player {
+  border: 2px #fff solid !important; }
+.history .road_basic, .history .bead_road, .history .big_road, .history .bigeye_road, .history .small_road, .history .cockroch_road {
+  flex: 1;
+  border-right: 1px #707070 solid;
+  overflow: hidden;
+  position: relative; }
+.history .road_basic:hover .go_left, .history .bead_road:hover .go_left, .history .big_road:hover .go_left, .history .bigeye_road:hover .go_left, .history .small_road:hover .go_left, .history .cockroch_road:hover .go_left, .history .road_basic:hover .go_right, .history .bead_road:hover .go_right, .history .big_road:hover .go_right, .history .bigeye_road:hover .go_right, .history .small_road:hover .go_right, .history .cockroch_road:hover .go_right, .history .road_basic:hover .go_right, .history .bead_road:hover .go_right, .history .big_road:hover .go_right, .history .bigeye_road:hover .go_right, .history .small_road:hover .go_right, .history .cockroch_road:hover .go_right {
+  opacity: 1; }
+.history .road_basic:not(:hover) .go_left, .history .bead_road:not(:hover) .go_left, .history .big_road:not(:hover) .go_left, .history .bigeye_road:not(:hover) .go_left, .history .small_road:not(:hover) .go_left, .history .cockroch_road:not(:hover) .go_left, .history .road_basic:not(:hover) .go_right, .history .bead_road:not(:hover) .go_right, .history .big_road:not(:hover) .go_right, .history .bigeye_road:not(:hover) .go_right, .history .small_road:not(:hover) .go_right, .history .cockroch_road:not(:hover) .go_right, .history .road_basic:not(:hover) .go_right, .history .bead_road:not(:hover) .go_right, .history .big_road:not(:hover) .go_right, .history .bigeye_road:not(:hover) .go_right, .history .small_road:not(:hover) .go_right, .history .cockroch_road:not(:hover) .go_right {
+  opacity: 0; }
+.history .road_basic .road_con, .history .bead_road .road_con, .history .big_road .road_con, .history .bigeye_road .road_con, .history .small_road .road_con, .history .cockroch_road .road_con {
+  width: 4000px; }
+.history .road_basic .pair_banker, .history .bead_road .pair_banker, .history .big_road .pair_banker, .history .bigeye_road .pair_banker, .history .small_road .pair_banker, .history .cockroch_road .pair_banker, .history .road_basic .pair_player, .history .bead_road .pair_player, .history .big_road .pair_player, .history .bigeye_road .pair_player, .history .small_road .pair_player, .history .cockroch_road .pair_player {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  background: #B80909;
+  border-radius: 100px;
+  border: 1px #fff solid;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); }
+.history .road_basic .pair_player, .history .bead_road .pair_player, .history .big_road .pair_player, .history .bigeye_road .pair_player, .history .small_road .pair_player, .history .cockroch_road .pair_player {
+  background: #216BB0;
+  top: inherit;
+  left: inherit;
+  right: 0px;
+  bottom: 0px; }
+.history .bead_road .banker, .history .bead_road .player, .history .bead_road .tie, .history .bead_road .big_road .tie_top, .history .big_road .bead_road .tie_top, .history .bead_road .big_road .tie_down, .history .big_road .bead_road .tie_down {
+  width: 23px;
+  height: 23px;
+  line-height: 23px;
+  background: #B80909;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 17px; }
+.history .bead_road .banker.ask, .history .bead_road .ask.player, .history .bead_road .ask.tie, .history .bead_road .big_road .ask.tie_top, .history .big_road .bead_road .ask.tie_top, .history .bead_road .big_road .ask.tie_down, .history .big_road .bead_road .ask.tie_down {
+  -webkit-animation: twinkling2 1s infinite ease-in-out;
+  -moz-animation: twinkling2 1s infinite ease-in-out;
+  -ms-animation: twinkling2 1s infinite ease-in-out;
+  animation: twinkling2 1s infinite ease-in-out; }
+.history .bead_road .player {
+  background: #216BB0; }
+.history .bead_road .tie, .history .bead_road .big_road .tie_top, .history .big_road .bead_road .tie_top, .history .bead_road .big_road .tie_down, .history .big_road .bead_road .tie_down {
+  background: #80B632; }
+.history .big_road .banker, .history .big_road .bead_road .tie, .history .bead_road .big_road .tie, .history .bead_road .big_road .tie_top, .history .big_road .bead_road .tie_top, .history .bead_road .big_road .tie_down, .history .big_road .bead_road .tie_down, .history .big_road .player {
+  width: 23px;
+  height: 23px;
+  border: 2px #B80909 solid;
+  border-radius: 100px;
+  background: none; }
+.history .big_road .banker.ask, .history .big_road .bead_road .ask.tie, .history .bead_road .big_road .ask.tie, .history .bead_road .big_road .ask.tie_top, .history .big_road .bead_road .ask.tie_top, .history .bead_road .big_road .ask.tie_down, .history .big_road .bead_road .ask.tie_down, .history .big_road .ask.player {
+  -webkit-animation: twinkling2 1s infinite ease-in-out;
+  -moz-animation: twinkling2 1s infinite ease-in-out;
+  -ms-animation: twinkling2 1s infinite ease-in-out;
+  animation: twinkling2 1s infinite ease-in-out; }
+.history .big_road .player {
+  border: 2px #216BB0 solid; }
+.history .big_road .tie, .history .big_road .tie_top, .history .big_road .tie_down {
+  width: 100%;
+  height: 4px;
+  background: #80B632;
+  border: 1px #fff solid;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: calc(100% - 15px);
+  left: 0px;
+  z-index: 8;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4); }
+.history .big_road .tie_top, .history .big_road .tie_down {
+  width: 73%;
+  top: 5px;
+  left: -2px; }
+.history .big_road .tie_down {
+  top: inherit;
+  left: inherit;
+  bottom: 5px;
+  right: -2px; }
+.history .big_road p {
+  width: 100%;
+  height: 100%;
+  line-height: 25px;
+  color: #538c02;
+  font-size: 13px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 15; }
+.history .road_set {
+  flex: 0.93;
+  border-right: 1px #707070 solid; }
+.history .bigeye_road, .history .small_road {
+  width: 100%;
+  height: 78px;
+  border-right: none;
+  border-bottom: 1px #707070 solid; }
+.history .bigeye_road .road_con, .history .small_road .road_con {
+  width: 1820px; }
+.history .bigeye_road td, .history .small_road td {
+  width: 12px;
+  height: 12px; }
+.history .bigeye_road .banker, .history .small_road .banker, .history .bigeye_road .bead_road .tie, .history .bead_road .bigeye_road .tie, .history .small_road .bead_road .tie, .history .bead_road .small_road .tie, .history .bigeye_road .bead_road .big_road .tie_top, .history .bead_road .big_road .bigeye_road .tie_top, .history .small_road .bead_road .big_road .tie_top, .history .bead_road .big_road .small_road .tie_top, .history .bigeye_road .big_road .bead_road .tie_top, .history .big_road .bead_road .bigeye_road .tie_top, .history .small_road .big_road .bead_road .tie_top, .history .big_road .bead_road .small_road .tie_top, .history .bigeye_road .bead_road .big_road .tie_down, .history .bead_road .big_road .bigeye_road .tie_down, .history .small_road .bead_road .big_road .tie_down, .history .bead_road .big_road .small_road .tie_down, .history .bigeye_road .big_road .bead_road .tie_down, .history .big_road .bead_road .bigeye_road .tie_down, .history .small_road .big_road .bead_road .tie_down, .history .big_road .bead_road .small_road .tie_down, .history .bigeye_road .player, .history .small_road .player {
+  width: 10px;
+  height: 10px;
+  background: #B80909;
+  border-radius: 100px; }
+.history .bigeye_road .banker.ask, .history .small_road .banker.ask, .history .bigeye_road .bead_road .ask.tie, .history .bead_road .bigeye_road .ask.tie, .history .small_road .bead_road .ask.tie, .history .bead_road .small_road .ask.tie, .history .bigeye_road .bead_road .big_road .ask.tie_top, .history .bead_road .big_road .bigeye_road .ask.tie_top, .history .small_road .bead_road .big_road .ask.tie_top, .history .bead_road .big_road .small_road .ask.tie_top, .history .bigeye_road .big_road .bead_road .ask.tie_top, .history .big_road .bead_road .bigeye_road .ask.tie_top, .history .small_road .big_road .bead_road .ask.tie_top, .history .big_road .bead_road .small_road .ask.tie_top, .history .bigeye_road .bead_road .big_road .ask.tie_down, .history .bead_road .big_road .bigeye_road .ask.tie_down, .history .small_road .bead_road .big_road .ask.tie_down, .history .bead_road .big_road .small_road .ask.tie_down, .history .bigeye_road .big_road .bead_road .ask.tie_down, .history .big_road .bead_road .bigeye_road .ask.tie_down, .history .small_road .big_road .bead_road .ask.tie_down, .history .big_road .bead_road .small_road .ask.tie_down, .history .bigeye_road .ask.player, .history .small_road .ask.player {
+  -webkit-animation: twinkling2 1s infinite ease-in-out;
+  -moz-animation: twinkling2 1s infinite ease-in-out;
+  -ms-animation: twinkling2 1s infinite ease-in-out;
+  animation: twinkling2 1s infinite ease-in-out; }
+.history .bigeye_road .player, .history .small_road .player {
+  background: #216BB0; }
+.history .small_road {
+  width: 50%;
+  height: 77px;
+  border-right: 1px #707070 solid;
+  border-bottom: none; }
+.history .small_road .banker, .history .small_road .bead_road .tie, .history .bead_road .small_road .tie, .history .small_road .bead_road .big_road .tie_top, .history .bead_road .big_road .small_road .tie_top, .history .small_road .big_road .bead_road .tie_top, .history .big_road .bead_road .small_road .tie_top, .history .small_road .bead_road .big_road .tie_down, .history .bead_road .big_road .small_road .tie_down, .history .small_road .big_road .bead_road .tie_down, .history .big_road .bead_road .small_road .tie_down, .history .small_road .player {
+  width: 10px;
+  height: 10px;
+  border: 2px #B80909 solid;
+  border-radius: 100px;
+  background: none; }
+.history .small_road .banker.ask, .history .small_road .bead_road .ask.tie, .history .bead_road .small_road .ask.tie, .history .small_road .bead_road .big_road .ask.tie_top, .history .bead_road .big_road .small_road .ask.tie_top, .history .small_road .big_road .bead_road .ask.tie_top, .history .big_road .bead_road .small_road .ask.tie_top, .history .small_road .bead_road .big_road .ask.tie_down, .history .bead_road .big_road .small_road .ask.tie_down, .history .small_road .big_road .bead_road .ask.tie_down, .history .big_road .bead_road .small_road .ask.tie_down, .history .small_road .ask.player {
+  -webkit-animation: twinkling2 1s infinite ease-in-out;
+  -moz-animation: twinkling2 1s infinite ease-in-out;
+  -ms-animation: twinkling2 1s infinite ease-in-out;
+  animation: twinkling2 1s infinite ease-in-out; }
+.history .small_road .player {
+  border: 2px #216BB0 solid; }
+.history .cockroch_road {
+  width: 50%;
+  height: 77px;
+  border-bottom: none;
+  border-right: none; }
+.history .cockroch_road .road_con {
+  width: 1820px; }
+.history .cockroch_road td {
+  width: 12px;
+  height: 12px; }
+.history .cockroch_road .banker, .history .cockroch_road .bead_road .tie, .history .bead_road .cockroch_road .tie, .history .cockroch_road .bead_road .big_road .tie_top, .history .bead_road .big_road .cockroch_road .tie_top, .history .cockroch_road .big_road .bead_road .tie_top, .history .big_road .bead_road .cockroch_road .tie_top, .history .cockroch_road .bead_road .big_road .tie_down, .history .bead_road .big_road .cockroch_road .tie_down, .history .cockroch_road .big_road .bead_road .tie_down, .history .big_road .bead_road .cockroch_road .tie_down, .history .cockroch_road .player {
+  width: 100%;
+  height: 2px;
+  background: #B80909;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: calc(100% - 7px);
+  left: 0px;
+  z-index: 8; }
+.history .cockroch_road .banker.ask, .history .cockroch_road .bead_road .ask.tie, .history .bead_road .cockroch_road .ask.tie, .history .cockroch_road .bead_road .big_road .ask.tie_top, .history .bead_road .big_road .cockroch_road .ask.tie_top, .history .cockroch_road .big_road .bead_road .ask.tie_top, .history .big_road .bead_road .cockroch_road .ask.tie_top, .history .cockroch_road .bead_road .big_road .ask.tie_down, .history .bead_road .big_road .cockroch_road .ask.tie_down, .history .cockroch_road .big_road .bead_road .ask.tie_down, .history .big_road .bead_road .cockroch_road .ask.tie_down, .history .cockroch_road .ask.player {
+  -webkit-animation: twinkling2 1s infinite ease-in-out;
+  -moz-animation: twinkling2 1s infinite ease-in-out;
+  -ms-animation: twinkling2 1s infinite ease-in-out;
+  animation: twinkling2 1s infinite ease-in-out; }
+.history .cockroch_road .player {
+  background: #216BB0; }
+.history .go_left, .history .go_right {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: calc(50% - 17px);
+  left: 5px;
+  z-index: 100;
+  cursor: pointer;
+  background: url(../../images/player/icon_arrow_L.png) center center no-repeat, rgba(255, 255, 255, 0.8);
+  border: 1px solid #fff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  opacity: 0; }
+.history .go_right {
+  left: inherit;
+  right: 5px;
+  background: url(../../images/player/icon_arrow_R.png) center center no-repeat, rgba(255, 255, 255, 0.8); }
+
+/****info****/
+.info {
+  flex: 0.3;
+  padding: 5px;
+  display: flex; }
+.info ul {
+  flex: none;
+  width: 65px;
+  margin-right: 3px; }
+.info ul li {
+  border: 1px solid #BDBDBD;
+  cursor: pointer;
+  font-size: 13px; }
+.info ul li:first-child {
+  margin-bottom: 5px; }
+.info ul .ask_banker {
+  color: #B80909; }
+.info ul .ask_banker:hover, .info ul .ask_banker.select {
+  border: 1px #B80909 solid; }
+.info ul .ask_player {
+  color: #216BB0; }
+.info ul .ask_player:hover, .info ul .ask_player.select {
+  border: 1px #216BB0 solid; }
+.info dl {
+  flex: auto;
+  font-size: 15px;
+  color: #4B4B4B;
+  border-right: 1px #E5E5E5 solid;
+  padding: 5px 0; }
+.info dl:last-child {
+  border: none; }
+.info dl dt {
+  width: 70%;
+  height: 33px;
+  padding: 6px 0 0 10px; }
+.info dl dd {
+  width: 30%;
+  height: 33px;
+  padding-top: 6px; }
+.info dl .banker, .info dl .history .bead_road .player, .history .bead_road .info dl .player, .info dl .history .bead_road .tie, .history .bead_road .info dl .tie, .info dl .history .bead_road .big_road .tie_top, .history .bead_road .big_road .info dl .tie_top, .info dl .history .big_road .bead_road .tie_top, .history .big_road .bead_road .info dl .tie_top, .info dl .history .bead_road .big_road .tie_down, .history .bead_road .big_road .info dl .tie_down, .info dl .history .big_road .bead_road .tie_down, .history .big_road .bead_road .info dl .tie_down, .info dl .history .big_road .player, .history .big_road .info dl .player, .info dl .history .bigeye_road .player, .history .bigeye_road .info dl .player, .info dl .history .small_road .player, .history .small_road .info dl .player, .info dl .history .cockroch_road .player, .history .cockroch_road .info dl .player {
+  color: #B80909; }
+.info dl .player {
+  color: #216BB0; }
+.info dl .tie, .info dl .history .big_road .tie_top, .history .big_road .info dl .tie_top, .info dl .history .big_road .tie_down, .history .big_road .info dl .tie_down {
+  color: #80B632; }
+.info dl .other {
+  color: #9D926E; }
+
+/****info end****/
+.ins_mode.history .big_road, .ins_mode .history .big_road {
+  background: url(../../images/player/icon_ins_bg.svg) center center/auto 80% no-repeat #fff !important; }
+
+.trans_history h3 {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px #333 solid; }
+.trans_history .con {
+  width: 1250px;
+  height: 720px;
+  position: relative;
+  border-bottom: 1px #2b2b2b solid;
+  overflow: hidden; }
+.trans_history .close {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background: url(../../images/player/icon_close.png) center center no-repeat; }
+.trans_history .seach_day {
+  color: #ccc;
+  font-size: 13px;
+  margin-bottom: 10px; }
+.trans_history .seach_day li {
+  margin-right: 10px; }
+.trans_history .seach_day input {
+  width: 100px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px #909090 solid;
+  height: 30px;
+  padding: 0 8px; }
+.trans_history .seach_day input:hover {
+  border: 1px #CE9500 solid; }
+.trans_history .seach_day .btn, .trans_history .seach_day .quick_btn {
+  color: #000;
+  font-size: 14px;
+  background: linear-gradient(0deg, #CE9500 0%, #FFC300 100%);
+  border: 1px #000 solid; }
+.trans_history .seach_day .quick_btn {
+  color: #333;
+  background: linear-gradient(-180deg, #FFFFFF 0%, #E1E1E1 100%); }
+.trans_history table {
+  width: calc(100% - 12px);
+  font-size: 13px; }
+.trans_history table td {
+  padding: 8px 10px; }
+.trans_history thead td {
+  color: #222;
+  background: #9e957d; }
+.trans_history tbody td {
+  color: #eee;
+  border-bottom: 1px #3a3a3a solid; }
+.trans_history tbody a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../../images/player/icon_play.png) center center no-repeat;
+  margin: 0 auto; }
+.trans_history tbody a:hover {
+  background-image: url(../../images/player/icon_play_hover.png); }
+.trans_history tbody .banker, .trans_history tbody .history .bead_road .player, .history .bead_road .trans_history tbody .player, .trans_history tbody .history .bead_road .tie, .history .bead_road .trans_history tbody .tie, .trans_history tbody .history .bead_road .big_road .tie_top, .history .bead_road .big_road .trans_history tbody .tie_top, .trans_history tbody .history .big_road .bead_road .tie_top, .history .big_road .bead_road .trans_history tbody .tie_top, .trans_history tbody .history .bead_road .big_road .tie_down, .history .bead_road .big_road .trans_history tbody .tie_down, .trans_history tbody .history .big_road .bead_road .tie_down, .history .big_road .bead_road .trans_history tbody .tie_down, .trans_history tbody .history .big_road .player, .history .big_road .trans_history tbody .player, .trans_history tbody .history .bigeye_road .player, .history .bigeye_road .trans_history tbody .player, .trans_history tbody .history .small_road .player, .history .small_road .trans_history tbody .player, .trans_history tbody .history .cockroch_road .player, .history .cockroch_road .trans_history tbody .player {
+  color: #F10C0C; }
+.trans_history tbody .player {
+  color: #4694DE; }
+.trans_history tbody .tie, .trans_history tbody .history .big_road .tie_top, .history .big_road .trans_history tbody .tie_top, .trans_history tbody .history .big_road .tie_down, .history .big_road .trans_history tbody .tie_down {
+  color: #8ECB34; }
+.trans_history tbody .other {
+  color: #B8AB83; }
+.trans_history tbody .negative {
+  color: #F10C0C; }
+.trans_history tbody .bet span {
+  display: inline-block;
+  padding: 3px;
+  border-radius: 2px;
+  background: #ffbc00;
+  color: #000;
+  font-size: 10px;
+  margin-left: 10px; }
+.trans_history tbody .bet p {
+  width: 18px;
+  height: 18px;
+  background: url(../../images/player/icon_more.svg) no-repeat;
+  background-size: 100% 100%;
+  display: block; }
+.trans_history tbody .bet p.now {
+  background: url(../../images/player/icon_more_now.svg) no-repeat;
+  background-size: 100% 100%; }
+.trans_history tbody .del {
+  color: #9a9a9a;
+  background: url(../../images/player/del_bg.png) left center repeat-x; }
+.trans_history tbody .del span {
+  background: #4a4a4a;
+  color: #9e9e9e; }
+.trans_history tbody .layer2 td {
+  background-color: #3c382f;
+  border-bottom: 1px #000 solid;
+  color: #ada89a; }
+.trans_history .video {
+  width: 1000px;
+  background: #131313;
+  position: absolute;
+  z-index: 300; }
+.trans_history .video .video_con {
+  width: 100%;
+  height: 629px;
+  background: #000;
+  clear: both; }
+.trans_history .video a {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 5px 0;
+  background: url(../../images/player/icon_close.png) center center no-repeat; }
+
+.game_guide .close {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background: url(../../images/player/icon_close.png) center center no-repeat; }
+.game_guide .tag {
+  width: 180px;
+  height: 90%;
+  margin-right: 30px;
+  border-right: 1px #333 solid;
+  padding: 0 5px; }
+.game_guide .tag li {
+  color: #dedede;
+  border-bottom: 1px #565656 solid;
+  padding: 15px 10px;
+  font-size: 14px;
+  cursor: pointer; }
+.game_guide .tag li:hover {
+  color: #EFB807; }
+.game_guide .tag li.now {
+  background: #EFB807;
+  color: #000;
+  border-bottom: 1px #000 solid; }
+.game_guide .con {
+  width: 1000px;
+  height: 90%;
+  position: relative; }
+.game_guide .con .con_inside {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 40px);
+  padding-right: 30px;
+  overflow: hidden; }
+.game_guide .con .scroll_bar {
+  position: absolute;
+  right: 0px; }
+.game_guide .con h2 {
+  height: 40px;
+  line-height: 50px;
+  color: #EFB807;
+  font-size: 25px;
+  font-weight: normal; }
+.game_guide .con h3 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #e0ce9b;
+  margin-bottom: 5px;
+  margin-top: 35px; }
+.game_guide .con h4 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #bfa785;
+  margin-bottom: 5px; }
+.game_guide .con p {
+  font-size: 14px;
+  color: #dcdcdc;
+  line-height: 20px;
+  margin-bottom: 15px; }
+.game_guide .con ol, .game_guide .con ul {
+  padding-left: 20px; }
+.game_guide .con ol li, .game_guide .con ul li {
+  font-size: 14px;
+  color: #dcdcdc;
+  line-height: 20px;
+  margin-bottom: 8px;
+  list-style: decimal; }
+.game_guide .con ul {
+  padding-left: 0px;
+  margin-bottom: 15px; }
+.game_guide .con ul li {
+  list-style: none; }
+.game_guide .con img {
+  display: block;
+  margin-bottom: 20px; }
+.game_guide .con table {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #dcdcdc; }
+.game_guide .con table.road_table {
+  margin-top: 20px; }
+.game_guide .con table.road_table th {
+  width: 27px; }
+.game_guide .con table.road_table td {
+  padding: 5px;
+  border-bottom: none; }
+.game_guide .con table.road_table img {
+  margin: 0; }
+.game_guide .con td {
+  padding: 7px 5px; }
+.game_guide .con thead td {
+  background: #000; }
+.game_guide .con tbody td {
+  border-bottom: 1px #424242 solid; }
+.game_guide .con .banker, .game_guide .con .history .bead_road .player, .history .bead_road .game_guide .con .player, .game_guide .con .history .bead_road .tie, .history .bead_road .game_guide .con .tie, .game_guide .con .history .bead_road .big_road .tie_top, .history .bead_road .big_road .game_guide .con .tie_top, .game_guide .con .history .big_road .bead_road .tie_top, .history .big_road .bead_road .game_guide .con .tie_top, .game_guide .con .history .bead_road .big_road .tie_down, .history .bead_road .big_road .game_guide .con .tie_down, .game_guide .con .history .big_road .bead_road .tie_down, .history .big_road .bead_road .game_guide .con .tie_down, .game_guide .con .history .big_road .player, .history .big_road .game_guide .con .player, .game_guide .con .history .bigeye_road .player, .history .bigeye_road .game_guide .con .player, .game_guide .con .history .small_road .player, .history .small_road .game_guide .con .player, .game_guide .con .history .cockroch_road .player, .history .cockroch_road .game_guide .con .player {
+  color: #F10C0C; }
+.game_guide .con .player {
+  color: #4694DE; }
+.game_guide .con .tie, .game_guide .con .history .big_road .tie_top, .history .big_road .game_guide .con .tie_top, .game_guide .con .history .big_road .tie_down, .history .big_road .game_guide .con .tie_down {
+  color: #8ECB34; }
+.game_guide .con .other {
+  color: #B8AB83; }
+.game_guide .good_road_list {
+  margin-top: 20px; }
+.game_guide .good_road_list dl {
+  width: calc(33.33333% - 20px);
+  height: 280px;
+  padding: 10px 10px 10px 0;
+  border-bottom: 1px #636363 solid;
+  margin-right: 20px; }
+.game_guide .good_road_list dl dt {
+  color: #efcc08;
+  font-size: 20px;
+  margin-bottom: 4px; }
+.game_guide .good_road_list dl dd {
+  font-size: 15px;
+  color: #b1b1b1; }
+.game_guide .good_road_list dl img {
+  display: block;
+  margin-top: 20px; }
+
+html {
+  height: 100%; }
+
+body {
+  position: relative; }
+body .table_con .road_frame .history_frame {
+  overflow: hidden; }
+
+.aside_box .id_box dl, .kv_box, .kv_box .kv_banner ul, .table_box, .table_box .table_con dl, .set_box {
+  display: flex;
+  justify-content: space-between; }
+
+.aside_box .id_box h2 {
+  display: flex;
+  justify-content: flex-start; }
+
+.trans_history {
+  position: fixed;
+  top: 46px;
+  left: 0px; }
+
+.aside_box {
+  width: 240px;
+  background: #000; }
+.aside_box .id_box {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #714B0E; }
+.aside_box .id_box h2 {
+  font-size: 18px;
+  line-height: 25px;
+  background-image: linear-gradient(0deg, #F39100 0%, #FFC300 100%);
+  padding: 15px 20px;
+  margin-bottom: 10px; }
+.aside_box .id_box h2 span {
+  display: block;
+  margin-right: 10px; }
+.aside_box .id_box dl {
+  padding: 10px 20px; }
+.aside_box .id_box dl dt {
+  color: #EFB807; }
+.aside_box .id_box dl dd {
+  color: #fff; }
+.aside_box .game_box li {
+  background-image: linear-gradient(-180deg, transparent 0%, rgba(85, 59, 14, 0.31) 100%);
+  border-bottom: 1px solid #714B0E; }
+.aside_box .game_box li a {
+  display: block;
+  color: #BDBDBD;
+  font-size: 17px;
+  line-height: 29px;
+  width: inherit;
+  text-indent: 40px;
+  padding: 18px 10px;
+  background: url(../../images/player/gamehall/ico_poker.png) 15px 20px no-repeat;
+  border-bottom: 1px solid #000; }
+.aside_box .game_box li a span {
+  display: block; }
+.aside_box .game_box li:hover {
+  background-color: #EFB807;
+  transition: all .30s linear; }
+.aside_box .game_box li:hover a {
+  color: #000;
+  transition: all .30s linear;
+  background: url(../../images/player/gamehall/ico_poker_bk.png) 15px 20px no-repeat; }
+.aside_box .game_box .cock a {
+  background: url(../../images/player/gamehall/ico_chicken.png) 15px 20px no-repeat; }
+.aside_box .game_box .cock:hover a {
+  background: url(../../images/player/gamehall/ico_chicken_bk.png) 15px 20px no-repeat; }
+.aside_box .game_box .fish a {
+  background: url(../../images/player/gamehall/ico_fish.png) 10px 20px no-repeat; }
+.aside_box .game_box .fish:hover a {
+  background: url(../../images/player/gamehall/ico_fish_bk.png) 10px 20px no-repeat; }
+.aside_box .game_box .horse a {
+  background: url(../../images/player/gamehall/ico_horse.png) 10px 20px no-repeat; }
+.aside_box .game_box .horse:hover a {
+  background: url(../../images/player/gamehall/ico_horse_bk.png) 10px 20px no-repeat; }
+.aside_box .game_box .slot a {
+  background: url(../../images/player/gamehall/ico_slot.png) 10px 20px no-repeat; }
+.aside_box .game_box .slot:hover a {
+  background: url(../../images/player/gamehall/ico_slot_bk.png) 10px 20px no-repeat; }
+.aside_box .game_box .ball a {
+  background: url(../../images/player/gamehall/ico_ball.png) 15px 20px no-repeat; }
+.aside_box .game_box .ball:hover a {
+  background: url(../../images/player/gamehall/ico_ball_bk.png) 15px 20px no-repeat; }
+
+article {
+  /*z-index: 0;
+  width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;*/ }
+
+.contant {
+  flex: 1; }
+
+.kv_box {
+  width: 1200px;
+  height: 200px;
+  cursor: pointer; }
+.kv_box .kv_banner {
+  position: relative; }
+.kv_box .kv_banner ul {
+  position: absolute;
+  left: calc(50% - 50px);
+  bottom: 10px;
+  width: 100px; }
+.kv_box .kv_banner ul li {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.8); }
+.kv_box .kv_banner ul li.on {
+  background: #7ED321; }
+.kv_box .vedio {
+  width: 320px;
+  height: 200px; }
+
+.table_all {
+  padding: 10px; }
+.table_all h2 {
+  font-size: 20px;
+  color: #EFB807;
+  font-weight: lighter;
+  line-height: 25px;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #EFB807;
+  text-indent: 8px; }
+.table_all h2.speed_mode {
+  background: url(../../images/player/icon_speed2.png) 10px center no-repeat;
+  padding-left: 40px; }
+.table_all h2.speed_mode span {
+  color: #dd341d; }
+
+.table_box {
+  width: 375px;
+  background: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+  margin: 9px; }
+.table_box .photo img {
+  width: 120px;
+  height: 144px; }
+.table_box .photo p {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  background: #000;
+  color: #BFBFBF;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center; }
+.table_box .table_con {
+  width: 253px; }
+.table_box .table_con dl {
+  color: #fff;
+  background: #1f1f1f; }
+.table_box .table_con dl dt {
+  font-size: 15px;
+  line-height: 37px;
+  text-indent: 10px;
+  flex: 1;
+  padding-right: 5px; }
+.table_box .table_con dl dd {
+  position: relative; }
+.table_box .table_con dl dd a {
+  display: block;
+  border-left: 1px solid #333;
+  font-size: 13px;
+  line-height: 25px;
+  padding: 5px 27px 5px 5px;
+  color: #fff;
+  background: url(../../images/player/arrow_white.png) right center no-repeat; }
+.table_box .table_con dl dd a:hover {
+  color: #fdbb00; }
+.table_box .table_con dl dd .limit_list {
+  position: absolute;
+  background: #333;
+  width: 332px;
+  min-height: 145px;
+  z-index: 50;
+  right: 0px;
+  padding: 8px; }
+.table_box .table_con dl dd .limit_list li {
+  font-size: 13px;
+  width: 46.4%;
+  margin: 2px 4px 2px 0; }
+.table_box .table_con dl dd .limit_list li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40px;
+  border: 1px #000 solid;
+  border-radius: 2px;
+  padding: 3px 12px;
+  background: inherit;
+  background: #212121;
+  font-size: 13px;
+  line-height: 18px;
+  cursor: pointer; }
+.table_box .table_con dl dd .limit_list li a:hover {
+  background: #fdbb00;
+  color: #000; }
+.table_box .table_con dl dd .limit_list li.close {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 6px;
+  right: 2px;
+  border: none;
+  padding: 0;
+  background: url(../../images/player/icon_cancel_nowork2.png) center center no-repeat; }
+.table_box .table_con dl dd .limit_list:not(:target) {
+  display: none; }
+.table_box .table_con dl dd .limit_list:target {
+  display: block; }
+.table_box .table_con .road_frame {
+  background: #000; }
+.table_box .table_con .road_frame .history_frame {
+  position: relative;
+  width: 253px;
+  height: 107px;
+  border: none; }
+.table_box .table_con .road_play {
+  background-image: linear-gradient(-1deg, #313131 0%, #000000 100%);
+  display: flex; }
+.table_box .table_con .road_play li {
+  color: #fff;
+  line-height: 36px;
+  flex: 1; }
+.table_box .table_con .road_play li.good_road_banker, .table_box .table_con .road_play li.good_road_player, .table_box .table_con .road_play li.good_road_normal {
+  flex: none;
+  width: 97px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  padding: 0 4px 0 22px;
+  margin: 8px 5px 0 4px;
+  background-image: url(../../images/player/icon_good_road.png);
+  background-position: 5px center;
+  background-color: #B80909 !important;
+  background-repeat: no-repeat;
+  background-size: auto 50%; }
+.table_box .table_con .road_play li.good_road_player {
+  background-color: #216BB0 !important; }
+.table_box .table_con .road_play li.good_road_normal {
+  background-color: #F9A306 !important; }
+.table_box .table_con .road_play li:last-child {
+  flex: none;
+  width: 95px; }
+.table_box .table_con .road_play span {
+  background: #B80909;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  text-indent: -9999px;
+  margin: 13px 5px 0 5px; }
+.table_box .table_con .road_play span:nth-child(3n) {
+  background: #216BB0; }
+.table_box .table_con .road_play span:nth-child(5n) {
+  background: #80B632; }
+.table_box .table_con .road_play p {
+  font-size: 14px;
+  margin-right: 5px; }
+.table_box .table_con .road_play a {
+  display: block;
+  height: 36px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  background-image: linear-gradient(0deg, #F39100 0%, #FFC300 100%); }
+.table_box .table_con.dragon_tiger .road_play span {
+  background: #216BB0; }
+.table_box .table_con.dragon_tiger .road_play span:nth-child(3n) {
+  background: #B80909; }
+.table_box .table_con.dragon_tiger .road_play span:nth-child(5n) {
+  background: #80B632; }
+.table_box .table_con.dragon_tiger .road_play li.good_road_banker, .table_box .table_con.dragon_tiger .road_play li.good_road_player, .table_box .table_con.dragon_tiger .road_play li.good_road_normal {
+  background-color: #216BB0 !important; }
+.table_box .table_con.dragon_tiger .road_play li.good_road_player {
+  background-color: #B80909 !important; }
+.table_box .table_con.dragon_tiger .road_play li.good_road_normal {
+  background-color: #F9A306 !important; }
+.table_box:hover {
+  border: 1px solid #EFB807; }
+.table_box:hover .road_play a {
+  background-image: linear-gradient(0deg, #F3BD00 0%, #FFF800 100%); }
+
+body.gamehall {
+  position: relative; }
+
+.popup_set, .top_message {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+.popup_set h3, .top_message h3 {
+  color: #EFB807;
+  font-size: 38px;
+  font-weight: normal;
+  margin-bottom: 10px; }
+.popup_set .con_all, .top_message .con_all {
+  width: 1005px; }
+.popup_set.set_limit .con_all, .set_limit.top_message .con_all {
+  width: 550px; }
+.popup_set.set_limit .set_box, .set_limit.top_message .set_box {
+  padding: 10px 0; }
+.popup_set.set_limit .set_limit, .set_limit.top_message .set_limit {
+  margin: 0 auto; }
+
+.top_message {
+  display: block;
+  font-size: 18px;
+  line-height: 35px;
+  color: #c7c7c7;
+  padding-top: 21%; }
+.top_message strong {
+  font-size: 25px;
+  color: #ffc201; }
+.top_message a {
+  font-size: 15px;
+  color: #b1ab97;
+  text-decoration: underline; }
+.top_message .btn_con {
+  padding-top: 25px; }
+.top_message .btn_con input {
+  width: auto; }
+
+.set_box {
+  border-bottom: 1px solid #4D4D4D;
+  border-top: 1px solid #4D4D4D;
+  padding: 15px 0 0 0; }
+.set_box h4 {
+  color: #CDCDCD;
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  height: inherit; }
+.set_box h4 strong {
+  color: #fff; }
+.set_box .set_limit {
+  color: #CDCDCD;
+  width: 480px; }
+.set_box .set_limit dl {
+  width: 230px;
+  height: 60px;
+  border: 1px solid #4A4A4A;
+  padding: 7px;
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+  background-color: #000; }
+.set_box .set_limit dl dt {
+  font-size: 15px;
+  line-height: 18px;
+  text-indent: 2px; }
+.set_box .set_limit dl dd {
+  font-size: 22px;
+  line-height: 28px; }
+.set_box .set_limit dl:hover, .set_box .set_limit dl.select {
+  color: #EFB807;
+  border: 1px solid #EFB807; }
+.set_box .set_chips_half {
+  background: none;
+  width: 490px; }
+.set_box .set_chips_half ul li p {
+  background: url(../../images/player/chips/chips_no_select.svg);
+  background-size: 100% 100%; }
+.set_box .set_chips_half ul {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+.set_box .set_chips_half li {
+  display: flex;
+  width: 95px;
+  height: 95px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+.set_box .set_chips_half li span {
+  display: flex;
+  width: 95px;
+  height: 95px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px; }
+.set_box .set_chips_half li p {
+  display: flex;
+  width: 85px;
+  height: 85px;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 26px; }
+.set_box .set_chips_half li p.lot_word {
+  font-size: 20px; }
+.set_box .set_chips_half li:hover span {
+  border: 2px #CECECE solid;
+  transition: all .20s linear; }
+.set_box .set_chips_half li.select p {
+  background: inherit;
+  border-radius: 500px;
+  background-size: 100% 100%; }
+.set_box .set_chips_half li.select span {
+  background: #000;
+  border: 3px #FFCE00 solid; }
+
+.btn_con {
+  margin: 10px 0; }
+.btn_con input {
+  width: 123px;
+  height: 42px;
+  margin-left: 5px;
+  font-size: 21px;
+  color: #D2D2D2;
+  background-image: linear-gradient(-180deg, #8B8B8B 0%, #575757 100%);
+  border: 1px solid #181818;
+  border-radius: 4px;
+  cursor: pointer; }
+.btn_con input:hover {
+  border: 1px #fff solid; }
+.btn_con .focus {
+  background-image: linear-gradient(0deg, #CE9500 0%, #FFC300 100%);
+  color: #1B1B1B; }
+
+.error_message {
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+  color: #EFB807; }
+
+.gamehall_road .game_info {
+  width: 180px;
+  height: 35px;
+  line-height: 35px;
+  background: rgba(23, 23, 23, 0.7);
+  color: #ffcc00;
+  border: 1px solid #000000;
+  padding: 0;
+  font-size: 15px;
+  position: absolute;
+  z-index: 50;
+  top: calc(50% - 35px/2);
+  left: calc(50% - 180px/2);
+  text-align: center; }
+.gamehall_road .history {
+  height: 107px; }
+.gamehall_road .history .big_road {
+  border-right: none; }
+.gamehall_road .history .big_road .banker, .gamehall_road .history .big_road .bead_road .tie, .gamehall_road .history .bead_road .big_road .tie, .gamehall_road .history .bead_road .big_road .tie_top, .gamehall_road .history .big_road .bead_road .tie_top, .gamehall_road .history .bead_road .big_road .tie_down, .gamehall_road .history .big_road .bead_road .tie_down, .gamehall_road .history .big_road .player {
+  width: 15px;
+  height: 15px; }
+.gamehall_road .history .big_road .tie, .gamehall_road .history .big_road .tie_top, .gamehall_road .history .big_road .tie_down {
+  top: calc(100% - 12px); }
+.gamehall_road .history .big_road .tie_top, .gamehall_road .history .big_road .tie_down {
+  top: 2px; }
+.gamehall_road .history .big_road .tie_down {
+  top: inherit;
+  bottom: 2px; }
+.gamehall_road .history .big_road p {
+  line-height: 18px; }
+.gamehall_road td {
+  width: 18px;
+  height: 18px; }
+.gamehall_road.speed_mode .history .big_road::before {
+  content: "";
+  display: block;
+  width: 163px;
+  height: 46px;
+  background: url(../../images/player/icon_speed_bg.png) center center no-repeat;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%); }
+
+body.cafe .kv_box {
+  width: 100%;
+  height: 149px; }
+body.cafe .kv_box .vedio {
+  width: 391px;
+  height: 220px; }
+body.cafe .kv_box .vedio img {
+  width: 100%;
+  height: 100%; }
+body.cafe .kv_box .kv_banner ul {
+  display: none; }
+body.cafe .aside_box {
+  display: none; }
+body.cafe .table_box {
+  width: 455px; }
+body.cafe .table_box .table_con {
+  width: 332px; }
+body.cafe .table_box .table_con .road_frame .history_frame {
+  overflow: hidden;
+  width: 332px; }
+
+body.maintenance {
+  background: linear-gradient(0deg, #640029 0%, #27121A 39%, #070707 100%);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+body.maintenance h1 {
+  min-width: 370px;
+  padding-top: 120px;
+  text-align: center;
+  background: url(../../images/player/gamehall/logo_big.png) center top no-repeat;
+  color: #FF68A4;
+  font-size: 22px;
+  font-weight: normal; }
+body.maintenance.venus {
+  background: linear-gradient(0deg, #644100 0%, #27121A 39%, #070707 100%); }
+body.maintenance.venus h1 {
+  background: url(../../images/player/gamehall/logo_big_venus.png) center top no-repeat;
+  color: #bd863d; }
+
+.dragon_tiger .history td.good_player {
+  background: #B80909 !important; }
+.dragon_tiger .history td.good_player .banker, .dragon_tiger .history td.good_player .bead_road .player, .dragon_tiger .history .bead_road td.good_player .player, .dragon_tiger .history td.good_player .bead_road .tie, .dragon_tiger .history .bead_road td.good_player .tie, .dragon_tiger .history td.good_player .bead_road .big_road .tie_top, .dragon_tiger .history .bead_road .big_road td.good_player .tie_top, .dragon_tiger .history td.good_player .big_road .bead_road .tie_top, .dragon_tiger .history .big_road .bead_road td.good_player .tie_top, .dragon_tiger .history td.good_player .bead_road .big_road .tie_down, .dragon_tiger .history .bead_road .big_road td.good_player .tie_down, .dragon_tiger .history td.good_player .big_road .bead_road .tie_down, .dragon_tiger .history .big_road .bead_road td.good_player .tie_down, .dragon_tiger .history td.good_player .big_road .player, .dragon_tiger .history .big_road td.good_player .player, .dragon_tiger .history td.good_player .bigeye_road .player, .dragon_tiger .history .bigeye_road td.good_player .player, .dragon_tiger .history td.good_player .small_road .player, .dragon_tiger .history .small_road td.good_player .player, .dragon_tiger .history td.good_player .cockroch_road .player, .dragon_tiger .history .cockroch_road td.good_player .player, .dragon_tiger .history td.good_player .player {
+  border-color: #fff !important; }
+.dragon_tiger .history td.good_banker {
+  background: #216BB0; }
+.dragon_tiger .history .road_basic .pair_banker, .dragon_tiger .history .bead_road .pair_banker, .dragon_tiger .history .big_road .pair_banker, .dragon_tiger .history .bigeye_road .pair_banker, .dragon_tiger .history .small_road .pair_banker, .dragon_tiger .history .cockroch_road .pair_banker, .dragon_tiger .history .road_basic .pair_player, .dragon_tiger .history .bead_road .pair_player, .dragon_tiger .history .big_road .pair_player, .dragon_tiger .history .bigeye_road .pair_player, .dragon_tiger .history .small_road .pair_player, .dragon_tiger .history .cockroch_road .pair_player {
+  background: #216BB0;
+  top: inherit;
+  left: inherit;
+  right: 0px;
+  bottom: 0px; }
+.dragon_tiger .history .road_basic .pair_player, .dragon_tiger .history .bead_road .pair_player, .dragon_tiger .history .big_road .pair_player, .dragon_tiger .history .bigeye_road .pair_player, .dragon_tiger .history .small_road .pair_player, .dragon_tiger .history .cockroch_road .pair_player {
+  background: #B80909 !important;
+  right: inherit !important;
+  bottom: inherit !important;
+  top: 0px !important;
+  left: 0px !important; }
+.dragon_tiger .bead_road .banker, .dragon_tiger .history .bead_road .player, .history .dragon_tiger .bead_road .player, .dragon_tiger .history .bead_road .tie, .history .dragon_tiger .bead_road .tie, .dragon_tiger .history .bead_road .big_road .tie_top, .history .dragon_tiger .bead_road .big_road .tie_top, .dragon_tiger .history .big_road .bead_road .tie_top, .history .big_road .dragon_tiger .bead_road .tie_top, .dragon_tiger .history .bead_road .big_road .tie_down, .history .dragon_tiger .bead_road .big_road .tie_down, .dragon_tiger .history .big_road .bead_road .tie_down, .history .big_road .dragon_tiger .bead_road .tie_down, .dragon_tiger .bead_road .history .big_road .player, .dragon_tiger .bead_road .history .bigeye_road .player, .dragon_tiger .bead_road .history .small_road .player, .dragon_tiger .bead_road .history .cockroch_road .player {
+  background: #216BB0; }
+.dragon_tiger .bead_road .player {
+  background: #B80909 !important; }
+.dragon_tiger .bead_road .tie, .dragon_tiger .bead_road .history .big_road .tie_top, .history .big_road .dragon_tiger .bead_road .tie_top, .dragon_tiger .bead_road .history .big_road .tie_down, .history .big_road .dragon_tiger .bead_road .tie_down {
+  background: #80B632 !important; }
+.dragon_tiger .big_road {
+  background: url(../../images/player/bg_dt_road.gif) center center no-repeat #fff;
+  background-size: auto 65%; }
+.dragon_tiger .big_road .banker, .dragon_tiger .big_road .history .bead_road .player, .dragon_tiger .big_road .history .bead_road .tie, .history .bead_road .dragon_tiger .big_road .tie, .dragon_tiger .history .bead_road .big_road .tie_top, .history .bead_road .dragon_tiger .big_road .tie_top, .dragon_tiger .history .big_road .bead_road .tie_top, .history .dragon_tiger .big_road .bead_road .tie_top, .dragon_tiger .history .bead_road .big_road .tie_down, .history .bead_road .dragon_tiger .big_road .tie_down, .dragon_tiger .history .big_road .bead_road .tie_down, .history .dragon_tiger .big_road .bead_road .tie_down, .dragon_tiger .history .big_road .player, .history .dragon_tiger .big_road .player, .dragon_tiger .big_road .history .bigeye_road .player, .dragon_tiger .big_road .history .small_road .player, .dragon_tiger .big_road .history .cockroch_road .player {
+  border: 2px #216BB0 solid; }
+.dragon_tiger .big_road .player {
+  border: 2px #B80909 solid !important; }
+
+.sicbo .history td {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 15px; }
+.sicbo .history .dot-1 p, .sicbo .history .dot-2 p, .sicbo .history .dot-3 p, .sicbo .history .dot-4 p, .sicbo .history .dot-5 p, .sicbo .history .dot-6 p, .sicbo .history .dot-chicken p, .sicbo .history .dot-crab p, .sicbo .history .dot-deer p, .sicbo .history .dot-fish p, .sicbo .history .dot-gourd p, .sicbo .history .dot-prawn p {
+  width: 15px;
+  height: 15px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="6" fill="%23B70A0A" fill-rule="evenodd"/></svg>');
+  background-size: 100% 100%;
+  border: 1px #adadad solid; }
+.sicbo .history .dot-2 p {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g fill-rule="evenodd"><circle cx="7" cy="7" r="3"/><circle cx="23" cy="23" r="3"/></g></svg>'); }
+.sicbo .history .dot-3 p {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g fill-rule="evenodd"><circle cx="7" cy="7" r="3"/><circle cx="15" cy="15" r="3"/><circle cx="23" cy="23" r="3"/></g></svg>'); }
+.sicbo .history .dot-4 p {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g fill="%23B70A0A" fill-rule="evenodd"><circle cx="7" cy="7" r="3"/><circle cx="23" cy="7" r="3"/><circle cx="7" cy="23" r="3"/><circle cx="23" cy="23" r="3"/></g></svg>'); }
+.sicbo .history .dot-5 p {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g fill-rule="evenodd"><circle cx="7" cy="7" r="3"/><circle cx="15" cy="15" r="3"/><circle cx="23" cy="7" r="3"/><circle cx="7" cy="23" r="3"/><circle cx="23" cy="23" r="3"/></g></svg>'); }
+.sicbo .history .dot-6 p {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g fill-rule="evenodd"><circle cx="7" cy="7" r="3"/><circle cx="7" cy="15" r="3"/><circle cx="23" cy="15" r="3"/><circle cx="23" cy="7" r="3"/><circle cx="7" cy="23" r="3"/><circle cx="23" cy="23" r="3"/></g></svg>'); }
+.sicbo .history .dot-chicken p {
+  background-image: url(../../images/fish_prawn_crab-web/dice-chicken.png); }
+.sicbo .history .dot-crab p {
+  background-image: url(../../images/fish_prawn_crab-web/dice-crab.png); }
+.sicbo .history .dot-deer p {
+  background-image: url(../../images/fish_prawn_crab-web/dice-deer.png); }
+.sicbo .history .dot-fish p {
+  background-image: url(../../images/fish_prawn_crab-web/dice-fish.png); }
+.sicbo .history .dot-gourd p {
+  background-image: url(../../images/fish_prawn_crab-web/dice-gourd.png); }
+.sicbo .history .dot-prawn p {
+  background-image: url(../../images/fish_prawn_crab-web/dice-prawn.png); }
+.sicbo .history .textBoldRed, .sicbo .history .dot-s-red {
+  color: #B80909; }
+.sicbo .history .textBoldBlue, .sicbo .history .dot-s-blue {
+  color: #216BB0; }
+.sicbo .history .textBoldGreen, .sicbo .history .dot-s-green {
+  color: #80B632; }
+
+.venus .left_list h1 {
+  width: 88px;
+  height: 43px;
+  margin: 5px 15px 5px 15px;
+  background: url(../../images/header/logo_venus.png) center center no-repeat; }
+.venus .table_box .photo p {
+  font-size: 14px;
+  font-weight: normal; }

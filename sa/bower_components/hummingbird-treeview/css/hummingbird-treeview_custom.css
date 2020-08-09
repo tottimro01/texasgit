@@ -1,0 +1,39 @@
+#treeview_container
+{
+  padding: 15px;
+}
+
+#treeview_container ul
+{
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+  
+#treeview_container ul:before{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: -20px;
+    bottom: 16px;
+    left: 0;
+    z-index: 1;
+    border: 1px dotted #67b2dd;
+    border-width: 0 0 0 1px;
+}
+
+#treeview_container ul li{
+  position: relative;
+}
+#treeview_container ul li:before
+{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -43px;
+    width: 30px;
+    height: 0;
+    border-top: 1px dotted #67b2dd;
+    z-index: 1;
+}

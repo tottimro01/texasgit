@@ -1,0 +1,155 @@
+
+@font-face {
+	font-family: 'Digital-7';
+	src: url('../fonts/Digital-7.eot?') format('eot'), 
+	     url('../fonts/Digital-7.woff') format('woff'), 
+	     url('../fonts/Digital-7.ttf')  format('truetype'),
+	     url('../fonts/Digital-7.svg#Digital-7') format('svg');
+}
+
+@font-face {
+    font-family: 'arialbold';
+    src: url('../fonts/arialbd-webfont.eot');
+    src: url('../fonts/arialbd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/arialbd-webfont.woff2') format('woff2'),
+         url('../fonts/arialbd-webfont.woff') format('woff'),
+         url('../fonts/arialbd-webfont.ttf') format('truetype'),
+         url('../fonts/arialbd-webfont.svg#arialbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a{
+	text-decoration: none;
+}
+a:link , a:visited , a:hover ,a:active{
+    color: #000;
+}
+
+
+.box-container
+{
+	padding: 0 5px;
+	padding-top: 60px;
+	margin-left: 0px!important;
+	padding-bottom: 0px;
+	height: 100vh!important;
+	/*height: calc(100vh - 57px)!important;*/
+	
+}
+.hamburger_case
+{
+	background: #00000066!important;
+	height: 50px;
+}
+.main_table
+{
+	width: 180%;
+	color: #fff;
+	border-collapse: collapse;
+}
+.main_table2
+{
+	width: 100%;
+}
+.overflow-data
+{
+	overflow-x:  auto;
+	width: 100%;
+	/*max-height: calc(100% - 90px);*/
+	/*height: calc(100% - 90px);*/
+}
+td
+{
+	text-align: center;
+}
+
+thead
+{
+	/*background: url(../img/btn-bg.jpg?v=01);
+    background-repeat: repeat-x;*/
+    /*background: #073317a6;*/
+    background: #584332
+
+}
+thead tr th,tbody tr td
+{
+	height: 35px;
+	border: 1px solid #757575b8;
+	;
+}
+tbody tr td
+{
+	/*background: #073317a6;*/
+    /*border: 1px solid #757575b8;*/
+    padding: 5px 0;
+        color: #353535;
+            font-family: 'arialbold';
+}
+tbody tr:nth-child(even) {
+	/*background: #dedede9c;*/
+	background: #bfbbaf;
+}
+tbody tr:nth-child(odd) {
+	/*background: #0d5629*/
+	background: #f5f1e5;
+}
+.t_head
+{
+	width: 100%;
+    height: 35px;
+    background: url(../img/btn-bg.jpg?v=01);
+    background-repeat: repeat-x;
+    text-align: center;
+    /*padding-top: 10px;*/
+    color: #fff;
+    font-weight: bold;
+}
+
+#q
+{
+	width: 100px;
+    padding-left: 5px;
+    margin-top: 0px;
+    border: 1px solid;
+    height: 23px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}
+
+select[name='zone']
+{
+	 border: 1px solid;
+    height: 23px!important;
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    display: inline-block;
+}
+* {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+@media all and (orientation: landscape) {
+	.main_table
+	{
+		width: 100%;
+	}
+	.overflow-data
+	{
+		overflow: auto;
+		width: 100%;
+		/*max-height: 65%;*/
+		
+	}
+	.box-container
+	{
+		overflow-y: auto;
+		padding-top: 55px;
+		 height: calc(100vh - 57px)!important;
+		 height: 100vh!important;
+	}
+
+}

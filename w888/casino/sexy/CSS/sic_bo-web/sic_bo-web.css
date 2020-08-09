@@ -1,0 +1,4269 @@
+/***************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  hlbr: expression(this.onFocus=this.blur());
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix:after, .pop_chips_set ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix, .pop_chips_set ul {
+  zoom: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+.float-L {
+  float: left;
+}
+
+.float-R {
+  float: right;
+}
+
+.align-L, .mainOne .betList-4 .textOdds:last-child, .infoDate, .mainThree .infoCountIn dt {
+  text-align: left;
+}
+
+.align-R, .ropdownLimit a, .mainOne .betList-4 .textOdds:first-child, .gameLimit, .infoCountIn dt, .infoTotal, .confirmArea .infoTotalThree {
+  text-align: right;
+}
+
+.align-C, .textOdds, .textOutline, .btnConfirm, .btnRepeat:hover p, .btnCancel:hover p, .btnTextMain, .btnTextSec, .btnTextSilver, .ulSelect, .ropdownLimit ul a, .resultPoint dl, .historyList ul, .mainOne .betList-1, .mainOne .betList-2, .roadArea .roadZone, .betPage1 .betList-1, .betPage1 .betList-3, .betPage1 .betList-4 {
+  text-align: center;
+}
+
+.displayB, .ropdownLimit:hover ul, .ropdownLimit a, .infoTime dd span, .selectChipsBox span, .infoTitle dt:hover strong {
+  display: block;
+}
+
+.displayF, .setFlex-BC, .infoBet-youWin, .historyList ul, .mainOne .betList-2, .mainOne .betList-3, .mainOne .betList-4, .betPage3 .betList-2 .betContent, .confirmArea, .setFlex-B, .infoLimit .popContent, .result, .resultPoint, .infoGame, .infoTitle, .setFlex-C, .btnConfirm, .aCheckText, .result ul, .resultPoint ul, .diceAll, .infoTitle dl, .betPage2 .betList-1 .betContent, .betPage2 .betList-2 .betContent, .betPage3 .betList-1 .betContent, .setFlex-CC, .dice-1, .dice-2, .dice-3, .dice-4, .dice-5, .dice-6, .btnRepeat, .btnCancel, .icTriangle, .ulSelect li, .popBgColorless, .popBgBlack, .popBgWhite, .infoRed, .infoBK, .infoYellow, .infoBet-success, .infoBet-fail, .mainOne .betList-3 .betZone, .mainOne .betList-4 .betZone, .mainOne .betChips .betList-3, .mainOne .betChips .betList-4, .dicePair .betZone, .diceThree .betZone, .selectChipsBox li, .mainThree .resultZone, .betPage1 .betList-2 .betZone, .betPage2 .betList-1 .betZone, .betPage2 .betList-2 .betZone, .betPage3 .betList-1 .betZone, .betPage, .betPage a, .ulSelect, .videoTool, .infoLimit dl, .gameOne .gameArea, .mainOne .videoArea, .mainOne .betList-1, .mainOne .betList-3 .betContent, .mainOne .betList-4 .betContent, .dicePair .betContent, .diceAll .betContent, .diceThree .betContent, .roadArea, .infoTime dt, .infoCountIn dl, .selectChipsBox, .infoConfirm, .mainThree .infoCountIn, .mainThree .infoCountIn dl, .infoTitle ul li, .betPage1 .betList-1, .betPage1 .betList-2 .betContent, .betPage1 .betList-3, .betPage1 .betList-4, .betPage3 .betDice, .betPage3 .betChips {
+  display: flex;
+}
+
+.displayI {
+  display: inline;
+}
+
+.displayIB, .btnTextMain, .btnTextSec, .btnTextSilver, .dealerName {
+  display: inline-block;
+}
+
+.displayIF {
+  display: inline-flex;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.target:not(:target), .popBgColorless:not(:target), .popBgBlack:not(:target), .popBgWhite:not(:target), .targetF:not(:target) {
+  display: none;
+}
+
+.target:target, .popBgColorless:target, .popBgBlack:target, .popBgWhite:target, .targetF:target {
+  display: flex;
+}
+
+.targetB:not(:target) {
+  display: none;
+}
+
+.targetB:target {
+  display: block;
+}
+
+.setFlex-BC, .infoBet-youWin, .historyList ul, .mainOne .betList-2, .mainOne .betList-3, .mainOne .betList-4, .betPage3 .betList-2 .betContent, .confirmArea {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setFlex-B, .infoLimit .popContent, .result, .resultPoint, .infoGame, .infoTitle {
+  justify-content: space-between;
+}
+
+.setFlex-C, .btnConfirm, .aCheckText, .result ul, .resultPoint ul, .diceAll, .infoTitle dl, .betPage2 .betList-1 .betContent, .betPage2 .betList-2 .betContent, .betPage3 .betList-1 .betContent {
+  align-items: center;
+}
+
+.setFlex-CC, .dice-1, .dice-2, .dice-3, .dice-4, .dice-5, .dice-6, .btnRepeat, .btnCancel, .icTriangle, .ulSelect li, .popBgColorless, .popBgBlack, .popBgWhite, .infoRed, .infoBK, .infoYellow, .infoBet-success, .infoBet-fail, .mainOne .betList-3 .betZone, .mainOne .betList-4 .betZone, .mainOne .betChips .betList-3, .mainOne .betChips .betList-4, .dicePair .betZone, .diceThree .betZone, .selectChipsBox li, .mainThree .resultZone, .betPage1 .betList-2 .betZone, .betPage2 .betList-1 .betZone, .betPage2 .betList-2 .betZone, .betPage3 .betList-1 .betZone, .betPage, .betPage a {
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  position: relative;
+  overflow: hidden;
+  width: 1440px;
+  height: 854px;
+  margin: 0 auto;
+}
+
+.gameArea {
+  padding-right: 45px;
+}
+
+.dice-1, .dice-2, .dice-3, .dice-4, .dice-5, .dice-6, .btnClose, .btnOneGame, .btnVideoRefresh, .btnVideoZoom, .btnVideoZoomClose, .infoTime dd span, .betPage a, .dice-none {
+  font-size: 0;
+  text-indent: -99999px;
+}
+
+article {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+}
+
+.ropdownLimit {
+  position: relative;
+}
+
+.ropdownLimit ul {
+  position: absolute;
+  z-index: 20;
+  display: none;
+}
+
+.ropdownLimit li {
+  list-style: none;
+}
+
+.dice-1:after, .dice-2:after, .dice-3:after, .dice-4:after, .dice-5:after, .dice-6:after {
+  content: "";
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.betZone {
+  background-color: #243F28;
+  cursor: pointer;
+}
+
+.betZone:hover {
+  background-color: #335938;
+}
+
+.btnClose, .btnCircle-close, .btnArrow-L, .btnArrow-R, .btnOneGame, .btnVideoRefresh, .btnVideoZoom, .btnVideoZoomClose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnClose:after, .btnCircle-close:after, .btnArrow-L:after, .btnArrow-R:after, .btnOneGame:after, .btnVideoRefresh:after, .btnVideoZoom:after, .btnVideoZoomClose:after {
+  content: "";
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.btnConfirm, .btnTextMain, .btnTextSec, .btnTextSilver {
+  border: 1px solid #181818;
+  background-image: linear-gradient(0deg, #CE9500 0%, #FFC300 100%);
+  color: #1B1B1B;
+}
+
+.btnConfirm:hover, .btnTextMain:hover, .btnTextSec:hover, .btnTextSilver:hover {
+  background-image: linear-gradient(0deg, #E6A700 0%, #FFEE00 100%);
+}
+
+.btnRepeat, .btnCancel, .btnTextSec, .aCheckText:after {
+  border: 1px solid #181818;
+  background-image: linear-gradient(-180deg, #486934 0%, #2C3E22 100%);
+  color: #ddebd2;
+}
+
+.btnRepeat:hover, .btnCancel:hover, .btnTextSec:hover, .aCheckText:hover:after {
+  background-image: linear-gradient(-180deg, #7CA364 0%, #355C2D 100%);
+}
+
+.btnConfirm.noWork, .btnRepeat.noWork, .noWork.btnCancel {
+  border: 1px solid #181818;
+  background-image: linear-gradient(-180deg, #5C5C5C 0%, #2C2C2C 100%);
+  color: #8d8d8d;
+}
+
+.btnConfirm.noWork:hover, .btnRepeat.noWork:hover, .noWork.btnCancel:hover {
+  background-image: linear-gradient(-180deg, #5C5C5C 0%, #2C2C2C 100%);
+}
+
+.btnTextSilver {
+  border: 1px solid #BDBDBD;
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #E1E1E1 100%);
+  color: #676767;
+}
+
+.btnTextSilver:hover {
+  background-image: linear-gradient(0deg, #FFFFFF 0%, #E1E1E1 100%);
+}
+
+.textBlue-S, .textBlue-XS {
+  font-size: 15px;
+  color: #216BB0;
+}
+
+.textBlue-XS {
+  font-size: 12px;
+}
+
+.textBlue {
+  color: #216BB0;
+}
+
+.textRed {
+  color: #B70A0A;
+}
+
+.textGreen {
+  color: #6C972F;
+}
+
+.textBrown {
+  color: #F2E2AC;
+}
+
+.textBoldRed, .textBoldBlue, .textBoldGreen {
+  font-size: 18px;
+  font-weight: bold;
+  color: #B70A0A;
+}
+
+.textBoldBlue {
+  color: #216BB0;
+}
+
+.textBoldGreen {
+  color: #6C972F;
+}
+
+.textOdd {
+  color: #4694DD;
+}
+
+.textEven {
+  color: #F00D0D;
+}
+
+.textOdds {
+  font-size: 12px;
+  font-style: italic;
+  line-height: 20px;
+  color: #84A575;
+}
+
+.textOutline {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.btnConfirm {
+  border-radius: 4px;
+  padding: 0 20px 0 24px;
+  font-size: 20px;
+  line-height: 58px;
+}
+
+.btnConfirm:before {
+  content: "";
+  width: 25px;
+  height: 19px;
+  margin-right: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="29"><path fill="rgb(0,0,0)" fill-rule="evenodd" d="M7.945 14.963L2.018 9.065 0 11.059l7.945 7.907L25 1.994 22.996 0 7.946 14.963"/></svg>');
+}
+
+.btnConfirm.noWork {
+  cursor: default;
+}
+
+.btnConfirm.noWork:before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="29"><path fill="rgb(108,108,108)" fill-rule="evenodd" d="M7.945 14.963L2.018 9.065 0 11.059l7.945 7.907L25 1.994 22.996 0 7.946 14.963"/></svg>');
+}
+
+.btnRepeat, .btnCancel {
+  position: relative;
+  border-radius: 4px;
+}
+
+.btnRepeat:before, .btnCancel:before {
+  content: "";
+  width: 27px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="27" height="20"><path fill="rgb(221,235,210)" fill-rule="evenodd" d="M22.09 4.974l-4.908 4.973h3.682c0 4.116-3.302 7.46-7.364 7.46a7.13 7.13 0 0 1-3.436-.87l-1.792 1.816a9.641 9.641 0 0 0 5.228 1.542c5.425 0 9.818-4.452 9.818-9.948H27l-4.91-4.973zM6.137 9.947c0-4.115 3.302-7.46 7.364-7.46 1.24 0 2.418.31 3.436.87l1.792-1.815A9.641 9.641 0 0 0 13.5 0C8.075 0 3.682 4.451 3.682 9.947H0l4.91 4.974 4.908-4.974H6.136z"/></svg>');
+}
+
+.btnRepeat p, .btnCancel p {
+  display: none;
+}
+
+.btnRepeat:hover p, .btnCancel:hover p {
+  display: block;
+  position: absolute;
+  top: -8px;
+  z-index: 10;
+  padding: 2px 4px;
+  background-color: #000;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
+  font-size: 13px;
+  color: #EFB807;
+}
+
+.btnRepeat.noWork, .noWork.btnCancel {
+  cursor: default;
+}
+
+.btnRepeat.noWork:before, .noWork.btnCancel:before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="27" height="20"><path fill="rgb(108,108,108)" fill-rule="evenodd" d="M22.09 4.974l-4.908 4.973h3.682c0 4.116-3.302 7.46-7.364 7.46a7.13 7.13 0 0 1-3.436-.87l-1.792 1.816a9.641 9.641 0 0 0 5.228 1.542c5.425 0 9.818-4.452 9.818-9.948H27l-4.91-4.973zM6.137 9.947c0-4.115 3.302-7.46 7.364-7.46 1.24 0 2.418.31 3.436.87l1.792-1.815A9.641 9.641 0 0 0 13.5 0C8.075 0 3.682 4.451 3.682 9.947H0l4.91 4.974 4.908-4.974H6.136z"/></svg>');
+}
+
+.btnRepeat.noWork:hover p, .noWork.btnCancel:hover p {
+  color: #8d8d8d;
+}
+
+.btnCancel:before {
+  width: 18px;
+  height: 18px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="rgb(221,235,210)" fill-rule="evenodd" d="M18 1.813L16.187 0 9 7.187 1.813 0 0 1.813 7.187 9 0 16.187 1.813 18 9 10.813 16.187 18 18 16.187 10.813 9 18 1.813"/></svg>');
+}
+
+.btnCancel.noWork:before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="rgb(108,108,108)" fill-rule="evenodd" d="M18 1.813L16.187 0 9 7.187 1.813 0 0 1.813 7.187 9 0 16.187 1.813 18 9 10.813 16.187 18 18 16.187 10.813 9 18 1.813"/></svg>');
+}
+
+.btnClose {
+  width: 34px;
+  height: 34px;
+}
+
+.btnClose:after {
+  width: 13px;
+  height: 13px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="rgb(92,92,92)" fill-rule="evenodd" d="M18 1.813L16.187 0 9 7.187 1.813 0 0 1.813 7.187 9 0 16.187 1.813 18 9 10.813 16.187 18 18 16.187 10.813 9 18 1.813"/></svg>');
+  background-position: center center;
+}
+
+.btnClose:hover:after {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="rgb(190,190,190)" fill-rule="evenodd" d="M18 1.813L16.187 0 9 7.187 1.813 0 0 1.813 7.187 9 0 16.187 1.813 18 9 10.813 16.187 18 18 16.187 10.813 9 18 1.813"/></svg>');
+}
+
+.btnCircle-close {
+  width: 20px;
+  height: 20px;
+  border-radius: 99rem;
+  background-color: #000;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.btnCircle-close:after {
+  width: 10px;
+  height: 10px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"><path fill="rgb(190,190,190)" fill-rule="evenodd" d="M18 1.813L16.187 0 9 7.187 1.813 0 0 1.813 7.187 9 0 16.187 1.813 18 9 10.813 16.187 18 18 16.187 10.813 9 18 1.813"/></svg>');
+  background-position: center center;
+}
+
+.btnCircle-close:hover {
+  background-color: #1b1b1b;
+}
+
+.btnTextMain, .btnTextSec, .btnTextSilver {
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.btnArrow-L, .btnArrow-R {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.btnArrow-L:hover, .btnArrow-R:hover {
+  border-color: #333;
+}
+
+.btnArrow-L:after, .btnArrow-R:after {
+  width: 12px;
+  height: 20px;
+  background-image: url('data:image/svg+xml,<svg width="12" height="20" xmlns="http://www.w3.org/2000/svg"><path fill="rgb(0, 0, 0)" d="M12 17.65l-7.417-7.433L12 2.783 9.717.5 0 10.217l9.717 9.716z" fill-rule="evenodd"/></svg>');
+}
+
+.btnArrow-R:after {
+  background-image: url('data:image/svg+xml,<svg width="12" height="20" xmlns="http://www.w3.org/2000/svg"><path fill="rgb(0, 0, 0)" d="M0 17.65l7.417-7.433L0 2.783 2.283.5 12 10.217l-9.717 9.716z" fill-rule="evenodd"/></svg>');
+}
+
+.btnOneGame {
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(-180deg, #2B2B2B 0%, #0E0E0E 100%);
+}
+
+.btnOneGame:hover {
+  background-image: linear-gradient(-180deg, #565656 0%, #232323 100%);
+}
+
+.btnOneGame:after {
+  width: 23px;
+  height: 22px;
+  background-image: url('data:image/svg+xml,<svg width="23" height="22" xmlns="http://www.w3.org/2000/svg"><g fill="%23DDDFDF" fill-rule="evenodd"><path d="M20.836 0H2.083C.938 0 0 .908 0 2.018v14.975c0 1.11.938 2.018 2.083 2.018h5.21v2.019h8.335V19.01h5.208c1.146 0 2.074-.908 2.074-2.018l.01-14.975C22.92.908 21.982 0 20.836 0zM1.344 1.302h20.232V17.71H1.344V1.302z"/><path d="M11.11 10.11a3.054 3.054 0 1 0 0-6.11 3.054 3.054 0 0 0-3.055 3.055 3.054 3.054 0 0 0 3.054 3.055zm0 1.527C9.07 11.637 5 12.66 5 14.692v1.527h12.219v-1.527c0-2.032-4.071-3.055-6.11-3.055z"/></g></svg>');
+}
+
+.btnVideoRefresh {
+  width: 46px;
+  height: 26px;
+  border: 1px solid #A6CF93;
+  border-radius: 2px;
+  background-image: linear-gradient(0deg, #0D241A 0%, #315344 100%);
+}
+
+.btnVideoRefresh:hover {
+  border-color: #dfd394;
+}
+
+.btnVideoRefresh:after {
+  width: 16px;
+  height: 16px;
+  background-image: url('data:image/svg+xml,<svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M14.485 2.495a8.45 8.45 0 0 0-6-2.495C3.79 0 0 3.802 0 8.495c0 4.694 3.791 8.496 8.485 8.496 3.96 0 7.263-2.708 8.208-6.372h-2.208a6.362 6.362 0 0 1-6 4.248 6.377 6.377 0 0 1-6.372-6.372 6.377 6.377 0 0 1 6.372-6.371c1.762 0 3.334.733 4.481 1.89l-3.42 3.42h7.434V0l-2.495 2.495" fill="%23B5DBA4" fill-rule="evenodd"/></svg>');
+}
+
+.btnVideoChange {
+  display: flex;
+  align-items: center;
+  width: 46px;
+  height: 26px;
+  border: 1px solid #A6CF93;
+  border-radius: 2px;
+  background-image: linear-gradient(0deg, #0D241A 0%, #315344 100%);
+  font-size: 17px;
+  color: #A6CF93;
+}
+
+.btnVideoChange:hover {
+  border-color: #dfd394;
+}
+
+.btnVideoChange:before {
+  content: "";
+  width: 18px;
+  height: 13px;
+  margin: 5px;
+  background-size: cover;
+  background-image: url('data:image/svg+xml,<svg width="18" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M0 3.725L1.636 5.36c4.067-4.066 10.661-4.066 14.728 0L18 3.725c-4.966-4.967-13.025-4.967-18 0zm6.545 6.545L9 12.725l2.455-2.455a3.467 3.467 0 0 0-4.91 0zM3.273 6.998l1.636 1.636a5.788 5.788 0 0 1 8.182 0l1.636-1.636c-3.158-3.159-8.288-3.159-11.454 0z" fill="%23B5DBA4" fill-rule="evenodd"/></svg>');
+}
+
+.btnVideoZoom, .btnVideoZoomClose {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #A6CF93;
+  border-radius: 2px;
+  background-image: linear-gradient(0deg, #0D241A 0%, #315344 100%);
+}
+
+.btnVideoZoom:hover, .btnVideoZoomClose:hover {
+  border-color: #dfd394;
+}
+
+.btnVideoZoom:after, .btnVideoZoomClose:after {
+  width: 18px;
+  height: 18px;
+  background-image: url('data:image/svg+xml,<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a"><stop stop-color="%23FFFFFF" offset="0%"/><stop stop-color="%23AFAFAF" offset="100%"/></linearGradient></defs><path d="M18 6l2.3 2.3-2.89 2.87 1.42 1.42L21.7 9.7 24 12V6h-6zM6 12l2.3-2.3 2.87 2.89 1.42-1.42L9.7 8.3 12 6H6v6zm6 12l-2.3-2.3 2.89-2.87-1.42-1.42L8.3 20.3 6 18v6h6zm12-6l-2.3 2.3-2.87-2.89-1.42 1.42 2.89 2.87L18 24h6v-6z" transform="translate(-6 -6)" fill="url(%23a)" fill-rule="evenodd"/></svg>');
+}
+
+.btnVideoZoomClose:after {
+  width: 14px;
+  height: 14px;
+  background-image: url('data:image/svg+xml,<svg width="14" height="14" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="a"><stop stop-color="%23FFFFFF" offset="0%"/><stop stop-color="%23AFAFAF" offset="100%"/></linearGradient></defs><path d="M14.9 13.556l5.536-5.536 1.414 1.415-5.536 5.535 5.536 5.536-1.414 1.414-5.536-5.535-5.536 5.535-1.414-1.414 5.536-5.536L7.95 9.435 9.364 8.02l5.536 5.536z" transform="translate(-8 -8)" fill="url(%23a)" fill-rule="evenodd"/></svg>');
+}
+
+.aCheckText {
+  position: relative;
+  padding-left: 28px;
+  line-height: 24px;
+  color: #DDEBD2;
+}
+
+.aCheckText:hover {
+  color: #fff;
+}
+
+.aCheckText:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.aCheckText.now:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  z-index: 1;
+  width: 15px;
+  height: 11px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="19" height="14"><path fill="rgb(221,235,210)" fill-rule="evenodd" d="M7.054 9.044L15.632.467l2.45 2.45L7.054 13.947.315 7.206l2.45-2.45z"/></svg>');
+}
+
+.icTriangle:after {
+  content: "";
+  width: 7px;
+  height: 4px;
+  background-size: cover;
+  background-image: url('data:image/svg+xml,<svg width="7" height="4" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 4L0 0h7z" fill="%239F650A" fill-rule="evenodd"/></svg>');
+}
+
+.ulSelect {
+  flex-direction: column;
+  font-size: 15px;
+  color: #676767;
+  background-color: #EEEEEE;
+}
+
+.ulSelect li {
+  flex: 1;
+  border-bottom: 1px solid #b1b1b1;
+  cursor: pointer;
+}
+
+.ulSelect li:hover {
+  background-color: #d4d4d4;
+}
+
+.ulSelect li:last-child {
+  border-bottom: none;
+}
+
+.ulSelect li.now {
+  background-color: #293930;
+  color: #EFB807;
+}
+
+.ulArrowLR {
+  position: relative;
+}
+
+.ulArrowLR li {
+  position: absolute;
+  top: 54px;
+}
+
+.ulArrowLR li:first-child {
+  left: 10px;
+}
+
+.ulArrowLR li:last-child {
+  right: 10px;
+}
+
+.ropdownLimit a {
+  padding: 0 8px 0 26px;
+  border: 1px solid #807143;
+  background-image: url('data:image/svg+xml,<svg width="9" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M2.571 0L0 2.565h1.929v4.506h1.285V2.565h1.929L2.57 0zm4.5 9.006V4.5H5.786v4.506H3.857l2.572 2.565L9 9.006H7.071z" fill="%23E4D69A" fill-rule="evenodd"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  background-color: #2B2614;
+  background-size: 13px 17px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #E4D69A;
+}
+
+.ropdownLimit a:hover {
+  border-color: #c5b584;
+}
+
+.ropdownLimit ul a {
+  border-top: none;
+  padding: 0;
+  background-color: #2B2614;
+  background-image: none;
+  line-height: 25px;
+  color: #E4D69A;
+}
+
+.ropdownLimit ul a:hover {
+  border-color: #807143;
+  color: #EFB807;
+}
+
+.dealerName {
+  padding: 0 8px;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  background: linear-gradient(-180deg, #101010 96%, #000 100%);
+  line-height: 20px;
+  font-size: 12px;
+  color: #F2E2AC;
+}
+
+.videoTool {
+  flex-direction: column;
+}
+
+.videoTool .btnVideoRefresh {
+  margin-bottom: 3px;
+}
+
+/***************************************************/
+.modeOpen {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.modeOpen .betZone {
+  border-color: #536d47 !important;
+  background-color: #111f13 !important;
+  cursor: default;
+}
+
+.modeOpen .betZone:hover {
+  background-color: #111f13;
+}
+
+.modeOpen .openZone {
+  background-image: radial-gradient(70% 90%, #FFFFF0 50%, #E4DBB6 70%, #DED292 75%, #8C631E 100%);
+  color: #333;
+  animation: twinkling .7s infinite ease-in-out;
+}
+
+.modeOpen .openZone .dice-1, .modeOpen .openZone .dice-2, .modeOpen .openZone .dice-3, .modeOpen .openZone .dice-4, .modeOpen .openZone .dice-5, .modeOpen .openZone .dice-6, .modeOpen .openZone .dice-2, .modeOpen .openZone .dice-3, .modeOpen .openZone .dice-4, .modeOpen .openZone .dice-5, .modeOpen .openZone .dice-6,
+.modeOpen .openZone .dice-deer, .modeOpen .openZone .dice-gourd, .modeOpen .openZone .dice-chicken, .modeOpen .openZone .dice-prawn, .modeOpen .openZone .dice-crab, .modeOpen .openZone .dice-fish {
+  border-color: #000;
+  background-color: #fff;
+}
+
+.modeOpen .dice-1, .modeOpen .dice-2, .modeOpen .dice-3, .modeOpen .dice-4, .modeOpen .dice-5, .modeOpen .dice-6, .modeOpen .dice-2, .modeOpen .dice-3, .modeOpen .dice-4, .modeOpen .dice-5, .modeOpen .dice-6,
+.modeOpen .dice-deer, .modeOpen .dice-gourd, .modeOpen .dice-chicken, .modeOpen .dice-prawn, .modeOpen .dice-crab, .modeOpen .dice-fish {
+  border: 1px solid rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.modeOpen .odd h2 {
+  color: #1d61a0;
+}
+
+.modeOpen .even h2 {
+  color: #8f0808;
+}
+
+.modeOpen .textOdds {
+  color: #4e6146;
+}
+
+.gameOne .modeOpen .betList-1 > div {
+  border-color: #536d47;
+  background-color: #111f13;
+}
+
+.gameOne .modeOpen .betList-1 > div:first-child {
+  border-left: 1px solid #536d47;
+}
+
+.gameOne .modeOpen .betList-2 .betZone {
+  border-color: #536d47;
+  background-color: #111f13;
+}
+
+.gameOne .modeOpen .betList-2 .betZone:hover {
+  background-color: #111f13;
+}
+
+.gameOne .modeOpen .betList-3, .gameOne .modeOpen .betPage1 .betList-4, .betPage1 .gameOne .modeOpen .betList-4 {
+  border-color: #536d47;
+  background-color: #111f13;
+}
+
+.gameOne .modeOpen .betList-3 .betZone, .gameOne .modeOpen .betPage1 .betList-4 .betZone, .betPage1 .gameOne .modeOpen .betList-4 .betZone {
+  border-color: #536d47;
+}
+
+.gameOne .modeOpen .betList-4 {
+  border-color: #536d47;
+  background-color: #111f13;
+}
+
+.gameOne .modeOpen .betList-4 .betZone {
+  border-color: #536d47;
+}
+
+.gameThree .betPage1 .modeOpen .betZone {
+  border-color: #536d47;
+}
+
+.gameThree .betPage1 .modeOpen .betList-2 {
+  border-color: #536d47;
+  background-color: #111f13;
+}
+
+.gameThree .betPage2 .modeOpen .betZone {
+  border-color: #536d47;
+}
+
+.gameThree .betPage2 .modeOpen .betList-1, .gameThree .betPage2 .modeOpen .betList-2 {
+  border-color: #536d47;
+  background-color: #111f13;
+}
+
+.gameThree .betPage3 .modeOpen .betZone {
+  border-color: #536d47;
+}
+
+.gameThree .betPage3 .modeOpen .betList-1, .gameThree .betPage3 .modeOpen .betList-2 {
+  border-color: #536d47;
+  background-color: #111f13;
+}
+
+.gameThree .chips2d-set {
+  line-height: 52px;
+}
+
+.popBgColorless, .popBgBlack, .popBgWhite {
+  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+}
+
+.popBgBlack {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popBgWhite {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.popContent {
+  padding: 10px;
+}
+
+.infoRed, .infoBK, .infoYellow, .infoBet-success, .infoBet-fail {
+  min-width: 460px;
+  height: 60px;
+  border: 1px solid #cc2121;
+  padding: 0 10px;
+  background: linear-gradient(-180deg, rgba(152, 0, 0, 0.8) 50%, #3d0000 100%);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.infoRed p, .infoBK p, .infoYellow p, .infoBet-success p, .infoBet-fail p {
+  font-size: 30px;
+  text-shadow: 2px 2px #000;
+}
+
+.gameThree .infoRed, .gameThree .infoBK, .gameThree .infoYellow, .gameThree .infoBet-success, .gameThree .infoBet-fail {
+  min-width: 360px;
+  height: 60px;
+}
+
+.gameThree .infoRed p, .gameThree .infoBK p, .gameThree .infoYellow p, .gameThree .infoBet-success p, .gameThree .infoBet-fail p {
+  font-size: 20px;
+}
+
+.infoBK {
+  border-color: #000;
+  background: linear-gradient(-180deg, rgba(16, 16, 16, 0.8) 50%, black 100%);
+  color: #EFB807;
+}
+
+.infoYellow {
+  border-color: #000;
+  background: linear-gradient(-180deg, rgba(252, 193, 0, 0.8) 50%, rgba(197, 153, 9, 0.8) 100%);
+  color: #000;
+}
+
+.infoYellow p {
+  text-shadow: none;
+}
+
+.infoBet-success {
+  border-color: #404C1E;
+  background: linear-gradient(-180deg, rgba(168, 190, 54, 0.8) 50%, rgba(132, 161, 56, 0.8) 100%);
+  color: #fff;
+}
+
+.infoBet-fail {
+  background: linear-gradient(-180deg, rgba(216, 34, 50, 0.8) 50%, rgba(148, 4, 26, 0.8) 100%);
+}
+
+.infoBet-youWin {
+  min-width: 550px;
+  height: 85px;
+  border: 1px solid #000;
+  padding: 0 20px 0 150px;
+  background: url(../../images/sic_bo-web/bgWinMoney.png) left bottom no-repeat, linear-gradient(-180deg, #050505 10%, #4F461D 100%);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.infoBet-youWin h3 {
+  font-size: 28px;
+  color: #EFB807;
+}
+
+.infoBet-youWin p {
+  font-size: 60px;
+  font-weight: bold;
+  color: #F5DC6E;
+}
+
+.gameThree .infoBet-youWin {
+  flex-direction: column;
+  justify-content: center;
+  min-width: 360px;
+  height: 60px;
+  padding: 0 20px 0 120px;
+  background-position: -30px bottom;
+}
+
+.gameThree .infoBet-youWin h3 {
+  width: 200px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.gameThree .infoBet-youWin h3 span {
+  margin-right: 4px;
+  font-weight: normal;
+  color: #B69C48;
+}
+
+.gameThree .infoBet-youWin p {
+  width: 200px;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.infoNote, .infoLimit {
+  width: 520px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.infoNote h3, .infoLimit h3 {
+  position: relative;
+  height: 34px;
+  padding: 0 10px;
+  background-color: #000;
+  font-size: 20px;
+  line-height: 34px;
+  color: #f9f1d8;
+}
+
+.infoNote h3 .btnClose, .infoLimit h3 .btnClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: auto;
+}
+
+.infoNote p, .infoLimit p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.gameThree .infoNote, .gameThree .infoLimit {
+  width: 380px;
+}
+
+.gameThree .infoNote h3, .gameThree .infoLimit h3 {
+  font-size: 18px;
+}
+
+.infoLimit {
+  position: absolute;
+  top: 120px;
+}
+
+.infoLimit dl {
+  margin-bottom: 16px;
+}
+
+.infoLimit dl:last-child {
+  margin: 0;
+}
+
+.infoLimit dt {
+  width: 100px;
+  margin-right: 10px;
+  color: #F2E2AC;
+}
+
+.infoLimit dd {
+  width: 60px;
+}
+
+.infoLimit .popContent {
+  padding: 14px 10px;
+}
+
+.infoLimit .popContent > div {
+  width: 46%;
+}
+
+.infoLimit .textBlue {
+  color: #216BB0;
+}
+
+.infoLimit .textRed {
+  color: #B70A0A;
+}
+
+.infoLimit .textGreen {
+  color: #6C972F;
+}
+
+.gameOne {
+  background: url(../../images/sic_bo-web/bgOne.png) repeat-x top left #010102;
+}
+
+.mainOne {
+  margin: 5px 5px 0 5px;
+}
+
+.mainOne .videoArea {
+  margin-bottom: 2px;
+}
+
+.mainOne .betArea {
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.mainOne .betChips {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.videoZone {
+  position: relative;
+}
+
+.videoZone .videoTool {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+}
+
+.videoZone .dealerName {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+}
+
+.videoZone .btnVideoZoom, .videoZone .btnVideoZoomClose {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+.video {
+  width: 680px;
+  height: 351px;
+  background-color: #000;
+}
+
+.resultZone {
+  padding: 10px 19px 10px 21px;
+}
+
+.result {
+  width: 354px;
+  margin: 2px 0 14px;
+}
+
+.result li {
+  margin-right: 11px;
+}
+
+.result li:last-child {
+  margin: 0;
+}
+
+.resultPoint dl {
+  margin-right: 12px;
+  border-left: 1px solid #5E5E5E;
+  padding-left: 12px;
+  font-style: italic;
+}
+
+.resultPoint dt {
+  margin-top: 4px;
+  line-height: 13px;
+  font-size: 13px;
+  color: #EFB807;
+}
+
+.resultPoint dd {
+  font-size: 54px;
+  font-weight: bold;
+  line-height: 54px;
+}
+
+.resultPoint ul {
+  flex-direction: column;
+  margin-top: 6px;
+}
+
+.resultPoint li {
+  width: 60px;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.resultPoint li:last-child {
+  margin-bottom: 0;
+}
+
+.historyList {
+  background-color: #0B3030;
+}
+
+.historyList ul {
+  margin: 0 12px;
+  border-bottom: 1px solid #344344;
+  line-height: 47px;
+}
+
+.historyList ul:last-child {
+  border-bottom: none;
+}
+
+.historyList li {
+  flex: 1;
+}
+
+.historyList .gameNo {
+  width: 100px;
+  color: #2A8C92;
+}
+
+.historyList .dice-none,
+.historyList .dice-1,
+.historyList .dice-2,
+.historyList .dice-3,
+.historyList .dice-4,
+.historyList .dice-5,
+.historyList .dice-6, .historyList .dice-2, .historyList .dice-3, .historyList .dice-4, .historyList .dice-5, .historyList .dice-6,
+.historyList .dice-deer, .historyList .dice-gourd, .historyList .dice-chicken, .historyList .dice-prawn, .historyList .dice-crab, .historyList .dice-fish {
+  margin-right: 4px;
+  opacity: 0.8;
+}
+
+.historyList .resultNo {
+  font-size: 26px;
+  font-weight: bold;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.historyList .textOutline {
+  width: 52px;
+  margin-right: 2px;
+  font-size: 13px;
+  line-height: 24px;
+  opacity: 0.8;
+}
+
+.odd h2 {
+  color: #4694DD;
+}
+
+.even h2 {
+  color: #F00D0D;
+}
+
+.mainOne .betList-1 > div {
+  padding-top: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #84A575;
+  border-left: none;
+}
+
+.mainOne .betList-1 > div:first-child {
+  border-left: 1px solid #84A575;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.mainOne .betList-1 > div:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.mainOne .betList-1 .betContent {
+  height: 90px;
+}
+
+.mainOne .betList-1 .betContent h2 {
+  margin-bottom: 3px;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.mainOne .betList-1 .betContent h3 {
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.mainOne .betList-2 .betZone {
+  flex: 1;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #84A575;
+  border-left: none;
+  border-top: none;
+  padding-top: 7px;
+}
+
+.mainOne .betList-2 .betZone:first-child {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #84A575;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.mainOne .betList-2 .betZone:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.mainOne .betList-2 h2 {
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.mainOne .betList-3, .mainOne .betPage1 .betList-4, .betPage1 .mainOne .betList-4 {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #84A575;
+  border-top: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  background-color: #243F28;
+}
+
+.mainOne .betList-3 .betZone, .mainOne .betPage1 .betList-4 .betZone, .betPage1 .mainOne .betList-4 .betZone {
+  flex: 1;
+  width: 64px;
+  border-left-width: 1px;
+  border-left-style: dotted;
+  border-left-color: #84A575;
+  padding: 6px 0;
+}
+
+.mainOne .betList-3 .betZone:last-child, .mainOne .betPage1 .betList-4 .betZone:last-child, .betPage1 .mainOne .betList-4 .betZone:last-child {
+  border-right-width: 1px;
+  border-right-style: dotted;
+  border-right-color: #84A575;
+}
+
+.mainOne .betList-3 .betZone span:first-child, .mainOne .betPage1 .betList-4 .betZone span:first-child, .betPage1 .mainOne .betList-4 .betZone span:first-child {
+  margin-bottom: 4px;
+}
+
+.mainOne .betList-3 .textOdds, .mainOne .betPage1 .betList-4 .textOdds, .betPage1 .mainOne .betList-4 .textOdds {
+  width: 30px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.mainOne .betList-4 {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #84A575;
+  border-top: none;
+  border-radius: 8px;
+  padding: 6px 0;
+  background-color: #243F28;
+}
+
+.mainOne .betList-4 .betZone {
+  flex: 1;
+  width: 150px;
+  border-left-width: 1px;
+  border-left-style: dotted;
+  border-left-color: #84A575;
+  padding: 6px 0;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.mainOne .betList-4 .betZone:last-child {
+  border-right-width: 1px;
+  border-right-style: dotted;
+  border-right-color: #84A575;
+}
+
+.mainOne .betList-4 .textOdds {
+  width: 60px;
+  margin: 0 auto;
+  line-height: 15px;
+}
+
+.mainOne .betChips {
+  pointer-events: none;
+}
+
+.mainOne .betChips .betZone {
+  border-color: rgba(255, 255, 255, 0);
+  background: none;
+}
+
+.mainOne .betChips .betZone:last-child {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.mainOne .betChips .betZone .btnCheck {
+  pointer-events: auto;
+}
+
+.mainOne .betChips .betList-1 > div {
+  height: 120px;
+  border-color: rgba(255, 255, 255, 0);
+  padding-bottom: 20px;
+  background: none;
+}
+
+.mainOne .betChips .small .chips3dTable, .mainOne .betChips .odd .chips3dTable, .mainOne .betChips .diceAll .chips3dTable, .mainOne .betChips .even .chips3dTable, .mainOne .betChips .big .chips3dTable {
+  bottom: 22px;
+}
+
+.mainOne .betChips .betList-2 .betZone {
+  height: 58px;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.mainOne .betChips .betList-2 .betZone:first-child {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.mainOne .betChips .betList-2 .chips3dTable {
+  bottom: 20px;
+}
+
+.mainOne .betChips .betList-3, .mainOne .betChips .betPage1 .betList-4, .betPage1 .mainOne .betChips .betList-4 {
+  border-color: rgba(255, 255, 255, 0);
+  background: none;
+}
+
+.mainOne .betChips .betList-3 .betZone, .mainOne .betChips .betPage1 .betList-4 .betZone, .betPage1 .mainOne .betChips .betList-4 .betZone {
+  height: 86px;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.mainOne .betChips .betList-3 .betZone:last-child, .mainOne .betChips .betPage1 .betList-4 .betZone:last-child, .betPage1 .mainOne .betChips .betList-4 .betZone:last-child {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.mainOne .betChips .betList-4 {
+  border-color: rgba(255, 255, 255, 0);
+  background: none;
+}
+
+.mainOne .betChips .betList-4 .betZone {
+  height: 52px;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.mainOne .betChips .betList-4 .betZone:last-child {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.dicePair {
+  background-color: #243F28;
+}
+
+.dicePair .betZone {
+  width: 50px;
+  border-left-width: 1px;
+  border-left-style: dotted;
+  border-color: #84A575;
+  padding: 8px 0;
+}
+
+.dicePair .betZone:first-child {
+  border: 0;
+}
+
+.dicePair .betZone span:first-child {
+  margin-bottom: 5px;
+}
+
+.diceAll {
+  width: 164px;
+  height: 120px;
+  flex-direction: column;
+}
+
+.diceAll .betContent {
+  height: 90px;
+  width: 130px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+
+.diceThree {
+  background-color: #243F28;
+}
+
+.diceThree .betContent {
+  height: 90px;
+}
+
+.diceThree .betZone {
+  width: 50px;
+  border-left-width: 1px;
+  border-left-style: dotted;
+  border-left-color: #84A575;
+  padding: 6px 0;
+}
+
+.diceThree .betZone:first-child {
+  border: none;
+}
+
+.diceThree .betZone span {
+  margin-bottom: 4px;
+}
+
+.diceThree .betZone span:last-child {
+  margin: 0;
+}
+
+.roadArea .ulSelect {
+  width: 164px;
+}
+
+.roadArea .roadZone {
+  overflow: hidden;
+  width: 910px;
+  background-color: #fff;
+}
+
+.roadArea .roadZone:hover .ulArrowLR {
+  opacity: 1;
+}
+
+.roadArea .ulArrowLR {
+  opacity: 0;
+}
+
+.roadArea .roadZoneWH {
+  width: 4000px;
+}
+
+.roadArea table {
+  table-layout: fixed;
+}
+
+.roadArea td {
+  width: 26px;
+  height: 24px;
+  border-right: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  line-height: 23px;
+}
+
+.roadArea tr:last-child td {
+  border-bottom: none;
+}
+
+.dicePair .chips3dTable, .diceThree .chips3dTable, .betList-3 .betZone .chips3dTable, .betPage1 .betList-4 .betZone .chips3dTable, .betList-4 .betZone .chips3dTable {
+  height: 100%;
+}
+
+.infoArea {
+  width: 100%;
+  background-image: linear-gradient(-180deg, #204548 0%, #04100D 100%);
+}
+
+.infoBasic {
+  padding: 10px 30px 0 16px;
+  background-image: linear-gradient(-180deg, #172526 94%, #0E1516 100%);
+  color: #CFCFCF;
+}
+
+.infoDate {
+  border-bottom: 1px solid #383838;
+  padding-bottom: 4px;
+  line-height: 28px;
+}
+
+.infoGame {
+  padding: 14px 0;
+  border-bottom: 1px solid #383838;
+}
+
+.gameName {
+  color: #EFB807;
+}
+
+.gameName dt {
+  margin-bottom: 2px;
+  line-height: 18px;
+}
+
+.gameName dd {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.gameLimit dt {
+  margin-bottom: 2px;
+  line-height: 18px;
+}
+
+.infoTime {
+  padding: 36px 0;
+}
+
+.infoTime dt {
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 18px;
+}
+
+.infoTime dt p {
+  margin-right: 4px;
+  font-size: 96px;
+  line-height: 76px;
+  color: #EFB807;
+}
+
+.infoTime dt span {
+  font-size: 18px;
+  color: #CDBD78;
+}
+
+.infoTime dd {
+  height: 3px;
+  background-color: #505050;
+}
+
+.infoTime dd span {
+  width: 80%;
+  height: 3px;
+  background-image: linear-gradient(-90deg, #EFB807 0%, #AF5E00 100%);
+}
+
+.infoTime.finish dt p {
+  color: #ff2800;
+}
+
+.infoTime.finish dt span {
+  color: #e2836c;
+}
+
+.infoTime.finish dd span {
+  background: linear-gradient(-90deg, #af0000 0%, #ef6207 100%);
+}
+
+.infoTime.end dt p, .infoTime.end span {
+  color: #505050;
+}
+
+.infoTime.end dd span {
+  background: #505050;
+}
+
+.infoCount {
+  margin: 12px 20px 12px 8px;
+}
+
+.infoCountIn {
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.infoCountIn dl {
+  border: 1px solid #1A4040;
+  border-radius: 6px;
+  border-bottom: none;
+}
+
+.infoCountIn dl:last-child {
+  border: 1px solid #1A4040;
+}
+
+.infoCountIn dt {
+  flex: 1;
+  margin-right: 8px;
+  color: #B8AB83;
+}
+
+.infoCountIn dd {
+  flex: 1;
+  margin-left: 8px;
+}
+
+.infoCountIn .textOdd {
+  color: #4694DD;
+}
+
+.infoCountIn .textEven {
+  color: #F00D0D;
+}
+
+.selectChipsBox {
+  position: relative;
+  flex-wrap: wrap;
+  align-content: stretch;
+  box-sizing: initial;
+  width: 280px;
+  height: 181px;
+  margin: 0 20px 8px 8px;
+  padding: 6px 0 72px;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml,<svg width="280" height="259" xmlns="http://www.w3.org/2000/svg"><path d="M71.5 201a8.5 8.5 0 0 1 8.5-8.5h194c3.035 0 5.5-2.464 5.5-5.5V6c0-3.032-2.465-5.5-5.5-5.5H6A5.502 5.502 0 0 0 .5 6v247a5.5 5.5 0 0 0 5.5 5.5h60a5.5 5.5 0 0 0 5.5-5.5v-52z" fill="%23223534" stroke="%23405E59" fill-rule="evenodd"/></svg>');
+}
+
+.selectChipsBox li {
+  flex: 1;
+  height: 94px;
+  cursor: pointer;
+}
+
+.selectChipsBox li:last-child {
+  position: absolute;
+  left: 11px;
+  bottom: 10px;
+  height: 50px;
+}
+
+.selectChipsBox span {
+  width: 72px;
+  height: 72px;
+  border-radius: 99em;
+  font-size: 20px;
+  line-height: 72px;
+}
+
+.selectChipsBox span.now {
+  width: 86px;
+  height: 86px;
+  border: 3px solid #EFB807;
+  line-height: 80px;
+}
+
+.selectChipsBox .chips2d-set {
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+}
+
+.infoFooter {
+  position: relative;
+  margin: 0 20px 0 7px;
+}
+
+.infoTotal {
+  position: absolute;
+  right: 0;
+  top: -70px;
+  width: 204px;
+  height: 61px;
+  border: 1px solid #405E59;
+  border-radius: 6px;
+  padding: 8px 10px 0 0;
+  background-color: #223534;
+}
+
+.infoTotal dt {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #CECECE;
+}
+
+.infoTotal dd {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #EFB807;
+}
+
+.infoConfirm .btnConfirm {
+  flex: 2;
+  margin-right: 2px;
+}
+
+.infoConfirm .btnRepeat, .infoConfirm .btnCancel {
+  flex: 1;
+  margin-right: 2px;
+}
+
+.infoConfirm .btnCancel {
+  flex: 1;
+  margin-right: 0;
+}
+
+.mainThree {
+  position: relative;
+  width: 463px;
+  margin-right: 2px;
+  background: url(../../images/sic_bo-web/bgThree.png) repeat top left;
+}
+
+.mainThree .gameArea {
+  position: relative;
+}
+
+.mainThree .videoArea {
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.mainThree .btnVideoZoom, .mainThree .btnVideoZoomClose {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 26px;
+  height: 26px;
+}
+
+.mainThree .btnVideoZoom:after, .mainThree .btnVideoZoomClose:after {
+  width: 16px;
+  height: 16px;
+}
+
+.mainThree .videoTool {
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+}
+
+.mainThree .btnVideoRefresh {
+  width: 40px;
+  height: 24px;
+}
+
+.mainThree .btnVideoRefresh:after {
+  width: 14px;
+  height: 14px;
+}
+
+.mainThree .btnVideoChange {
+  width: 40px;
+  height: 24px;
+  font-size: 15px;
+}
+
+.mainThree .btnVideoChange:before {
+  width: 15px;
+  height: 11px;
+  margin: 5px 4px 5px 5px;
+}
+
+.mainThree .dealerName {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+}
+
+.mainThree .betArea {
+  width: 456px;
+  margin: 0 auto;
+}
+
+.mainThree .betChips {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.mainThree .betChips .betZone {
+  border-color: rgba(255, 255, 255, 0);
+  background: none;
+}
+
+.mainThree .betChips .btnCheck {
+  pointer-events: auto;
+}
+
+.mainThree .chips3dTable-in .chips3d-1 {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-1k {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-1m {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-2 {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-2k {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-2m {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-5 {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-5k {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-5m {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-10 {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-10k {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-10m {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-20 {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-20k {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-20m {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-50 {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-50k {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-50m {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-100 {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-100k {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-100m {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-200 {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-200k {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-200m {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-500 {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-500k {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-500m {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-set {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .chips3dTable-in .chips3d-user {
+  width: 37px;
+  height: 35px;
+}
+
+.mainThree .resultZone {
+  height: 144px;
+  margin: 0;
+}
+
+.mainThree .result {
+  width: auto;
+  margin: 0;
+}
+
+.mainThree .result ul {
+  margin-right: 22px;
+}
+
+.mainThree .resultPoint dl {
+  padding-left: 16px;
+}
+
+.mainThree .resultPoint dd {
+  font-size: 62px;
+  line-height: 58px;
+}
+
+.mainThree .resultPoint ul {
+  margin-right: 0;
+}
+
+.mainThree .roadArea {
+  background-color: #fff;
+}
+
+.mainThree .ulSelect {
+  width: 78px;
+  font-size: 13px;
+}
+
+.mainThree .roadZone {
+  width: 235px;
+}
+
+.mainThree .btnArrow-L, .mainThree .btnArrow-R {
+  width: 28px;
+  height: 28px;
+}
+
+.mainThree .btnArrow-L:after, .mainThree .btnArrow-R:after {
+  width: 9px;
+  height: 16px;
+}
+
+.mainThree .infoCount {
+  margin: 0;
+  padding: 6px 2px 0;
+}
+
+.mainThree .infoCountIn {
+  flex-wrap: wrap;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.mainThree .infoCountIn dl {
+  width: 47%;
+  margin-right: 5%;
+  margin-bottom: 4px;
+  border: none;
+}
+
+.mainThree .infoCountIn dl:last-child {
+  margin-bottom: 0;
+}
+
+.mainThree .infoCountIn dl:nth-child(even) {
+  margin-right: 0;
+}
+
+.mainThree .infoCountIn dt {
+  width: 38px;
+  margin-right: 0;
+  color: #665C3F;
+}
+
+.mainThree .infoCountIn dd {
+  width: 40px;
+  color: #665C3F;
+}
+
+.mainThree .infoCountIn .textOdd {
+  color: #4694DD;
+}
+
+.mainThree .infoCountIn .textEven {
+  color: #F00D0D;
+}
+
+.mainThree .infoCountIn .lineHeight {
+  line-height: 15px;
+}
+
+.infoTitle {
+  height: 40px;
+  padding-left: 10px;
+  background: linear-gradient(-180deg, #101010 94%, #000 100%);
+}
+
+.infoTitle ul li {
+  font-size: 17px;
+  line-height: 40px;
+  color: #EFB807;
+  cursor: pointer;
+}
+
+.infoTitle ul li strong {
+  margin-left: 4px;
+}
+
+.infoTitle ul .icTriangle {
+  width: 20px;
+  height: 40px;
+}
+
+.infoTitle dl {
+  height: 40px;
+}
+
+.infoTitle dt {
+  position: relative;
+  margin-right: 8px;
+  font-size: 11px;
+  color: #CFCFCF;
+  cursor: pointer;
+}
+
+.infoTitle dt:hover {
+  color: #fff;
+}
+
+.infoTitle dt:hover strong {
+  position: absolute;
+  top: 16px;
+  left: -2px;
+  z-index: 10;
+  border: 1px #333 solid;
+  padding: 4px 6px;
+  transition: all .15s linear;
+  background-color: #000;
+  color: #EFB807;
+}
+
+.infoTitle dt strong {
+  display: none;
+}
+
+.infoTitle .ropdownLimit a {
+  padding: 0 8px 0 18px;
+  background-position: 4px center;
+  background-size: 11px 14px;
+  font-size: 12px;
+}
+
+.infoTitle .ropdownLimit ul a {
+  padding: 0;
+}
+
+.infoTitle .btnOneGame {
+  margin-left: 10px;
+}
+
+.video-XS {
+  width: 463px;
+  height: 261px;
+  background-color: #333;
+}
+
+.betPage1 {
+  position: relative;
+}
+
+.betPage1 .betList-1 h2 {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.betPage1 .betList-1 .betZone {
+  flex: 1;
+  height: 60px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #84A575;
+  border-left: none;
+}
+
+.betPage1 .betList-1 .betZone:first-child {
+  border-left: 1px solid #84A575;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.betPage1 .betList-1 .betZone:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.betPage1 .betList-2 {
+  height: 72px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #84A575;
+  border-radius: 6px;
+  border-top: none;
+  background-color: #243F28;
+}
+
+.betPage1 .betList-2 .betContent {
+  padding-top: 8px;
+}
+
+.betPage1 .betList-2 .betZone {
+  flex: 1;
+  width: 76px;
+  height: 43px;
+  border-right-width: 1px;
+  border-right-style: dotted;
+  border-right-color: #84A575;
+}
+
+.betPage1 .betList-2 .betZone:last-child {
+  border-right: none;
+}
+
+.betPage1 .betList-2 .textOdds {
+  line-height: 20px;
+}
+
+.betPage1 .betList-3, .betPage1 .betList-4 {
+  height: 50px;
+}
+
+.betPage1 .betList-3 h2, .betPage1 .betList-4 h2 {
+  font-size: 23px;
+  line-height: 27px;
+}
+
+.betPage1 .betList-3 .betZone, .betPage1 .betList-4 .betZone {
+  width: 65px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #84A575;
+  border-top: none;
+  border-right: none;
+  padding-top: 4px;
+}
+
+.betPage1 .betList-3 .betZone:first-child, .betPage1 .betList-4 .betZone:first-child {
+  width: 66px;
+  border-top-left-radius: 8px;
+}
+
+.betPage1 .betList-3 .betZone:last-child, .betPage1 .betList-4 .betZone:last-child {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #84A575;
+  border-top-right-radius: 8px;
+}
+
+.betPage1 .betList-3 .textOdds, .betPage1 .betList-4 .textOdds {
+  line-height: 18px;
+}
+
+.betPage1 .betList-4 .betZone:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 6px;
+}
+
+.betPage1 .betList-4 .betZone:last-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 6px;
+}
+
+.betPage1 .betChips .betList-1 .betZone {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.betPage1 .betChips .betList-1 .chips3dTable {
+  bottom: 20px;
+}
+
+.betPage1 .betChips .betList-2 {
+  border-color: rgba(255, 255, 255, 0);
+  background: none;
+}
+
+.betPage1 .betChips .betList-2 .betZone {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.betPage1 .betChips .betList-3 .betZone, .betPage1 .betChips .betList-4 .betZone {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.betPage1 .betChips .betList-3 .chips3dTable, .betPage1 .betChips .betList-4 .chips3dTable {
+  bottom: 18px;
+}
+
+.betPage2 {
+  position: relative;
+}
+
+.betPage2 .betList-1 {
+  height: 167px;
+  padding-top: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #84A575;
+  border-radius: 6px;
+  background-color: #243F28;
+}
+
+.betPage2 .betList-1 .betContent {
+  flex-wrap: wrap;
+  margin-bottom: 3px;
+}
+
+.betPage2 .betList-1 .betZone {
+  height: 38px;
+  width: 91px;
+  margin-bottom: 9px;
+  border-right-width: 1px;
+  border-right-style: dotted;
+  border-right-color: #84A575;
+}
+
+.betPage2 .betList-1 .betZone:nth-child(5), .betPage2 .betList-1 .betZone:nth-child(10), .betPage2 .betList-1 .betZone:last-child {
+  width: 90px;
+  border: none;
+}
+
+.betPage2 .betList-1 .betZone:nth-child(11), .betPage2 .betList-1 .betZone:nth-child(12), .betPage2 .betList-1 .betZone:nth-child(13), .betPage2 .betList-1 .betZone:nth-child(14), .betPage2 .betList-1 .betZone:last-child {
+  margin-bottom: 0;
+}
+
+.betPage2 .betList-1 .betZone span:first-child {
+  margin-right: 3px;
+}
+
+.betPage2 .betList-2 {
+  height: 65px;
+  padding-top: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #84A575;
+  border-top: none;
+  border-radius: 6px;
+  background-color: #243F28;
+}
+
+.betPage2 .betList-2 .betZone {
+  flex: 1;
+  height: 36px;
+  border-right-width: 1px;
+  border-right-style: dotted;
+  border-right-color: #84A575;
+}
+
+.betPage2 .betList-2 .betZone:last-child {
+  border: none;
+}
+
+.betPage2 .betList-2 .betZone span:first-child {
+  margin-right: 3px;
+}
+
+.betPage2 .betChips .betList-1, .betPage2 .betChips .betList-2 {
+  border-color: rgba(255, 255, 255, 0);
+  background: none;
+}
+
+.betPage2 .betChips .betList-1 .betZone, .betPage2 .betChips .betList-2 .betZone {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.betPage3 {
+  position: relative;
+}
+
+.betPage3 .betList-1 {
+  width: 306px;
+  height: 232px;
+  padding-top: 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #84A575;
+  border-radius: 6px;
+  background-color: #243F28;
+}
+
+.betPage3 .betList-1 .betContent {
+  flex-wrap: wrap;
+}
+
+.betPage3 .betList-1 .betZone {
+  height: 54px;
+  width: 152px;
+  margin-bottom: 12px;
+  border-right-width: 1px;
+  border-right-style: dotted;
+  border-right-color: #84A575;
+}
+
+.betPage3 .betList-1 .betZone:nth-child(even) {
+  border: none;
+}
+
+.betPage3 .betList-1 .betZone:nth-child(5), .betPage3 .betList-1 .betZone:nth-child(6) {
+  margin: 0;
+}
+
+.betPage3 .betList-1 .betZone span {
+  margin-right: 5px;
+}
+
+.betPage3 .betList-1 .betZone span:last-child {
+  margin: 0;
+}
+
+.betPage3 .betList-1 .textOdds {
+  line-height: 30px;
+}
+
+.betPage3 .betList-2 {
+  width: 150px;
+  padding-top: 14px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #84A575;
+  border-radius: 6px;
+  border-left: none;
+}
+
+.betPage3 .betList-2 .betContent {
+  width: 90px;
+  flex-wrap: wrap;
+  margin: 0 auto 8px;
+}
+
+.betPage3 .betList-2 .betContent span {
+  margin-bottom: 6px;
+}
+
+.betPage3 .betList-2 .betContent span:nth-child(16), .betPage3 .betList-2 .betContent span:nth-child(17), .betPage3 .betList-2 .betContent span:last-child {
+  margin-bottom: 0px;
+}
+
+.betPage3 .betChips .betList-1 {
+  border-color: rgba(255, 255, 255, 0);
+  background: none;
+}
+
+.betPage3 .betChips .betList-1 .betZone {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.betPage3 .betChips .betList-2 .chips3dTable {
+  bottom: 70px;
+}
+
+.betPage {
+  height: 25px;
+}
+
+.betPage a {
+  width: 50px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.betPage a:after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #3F6B5B;
+}
+
+.betPage a:last-child {
+  margin-right: 0;
+}
+
+.betPage a:hover:after {
+  background-color: #80B699;
+}
+
+.betPage a.now:after {
+  background-color: #8DF0BA;
+}
+
+.confirmArea {
+  height: 62px;
+  margin-bottom: 84px;
+  padding: 0 3px;
+  background-image: linear-gradient(-180deg, #001613 0%, #0A2C27 20%);
+}
+
+.confirmArea .infoTime {
+  width: 60px;
+  height: 50px;
+  padding: 0 3px;
+  border: 1px solid #415439;
+  border-radius: 5px;
+  background: linear-gradient(-180deg, #101010 96%, #000 100%);
+  font-size: 34px;
+  color: #EFB807;
+}
+
+.confirmArea .infoTime dt {
+  margin-bottom: 0;
+}
+
+.confirmArea .infoTime dd {
+  background-color: #000;
+}
+
+.confirmArea .infoTime.finish {
+  border: 1px #ff0d09 solid;
+  background: #380615;
+  color: #ff0d09;
+}
+
+.confirmArea .infoTotalThree {
+  margin-right: 6px;
+}
+
+.confirmArea .infoTotalThree dt {
+  font-size: 12px;
+  color: #CECECE;
+}
+
+.confirmArea .infoTotalThree dd {
+  font-size: 20px;
+  font-weight: bold;
+  color: #EFB807;
+}
+
+.confirmArea .infoConfirm {
+  width: auto;
+}
+
+.confirmArea .btnConfirm {
+  height: 42px;
+  padding: 0 8px;
+}
+
+.confirmArea .btnConfirm:before {
+  width: 20px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.confirmArea .btnRepeat, .confirmArea .btnCancel {
+  width: 42px;
+}
+
+.confirmArea .btnRepeat:before, .confirmArea .btnCancel:before {
+  width: 23px;
+  height: 18px;
+}
+
+.confirmArea .btnCancel:before {
+  width: 15px;
+  height: 15px;
+}
+
+.chips3dSelect {
+  left: 0;
+  bottom: 144px;
+  width: 100%;
+  height: 84px;
+}
+
+.dice-none {
+  border: 1px solid #9e9e9e;
+}
+
+.dice-1, .dice-2, .dice-3, .dice-4, .dice-5, .dice-6 {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #F4F4F4;
+  background-color: #fff;
+}
+
+.dice-1:after, .dice-2:after, .dice-3:after, .dice-4:after, .dice-5:after, .dice-6:after {
+  background-image: url('data:image/svg+xml,<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="7" fill="%23B70A0A" fill-rule="evenodd"/></svg>');
+}
+
+.dice-2:after {
+  background-image: url('data:image/svg+xml,<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><g fill="%23000000" fill-rule="evenodd"><circle cx="9" cy="9" r="4"/><circle cx="31" cy="31" r="4"/></g></svg>');
+}
+
+.dice-3:after {
+  background-image: url('data:image/svg+xml,<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><g fill="%23000000" fill-rule="evenodd"><circle cx="9" cy="9" r="4"/><circle cx="31" cy="31" r="4"/><circle cx="20" cy="20" r="4"/></g></svg>');
+}
+
+.dice-4:after {
+  background-image: url('data:image/svg+xml,<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><g fill="%23B70A0A" fill-rule="evenodd"><circle cx="9" cy="9" r="4"/><circle cx="31" cy="31" r="4"/><circle transform="matrix(-1 0 0 1 62 0)" cx="31" cy="9" r="4"/><circle transform="matrix(-1 0 0 1 18 0)" cx="9" cy="31" r="4"/></g></svg>');
+}
+
+.dice-5:after {
+  background-image: url('data:image/svg+xml,<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><g fill="%23000000" fill-rule="evenodd"><circle cx="9" cy="9" r="4"/><circle cx="31" cy="31" r="4"/><circle transform="matrix(-1 0 0 1 62 0)" cx="31" cy="9" r="4"/><circle transform="matrix(-1 0 0 1 18 0)" cx="9" cy="31" r="4"/><circle transform="matrix(-1 0 0 1 40 0)" cx="20" cy="20" r="4"/></g></svg>');
+}
+
+.dice-6:after {
+  background-image: url('data:image/svg+xml,<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><g fill="%23000000" fill-rule="evenodd"><circle cx="9" cy="9" r="4"/><circle cx="31" cy="31" r="4"/><circle transform="matrix(-1 0 0 1 62 0)" cx="31" cy="9" r="4"/><circle transform="matrix(-1 0 0 1 18 0)" cx="9" cy="31" r="4"/><circle cx="9" cy="20" r="4"/><circle transform="matrix(-1 0 0 1 62 0)" cx="31" cy="20" r="4"/></g></svg>');
+}
+
+.result .dice-none, .result .dice-1, .result .dice-2, .result .dice-3, .result .dice-4, .result .dice-5, .result .dice-6, .result .dice-2, .result .dice-3, .result .dice-4, .result .dice-5, .result .dice-6 {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+}
+
+.result .dice-none:after, .result .dice-1:after, .result .dice-2:after, .result .dice-3:after, .result .dice-4:after, .result .dice-5:after, .result .dice-6:after, .result .dice-2:after, .result .dice-3:after, .result .dice-4:after, .result .dice-5:after, .result .dice-6:after {
+  width: 54px;
+  height: 54px;
+}
+
+.historyList .dice-none, .historyList .dice-1, .historyList .dice-2, .historyList .dice-3, .historyList .dice-4, .historyList .dice-5, .historyList .dice-6, .historyList .dice-2, .historyList .dice-3, .historyList .dice-4, .historyList .dice-5, .historyList .dice-6 {
+  width: 26px;
+  height: 26px;
+  border-radius: 3px;
+}
+
+.historyList .dice-none:after, .historyList .dice-1:after, .historyList .dice-2:after, .historyList .dice-3:after, .historyList .dice-4:after, .historyList .dice-5:after, .historyList .dice-6:after, .historyList .dice-2:after, .historyList .dice-3:after, .historyList .dice-4:after, .historyList .dice-5:after, .historyList .dice-6:after {
+  width: 24px;
+  height: 24px;
+}
+
+.mainOne .small {
+  width: 77px;
+  height: 120px;
+}
+
+.mainOne .small .betContent {
+  width: 75px;
+  padding-top: 6px;
+}
+
+.mainOne .odd {
+  width: 78px;
+  height: 120px;
+}
+
+.mainOne .odd .betContent {
+  width: 76px;
+  padding-top: 6px;
+}
+
+.mainOne .even {
+  width: 78px;
+  height: 120px;
+}
+
+.mainOne .even .betContent {
+  width: 76px;
+  padding-top: 6px;
+}
+
+.mainOne .big {
+  width: 78px;
+  height: 120px;
+}
+
+.mainOne .big .betContent {
+  width: 76px;
+  padding-top: 6px;
+}
+
+.mainOne .dicePair .dice-1, .mainOne .dicePair .dice-2, .mainOne .dicePair .dice-3, .mainOne .dicePair .dice-4, .mainOne .dicePair .dice-5, .mainOne .dicePair .dice-6, .mainOne .dicePair .dice-2, .mainOne .dicePair .dice-3, .mainOne .dicePair .dice-4, .mainOne .dicePair .dice-5, .mainOne .dicePair .dice-6 {
+  width: 31px;
+  height: 31px;
+  border-radius: 4px;
+}
+
+.mainOne .dicePair .dice-1:after, .mainOne .dicePair .dice-2:after, .mainOne .dicePair .dice-3:after, .mainOne .dicePair .dice-4:after, .mainOne .dicePair .dice-5:after, .mainOne .dicePair .dice-6:after, .mainOne .dicePair .dice-2:after, .mainOne .dicePair .dice-3:after, .mainOne .dicePair .dice-4:after, .mainOne .dicePair .dice-5:after, .mainOne .dicePair .dice-6:after {
+  width: 29px;
+  height: 29px;
+}
+
+.mainOne .diceAll .dice-1, .mainOne .diceAll .dice-2, .mainOne .diceAll .dice-3, .mainOne .diceAll .dice-4, .mainOne .diceAll .dice-5, .mainOne .diceAll .dice-6, .mainOne .diceAll .dice-2, .mainOne .diceAll .dice-3, .mainOne .diceAll .dice-4, .mainOne .diceAll .dice-5, .mainOne .diceAll .dice-6 {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+}
+
+.mainOne .diceAll .dice-1:after, .mainOne .diceAll .dice-2:after, .mainOne .diceAll .dice-3:after, .mainOne .diceAll .dice-4:after, .mainOne .diceAll .dice-5:after, .mainOne .diceAll .dice-6:after, .mainOne .diceAll .dice-2:after, .mainOne .diceAll .dice-3:after, .mainOne .diceAll .dice-4:after, .mainOne .diceAll .dice-5:after, .mainOne .diceAll .dice-6:after {
+  width: 18px;
+  height: 18px;
+}
+
+.mainOne .diceThree .dice-1, .mainOne .diceThree .dice-2, .mainOne .diceThree .dice-3, .mainOne .diceThree .dice-4, .mainOne .diceThree .dice-5, .mainOne .diceThree .dice-6, .mainOne .diceThree .dice-2, .mainOne .diceThree .dice-3, .mainOne .diceThree .dice-4, .mainOne .diceThree .dice-5, .mainOne .diceThree .dice-6 {
+  width: 22px;
+  height: 22px;
+  border-radius: 3px;
+}
+
+.mainOne .diceThree .dice-1:after, .mainOne .diceThree .dice-2:after, .mainOne .diceThree .dice-3:after, .mainOne .diceThree .dice-4:after, .mainOne .diceThree .dice-5:after, .mainOne .diceThree .dice-6:after, .mainOne .diceThree .dice-2:after, .mainOne .diceThree .dice-3:after, .mainOne .diceThree .dice-4:after, .mainOne .diceThree .dice-5:after, .mainOne .diceThree .dice-6:after {
+  width: 20px;
+  height: 20px;
+}
+
+.mainOne .betList-3 .dice-1, .mainOne .betPage1 .betList-4 .dice-1, .betPage1 .mainOne .betList-4 .dice-1, .mainOne .betList-3 .dice-2, .mainOne .betPage1 .betList-4 .dice-2, .betPage1 .mainOne .betList-4 .dice-2, .mainOne .betList-3 .dice-3, .mainOne .betPage1 .betList-4 .dice-3, .betPage1 .mainOne .betList-4 .dice-3, .mainOne .betList-3 .dice-4, .mainOne .betPage1 .betList-4 .dice-4, .betPage1 .mainOne .betList-4 .dice-4, .mainOne .betList-3 .dice-5, .mainOne .betPage1 .betList-4 .dice-5, .betPage1 .mainOne .betList-4 .dice-5, .mainOne .betList-3 .dice-6, .mainOne .betPage1 .betList-4 .dice-6, .betPage1 .mainOne .betList-4 .dice-6, .mainOne .betList-3 .dice-2, .mainOne .betPage1 .betList-4 .dice-2, .betPage1 .mainOne .betList-4 .dice-2, .mainOne .betList-3 .dice-3, .mainOne .betPage1 .betList-4 .dice-3, .betPage1 .mainOne .betList-4 .dice-3, .mainOne .betList-3 .dice-4, .mainOne .betPage1 .betList-4 .dice-4, .betPage1 .mainOne .betList-4 .dice-4, .mainOne .betList-3 .dice-5, .mainOne .betPage1 .betList-4 .dice-5, .betPage1 .mainOne .betList-4 .dice-5, .mainOne .betList-3 .dice-6, .mainOne .betPage1 .betList-4 .dice-6, .betPage1 .mainOne .betList-4 .dice-6 {
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+}
+
+.mainOne .betList-3 .dice-1:after, .mainOne .betPage1 .betList-4 .dice-1:after, .betPage1 .mainOne .betList-4 .dice-1:after, .mainOne .betList-3 .dice-2:after, .mainOne .betPage1 .betList-4 .dice-2:after, .betPage1 .mainOne .betList-4 .dice-2:after, .mainOne .betList-3 .dice-3:after, .mainOne .betPage1 .betList-4 .dice-3:after, .betPage1 .mainOne .betList-4 .dice-3:after, .mainOne .betList-3 .dice-4:after, .mainOne .betPage1 .betList-4 .dice-4:after, .betPage1 .mainOne .betList-4 .dice-4:after, .mainOne .betList-3 .dice-5:after, .mainOne .betPage1 .betList-4 .dice-5:after, .betPage1 .mainOne .betList-4 .dice-5:after, .mainOne .betList-3 .dice-6:after, .mainOne .betPage1 .betList-4 .dice-6:after, .betPage1 .mainOne .betList-4 .dice-6:after, .mainOne .betList-3 .dice-2:after, .mainOne .betPage1 .betList-4 .dice-2:after, .betPage1 .mainOne .betList-4 .dice-2:after, .mainOne .betList-3 .dice-3:after, .mainOne .betPage1 .betList-4 .dice-3:after, .betPage1 .mainOne .betList-4 .dice-3:after, .mainOne .betList-3 .dice-4:after, .mainOne .betPage1 .betList-4 .dice-4:after, .betPage1 .mainOne .betList-4 .dice-4:after, .mainOne .betList-3 .dice-5:after, .mainOne .betPage1 .betList-4 .dice-5:after, .betPage1 .mainOne .betList-4 .dice-5:after, .mainOne .betList-3 .dice-6:after, .mainOne .betPage1 .betList-4 .dice-6:after, .betPage1 .mainOne .betList-4 .dice-6:after {
+  width: 33px;
+  height: 33px;
+}
+
+.mainOne .betList-4 .dice-1, .mainOne .betList-4 .dice-2, .mainOne .betList-4 .dice-3, .mainOne .betList-4 .dice-4, .mainOne .betList-4 .dice-5, .mainOne .betList-4 .dice-6, .mainOne .betList-4 .dice-2, .mainOne .betList-4 .dice-3, .mainOne .betList-4 .dice-4, .mainOne .betList-4 .dice-5, .mainOne .betList-4 .dice-6 {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  margin-right: 6px;
+}
+
+.mainOne .betList-4 .dice-1:after, .mainOne .betList-4 .dice-2:after, .mainOne .betList-4 .dice-3:after, .mainOne .betList-4 .dice-4:after, .mainOne .betList-4 .dice-5:after, .mainOne .betList-4 .dice-6:after, .mainOne .betList-4 .dice-2:after, .mainOne .betList-4 .dice-3:after, .mainOne .betList-4 .dice-4:after, .mainOne .betList-4 .dice-5:after, .mainOne .betList-4 .dice-6:after {
+  width: 38px;
+  height: 38px;
+}
+
+.mainThree .result .dice-none, .mainThree .result .dice-1, .mainThree .result .dice-2, .mainThree .result .dice-3, .mainThree .result .dice-4, .mainThree .result .dice-5, .mainThree .result .dice-6, .mainThree .result .dice-2, .mainThree .result .dice-3, .mainThree .result .dice-4, .mainThree .result .dice-5, .mainThree .result .dice-6 {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+}
+
+.mainThree .result .dice-none:after, .mainThree .result .dice-1:after, .mainThree .result .dice-2:after, .mainThree .result .dice-3:after, .mainThree .result .dice-4:after, .mainThree .result .dice-5:after, .mainThree .result .dice-6:after, .mainThree .result .dice-2:after, .mainThree .result .dice-3:after, .mainThree .result .dice-4:after, .mainThree .result .dice-5:after, .mainThree .result .dice-6:after {
+  width: 66px;
+  height: 66px;
+}
+
+.mainThree .infoCountIn .dice-1, .mainThree .infoCountIn .dice-2, .mainThree .infoCountIn .dice-3, .mainThree .infoCountIn .dice-4, .mainThree .infoCountIn .dice-5, .mainThree .infoCountIn .dice-6, .mainThree .infoCountIn .dice-2, .mainThree .infoCountIn .dice-3, .mainThree .infoCountIn .dice-4, .mainThree .infoCountIn .dice-5, .mainThree .infoCountIn .dice-6 {
+  width: 22px;
+  height: 22px;
+  border-radius: 2px;
+  border: 1px solid #949494;
+}
+
+.mainThree .infoCountIn .dice-1:after, .mainThree .infoCountIn .dice-2:after, .mainThree .infoCountIn .dice-3:after, .mainThree .infoCountIn .dice-4:after, .mainThree .infoCountIn .dice-5:after, .mainThree .infoCountIn .dice-6:after, .mainThree .infoCountIn .dice-2:after, .mainThree .infoCountIn .dice-3:after, .mainThree .infoCountIn .dice-4:after, .mainThree .infoCountIn .dice-5:after, .mainThree .infoCountIn .dice-6:after {
+  width: 20px;
+  height: 20px;
+}
+
+.betPage1 .betList-2 .dice-1, .betPage1 .betList-2 .dice-2, .betPage1 .betList-2 .dice-3, .betPage1 .betList-2 .dice-4, .betPage1 .betList-2 .dice-5, .betPage1 .betList-2 .dice-6, .betPage1 .betList-2 .dice-2, .betPage1 .betList-2 .dice-3, .betPage1 .betList-2 .dice-4, .betPage1 .betList-2 .dice-5, .betPage1 .betList-2 .dice-6 {
+  width: 28px;
+  height: 28px;
+  border-radius: 3px;
+}
+
+.betPage1 .betList-2 .dice-1:after, .betPage1 .betList-2 .dice-2:after, .betPage1 .betList-2 .dice-3:after, .betPage1 .betList-2 .dice-4:after, .betPage1 .betList-2 .dice-5:after, .betPage1 .betList-2 .dice-6:after, .betPage1 .betList-2 .dice-2:after, .betPage1 .betList-2 .dice-3:after, .betPage1 .betList-2 .dice-4:after, .betPage1 .betList-2 .dice-5:after, .betPage1 .betList-2 .dice-6:after {
+  width: 26px;
+  height: 26px;
+}
+
+.betPage2 .betList-1 .dice-1, .betPage2 .betList-1 .dice-2, .betPage2 .betList-1 .dice-3, .betPage2 .betList-1 .dice-4, .betPage2 .betList-1 .dice-5, .betPage2 .betList-1 .dice-6, .betPage2 .betList-1 .dice-2, .betPage2 .betList-1 .dice-3, .betPage2 .betList-1 .dice-4, .betPage2 .betList-1 .dice-5, .betPage2 .betList-1 .dice-6 {
+  width: 28px;
+  height: 28px;
+  border-radius: 3px;
+}
+
+.betPage2 .betList-1 .dice-1:after, .betPage2 .betList-1 .dice-2:after, .betPage2 .betList-1 .dice-3:after, .betPage2 .betList-1 .dice-4:after, .betPage2 .betList-1 .dice-5:after, .betPage2 .betList-1 .dice-6:after, .betPage2 .betList-1 .dice-2:after, .betPage2 .betList-1 .dice-3:after, .betPage2 .betList-1 .dice-4:after, .betPage2 .betList-1 .dice-5:after, .betPage2 .betList-1 .dice-6:after {
+  width: 26px;
+  height: 26px;
+}
+
+.betPage2 .betList-2 .dice-1, .betPage2 .betList-2 .dice-2, .betPage2 .betList-2 .dice-3, .betPage2 .betList-2 .dice-4, .betPage2 .betList-2 .dice-5, .betPage2 .betList-2 .dice-6, .betPage2 .betList-2 .dice-2, .betPage2 .betList-2 .dice-3, .betPage2 .betList-2 .dice-4, .betPage2 .betList-2 .dice-5, .betPage2 .betList-2 .dice-6 {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+}
+
+.betPage2 .betList-2 .dice-1:after, .betPage2 .betList-2 .dice-2:after, .betPage2 .betList-2 .dice-3:after, .betPage2 .betList-2 .dice-4:after, .betPage2 .betList-2 .dice-5:after, .betPage2 .betList-2 .dice-6:after, .betPage2 .betList-2 .dice-2:after, .betPage2 .betList-2 .dice-3:after, .betPage2 .betList-2 .dice-4:after, .betPage2 .betList-2 .dice-5:after, .betPage2 .betList-2 .dice-6:after {
+  width: 22px;
+  height: 22px;
+}
+
+.betPage3 .betList-1 .dice-1, .betPage3 .betList-1 .dice-2, .betPage3 .betList-1 .dice-3, .betPage3 .betList-1 .dice-4, .betPage3 .betList-1 .dice-5, .betPage3 .betList-1 .dice-6, .betPage3 .betList-1 .dice-2, .betPage3 .betList-1 .dice-3, .betPage3 .betList-1 .dice-4, .betPage3 .betList-1 .dice-5, .betPage3 .betList-1 .dice-6 {
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+}
+
+.betPage3 .betList-1 .dice-1:after, .betPage3 .betList-1 .dice-2:after, .betPage3 .betList-1 .dice-3:after, .betPage3 .betList-1 .dice-4:after, .betPage3 .betList-1 .dice-5:after, .betPage3 .betList-1 .dice-6:after, .betPage3 .betList-1 .dice-2:after, .betPage3 .betList-1 .dice-3:after, .betPage3 .betList-1 .dice-4:after, .betPage3 .betList-1 .dice-5:after, .betPage3 .betList-1 .dice-6:after {
+  width: 34px;
+  height: 34px;
+}
+
+.betPage3 .betList-2 .dice-1, .betPage3 .betList-2 .dice-2, .betPage3 .betList-2 .dice-3, .betPage3 .betList-2 .dice-4, .betPage3 .betList-2 .dice-5, .betPage3 .betList-2 .dice-6, .betPage3 .betList-2 .dice-2, .betPage3 .betList-2 .dice-3, .betPage3 .betList-2 .dice-4, .betPage3 .betList-2 .dice-5, .betPage3 .betList-2 .dice-6 {
+  width: 26px;
+  height: 26px;
+  border-radius: 3px;
+}
+
+.betPage3 .betList-2 .dice-1:after, .betPage3 .betList-2 .dice-2:after, .betPage3 .betList-2 .dice-3:after, .betPage3 .betList-2 .dice-4:after, .betPage3 .betList-2 .dice-5:after, .betPage3 .betList-2 .dice-6:after, .betPage3 .betList-2 .dice-2:after, .betPage3 .betList-2 .dice-3:after, .betPage3 .betList-2 .dice-4:after, .betPage3 .betList-2 .dice-5:after, .betPage3 .betList-2 .dice-6:after {
+  width: 24px;
+  height: 24px;
+}
+
+/***************************************************/
+.chips2d-all {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-all.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-noSelect {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-noSelect.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-set {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-set.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-user {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-user.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-1 {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-1.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-2 {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-2.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-5 {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-5.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-10 {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-10.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-20 {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-20.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-50 {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-50.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-100 {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-100.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-200 {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-200.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-500 {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-500.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-1k {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-1k.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-2k {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-2k.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-5k {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-5k.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-10k {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-10k.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-20k {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-20k.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-50k {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-50k.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-100k {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-100k.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-200k {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-200k.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-500k {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-500k.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-1m {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-1m.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-2m {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-2m.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-5m {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-5m.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-10m {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-10m.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-20m {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-20m.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-50m {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-50m.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-100m {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-100m.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-200m {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-200m.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips2d-500m {
+  display: block;
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips2d/chips-500m.svg);
+  text-align: center;
+  color: #333;
+}
+
+.chips3d-all {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-all.svg);
+}
+
+.chips3d-noSelect {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-noSelect.svg);
+}
+
+.chips3d-set {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-set.svg);
+}
+
+.chips3d-user {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-user.svg);
+}
+
+.chips3d-1 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-1.svg);
+}
+
+.chips3d-2 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-2.svg);
+}
+
+.chips3d-5 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-5.svg);
+}
+
+.chips3d-10 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-10.svg);
+}
+
+.chips3d-20 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-20.svg);
+}
+
+.chips3d-50 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-50.svg);
+}
+
+.chips3d-100 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-100.svg);
+}
+
+.chips3d-200 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-200.svg);
+}
+
+.chips3d-500 {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-500.svg);
+}
+
+.chips3d-1k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-1k.svg);
+}
+
+.chips3d-2k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-2k.svg);
+}
+
+.chips3d-5k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-5k.svg);
+}
+
+.chips3d-10k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-10k.svg);
+}
+
+.chips3d-20k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-20k.svg);
+}
+
+.chips3d-50k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-50k.svg);
+}
+
+.chips3d-100k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-100k.svg);
+}
+
+.chips3d-200k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-200k.svg);
+}
+
+.chips3d-500k {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-500k.svg);
+}
+
+.chips3d-1m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-1m.svg);
+}
+
+.chips3d-2m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-2m.svg);
+}
+
+.chips3d-5m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-5m.svg);
+}
+
+.chips3d-10m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-10m.svg);
+}
+
+.chips3d-20m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-20m.svg);
+}
+
+.chips3d-50m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-50m.svg);
+}
+
+.chips3d-100m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-100m.svg);
+}
+
+.chips3d-200m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-200m.svg);
+}
+
+.chips3d-500m {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-500m.svg);
+}
+
+.betZone {
+  position: relative;
+}
+
+.chips3dTable {
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: calc(100% - 18px);
+}
+
+.chips3dTable-in {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.chips3dTable-in div {
+  position: absolute;
+}
+
+.chips3dTable-in div:nth-child(1n) {
+  bottom: -3px;
+  z-index: 1;
+}
+
+.chips3dTable-in div:nth-child(2n) {
+  bottom: 3px;
+  z-index: 2;
+}
+
+.chips3dTable-in div:nth-child(3n) {
+  bottom: 9px;
+  z-index: 3;
+}
+
+.chips3dTable-in div:nth-child(4n) {
+  bottom: 15px;
+  z-index: 4;
+}
+
+.chips3dTable-in div:nth-child(5n) {
+  bottom: 21px;
+  z-index: 5;
+}
+
+.chips3dTable-in div:nth-child(6n) {
+  bottom: 27px;
+  z-index: 6;
+}
+
+.chips3dTable-in div:nth-child(7n) {
+  bottom: 33px;
+  z-index: 7;
+}
+
+.chips3dTable-in div:nth-child(8n) {
+  bottom: 39px;
+  z-index: 8;
+}
+
+.chips3dTable-in div:nth-child(9n) {
+  bottom: 45px;
+  z-index: 9;
+}
+
+.chips3dTable-in div:nth-child(10n) {
+  bottom: 51px;
+  z-index: 10;
+}
+
+.chips3dTable-in div:nth-child(11n) {
+  bottom: 57px;
+  z-index: 11;
+}
+
+.chips3dTable-in div:nth-child(12n) {
+  bottom: 63px;
+  z-index: 12;
+}
+
+.chips3dTable-in div:nth-child(13n) {
+  bottom: 69px;
+  z-index: 13;
+}
+
+.chips3dTable-in div:nth-child(14n) {
+  bottom: 75px;
+  z-index: 14;
+}
+
+.chips3dTable-in div:nth-child(15n) {
+  bottom: 81px;
+  z-index: 15;
+}
+
+.chips3dTable-in div:nth-child(16n) {
+  bottom: 87px;
+  z-index: 16;
+}
+
+.chips3dTable-in div:nth-child(17n) {
+  bottom: 93px;
+  z-index: 17;
+}
+
+.chips3dTable-in div:nth-child(18n) {
+  bottom: 99px;
+  z-index: 18;
+}
+
+.chips3dTable-in div:nth-child(19n) {
+  bottom: 105px;
+  z-index: 19;
+}
+
+.chips3dTable-in div:nth-child(20n) {
+  bottom: 111px;
+  z-index: 20;
+}
+
+.chips3dTable-in .chips3d-1 {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-1k {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-1m {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-2 {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-2k {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-2m {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-5 {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-5k {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-5m {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-10 {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-10k {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-10m {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-20 {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-20k {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-20m {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-50 {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-50k {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-50m {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-100 {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-100k {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-100m {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-200 {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-200k {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-200m {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-500 {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-500k {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-500m {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-set {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-user {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .chips3d-all {
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.chips3dTable-in .amount, .chips3dTable-in .oneChip2DTable-in .amountAdd, .oneChip2DTable-in .chips3dTable-in .amountAdd, .chips3dTable-in .oneChip3DTable-in .amountAdd, .oneChip3DTable-in .chips3dTable-in .amountAdd {
+  min-width: 50px;
+  margin-bottom: 7px;
+  border: 1px solid #000000;
+  border-radius: 99em;
+  padding: 0 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #EFB807;
+  color: #000;
+}
+
+.chips3dTable-in .amountAdd {
+  min-width: 50px;
+  margin-bottom: 7px;
+  border: 1px solid #000000;
+  border-radius: 99em;
+  padding: 0 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #252525;
+  color: #fff;
+}
+
+.chips3dTable-in .btnCheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 22px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  border: 1px solid #181818;
+  cursor: pointer;
+  background: linear-gradient(0deg, #CE9500 0%, #FFC300 100%);
+}
+
+.chips3dTable-in .btnCheck:hover {
+  background: linear-gradient(0deg, #E6A700 0%, #FFEE00 100%);
+}
+
+.chips3dTable-in .btnCheck:after {
+  content: "";
+  width: 14px;
+  height: 11px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="29"><path fill="%23000000" fill-rule="evenodd" d="M7.945 14.963L2.018 9.065 0 11.059l7.945 7.907L25 1.994 22.996 0 7.946 14.963"/></svg>');
+}
+
+.chips3dTable-in.modeChecking .amount, .chips3dTable-in.modeChecking .oneChip2DTable-in .amountAdd, .oneChip2DTable-in .chips3dTable-in.modeChecking .amountAdd, .chips3dTable-in.modeChecking .oneChip3DTable-in .amountAdd, .oneChip3DTable-in .chips3dTable-in.modeChecking .amountAdd {
+  background-color: #252525;
+  color: #fff;
+}
+
+.chips3dTable-in.modeAddChips .addChipsBox {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.chips3dTable-in.modeAddChips .amount, .chips3dTable-in.modeAddChips .oneChip2DTable-in .amountAdd, .oneChip2DTable-in .chips3dTable-in.modeAddChips .amountAdd, .chips3dTable-in.modeAddChips .oneChip3DTable-in .amountAdd, .oneChip3DTable-in .chips3dTable-in.modeAddChips .amountAdd {
+  bottom: -4px;
+  z-index: 20;
+  min-width: 40px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: #252525;
+  color: #fabe00;
+}
+
+.oneChip2DTable-in, .oneChip3DTable-in {
+  position: relative;
+}
+
+.oneChip2DTable-in .chips2d-all, .oneChip3DTable-in .chips2d-all, .oneChip2DTable-in .addChipsBox, .oneChip3DTable-in .addChipsBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.oneChip2DTable-in .chips2d-all, .oneChip3DTable-in .chips2d-all {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 99rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.oneChip2DTable-in .addChipsBox, .oneChip3DTable-in .addChipsBox {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.oneChip2DTable-in .amount, .oneChip3DTable-in .amount, .oneChip2DTable-in .amountAdd, .oneChip3DTable-in .amountAdd {
+  min-width: 38px;
+  height: 15px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 0 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+  line-height: 15px;
+  background-color: #EFB807;
+  color: #000;
+}
+
+.oneChip2DTable-in .amount.textSmall, .oneChip3DTable-in .amount.textSmall, .oneChip2DTable-in .textSmall.amountAdd, .oneChip3DTable-in .textSmall.amountAdd {
+  font-size: 10px;
+}
+
+.oneChip2DTable-in .amountAdd, .oneChip3DTable-in .amountAdd {
+  margin: 1px 0;
+  background-color: #fff;
+  color: #252525;
+}
+
+.oneChip2DTable-in.modeChecking .amount, .modeChecking.oneChip3DTable-in .amount, .oneChip2DTable-in.modeChecking .amountAdd, .modeChecking.oneChip3DTable-in .amountAdd {
+  background-color: #252525;
+  color: #fff;
+}
+
+.oneChip3DTable-in .chips3d-all {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 43px;
+  height: 40px;
+}
+
+.oneChip3DTable-in .amount, .oneChip3DTable-in .amountAdd {
+  margin-bottom: 5px;
+}
+
+.oneChip3DTable-in .amountAdd {
+  margin-bottom: 1px;
+}
+
+.chips3dSelect {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(0deg, #183935 0%, #091715 100%);
+}
+
+.chips3dSelect-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.chips3dSelect-in li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 66px;
+  margin-right: 12px;
+  background-image: none;
+  text-align: center;
+  color: #272727;
+  cursor: pointer;
+  list-style: none;
+}
+
+.chips3dSelect-in li p {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  width: 70px;
+  height: 66px;
+  font-size: 20px;
+  line-height: 57px;
+  background: none;
+}
+
+.chips3dSelect-in li:hover {
+  top: -5px;
+  height: 70px;
+  transition: all .15s linear;
+}
+
+.chips3dSelect-in li:hover .shadow {
+  display: block;
+  top: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
+  transition: all .15s linear;
+}
+
+.chips3dSelect-in li:hover .line {
+  transform: translateX(0);
+  -webkit-animation: rotateLine 5.8s infinite linear;
+  -moz-animation: rotateLine 5.8s infinite linear;
+  -o-animation: rotateLine 5.8s infinite linear;
+  animation: rotateLine 5.8s infinite linear;
+}
+
+@-webkit-keyframes rotateLine {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotateLine {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes rotateLine {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateLine {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.chips3dSelect-in li:not(:hover) {
+  transition: all .15s linear;
+}
+
+.chips3dSelect-in li.now {
+  top: -5px;
+  height: 72px;
+  transition: all .15s linear;
+}
+
+.chips3dSelect-in li.now .shadow {
+  display: none;
+}
+
+.chips3dSelect-in li.now .ring {
+  border: 4px #FFDD00 solid;
+  transition: all .15s linear;
+}
+
+.chips3dSelect-in li.now .line {
+  display: block;
+}
+
+.chips3dSelect-in .shadow {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 64px;
+  height: 50px;
+  border-radius: 104px / 86px;
+  background: none;
+  box-shadow: none;
+  text-indent: -9999px;
+}
+
+.chips3dSelect-in .ring {
+  position: absolute;
+  bottom: 0;
+  width: 66px;
+  height: 52px;
+  border-radius: 100px / 76px;
+  text-indent: -9999px;
+}
+
+.chips3dSelect-in .line {
+  position: absolute;
+  bottom: -6px;
+  z-index: 5;
+  display: none;
+  width: 70px;
+  height: 70px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"><path d="M34 31.268V0h2v31.268L51.634 4.189l1.732 1-15.634 27.079 27.079-15.634 1 1.732L38.732 34H70v2H38.732l27.079 15.634-1 1.732-27.079-15.634 15.634 27.079-1.732 1L36 38.732V70h-2V38.732L18.366 65.811l-1.732-1 15.634-27.079L5.189 53.366l-1-1.732L31.268 36H0v-2h31.268L4.189 18.366l1-1.732 27.079 15.634L16.634 5.189l1.732-1L34 31.268z" fill="rgb(22, 54, 50)" fill-rule="evenodd" /></svg>');
+  background-size: 100% 100%;
+  text-indent: -9999px;
+}
+
+.chips3dSelect-in .chips3d-all p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-all.svg);
+}
+
+.chips3dSelect-in .chips3d-noSelect p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-noSelect.svg);
+}
+
+.chips3dSelect-in .chips3d-set p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-set.svg);
+}
+
+.chips3dSelect-in .chips3d-user p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-user.svg);
+}
+
+.chips3dSelect-in .chips3d-1 p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-1.svg);
+}
+
+.chips3dSelect-in .chips3d-2 p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-2.svg);
+}
+
+.chips3dSelect-in .chips3d-5 p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-5.svg);
+}
+
+.chips3dSelect-in .chips3d-10 p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-10.svg);
+}
+
+.chips3dSelect-in .chips3d-20 p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-20.svg);
+}
+
+.chips3dSelect-in .chips3d-50 p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-50.svg);
+}
+
+.chips3dSelect-in .chips3d-100 p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-100.svg);
+}
+
+.chips3dSelect-in .chips3d-200 p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-200.svg);
+}
+
+.chips3dSelect-in .chips3d-500 p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-500.svg);
+}
+
+.chips3dSelect-in .chips3d-1k p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-1k.svg);
+}
+
+.chips3dSelect-in .chips3d-2k p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-2k.svg);
+}
+
+.chips3dSelect-in .chips3d-5k p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-5k.svg);
+}
+
+.chips3dSelect-in .chips3d-10k p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-10k.svg);
+}
+
+.chips3dSelect-in .chips3d-20k p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-20k.svg);
+}
+
+.chips3dSelect-in .chips3d-50k p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-50k.svg);
+}
+
+.chips3dSelect-in .chips3d-100k p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-100k.svg);
+}
+
+.chips3dSelect-in .chips3d-200k p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-200k.svg);
+}
+
+.chips3dSelect-in .chips3d-500k p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-500k.svg);
+}
+
+.chips3dSelect-in .chips3d-1m p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-1m.svg);
+}
+
+.chips3dSelect-in .chips3d-2m p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-2m.svg);
+}
+
+.chips3dSelect-in .chips3d-5m p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-5m.svg);
+}
+
+.chips3dSelect-in .chips3d-10m p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-10m.svg);
+}
+
+.chips3dSelect-in .chips3d-20m p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-20m.svg);
+}
+
+.chips3dSelect-in .chips3d-50m p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-50m.svg);
+}
+
+.chips3dSelect-in .chips3d-100m p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-100m.svg);
+}
+
+.chips3dSelect-in .chips3d-200m p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-200m.svg);
+}
+
+.chips3dSelect-in .chips3d-500m p {
+  background-size: cover;
+  background-image: url(../../images/share_source/chips/chips3d/chips-500m.svg);
+}
+
+.chips3dSelect-in .chips2d-set {
+  width: 52px;
+  height: 52px;
+}
+
+.chips3dSelect-in .chips2d-set:hover {
+  top: 0;
+  width: 52px;
+  height: 52px;
+}
+
+.chips3dSelect-in .chips2d-set p {
+  position: static;
+  width: 46px;
+  height: 46px;
+  background-image: url(../../images/share_source/chips/chips2d/chips-set.svg);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+  border-radius: 99em;
+  font-size: 15px;
+  line-height: 46px;
+}
+
+.chips3dSelect-in .chips2d-set p:hover {
+  width: 52px;
+  height: 52px;
+  font-size: 17px;
+  line-height: 52px;
+  transition: all .15s linear;
+}
+
+.chips3dSelect-in .chips2d-icSet {
+  width: 35px;
+  height: 35px;
+}
+
+.chips3dSelect-in .chips2d-icSet:hover {
+  top: 0;
+  width: 35px;
+  height: 35px;
+}
+
+.chips3dSelect-in .chips2d-icSet p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border: 2px solid #e7daaf;
+  border-radius: 99em;
+  background: linear-gradient(-180deg, #363636 0%, #131313 100%);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+  text-indent: -9999px;
+}
+
+.chips3dSelect-in .chips2d-icSet p:after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-image: url('data:image/svg+xml,<svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="rgb(231, 218, 175)" fill-rule="evenodd"><path d="M2.63 11.784c.3-1.157.758-2.25 1.35-3.256l-1.55-2.17 3.928-3.929 2.17 1.55a12.701 12.701 0 0 1 3.256-1.349L12.222 0h5.556l.438 2.63c1.157.3 2.25.758 3.256 1.35l2.17-1.55 3.929 3.928-1.55 2.17a12.701 12.701 0 0 1 1.349 3.256l2.63.438v5.556l-2.63.438c-.3 1.157-.758 2.25-1.35 3.256l1.55 2.17-3.928 3.929-2.17-1.55a12.701 12.701 0 0 1-3.256 1.349L17.778 30h-5.556l-.438-2.63c-1.157-.3-2.25-.758-3.256-1.35l-2.17 1.55-3.929-3.928 1.55-2.17a12.701 12.701 0 0 1-1.349-3.256L0 17.778v-5.556l2.63-.438zM15 25.236c5.653 0 10.236-4.583 10.236-10.236 0-5.653-4.583-10.236-10.236-10.236C9.347 4.764 4.764 9.347 4.764 15c0 5.653 4.583 10.236 10.236 10.236z"/><path d="M17.518 13.907a22.427 22.427 0 0 0-1.881-.553V9.65c.8.242 1.304.735 1.514 1.478.185.63.587.944 1.211.944.33 0 .61-.108.842-.326a1.02 1.02 0 0 0 .347-.77c0-.267-.077-.56-.233-.882a3.778 3.778 0 0 0-.662-.935 3.465 3.465 0 0 0-1.27-.89c-.486-.196-1.07-.328-1.75-.393V6l-1.208.018v1.858c-1.314.108-2.32.487-3.014 1.141-.696.652-1.043 1.49-1.043 2.511 0 .784.178 1.426.534 1.924.354.499.819.883 1.39 1.153s1.282.515 2.133.735v4.14c-.425-.111-.767-.276-1.025-.488a2.191 2.191 0 0 1-.575-.709c-.127-.258-.277-.63-.447-1.118a.976.976 0 0 0-.41-.525 1.326 1.326 0 0 0-.724-.188c-.355 0-.652.115-.89.344-.238.228-.357.485-.357.77 0 .386.088.78.266 1.18.178.4.452.786.823 1.158a4.64 4.64 0 0 0 1.39.931c.556.25 1.206.412 1.949.49V23h1.209v-1.693c.908-.072 1.692-.294 2.352-.667.66-.375 1.16-.858 1.5-1.448.34-.59.511-1.225.511-1.901 0-.54-.107-1.038-.319-1.493a3.35 3.35 0 0 0-.91-1.17 3.947 3.947 0 0 0-1.253-.721zm-3.09-.882c-.572-.196-.998-.414-1.278-.655-.277-.24-.418-.595-.418-1.064 0-.492.15-.86.448-1.104.3-.243.714-.439 1.248-.587v3.41zm2.695 5.823c-.35.363-.845.603-1.487.722v-3.9c.661.196 1.161.435 1.5.717.34.282.51.681.51 1.197 0 .481-.175.904-.523 1.264z"/></g></svg>');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chips2dSelect-in li {
+  width: 45px;
+  height: 45px;
+  border-radius: 99em;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 47px;
+  color: #000;
+}
+
+.chips2dSelect-in li.now {
+  box-shadow: 0 0 3px 2px #FFDD00;
+}
+
+.chips2dSelect-in .chips2d-icSet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border: 2px solid #e7daaf;
+  background: linear-gradient(-180deg, #363636 0%, #131313 100%);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+  text-indent: -9999px;
+}
+
+.chips2dSelect-in .chips2d-icSet:after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-image: url('data:image/svg+xml,<svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="rgb(231, 218, 175)" fill-rule="evenodd"><path d="M2.63 11.784c.3-1.157.758-2.25 1.35-3.256l-1.55-2.17 3.928-3.929 2.17 1.55a12.701 12.701 0 0 1 3.256-1.349L12.222 0h5.556l.438 2.63c1.157.3 2.25.758 3.256 1.35l2.17-1.55 3.929 3.928-1.55 2.17a12.701 12.701 0 0 1 1.349 3.256l2.63.438v5.556l-2.63.438c-.3 1.157-.758 2.25-1.35 3.256l1.55 2.17-3.928 3.929-2.17-1.55a12.701 12.701 0 0 1-3.256 1.349L17.778 30h-5.556l-.438-2.63c-1.157-.3-2.25-.758-3.256-1.35l-2.17 1.55-3.929-3.928 1.55-2.17a12.701 12.701 0 0 1-1.349-3.256L0 17.778v-5.556l2.63-.438zM15 25.236c5.653 0 10.236-4.583 10.236-10.236 0-5.653-4.583-10.236-10.236-10.236C9.347 4.764 4.764 9.347 4.764 15c0 5.653 4.583 10.236 10.236 10.236z"/><path d="M17.518 13.907a22.427 22.427 0 0 0-1.881-.553V9.65c.8.242 1.304.735 1.514 1.478.185.63.587.944 1.211.944.33 0 .61-.108.842-.326a1.02 1.02 0 0 0 .347-.77c0-.267-.077-.56-.233-.882a3.778 3.778 0 0 0-.662-.935 3.465 3.465 0 0 0-1.27-.89c-.486-.196-1.07-.328-1.75-.393V6l-1.208.018v1.858c-1.314.108-2.32.487-3.014 1.141-.696.652-1.043 1.49-1.043 2.511 0 .784.178 1.426.534 1.924.354.499.819.883 1.39 1.153s1.282.515 2.133.735v4.14c-.425-.111-.767-.276-1.025-.488a2.191 2.191 0 0 1-.575-.709c-.127-.258-.277-.63-.447-1.118a.976.976 0 0 0-.41-.525 1.326 1.326 0 0 0-.724-.188c-.355 0-.652.115-.89.344-.238.228-.357.485-.357.77 0 .386.088.78.266 1.18.178.4.452.786.823 1.158a4.64 4.64 0 0 0 1.39.931c.556.25 1.206.412 1.949.49V23h1.209v-1.693c.908-.072 1.692-.294 2.352-.667.66-.375 1.16-.858 1.5-1.448.34-.59.511-1.225.511-1.901 0-.54-.107-1.038-.319-1.493a3.35 3.35 0 0 0-.91-1.17 3.947 3.947 0 0 0-1.253-.721zm-3.09-.882c-.572-.196-.998-.414-1.278-.655-.277-.24-.418-.595-.418-1.064 0-.492.15-.86.448-1.104.3-.243.714-.439 1.248-.587v3.41zm2.695 5.823c-.35.363-.845.603-1.487.722v-3.9c.661.196 1.161.435 1.5.717.34.282.51.681.51 1.197 0 .481-.175.904-.523 1.264z"/></g></svg>');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pop_chips_set {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.88);
+  justify-content: center;
+  align-items: center;
+}
+
+.pop_chips_set .con {
+  width: 490px;
+}
+
+.pop_chips_set .con ul p {
+  background: url(../../images/share_source/chips/chips2d/chips-noSelect.svg);
+  background-size: 100% 100%;
+}
+
+.pop_chips_set .con ul .select .chips2d-All {
+  background-image: url(../../images/share_source/chips/chips2d/chips-All.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-1 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-1.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-2 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-2.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-5 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-5.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-10 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-10.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-20 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-20.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-50 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-50.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-100 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-100.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-200 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-200.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-500 {
+  background-image: url(../../images/share_source/chips/chips2d/chips-500.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-1k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-1k.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-2k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-2k.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-5k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-5k.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-10k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-10k.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-20k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-20k.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-50k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-50k.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-100k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-100k.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-200k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-200k.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-500k {
+  background-image: url(../../images/share_source/chips/chips2d/chips-500k.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-1m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-1m.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-2m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-2m.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-5m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-5m.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-10m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-10m.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-20m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-20m.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-50m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-50m.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-100m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-100m.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-200m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-200m.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-500m {
+  background-image: url(../../images/share_source/chips/chips2d/chips-500m.svg);
+}
+
+.pop_chips_set .con ul .select .chips2d-user {
+  background-image: url(../../images/share_source/chips/chips2d/chips-user.svg);
+}
+
+.pop_chips_set h3 {
+  color: #EFB807;
+  font-size: 38px;
+  font-weight: normal;
+}
+
+.pop_chips_set h4 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #CDCDCD;
+  margin-top: 5px;
+}
+
+.pop_chips_set h4 strong {
+  color: #fff;
+}
+
+.pop_chips_set ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.pop_chips_set ul li, .pop_chips_set ul dt, .pop_chips_set ul dd {
+  display: block;
+  float: left;
+}
+
+.pop_chips_set li {
+  display: flex;
+  width: 95px;
+  height: 95px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pop_chips_set li:hover span {
+  border: 2px #CECECE solid;
+  transition: all .20s linear;
+}
+
+.pop_chips_set li.select span {
+  background: #000;
+  border: 3px #FFCE00 solid;
+}
+
+.pop_chips_set .user_set {
+  display: flex;
+  border-top: 1px #464646 solid;
+  border-bottom: 1px #464646 solid;
+  padding: 10px 45px;
+  margin-bottom: 10px;
+}
+
+.pop_chips_set .user_set.select .user_chip {
+  background: #000;
+  border: 3px #FFCE00 solid;
+}
+
+.pop_chips_set dl {
+  flex: 1;
+  background: url(../../images/share_source/chips/bg_arrow.png) right center no-repeat;
+  padding-right: 15px;
+}
+
+.pop_chips_set dt {
+  font-size: 16px;
+  color: #FFCE00;
+  padding: 5px 0;
+  text-align: left;
+}
+
+.pop_chips_set dd {
+  display: flex;
+  padding-top: 5px;
+}
+
+.pop_chips_set dd input {
+  width: 175px;
+  height: 40px;
+  background: #FAFAFA;
+  border: 1px solid #EFB807;
+  color: #212121;
+  font-size: 33px;
+  padding: 0 10px;
+  margin-top: 8px;
+  text-align: right;
+}
+
+.pop_chips_set dd .note {
+  flex: 1;
+  color: #fff;
+  font-size: 33px;
+  text-align: center;
+}
+
+.pop_chips_set dd .note span {
+  display: inline;
+  font-size: 16px;
+}
+
+.pop_chips_set dd .note p {
+  color: #DDDDDD;
+  font-size: 11px;
+  width: auto;
+  height: auto;
+}
+
+.pop_chips_set .user_chip {
+  display: flex;
+  width: 95px;
+  height: 95px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+  cursor: pointer;
+  margin-left: 10px;
+  color: #000;
+}
+
+.pop_chips_set .user_chip:hover {
+  border: 2px #CECECE solid;
+  transition: all .20s linear;
+}
+
+.pop_chips_set .user_chip p {
+  width: 85px;
+  height: 85px;
+  background-image: url(../../images/share_source/chips/chips2d/chips-user.svg);
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  text-align: center;
+}
+
+.pop_chips_set span {
+  display: flex;
+  width: 95px;
+  height: 95px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+}
+
+.pop_chips_set p {
+  display: flex;
+  width: 85px;
+  height: 85px;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 26px;
+}
+
+.pop_chips_set .lot_word {
+  font-size: 20px;
+}
+
+.pop_chips_set .btn_con {
+  text-align: right;
+}
+
+.pop_chips_set .btn_con input {
+  width: 123px;
+  height: 42px;
+  margin-left: 5px;
+  font-size: 21px;
+  color: #D2D2D2;
+  background-image: linear-gradient(-180deg, #8B8B8B 0%, #575757 100%);
+  border: 1px solid #181818;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.pop_chips_set .btn_con input:hover {
+  border: 1px #fff solid;
+}
+
+.pop_chips_set .btn_con .focus {
+  background-image: linear-gradient(0deg, #CE9500 0%, #FFC300 100%);
+  color: #1B1B1B;
+}

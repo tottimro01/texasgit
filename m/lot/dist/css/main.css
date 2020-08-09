@@ -1,0 +1,295 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+a.nav-expander {
+  color: #6A4806;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+  margin-right: 0;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 0;
+  transition: right 0.3s ease-in-out 0s;
+  width: 73px;
+  z-index: 12;
+
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+
+}
+
+a.nav-expander:hover {
+  cursor: pointer;
+}
+
+a.nav-expander.fixed {
+  position: fixed;
+}
+
+.nav-expanded a.nav-expander.fixed {
+    right: 10em;
+}
+
+nav {
+  background: #000000;
+  opacity:.9;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: -20em;
+  font-size: 15px;
+  top: 0;
+  width: 20em;
+  z-index: 20000;
+  
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+
+}
+.nav-expanded nav {
+  right: 0;
+}
+
+body.nav-expanded {
+  margin-left: 0em;
+  transition: right 0.4s ease-in-out 0s;
+  -webkit-transition: right 0.4s ease-in-out 0s;
+  -moz-transition: right 0.4s ease-in-out 0s;
+  -o-transition: right 0.4s ease-in-out 0s;
+}
+
+#nav-close {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+.main-menu {
+  padding-top: 12px;
+}
+
+.main-menu li {
+  border-bottom: 1px solid #323949;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 12px;
+  /*position: relative;*/
+}
+
+.main-menu li a {
+  color: #6F7D8C;
+  text-decoration: none;
+}
+
+.main-menu li a:hover {
+  color: #6A4806;
+  text-decoration: none;
+}
+
+.main-menu li .sub-nav {
+  border-bottom: 0px;
+  padding: 4px;
+}
+
+.main-menu a .caret {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	vertical-align: top;
+	border-top: 4px solid #4f5963;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: "";
+  margin-top: 8px;
+}
+
+.main-menu a:hover .caret {
+	border-top-color: #4f5963;
+}
+
+.main-menu li.open > a > .caret {
+	border-top: none;
+	border-bottom: 4px solid #4f5963;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+
+.main-menu li.open > a:hover > .caret {
+	border-bottom-color: #4f5963;
+}
+
+.icon:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '\f105';
+}
+
+.main-menu li > a > span.icon {
+  float: right;
+  margin: 0.1em 1.7em -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.main-menu li > a:hover > span.icon {
+  float: right;
+  margin: 0.1em 0.8em -0.1em 0;
+  opacity: 1;
+}
+
+.table-template {
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+  overflow-y: hidden;
+  height: auto;
+
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+
+}
+
+.table-template .ttitle {
+  padding: 0 6px;
+}
+
+.table-template .arrow {
+  line-height: 26px;
+  height: 26px;
+  width: 26px;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  float: right;
+}
+
+.table-template table {
+  width: 100%;
+  padding: 0;
+  border-spacing: 0;
+}
+
+.table-template table .sub-th {
+  font-size: 12px;
+}
+
+.table-template table th ,
+.table-template table td {
+  border: 1px solid #ccc;
+}
+
+.table-template table th {
+  background-color: #daa520;
+  height: 26px;
+  text-align: center;
+  color: #333;
+  line-height: 26px
+}
+
+.table-template table td {
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+}
+.table-template input[type=submit]{
+    margin: 2px auto;
+    width: 80%;
+    border: 1px solid #333;
+    background-color: #6a4806;
+    color: #fff;
+    height: 26px;
+    line-height: 26px;
+}
+
+
+.header-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  padding: 4px 0;
+  text-align: center;
+  border: 1px solid rgb(127, 90, 0);
+  background: #B88916;
+  background: -webkit-linear-gradient(#b88918, #f3ba30, #b88918);
+  background: -o-linear-gradient(#b88918, #f3ba30, #b88918);
+  background: -moz-linear-gradient(#b88918, #f3ba30, #b88918);
+  background: linear-gradient(#b88918, #f3ba30, #b88918);
+  border-radius: 4px;
+  margin-top: 1px;
+}
+
+@font-face {
+  font-family: digital;
+  src: url(../../plugin/fonts/Digital-7.woff);
+}
+
+.countdown {
+  background-color: #333;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+  float: right;
+  color: #fff;
+  margin: 4px 0;
+  font-family: 'digital', sans-serif;
+}
+
+
+/* lang */
+.langTB
+{
+  font-size: 25px;
+  color: #333;
+  font-family: "thaisansneue-extralight", "Open Sans", sans-serif;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  padding-right: 15px;
+}
+
+.langTB tr
+{
+  border-bottom:1px solid #e4b02f;
+  padding-bottom: 15px;
+}
+.langTB tr td
+{
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+
+
+
+
+
+
+
+
+

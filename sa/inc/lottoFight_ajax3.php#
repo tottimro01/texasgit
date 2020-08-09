@@ -1,0 +1,111 @@
+<?
+  include "inc_head_bySession.php";
+  if($_GET[zone]!=""){ $kzone="  and lot_zone='$_GET[zone]' ";}else{ $kzone="  and lot_zone='2' "; }
+  if($_GET[rob]!=""){ $krob="  and lot_rob='$_GET[rob]' ";}else{ $krob="  and lot_rob='1' "; }
+?>
+
+<table class="table table-bordered table-hover">
+    <tr align="center" class="bghead bg-aqua-gradient">
+      <th width="30%" height=25>วันที่</th>
+      <th width="70%">ผลรางวัล</th>
+    </tr>
+ <?
+ $x=1;
+ $sql="select * from bom_tb_lotto_ok  where lot_zone=1 order by ok_id desc limit 1,11";
+$re=sql_query($sql);
+while($rs=sql_fetch($re)){
+  
+$enum=explode(',',$rs[o_number]);
+  ?>   
+    <tr height="30" class="txt_back11n" bgcolor='#ffffff' onmouseover=this.bgColor='#FFFF66' onmouseout=this.bgColor='#ffffff'>
+      <td align="center"><?=date("d-m-Y",$rs[o_limit_time])?></td>
+      <td align="center">
+6ตัว : <b class="cbu"><?=$enum[0];?></b> &nbsp;&nbsp;,&nbsp;&nbsp;   2ล่าง: <b class="cbu"><?=$enum[1];?></b><!--&nbsp;&nbsp;,&nbsp;&nbsp; 
+
+3ล่างหน้า:  <b class="cbu"><?=$enum[2];?></b> , <b class="cbu"><?=$enum[3];?></b> 
+    &nbsp;3ล่าง&nbsp;<b class="cbu"><?=$enum[4];?></b> , <b class="cbu"><?=$enum[5];?></b> -->      
+      </td>
+    </tr>
+    <? $x++;} ?>
+
+  </table>
+    <div style="clear:both; height:5px;"></div>
+    <table width="100%" border="0" cellspacing="1" cellpadding="0" class="bgtable txt_back11n">
+      <tr class="bghead">
+        <th height="20" align="center">เลขควรระวัง</th>
+      </tr>
+        <tr style="background:#ffffff;">
+        <td align="center">
+        <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr align="center" class="txt_back12b">
+              <td height="100" class="txt_red12b" align="center">
+              <div class="bg-aqua-gradient" style="text-align:center; line-height:25px; color:#fff;" >เลขพี่น้อง</div>
+              <?
+                $ni1 = 0;
+                $ni2 = 1;
+                for($ip2=1;$ip2<=10;$ip2++){
+                  if($ni2>9){
+                    $ni2 = 0; 
+                  }
+
+                  echo $q_num = $ni1."".$ni2." , ";
+                  echo $q_num = $ni2."".$ni1." , ";
+          
+                  $ni1++;
+                  $ni2++;
+
+                }
+        ?>
+             <div class="bg-aqua-gradient" style="text-align:center; line-height:25px; color:#fff;" >เลขเบิ้ล</div>
+             00 , 11 , 22 , 33 , 44 , 55 , 66 , 77 , 88 , 99
+             <div class="bg-aqua-gradient" style="text-align:center; line-height:25px; color:#fff;" >เลขสูง</div>
+        <?
+             for($i=50;$i<100;$i++){
+                echo $i." , "; 
+             }
+        ?>
+             <div class="bg-aqua-gradient" style="text-align:center;  line-height:25px; color:#fff;" >เลขต่ำ</div>
+        <?
+             for($i=0;$i<50;$i++){
+                if($i<10){
+                  echo "0"; 
+                }
+                echo $i." , "; 
+              }
+       ?>
+             <div class="bg-aqua-gradient" style="text-align:center; line-height:25px; color:#fff;" >เลขคู่</div>
+       <?
+             for($i=0;$i<99;$i++){
+                if($i<10){
+                  $n="0".$i;
+                }else{
+                  $n=$i;
+                }
+
+              if($n%2==0){
+                echo $n." , ";
+              }
+            }
+       ?>
+             <div class="bg-aqua-gradient" style="text-align:center;line-height:25px; color:#fff;" >เลขคี่</div>
+        <?
+             for($i=0;$i<99;$i++){
+                if($i<10){
+                  $n="0".$i;
+                }else{
+                  $n=$i;
+                }
+
+              if($n%2!=0){
+                echo $n." , ";
+              }
+            }
+       ?>
+             </td>
+            </tr>
+          </tbody>
+        </table>
+        </td>
+      </tr>
+</table>

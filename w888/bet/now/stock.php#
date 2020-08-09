@@ -1,0 +1,47 @@
+<? ob_start(); if (!isset($_SESSION)) { session_start(); } ?>
+<script src="../../js/jquery-1.9.1.js"></script>
+<script>
+
+function set_active(val,acc,add){
+	$.post("ajax/set_active.php" , {'val': val, 'acc': acc, 'add': add },
+		function(data){
+
+			$("#active_check"+acc+add).html(data);
+	});	
+}
+</script>
+<?
+	require('../inc/conn.php');
+	require('../inc/function.php');
+
+
+
+$sql_stock = "SELECT  `b_id` ,  `b_name_1` ,  `b_name_2` ,  `b_hdc` ,  `b_hdc_1` ,  `b_hdc_2` ,  `b_goal` ,  `b_goal_1` ,  `b_goal_2` ,  `b_add` ";
+$sql_stock = $sql_stock."  FROM  `pha_tb_ball_list_live` WHERE  `b_active` =0 AND b_numcode > 0";
+$q_stock = sql_query($sql_stock);
+$_num_stock = mysql_num_rows($q_stock);
+
+if($_num_stock > 0){
+	echo "<table>";
+	while($rw_stock = mysql_fetch_array($q_stock)){
+		
+		echo "<tr>
+				<!--<td>$rw_stock[b_id]</td>-->
+				<td>$rw_stock[b_name_1]</td>
+				<td>$rw_stock[b_name_2]</td>
+				<td>$rw_stock[b_hdc]</td>
+				<td>$rw_stock[b_hdc_1]</td>
+				<td>$rw_stock[b_hdc_2]</td>
+				<td>$rw_stock[b_goal]</td>
+				<td>$rw_stock[b_goal_1]</td>
+				<td>$rw_stock[b_goal_2]</td>
+				<td><span id='active_check$rw_stock[b_id]$rw_stock[b_add]'><a href='javascript:set_active(1,$rw_stock[b_id],$rw_stock[b_add]);' >$rw_stock[b_add]</a></span></td>
+			  </tr>";
+
+		
+	}
+	echo "</table>";	
+}else{
+	echo "Stock not found...";
+}
+?>

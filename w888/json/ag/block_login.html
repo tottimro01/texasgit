@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<TITLE>::: OHOBET :::</TITLE>
+ <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <script type="text/javascript">
+var timeInSecs;
+var ticker;
+function startTimer(secs){
+timeInSecs = parseInt(secs)-1;
+ticker = setInterval("tick()",1000);   // every second
+}
+function tick() {
+var secs = timeInSecs;
+if (secs>0) {
+timeInSecs--;
+}
+else {
+clearInterval(ticker); 
+window.location='block_run.php';
+}
+document.getElementById("countdown").innerHTML = secs;
+}
+startTimer(180);
+</script> 
+<style type="text/css">
+body {
+	font: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background-color: #CCC;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+</style>  
+</head>
+
+<body>
+<div align="center">
+<p><img src="assets/img/OpenBet-01.png" /></p>
+<h3>Have been suspended for 3 minutes because of login wrong.</h3>
+<p><h3><div style="background:url(assets/img/loding.gif) no-repeat; width:50px; height:10px; color:#f00;"><br><span id="countdown" >180</span></div></h3>
+</p><br>
+Contact call <strong>Agent</strong></div>
+</body>
+</html>

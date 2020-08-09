@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="<?php echo $_SESSION["includeUrl"]; ?>/assets/library/css/bingofull.css?v=<?=time()?>">
+<link rel="stylesheet" href="<?php echo $_SESSION["includeUrl"]; ?>/assets/library/css/home.css?v=<?=time()?>">
+<link rel="stylesheet" href="<?php echo $_SESSION["includeUrl"]; ?>/assets/library/css/news.css?v=<?=time()?>">
+<div id="FullBody">
+	<div id="FullBigotitle" class="garyGradient"> ข่าวสาร </div>
+	<div id="mainFullContain" style="background: #e0e0e0;">
+  
+  		<ul id='news'>
+  			<li class="newsContent">
+  				<div class="newsA">
+  					หวยหลังจากซื้อแล้ว มี เวลา 30 นาทียกเลิกบิลนั้นได้ , เกิน 30ไม่มีสิทธิ์ยกเลิกได้ ทุกกรณี เนื่องจากมีลูกค้าบางสาย ซื้อเลขดังกักตุนไว้จนเลขเต็ม 	แล้วมายกเลิกวันหวยออก"
+  				</div>
+  				<div class="newsDate">
+  					2017-06-05 12:24:21
+  				</div>
+  				
+  			</li>
+  		</ul>
+	
+	</div>
+</div>
+<script>
+
+$(document).ready(function() { 
+
+
+	setInterval(function(){ 
+       setmainFullContainHeight();
+   }, 100);
+	// getBingo9FullData();
+  console.log(screen.orientation.type); 
+});
+getBingo9FullData();	
+ function getBingo9FullData()
+ {
+ 	$('#loading').show();
+ 	$.get( "data/lotto_news.php")
+ 	.done(function(data)
+	{
+    		// console.log(data)
+    		showNewsData(data);
+    		$('#loading').hide();
+    });
+ 	
+ }
+
+
+
+ function showNewsData(data)
+ {
+ 	var newLength = data.length;
+ 	var html='';
+ 	console.log('newLength :'+newLength)
+
+ 		for(var i=0; i<newLength;i++)
+ 		{
+
+ 			var dateNews=data[i]['n_date'].split(" ");
+ 			html+='<li class="newsContent">'+
+  				'<div class="newsA">'+
+  					data[i]['n_note']+
+  				'</div>'+
+  				'<div class="newsDate">'+
+  					'วันที่ : '+
+  					dateNews[0]+
+  					' | '+
+  					dateNews[1]+
+  					' น. '+
+  				'</div>'+
+  			'</li>';
+ 		}
+ 		$('#news').text('');
+ 		$('#news').append(html);
+
+ 		
+ }
+
+ function setmainFullContainHeight()
+ {
+ 
+    var includeBodyH = $('#FullBody').outerHeight();
+    var FullBigotitle = $('#FullBigotitle').outerHeight();
+    $("#FullBody").css("background-color", "#e0e0e0");
+    var mainFull = includeBodyH-FullBigotitle-10;
+     $('#mainFullContain').height(mainFull);  
+     console.log('includeBodyH : '+includeBodyH)
+    $('#mainFullContain').css('overflowY', 'auto'); 
+    $('#mainFullContain').css("-webkit-overflow-scrolling", "touch");
+
+ } 
+
+
+</script>

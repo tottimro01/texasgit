@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/earlyaccess/myanmarsanspro.css);
+
+body , input, select, marquee {
+	font-family: 'Myanmar Sans Pro', sans-serif;
+}
+

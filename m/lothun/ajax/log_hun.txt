@@ -1,0 +1,5 @@
+Hi, I uploaded the app build (iOS) in this folder. Please try it when u have time. 
+About the mapping app If you construct new map and want to upload it to your server you have to restart the app because it can't refresh the map list from Immersal server for now. I'll fix it later. And for the admin app now there are only 2 sample objects that can be spawn.
+
+
+https://drive.google.com/drive/folders/1MtYkU_ZAt3948vDKlTN7cYN1A7hwbEVK?usp=sharing

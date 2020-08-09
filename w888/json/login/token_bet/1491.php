@@ -1,0 +1,1 @@
+<? $bet_token="bdc5fcabd3bba3a12d51e6c4005ee921"; ?>

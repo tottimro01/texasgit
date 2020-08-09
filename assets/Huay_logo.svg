@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Huay_logo Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#5D85C4" offset="0%"></stop>
+            <stop stop-color="#2B4786" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="160" height="160" rx="6"></rect>
+        <path d="M73.1428571,91.4285714 L109.714286,91.4285714 L109.714286,50.2857143 L133.142857,50.2857143 C135.351996,50.2857143 137.142857,52.0765753 137.142857,54.2857143 L137.142857,160 L109.714286,160 L109.714286,118.857143 L73.1428571,118.857143 L73.1428571,160 L45.7142857,160 L45.7142857,50.2857143 L73.1428571,50.2857143 L73.1428571,91.4285714 Z" id="path-4"></path>
+        <filter x="-4.9%" y="-3.2%" width="112.0%" height="110.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.395550272 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="icon_Logo&amp;Rank" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Huay_logo-Copy">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            <g id="Combined-Shape" mask="url(#mask-3)">
+                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+            </g>
+        </g>
+    </g>
+</svg>

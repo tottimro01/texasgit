@@ -1,0 +1,365 @@
+<script id="sportListTmplNew" type="text/x-jsrender">
+<li data-league-name="{{:league_name}}" id="select-li-{{:league_id}}" class="{{if league_view}} lg-viewed {{/if}}">
+  <div class="head">
+    <table class="fixed-table" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+          <label for="toggle-{{:league_id}}" class="sport-list-toggle">
+            <span class="lg-name {{:league_id}} sportListItemDraggable sportNavDraggable" data-sname="{{:league_name}}" data-skey="{{:league_id}}">{{:league_name}}</span>
+          </label>
+        </td>
+        <td style="width: 30px; vertical-align: top;" class="text-center">
+          {{if !league_check}}
+            {{if !league_view}}
+              <span class="lg-view-{{:league_id}}"><i class="fas fa-eye-slash"></i></span>
+            {{/if}}
+          {{/if}}
+        </td>
+        <td style="width: 40px; vertical-align: top;">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" name="enableSportList" class="custom-control-input" id="switch-league-{{:league_id}}" value="{{:league_id}}" {{if league_check}} checked="checked" {{/if}} />
+            <label class="custom-control-label" for="switch-league-{{:league_id}}"></label>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <input type="checkbox" name="toggleSportList" id="toggle-{{:league_id}}" value="{{:league_id}}" {{if league_expanse}} checked="checked" {{/if}} /> 
+  <ul class="sport-list-team hide-order toggle-{{:league_id}}">
+    {{props league_matches}}
+      <li>
+        <div class="head">
+          <table class="w-100">
+            <tr>
+              <td>
+                <span>{{:prop.team_1_name}} -vs- {{:prop.team_2_name}}</span>
+              </td>
+              <td style="width: 24px; vertical-align: top;">
+                <div class="text-center">
+                 <div class="chk-item mx-auto">
+                  <input type="checkbox" name="checkSelectMatch" id="checkSelectMatch_{{:prop.match_id}}" value="{{:prop.league_id}}-{{:prop.match_id}}" class="checkSelectMatch l-{{:prop.league_id}}" {{if !prop.match_ignore}} checked="checked" {{/if}} {{if !prop.match_check_enable}} disabled="disabled" {{/if}} />
+                  <label for="checkSelectMatch_{{:prop.match_id}}" class="checkmark"></label>
+                </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </li>
+    {{/props}}
+  </ul>
+</li>
+</script>
+
+<script id="editMatchForm_Tmpl" type="text/x-jsrender">
+<form action="process/updateMatch.php" method="post" class="edit-match-form" id="editMatchForm">
+  <fieldset>
+    <input type="hidden" name="match_index" value="{{:match_id}}" />
+    <input type="hidden" name="match_add" value="{{:match_add}}" />
+    <input type="hidden" name="match_time" value="{{:half}}" />
+    <input type="submit" name="submit" class="d-none" />
+    
+    <table class="w-100 fixed-table" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td>
+          <table class="w-100 fixed-table" cellspacing="0" cellpadding="0">
+                <colgroup><col style="width: 13%;" /><col /></colgroup>
+                <tbody>
+                  <tr>
+                    <td align="right"><label class="b">ทีมต่อ</label></td>
+                    <td>
+                      <div class="pb-1">
+                      <div class="sportTimeBox _{{:half}} mr-1" style="margin-top: 2px;"></div>
+                      
+                      <span class="chk-item rdo with-label">
+                        <input type="radio" name="team_big" id="t-big-1" value="1" {{if team_big==1}}checked="checked"{{/if}} />
+                        <label class="checkmark" for="t-big-1">เจ้าบ้าน</label>
+                      </span>
+
+                      <span class="chk-item rdo with-label">
+                        <input type="radio" name="team_big" id="t-big-2" value="2" {{if team_big==2}}checked="checked"{{/if}} />
+                        <label class="checkmark" for="t-big-2">ทีมเยือน</label>
+                      </span>
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <table class="w-100 fixed-table" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td>
+
+            <table class="w-100 fixed-table" cellspacing="0" cellpadding="0">
+              <colgroup><col style="width: 13%;" /><col style="width: 37%;" /></colgroup>
+              <tbody>
+                <tr>
+                  <td align="right"><label class="b">เวลา</label></td>
+                    <td>
+                      <input type="text" name="time" value="{{:match_time}}" />
+                    </td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">ลีก</label></td>
+                  <td>
+                    <select name="league_zone_id" id="league_zone_id" class="pr-3">
+                     <option value="-1">ลีกใหม่</option>
+                    </select>
+                    <div></div>
+                    <input type="text" name="league_th" value="{{:league_name_th}}" /> (TH)
+                    <div></div>
+                    <input type="text" name="league_en" value="{{:league_name_en}}" /> (EN)
+                    <div></div>
+                    <input type="text" name="league_cn" value="{{:league_name_cn}}" /> (CN)
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">ID</label></td>
+                  <td><input type="text" name="match_id" value="{{:match_id}}" /></td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">ID thscore</label></td>
+                  <td><input type="text" name="match_id_thscore" value="{{:id_thscore}}" /></td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">Set Time'</label></td>
+                  <td><input type="text" name="set_time" /></td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">Code</label></td>
+                  <td>
+                    <span>13411,13412,13413,13414,13415,13416,13417,13418,13419</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </td>
+          <td>
+
+            <table class="w-100 fixed-table" cellspacing="0" cellpadding="0">
+              <colgroup><col style="width: 13%;" /><col style="width: 37%;" /></colgroup>
+              <tbody>
+                <tr>
+                  <td align="right"><label class="b">วันที่</label></td>
+                    <td>
+                      <input type="text" name="date" value="{{:match_date}}" />
+                    </td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">เจ้าบ้าน</label></td>
+                  <td>
+                    <input type="text" name="team_1_th" value="{{:team_1_name_th}}" /><label>&nbsp;&nbsp;(EN)</label>
+                    <div></div>
+                    <input type="text" name="team_1_en" value="{{:team_1_name_en}}" /><label>&nbsp;&nbsp;(TH)</label>
+                    <div></div>
+                    <input type="text" name="team_1_cn" value="{{:team_1_name_cn}}" /><label>&nbsp;&nbsp;(CN)</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">ทีมเยือน</label></td>
+                  <td>
+                    <input type="text" name="team_2_th" value="{{:team_2_name_th}}" /><label for="e-a-team-en">&nbsp;&nbsp;(EN)</label>
+                    <div></div>
+                    <input type="text" name="team_2_en" value="{{:team_2_name_en}}" /><label for="e-a-team-th">&nbsp;&nbsp;(TH)</label>
+                    <div></div>
+                    <input type="text" name="team_2_cn" value="{{:team_2_name_cn}}" /><label for="e-a-team-th">&nbsp;&nbsp;(CN)</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">สูงสุดต่อคู่</label></td>
+                  <td>
+                    <input type="text" name="match_max" value="" />
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">TV</label></td>
+                  <td>
+                    <input type="text" name="tv" value="{{:tv_link}}" />
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">Log</label></td>
+                  <td>
+                    <span>AUTO by 32287516,1,2,6 = 13411 = 13419</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+   
+  </fieldset>
+</form>
+</script>
+
+<script id="createMatchForm_Tmpl" type="text/x-jsrender">    
+<form action="process/createMatch.php" method="post" class="edit-match-form" id="createMatchForm">
+  <fieldset>
+
+    <input type="submit" name="submit" class="d-none" />
+    
+    <table class="w-100 fixed-table" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td>
+          <table class="w-100 fixed-table" cellspacing="0" cellpadding="0">
+                <colgroup><col style="width: 13%;" /><col /></colgroup>
+                <tbody>
+                  <tr>
+                    <td align="right"><label class="b">ทีมต่อ</label></td>
+                    <td>
+                      <div class="pb-1">
+                        <span class="chk-item rdo with-label">
+                          <input type="radio" name="team_big" id="t-big-1" value="1" checked="checked" />
+                          <label class="checkmark" for="t-big-1">เจ้าบ้าน</label>
+                        </span>
+
+                        <span class="chk-item rdo with-label">
+                          <input type="radio" name="team_big" id="t-big-2" value="2" />
+                          <label class="checkmark" for="t-big-2">ทีมเยือน</label>
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <table class="w-100 fixed-table" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td>
+
+            <table class="w-100 fixed-table" cellspacing="0" cellpadding="0">
+              <colgroup><col style="width: 13%;" /><col style="width: 37%;" /></colgroup>
+              <tbody>
+                <tr>
+                  <td align="right"><label class="b">เวลา</label></td>
+                    <td>
+                      <input type="text" name="time" value="{{:match_time}}" />
+                    </td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">ลีก</label></td>
+                  <td>
+                    <select name="league_zone_id" id="league_zone_id" class="pr-3">
+                     <option value="-1">ลีกใหม่</option>
+                    </select>
+                    <div></div>
+                    <input type="text" name="league_th" value="" /> (TH)
+                    <div></div>
+                    <input type="text" name="league_en" value="" /> (EN)
+                    <div></div>
+                    <input type="text" name="league_cn" value="" /> (CN)
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">ID</label></td>
+                  <td><input type="text" name="match_id" value="{{:match_id}}" /></td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">ประเภท</label></td>
+                  <td>
+                    <select name="sport_type">
+                    {{props sport_list}}
+                    <option value="{{:key}}" {{if #parent.parent.data.page_sport_zone==prop.id}} selected="selected" {{/if}}>{{:prop.name}}</option>
+                    {{/props}}
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                    <td align="right"></td>
+                    <td>
+                        <div class="pb-1">
+                            <div class="d-inline-block">
+                                <span class="chk-item rdo with-label">
+                                    <input type="radio" name="match_half" id="m-half-ft" value="ft" checked="checked" />
+                                    <label class="checkmark" for="m-half-ft"></label>
+                                </span>
+                                <div class="sportTimeBox _ft mr-1" style="margin-top: 2px;"></div>
+                            </div>
+                            <div class="d-inline-block">
+                                <span class="chk-item rdo with-label">
+                                    <input type="radio" name="match_half" id="m-half-1h" value="1h" />
+                                    <label class="checkmark" for="m-half-1h"></label>
+                                </span>
+                                <div class="sportTimeBox _1h mr-1" style="margin-top: 2px;"></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                
+              </tbody>
+            </table>
+
+          </td>
+          <td>
+
+            <table class="w-100 fixed-table" cellspacing="0" cellpadding="0">
+              <colgroup><col style="width: 13%;" /><col style="width: 37%;" /></colgroup>
+              <tbody>
+                <tr>
+                  <td align="right"><label class="b">วันที่</label></td>
+                    <td>
+                      <input type="text" name="date" value="{{:match_date}}" />
+                    </td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">เจ้าบ้าน</label></td>
+                  <td>
+                    <input type="text" name="team_1_th" value="" /><label>&nbsp;&nbsp;(EN)</label>
+                    <div></div>
+                    <input type="text" name="team_1_en" value="" /><label>&nbsp;&nbsp;(TH)</label>
+                    <div></div>
+                    <input type="text" name="team_1_cn" value="" /><label>&nbsp;&nbsp;(CN)</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">ทีมเยือน</label></td>
+                  <td>
+                    <input type="text" name="team_2_th" value="" /><label for="e-a-team-en">&nbsp;&nbsp;(EN)</label>
+                    <div></div>
+                    <input type="text" name="team_2_en" value="" /><label for="e-a-team-th">&nbsp;&nbsp;(TH)</label>
+                    <div></div>
+                    <input type="text" name="team_2_cn" value="" /><label for="e-a-team-th">&nbsp;&nbsp;(CN)</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right"><label class="b">สูงสุดต่อคู่</label></td>
+                  <td>
+                    <input type="text" name="match_max" value="{{:max_play}}" />
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+   
+  </fieldset>
+</form>
+</script>
+
+<script id="sportEmpty_Tmpl" type="text/x-jsrender">
+  <div class="text-center">
+    <span>ไม่มีการเลือกคู่แข่งขัน</span>
+  </div>
+</script>
+

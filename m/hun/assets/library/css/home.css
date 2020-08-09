@@ -1,0 +1,289 @@
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+    -webkit-border-radius: 6px;
+}
+
+.green-color{
+	color: #2d8831;
+	font-weight: bold;
+}
+.red-color{
+	color: #f43a2c;
+	font-weight: bold;
+}	
+.gray-color
+{
+
+}
+.blue-color
+{
+	color: blue;
+	font-weight: bold;
+}
+
+#homeBody
+{
+	background: #e1e0e0;
+	border-radius: 8px;
+	margin: 5px;
+}
+
+#homeTitle
+{
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+	height: 35px;
+	padding-top: 15px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+
+
+}
+.garyGradient
+{
+background: rgba(218,218,218,1);
+background: -moz-linear-gradient(top, rgba(218,218,218,1) 0%, rgba(205,205,205,1) 49%, rgba(189,189,189,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(218,218,218,1)), color-stop(49%, rgba(205,205,205,1)), color-stop(100%, rgba(189,189,189,1)));
+background: -webkit-linear-gradient(top, rgba(218,218,218,1) 0%, rgba(205,205,205,1) 49%, rgba(189,189,189,1) 100%);
+background: -o-linear-gradient(top, rgba(218,218,218,1) 0%, rgba(205,205,205,1) 49%, rgba(189,189,189,1) 100%);
+background: -ms-linear-gradient(top, rgba(218,218,218,1) 0%, rgba(205,205,205,1) 49%, rgba(189,189,189,1) 100%);
+background: linear-gradient(to bottom, rgba(218,218,218,1) 0%, rgba(205,205,205,1) 49%, rgba(189,189,189,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dadada', endColorstr='#bdbdbd', GradientType=0 )
+
+}
+
+#ubHomeTitle
+{
+	text-align: center;
+}
+#landscapeSelectDate
+{
+	display: inline-block;
+	display: none
+}
+.selectBoxStyle
+{
+	margin-top: 2px;
+	height: 40px;
+	border-radius: 20px;
+	outline-style:none;
+	box-shadow:none;
+	border-color:transparent;
+	width: 98%;
+	border: 1px solid #a9a6a6;
+	background: url(../img/icondate_select.png) no-repeat right;
+	background-size: 20px 20px;
+	background-position-x: 98%;
+	-webkit-appearance: none;
+	margin-left: 1%; 
+	padding-left: 35%;
+    padding-right: 10%;
+    /*text-align: center;*/
+	
+}
+.selectBoxStyle *
+{
+	/*display: none;*/
+	text-align: center;
+}
+.SlidePagination
+{
+	height: 60px;
+	width: 98%;
+	margin-left: 1%;
+	padding: auto;
+}
+
+.swiper-wrapper 
+{
+  height: 97%;
+}
+
+/* slide style */
+
+/*ช่อง 9 */
+ #showBingoData
+ {
+ 	height: auto;
+ 	width: 98%;
+ 	margin-left: 1%;
+ }
+ .Bingodatatable{
+ 	margin-bottom: 30px;
+ 	background-color: #fff;
+ 	border-top-right-radius: 5px;
+ 	border-top-left-radius: 5px;
+ }
+ .Bingodatatable tr
+ {
+ 	height: 40px;
+ }
+ .Bingodatatable
+ {
+
+ }
+
+ .Bingodatatable .main-title
+ {
+	color: blue;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border: solid 1px #333;
+ }
+ .tbodyData
+ {
+ 	border: solid 1px #333;
+ }
+ .boder-line
+ {
+ 	border: solid 0.5px rgba(51, 51, 51, 0.65);
+ }
+ .Bingodatatable .set-title
+ {
+ 	background-color: #6e6e70;
+ 	color: #fff;
+ 	border-left: solid 1px #333;
+
+ }
+
+
+.moonTitle
+{	
+	border: solid 1px #333;
+	color: #fff;
+}
+/*ช่อง 9 */
+
+/* slide style */
+
+
+@-moz-document url-prefix() {
+    .selectBoxStyle
+	{
+		padding-left: 30%;
+	    padding-right: 20%;
+		
+	}
+
+	select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: "";
+    color: transparent !important;
+    text-shadow: 0 0 0 #000 !important;
+  }
+}
+
+@media (min-device-width:768px) and (max-device-width:1023px)
+{
+	.selectBoxStyle
+	{
+		padding-left: 42%;
+	    padding-right: 0%;
+	    /*text-align: center;*/
+	}
+	
+}
+@media (min-device-width:1024px) and (max-device-width:1366px)
+{
+		.selectBoxStyle
+		{
+			padding-left: 43%;
+		    padding-right: 0%;
+		    /*text-align: center;*/
+		}
+	
+}
+
+@media all and (orientation: landscape) 
+{
+
+	#landscapeSelectDate
+	{
+		float: right;
+		width: 60%;
+		text-align: center;
+		display: inline-block;
+	}
+
+	#ubHomeTitle
+	{
+		text-align: center;
+		float: left;
+		width: 40%;
+		display: inline-block;
+	}
+	#selectDate
+	{
+		display: none;
+	}
+
+	.selectBoxStyle
+	{
+		margin-top: -7px;
+		height: 35px;
+		border-radius: 20px;
+		width: 100%;
+		margin-right: 10px;
+		margin-left: 0px;
+		float: right;
+		/*padding-left: 33%;*/
+    	
+	
+	}
+	.SlidePagination
+{
+	height: 30px;
+	width: 98%;
+	margin-left: 5%;
+	padding: auto;
+}
+
+	.swiperBox
+	{
+	  width: 30%;
+	  text-align: left;
+	}
+
+	.swiper-pagination-bullet
+	{
+	
+	}
+
+	.swiperPText
+	{
+		display: inline-block;
+		position: absolute;
+    	top: 20px;
+    	font-size: 13px;
+
+	}
+	#DateselectBoxL
+	{
+		font-size: 15px;
+	}
+	/* slide style */
+
+	/*ช่อง 9 */
+	/*ช่อง 9 */
+	
+	/* slide style */
+
+	@media (min-device-width:1024px) and (max-device-width:1366px)
+	{
+		/*.selectBoxStyle
+		{
+			padding-left: 43%;
+		    padding-right: 0%;
+		    text-align: center;
+		}*/
+	
+	}
+
+}

@@ -1,0 +1,420 @@
+body{ font-family: Arial, Helvetica, sans-serif; }
+.thaisan{ font-family: "thaisansneue-extralight", "Open Sans", sans-serif }
+.tahoma{ font-family: Tahoma, Arial, Helvetica, sans-serif; }
+.H1 {
+	font-family: "thaisansneue-extralight", "Open Sans", sans-serif;
+  	font-size: 50px;font-weight:bold;color: #337ab7;text-shadow: 0px 1px 0px #999, 0px 1px 0px #888, 0px 2px 0px #777, 0px 2px 0px #666, 0px 3px 0px #555, 0px 3px 0px #444, 0px 4px 0px #333, 0px 4px 7px #001135; margin-top:0px
+	}
+	@media screen and (max-width: 990px) {
+    .H1 {
+      	font-size: 300%; } }
+  	@media screen and (max-width: 768px) {
+    .H1 {
+      	font-size: 300%; } }
+		
+		footer#colophon {
+			display: block;
+			width: 100%;
+			text-align: center;
+			background-color:#121212;
+			color: white;
+			border-top:1px solid #000000;
+		}
+		
+
+.gardient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+49,dddfe3+80,f5f6f6+100;Grey+Pipe */
+background: rgb(245,246,246); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%, rgba(184,186,198,1) 49%, rgba(221,223,227,1) 80%, rgba(245,246,246,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(21%,rgba(219,220,226,1)), color-stop(49%,rgba(184,186,198,1)), color-stop(80%,rgba(221,223,227,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+.col-xs-1sths,
+.col-sm-1sths,
+.col-md-1sths,
+.col-lg-1sths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.col-xs-1sths {
+    width: 5%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-1sths {
+        width: 5%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-1sths {
+        width: 5%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-1sths {
+        width: 5%;
+        float: left;
+    }
+}
+
+.col-xs-2ths,
+.col-sm-2ths,
+.col-md-2ths,
+.col-lg-2ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.col-xs-2ths {
+    width: 16.66%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-2ths {
+        width: 16.66%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-2ths {
+        width: 16.66%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-2ths {
+        width: 16.66%;
+        float: left;
+    }
+}
+
+
+
+
+.col-xs-2sths,
+.col-sm-2sths,
+.col-md-2sths,
+.col-lg-2sths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.col-xs-2sths {
+    width: 15%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-2sths {
+        width: 15%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-2sths {
+        width: 15%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-2sths {
+        width: 15%;
+        float: left;
+    }
+}
+
+
+.col-xs-3ths,
+.col-sm-3ths,
+.col-md-3ths,
+.col-lg-3ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.col-xs-3ths {
+    width: 25%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-3ths {
+        width: 25%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-3ths {
+        width: 25%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-3ths {
+        width: 25%;
+        float: left;
+    }
+}
+
+
+
+
+
+.col-xs-4ths,
+.col-sm-4ths,
+.col-md-4ths,
+.col-lg-4ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.col-xs-4ths {
+    width: 25%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-4ths {
+        width: 25%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-4ths {
+        width: 25%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-4ths {
+        width: 25%;
+        float: left;
+    }
+}
+
+
+.col-xs-4sths,
+.col-sm-4sths,
+.col-md-4sths,
+.col-lg-4sths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.col-xs-4sths {
+    width: 33.33%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-4sths {
+        width: 33.33%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-4sths {
+        width: 33.33%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-4sths {
+        width: 33.33%;
+        float: left;
+    }
+}
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+
+.col-xs-5sths,
+.col-sm-5sths,
+.col-md-5sths,
+.col-lg-5sths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5sths {
+    width: 40%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-5sths {
+        width: 40%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-5sths {
+        width: 40%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-5sths {
+        width: 40%;
+        float: left;
+    }
+}
+
+
+
+.col-xs-6ths,
+.col-sm-6ths,
+.col-md-6ths,
+.col-lg-6ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-6ths {
+    width: 50%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-6ths {
+        width: 50%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-6ths {
+        width: 50%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-6ths {
+        width: 50%;
+        float: left;
+    }
+}
+
+
+
+.col-xs-8ths,
+.col-sm-8ths,
+.col-md-8ths,
+.col-lg-8ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.col-xs-8ths {
+    width: 75%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-8ths {
+        width: 75%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-8ths {
+        width: 75%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-8ths {
+        width: 75%;
+        float: left;
+    }
+}
+
+
+.col-xs-12ths,
+.col-sm-12ths,
+.col-md-12ths,
+.col-lg-12ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.col-xs-12ths {
+    width: 100%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-12ths {
+        width: 100%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-12ths {
+        width: 100%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-12ths {
+        width: 100%;
+        float: left;
+    }
+}
+
+
+
+		

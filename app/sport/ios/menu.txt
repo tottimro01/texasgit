@@ -1,0 +1,4 @@
+ผลบอล,?p=score,polball.png
+เลือกลีก,?p=leage,leage.png
+เปลี่ยนรหัสผ่าน,?p=pass,pass.png
+ออกจากระบบ,?p=logout,logout.png

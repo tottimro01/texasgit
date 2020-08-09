@@ -1,0 +1,145 @@
+<?php ob_start(); if (!isset($_SESSION)) { session_start(); } ?>
+<?php
+require('../../../inc/conn.php');
+require('../../../inc/function.php');
+
+require("../../../../lang/variable_lang.php");
+require("../../../../lang/function_array.php");
+
+
+$_SESSION["idleCount"] = 1;
+
+$sql="select * from bom_tb_member where m_id='".$_SESSION['m_id']."'";
+$re_m=sql_array($sql);
+
+$domainType = $_POST["domainType"];
+$tableID = $_POST["tableID"];
+$gameShoe = $_POST["gameShoe"];
+$gameRound = $_POST["gameRound"];
+$data = $_POST["data"];
+$betLimitID = $_POST["betLimitID"];
+$f = $_POST["f"];
+$c = $_POST["c"];
+
+$arrayOfObjs = json_decode($data);
+
+$bet_session = $_SESSION['m_id']."X".$time_stam;
+$bet_success = array();
+
+$play_bet = "";
+$sum_stake = 0;
+$txns = array();
+$di = 0;
+
+$fcount = $re_m[m_count];
+
+foreach ($arrayOfObjs as $key => $object) {
+    $categoryIdx = $object->categoryIdx;
+    $categoryName = $object->categoryName;
+    $stake = $object->stake;
+
+    $txns[$di]["categoryIdx"] = $categoryIdx;
+    $txns[$di]["categoryName"] = $categoryName;
+    $txns[$di]["stake"] = $stake;
+    $txns[$di]["success"] = "true";
+    $txns[$di]["message"] = "ยอมรับการเดิมพันแล้ว";
+
+    $key_play = array_search ($categoryName, $arr_baccarat);
+
+    /*if($play_bet==""){
+        $play_bet = $key_play;
+    }else{
+        $play_bet .= ",".$key_play;
+    }*/
+	
+################Config Member
+$rmyshare=array();
+$rdis=array();
+$rag=array(); 
+################Config Member
+########################Agent
+foreach($_SESSION['arid'] as $rid){
+	
+	
+						######################ระงับ
+					  if(intval($_SESSION['ardata'][$rid]['r_active'])==0){ 
+					echo "<b class='cr'>E32-".$lang_member[555]."</b>";
+					 exit();
+					 }
+					 
+$rag[]=$rid; 					 
+$rdis[]=@explode(',',$_SESSION['ardata'][$rid]['r_casino_dis']); 					 
+$rmyshare[]=@explode(',',$_SESSION['ardata'][$rid]['r_casino_myshare']); 
+$mshare=@explode(',',$_SESSION['ardata'][$rid]['r_casino_share']); 
+	
+}
+	
+###################Share New
+for($xs=1;$xs<@count($rmyshare);$xs++){
+$r1myshare[$xs]=$rmyshare[$xs][1]; 
+	}
+$hshare=$mshare[1]; 
+	
+ #########################AF
+if($re_m['bonus_m_id']>0){
+	   $comaf=$af_casino;
+	}else{
+		$comaf=0;
+	}
+
+    if($re_m[m_count]>=$stake){
+
+        $ecount = $fcount-$stake;
+
+        $sql="INSERT IGNORE INTO bom_tb_casino_bill_play_live  (bet_id , bet_round ,play_timestam ,play_datenow  ,play_bet
+            ,casino_zone ,casino_table
+            ,b_total ,b_pay ,m_id ,b_date ,r_agent_id , bet_session, bonus_m_id , b_credit_start , b_credit_end, r_id, com_af
+			,b_share_m 	 ,b_myshare_1 ,b_myshare_2 ,b_myshare_3 ,b_myshare_4 ,b_myshare_5 ,b_myshare_6,b_myshare_7
+			)   values('$gameShoe', '$gameRound','$time_stam','".date("Y-m-d H:i:s")."' ,'$key_play' 
+            ,'$domainType','$tableID'
+            ,'$stake','$stake', '".$_SESSION['m_id']."','$view_date','".$_SESSION['r_agent_id']."' , '$bet_session','$re_m[bonus_m_id]' , '$fcount' , '$ecount'
+			, '".$_SESSION['cr_id']."' ,'$comaf'
+			,'$hshare' ,'".$r1myshare[1]."' 	,'".$r1myshare[2]."' 	,'".$r1myshare[3]."' 	,'".$r1myshare[4]."' 	,'".$r1myshare[5]."' 	,'".$r1myshare[6]."' 	,'".$r1myshare[7]."' 
+            );";
+
+        if(sql_query($sql)){ 
+            $bet_success[] = "OK";
+
+            $fcount = $fcount-$stake;
+        }
+    }
+
+    $sum_stake = $sum_stake+$stake;
+    $di++;
+}
+
+if($di==count($bet_success)){           
+    $arr_return["status"] = 200;
+    $arr_return["message"] = array();
+    $arrx["balance"] = $re_m["m_count"];
+    $arrx["txns"] = $txns;
+    $arr_return["message"] = json_encode($arrx);
+
+    $sql="update IGNORE  bom_tb_member set m_count = m_count-$sum_stake where m_id = '".$_SESSION['m_id']."'";
+    sql_query($sql);
+
+    echo json_encode($arr_return);                
+}else{
+
+    $sql="delete from bom_tb_member where m_id = '".$_SESSION['m_id']."' and bet_session = '$bet_session'";
+    sql_query($sql);
+
+    $arr_return["status"] = 200;
+    $arr_return["message"] = array();
+    $arrx["balance"] = $re_m["m_count"];
+    $arrx["txns"] = "";
+    $arr_return["message"] = "";
+
+    echo json_encode($arr_return);
+}
+
+exit();
+
+
+
+?>

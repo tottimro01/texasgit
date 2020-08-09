@@ -1,0 +1,14 @@
+#mainFullContain {
+	    width: 100%;
+	     overflow-y: auto; 
+	     /*-webkit-overflow-scrolling: touch; */
+	}
+
+@media all and (orientation: landscape) 
+{
+	#mainFullContain {
+	    width: 100%;
+	     overflow-y: auto; 
+	     /*-webkit-overflow-scrolling: touch; */
+	}
+}

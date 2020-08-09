@@ -1,0 +1,146 @@
+select.no-outline:focus, 
+textarea.no-outline:focus, 
+textarea.form-control.no-outline:focus, 
+input.form-control.no-outline:focus, 
+button.btn.no-outline:focus, 
+input[type=text].no-outline:focus, 
+input[type=password].no-outline:focus, 
+input[type=email].no-outline:focus, 
+input[type=number].no-outline:focus, 
+input[type=checkbox].no-outline:focus, 
+input[type=radio].no-outline:focus, 
+input[type=submit].no-outline:focus, 
+[type=text].form-control.no-outline:focus, 
+[type=password].form-control.no-outline:focus, 
+[type=email].form-control.no-outline:focus, 
+[type=tel].form-control.no-outline:focus, 
+[type=checkbox].form-control.no-outline:focus, 
+[type=radio].form-control.no-outline:focus, 
+[type=submit].form-control.no-outline:focus, 
+[contenteditable].form-control.no-outline:focus,
+.custom-control-input.no-outline:focus~.custom-control-label::before{
+  box-shadow: none!important;
+}
+
+select.control-sc:focus, 
+textarea.control-sc:focus, 
+textarea.form-control.control-sc:focus, 
+input.form-control.control-sc:focus, 
+button.btn.control-sc:focus, 
+input[type=text].control-sc:focus, 
+input[type=password].control-sc:focus, 
+input[type=email].control-sc:focus, 
+input[type=number].control-sc:focus, 
+input[type=checkbox].control-sc:focus, 
+input[type=radio].control-sc:focus, 
+input[type=submit].control-sc:focus, 
+[type=text].form-control.control-sc:focus, 
+[type=password].form-control.control-sc:focus, 
+[type=email].form-control.control-sc:focus, 
+[type=tel].form-control.control-sc:focus, 
+[type=checkbox].form-control.control-sc:focus, 
+[type=radio].form-control.control-sc:focus, 
+[type=submit].form-control.control-sc:focus, 
+[contenteditable].form-control.control-sc:focus,
+.custom-control-input.control-sc:focus~.custom-control-label::before{
+  border-color: #cd8110;
+  box-shadow: 0 0 0 0.2rem rgba(201, 136, 34, 0.4);
+}
+.custom-control-input.control-sc:checked~.custom-control-label::before {
+  border-color: #cd8110;
+  background-color: #cd8110;
+}
+
+input[type=submit].control-sc, 
+[type=submit].form-control.control-sc, 
+button.control-sc{
+  background-color: #861a0e;
+}
+input[type=submit].control-sc:hover, 
+[type=submit].form-control.control-sc:hover, 
+button.control-sc:hover{
+  background-color: #9e1f10;
+}
+.control-sc.btn:focus,
+.control-sc.btn.focus
+input[type=submit].control-sc:focus, 
+[type=submit].form-control.control-sc:focus, 
+button.control-sc:focus{
+  box-shadow: 0 0 0 0.2rem rgba(201, 136, 34, 0.4);
+}
+
+input[type=submit].control-sc,
+input[type=submit].control-sc:hover,
+input[type=submit].control-sc:focus,
+[type=submit].form-control.control-sc,
+[type=submit].form-control.control-sc:hover,
+[type=submit].form-control.control-sc:focus,
+button.control-sc,
+button.control-sc:hover,
+button.control-sc:focus{
+  color: #fff;
+}
+
+input[type=submit].control-sc.sc-gd, 
+[type=submit].form-control.control-sc.sc-gd, 
+button.control-sc.sc-gd{
+  background: #861a0e;
+background: -moz-linear-gradient(top,  #ad463d 0%, #861a0e 100%);
+background: -webkit-linear-gradient(top,  #ad463d 0%,#861a0e 100%);
+background: linear-gradient(to bottom,  #ad463d 0%,#861a0e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ad463d', endColorstr='#861a0e',GradientType=0 );
+border: 1px solid #c78116;
+text-shadow: 1px 1px #6b1309;
+color: #fff;
+}
+input[type=submit].control-sc.sc-gd:hover, 
+[type=submit].form-control.control-sc.sc-gd:hover, 
+button.control-sc.sc-gd:hover{
+  background: #9e1f10;
+background: -moz-linear-gradient(top, #c14f45 0%, #9e1f10 100%);
+background: -webkit-linear-gradient(top, #c14f45 0%,#9e1f10 100%);
+background: linear-gradient(to bottom, #c14f45 0%,#9e1f10  100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eada85', endColorstr='#9e1f10',GradientType=0 );
+/*border: 1px solid #9e1f10;*/
+}
+
+input[type=submit].form-control.control-sc.sc-gd,
+input[type=submit].form-control.control-sc.sc-gd:hover,
+input[type=submit].form-control.control-sc.sc-gd:focus,
+button.control-sc.sc-gd,
+button.control-sc.sc-gd:hover,
+button.control-sc.sc-gd:focus{
+  color: #444;
+}
+
+.checkbox-checkmark{
+  font-size: .8rem;
+}
+
+.checkbox-checkmark > input.hideInput{
+  position: absolute;
+  opacity: 0;
+  width: 0;
+}
+
+.checkbox-checkmark > .checkmark > .onCheck{
+	display: none;
+}
+
+.checkbox-checkmark > input:checked ~ .checkmark .onCheck{
+	display: inline;
+}
+
+.checkbox-checkmark > input ~ .checkmark .onUncheck.d_block,
+.checkbox-checkmark > input:checked ~ .checkmark .onCheck.d_block{
+  display: block;
+}
+
+.checkbox-checkmark > input ~ .checkmark .onUncheck.d_inline_block,
+.checkbox-checkmark > input:checked ~ .checkmark .onCheck.d_inline_block{
+  display: inline-block;
+}
+
+.checkbox-checkmark > input:checked ~ .checkmark .onUncheck{
+	display: none;
+}

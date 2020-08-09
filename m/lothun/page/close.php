@@ -1,0 +1,1 @@
+<h1 class="thaisan" style="color:#FF0000">ปิดรับแทงแล้ว</h1>

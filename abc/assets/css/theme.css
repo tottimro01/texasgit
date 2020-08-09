@@ -1,0 +1,575 @@
+body{
+    min-width: 1360px!important;
+}
+/*-------------------- match table --------------------*/
+#sportContainer{
+  /*max-width: 1366px;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+#sportContainer_body{
+  min-height: 100px;
+  border: 0;
+}
+.sport-match-header,
+.sport-match-table{
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.sport-league-box.leagueCollapsed > .sport-league-head{
+  border-bottom: 1px solid #929292;
+}
+/* .sport-league-box.leagueCollapsed > .sport-league-head .collapseLeagueBtn{
+    background: red;;
+} */
+.sport-league-box.leagueCollapsed > .sport-league-head .collapseLeagueBtn > .fa-chevron-up{
+  display: none;
+}
+.sport-league-box:not(.leagueCollapsed) > .sport-league-head .collapseLeagueBtn > .fa-chevron-down{
+  display: none;
+}
+.sport-league-box.leagueCollapsed > .sport-league-body{
+  display: none;
+}
+/* ------------------------------ HDC GOAL Column ------------------------------ */
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(1),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(1){
+  width: 80px;
+}
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(8),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(8),
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(9),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(9),
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(15),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(15),
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(16),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(16),
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(19),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(19),
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(20),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(20){
+  width: 50px;
+}
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(2),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(2),
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(3),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(3),
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(4),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(4),
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(6),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(6),
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(13),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(13),
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(21),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(21){
+  width: 30px;
+}
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(7),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(7),
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(11),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(11),
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(14),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(14),
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(18),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(18){
+  width: 60px;
+}
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(10),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(10),
+.sport-match-table-sizer.p_hdc_goal > thead > tr > th:nth-child(17),
+.sport-match-table-sizer.p_hdc_goal > tbody > tr > td:nth-child(17){
+  width: 100px;
+}
+/* ------------------------------ HDC GOAL Column END ------------------------------ */
+/* ------------------------------ 1X2 OE Column ------------------------------ */
+.sport-match-table-sizer.p_1x2_oe > thead > tr > th:nth-child(1),
+.sport-match-table-sizer.p_1x2_oe > tbody > tr > td:nth-child(1){
+  width: 80px;
+}
+.sport-match-table-sizer.p_1x2_oe > thead > tr > th:nth-child(6),
+.sport-match-table-sizer.p_1x2_oe > tbody > tr > td:nth-child(6),
+.sport-match-table-sizer.p_1x2_oe > thead > tr > th:nth-child(7),
+.sport-match-table-sizer.p_1x2_oe > tbody > tr > td:nth-child(7),
+.sport-match-table-sizer.p_1x2_oe > thead > tr > th:nth-child(8),
+.sport-match-table-sizer.p_1x2_oe > tbody > tr > td:nth-child(8),
+.sport-match-table-sizer.p_1x2_oe > thead > tr > th:nth-child(13),
+.sport-match-table-sizer.p_1x2_oe > tbody > tr > td:nth-child(13),
+.sport-match-table-sizer.p_1x2_oe > thead > tr > th:nth-child(14),
+.sport-match-table-sizer.p_1x2_oe > tbody > tr > td:nth-child(14){
+  width: 50px;
+}
+.sport-match-table-sizer.p_1x2_oe > thead > tr > th:nth-child(2),
+.sport-match-table-sizer.p_1x2_oe > tbody > tr > td:nth-child(2),
+.sport-match-table-sizer.p_1x2_oe > thead > tr > th:nth-child(3),
+.sport-match-table-sizer.p_1x2_oe > tbody > tr > td:nth-child(3),
+.sport-match-table-sizer.p_1x2_oe > thead > tr > th:nth-child(4),
+.sport-match-table-sizer.p_1x2_oe > tbody > tr > td:nth-child(4),
+.sport-match-table-sizer.p_1x2_oe > thead > tr > th:nth-child(12),
+.sport-match-table-sizer.p_1x2_oe > tbody > tr > td:nth-child(12),
+.sport-match-table-sizer.p_1x2_oe > thead > tr > th:last-child,
+.sport-match-table-sizer.p_1x2_oe > tbody > tr > td:last-child{
+  width: 30px;
+}
+
+.sport-match-table-sizer.p_1x2_oe > thead > tr > th:nth-child(10),
+.sport-match-table-sizer.p_1x2_oe > tbody > tr > td:nth-child(10),
+.sport-match-table-sizer.p_1x2_oe > thead > tr > th:nth-child(16),
+.sport-match-table-sizer.p_1x2_oe > tbody > tr > td:nth-child(16){
+  width: 60px;
+}
+.sport-match-table-sizer.p_1x2_oe > thead > tr > th:nth-child(9),
+.sport-match-table-sizer.p_1x2_oe > tbody > tr > td:nth-child(9),
+.sport-match-table-sizer.p_1x2_oe > thead > tr > th:nth-child(15),
+.sport-match-table-sizer.p_1x2_oe > tbody > tr > td:nth-child(15){
+  width: 140px;
+}
+/* ------------------------------ 1X2 OE Column END ------------------------------ */
+/* ------------------------------ Result Column ------------------------------ */
+.sport-match-table-sizer.sp_result > thead > tr > th:nth-child(1),
+.sport-match-table-sizer.sp_result > tbody > tr > td:nth-child(1){
+  width: 150px;
+}
+.sport-match-table-sizer.sp_result > thead > tr > th:nth-child(6),
+.sport-match-table-sizer.sp_result > tbody > tr > td:nth-child(6),
+.sport-match-table-sizer.sp_result > thead > tr > th:nth-child(7),
+.sport-match-table-sizer.sp_result > tbody > tr > td:nth-child(7){
+  width: 110px;
+}
+.sport-match-table-sizer.sp_result > thead > tr > th:nth-child(3),
+.sport-match-table-sizer.sp_result > tbody > tr > td:nth-child(3),
+.sport-match-table-sizer.sp_result > thead > tr > th:nth-child(4),
+.sport-match-table-sizer.sp_result > tbody > tr > td:nth-child(4),
+.sport-match-table-sizer.sp_result > thead > tr > th:nth-child(5),
+.sport-match-table-sizer.sp_result > tbody > tr > td:nth-child(5)
+{
+  width: 85px;
+}
+.sport-match-table-sizer.sp_result > thead > tr > th:nth-child(9),
+.sport-match-table-sizer.sp_result > tbody > tr > td:nth-child(9),
+.sport-match-table-sizer.sp_result > thead > tr > th:nth-child(10),
+.sport-match-table-sizer.sp_result > tbody > tr > td:nth-child(10){
+  width: 60px;
+}
+/* ------------------------------ Result Column END ------------------------------ */
+/* ------------------------------ Result Column ------------------------------ */
+.sport-match-table-sizer.bill_var > thead > tr > th:not(:nth-child(4)),
+.sport-match-table-sizer.bill_var > tbody > tr > td:not(:nth-child(4)){
+  width: 10%;
+}
+.sport-match-table-sizer.bill_var > thead > tr > th:nth-child(2),
+.sport-match-table-sizer.bill_var > tbody > tr > td:nth-child(2){
+  width: 15%;
+}
+/* ------------------------------ Result Column END ------------------------------ */
+/* ------------------------------ Sport Column Color ------------------------------ */
+.sport-match-table-sizer > tbody > tr > td.c-pp{
+  background-color: #e9bbff; /*purple*/
+}
+.sport-match-table-sizer > tbody > tr > td.c-p{
+  background-color: #f8dbe6; /*pink*/
+}
+.sport-match-table-sizer > tbody > tr > td.c-b{
+  background-color: #a6e2ff; /*blue*/
+}
+.sport-match-table-sizer > tbody > tr > td.c-g{
+  background-color: #66cc99; /*green*/
+}
+.sport-match-table-sizer > tbody > tr > td.c-org{
+  background-color: #ffe1c4; /*orange*/
+}
+.sport-match-table-sizer > tbody > tr > td.c-w{
+  background-color: #fff; /*white*/
+}
+.sport-match-table-sizer > tbody > tr > td.c-y{
+  background-color: #ffff66; /*yellow*/
+}
+.sport-match-table-sizer > tbody > tr > td.c-gry{
+  background-color: #ced5d7; /*gray*/
+}
+/* ------------------------------ Sport Column Color END ------------------------------ */
+.sport-league-head{
+  background-color: #b1b1b1;
+  border-bottom: 1px solid #929292;
+}
+.sport-league-head > .league-name-text{
+    cursor: default;
+}
+.match_container:nth-child(even) > tr{
+  background-color: #c6d4f1;
+}
+.match_container:nth-child(odd) > tr{
+  background-color: #e4e4e4;
+}
+.match_container:nth-child(even) > tr.market_live{
+  background-color: #ffccbc;
+}
+.match_container:nth-child(odd) > tr.market_live{
+  background-color: #f9b29b;
+}
+.match_container > tr.market_live .time_text{
+  color: #B50000;
+}
+.match_container > tr.market_live .time_text:after{
+  content: "\"";
+  -webkit-animation: live_time_text 1s infinite;
+  animation: live_time_text 1s infinite;
+}
+
+@-webkit-keyframes live_time_text{
+  50% {opacity: 0;}
+}
+
+@keyframes live_time_text{
+  50% {opacity: 0;}
+}
+
+.sport-match-table .name-table tr th,
+.sport-match-table .name-table tr td,
+.sport-match-table .rate-table tr th,
+.sport-match-table .rate-table tr td{
+  border: none;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.sport-match-table .bet_a{
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sport-match-table .team_name{
+  color: #0000FF;
+}
+
+.sport-match-table > tbody > tr > th,
+.sport-match-table > tbody > tr > td{
+  border: 1px solid #b1b1b1;
+  border-top: 0;
+  padding: 4px 4px;
+}
+
+.sport-match-table .match_row .team_name.team_big{
+  color: #B50000;
+}
+
+.sport-match-table .match_row .team_name.team_big{
+  text-decoration: underline;
+}
+.sport-match-table .match_row .team_name.team_big:before{
+  content: "* ";
+}
+
+.m_end .sport-match-table .match_row .team_name{
+  color: #757575!important;
+}
+
+.m_1h_end .sport-match-table .match_row._1h .team_name{
+  color: #757575!important;
+}
+
+.add-hider{
+    position: relative;
+}
+
+.add-hider:after{
+    content: "";
+    /* position: absolute;
+    height: 2px;
+    background: white;
+    bottom: -1px;
+    left: 0px;
+    right: -1px;
+    border-right: 1px solid #b1b1b1; */
+}
+/* ------------------------------ Result Sport table ------------------------------ */
+#result_table .match_row{
+  background-color: #66ff99;
+}
+#result_table .match_row.score_empty{
+    background-color: #4ebfe0;
+  }
+#result_table .match_row.match_end{
+  background-color: #ffffff;
+}
+#result_table .match_row.match_end.score_empty{
+  background-color: #ff7c6f;
+}
+#result_table .match_row > td{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* ------------------------------ Result Sport table END ------------------------------ */
+/* ------------------------------ Bill VAR table ------------------------------ */
+.sport-match-table-sizer.bill_var > tbody > tr:nth-child(even){
+    background-color: #fff;
+}
+.sport-match-table-sizer.bill_var > tbody > tr:nth-child(odd){
+    background-color: #fff5db;;
+}
+/* ------------------------------ Bill VAR table END ------------------------------ */
+
+/*// ------------------------------------------------- //*/
+.formUpdateVal.sp_cell input[type="text"]{
+  text-align: center;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+.formUpdateVal.sp_cell input[type="text"]:focus{
+  background: #fff;
+}
+.formUpdateVal.sp_cell input[type="submit"]{
+  display: none;
+}
+
+.edit-match-form label{
+  margin-bottom: 0;
+}
+
+.edit-match-form select,
+.edit-match-form input{
+  margin-bottom: 4px;
+  padding: 0 4px;
+  width: 230px;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.edit-match-form select{
+  -webkit-appearance: none;
+  background-image: url(../img/ui/arrow-down.png);
+  background-size: 8px 8px;
+  background-repeat: no-repeat;
+  background-position: 98% center;
+}
+
+.edit-match-form table td{
+  word-break: break-all;
+  vertical-align: top;
+  padding: 0 2px;
+}
+
+/*// ------------------------------------------------- //*/
+
+.custom-checkbox.custom-checkbox-center,
+.custom-radio.custom-radio-center{
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+.custom-checkbox.custom-checkbox-center .custom-control-label,
+.custom-radio.custom-radio-center .custom-control-label{
+  width: 100%;
+}
+.custom-checkbox.custom-checkbox-center .custom-control-label::before,
+.custom-checkbox.custom-checkbox-center .custom-control-label::after,
+.custom-radio.custom-radio-center .custom-control-label::before,
+.custom-radio.custom-radio-center .custom-control-label::after{
+  position: absolute;
+  left: 50%;
+  margin-left: -.5rem;
+}
+
+.sportTimeBox {
+  display: inline-block!important;
+  width: 18px;
+  height: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  box-sizing: border-box;
+  padding: 0px;
+  /* float: left; */
+}
+
+.sportTimeBox._ft {
+  background: #a9c0ea;
+  background: -webkit-linear-gradient(#a9c0ea 0%, #acbeec 50%, #94acda 51%, #97b3da 100%);
+  background: -o-linear-gradient(#a9c0ea 0%, #acbeec 50%, #94acda 51%, #97b3da 100%);
+  background: linear-gradient(#a9c0ea 0%, #acbeec 50%, #94acda 51%, #97b3da 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9c0ea', endColorstr='#97b3da', GradientType=0);
+  color: #3b536f;
+  border: 1px solid #6d88b5;
+}
+
+.sportTimeBox._1h {
+  background: #ffa1b5;
+  background: -webkit-linear-gradient(#ffa1b5 0%, #fbd1e1 50%, #ffbcd2 51%, #ffc3d9 100%);
+  background: -o-linear-gradient(#ffa1b5 0%, #fbd1e1 50%, #ffbcd2 51%, #ffc3d9 100%);
+  background: linear-gradient(#ffa1b5 0%, #fbd1e1 50%, #ffbcd2 51%, #ffc3d9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa1b5', endColorstr='#ffc3d9', GradientType=0);
+  color: #fe0036;
+  border: 1px solid #ff9fb3;
+}
+
+.sportTimeBox:before {
+  content: "";
+  text-align: center;
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: 500;
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.55);
+  text-shadow: 0 0 1px #d0d9ea;
+  display: block;
+}
+
+.sportTimeBox._ft:before{
+  content: "FT";
+}
+
+.sportTimeBox._1h:before{
+  content: "1H";
+}
+
+.card_gif{
+  width: 12px;
+  height: 15px;
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+  font-size: 9px;
+  font-family: Sans-serif;
+  line-height: 15px;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 2px;
+}
+.card_gif.red{
+  background-color: #f00;
+  border-color: #9e0000;
+  color: #fff;
+}
+.card_gif.yellow{
+  background-color: #fff400;
+  border-color: #5f4703;
+  color: #5f4703;
+}
+
+/* -------------------------------------------- */
+.match-sum-table{
+  width: 100%;
+}
+
+.match-sum-table > thead > tr > th:nth-child(4),
+.match-sum-table > tbody > tr > td:nth-child(4),
+.match-sum-table > thead > tr > th:nth-child(5),
+.match-sum-table > tbody > tr > td:nth-child(5),
+.match-sum-table > thead > tr > th:nth-child(6),
+.match-sum-table > tbody > tr > td:nth-child(6),
+.match-sum-table > thead > tr > th:nth-child(8),
+.match-sum-table > tbody > tr > td:nth-child(8),
+.match-sum-table > thead > tr > th:nth-child(9),
+.match-sum-table > tbody > tr > td:nth-child(9)
+{
+  width: 6%;
+}
+.match-sum-table > thead > tr > th:nth-child(1),
+.match-sum-table > tbody > tr > td:nth-child(1),
+.match-sum-table > thead > tr > th:nth-child(2),
+.match-sum-table > tbody > tr > td:nth-child(2),
+.match-sum-table > thead > tr > th:nth-child(10),
+.match-sum-table > tbody > tr > td:nth-child(10)
+{
+  width: 8%;
+}
+.match-sum-table > thead > tr > th:nth-child(3),
+.match-sum-table > tbody > tr > td:nth-child(3)
+{
+  width: 24%;
+}
+.match-sum-table > thead > tr > th:nth-child(7),
+.match-sum-table > tbody > tr > td:nth-child(7)
+{
+  width: 16%;
+}
+.match-sum-table > thead > tr > th:nth-child(11),
+.match-sum-table > tbody > tr > td:nth-child(11)
+{
+  width: 2%;
+}
+
+.match-sum-table > tbody > tr > td{
+  border: 1px solid #e5c567;
+  border-top: 0;
+  padding: 2px 4px;
+}
+/* -------------------------------------------- */
+
+/* -------------------------------------------- SERVER STATUS -------------------------------------------- */
+
+#server_status.preloader .chk_sp_server:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #ddd 0px, #e8e8e8 50px, #ddd 100px);
+  background-size: 800px;
+  -webkit-animation: shine-avatar 1.6s infinite linear;
+  animation: shine-avatar 1.6s infinite linear;
+} 
+
+@-webkit-keyframes shine-avatar {
+  0%{
+    background-position: -100px;
+  }
+  40%, 100%{
+    background-position: 300px;
+  }
+}
+
+@keyframes shine-avatar {
+  0%{
+    background-position: -100px;
+  }
+  40%, 100%{
+    background-position: 300px;
+  }
+}
+
+.chk_sp_server{
+  position: relative;
+  color: #ffffff;
+  background-color: #dd4b39;
+}
+
+.chk_sp_server.on{
+  background-color: #00a65a;
+}
+
+.chk_sp_server .serv_ico{
+  background-color: #b13c2e;
+}
+
+.chk_sp_server.on .serv_ico{
+  background-color: #008548;
+}
+
+.chk_sp_server .tgOnOff > span.isOn{
+  display: none;
+}
+
+.chk_sp_server.on .tgOnOff > span.isOn{
+  display: inline;
+}
+.chk_sp_server.on .tgOnOff > span.isOff{
+  display: none;
+}
+
+.chk_sp_server .card-footer{
+  border-top-color: #ffffff;
+}
+/* -------------------------------------------- END SERVER STATUS -------------------------------------------- */
+
+/* -------------------------------------------- LOT HUN -------------------------------------------- */
+.lothun_win_form .flag-icon{
+  padding: 0;
+  margin: 0;
+  /* box-shadow: 0 0 1px #a7a7a7; */
+  background-size: cover;
+}  
+/* -------------------------------------------- END LOT HUN -------------------------------------------- */

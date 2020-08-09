@@ -1,0 +1,47 @@
+
+
+
+38 8,10,12,14,16,18,20 * * *   curl --request GET 'http://www.stepmx.com/auto/add_lang_isc.php' >/dev/null 2>&1
+45 8,10,12 * * *   curl --request GET 'http://www.stepmx.com/auto/add_lang_befor.php' >/dev/null 2>&1
+45 14,16,18,20 * * *   curl --request GET 'http://www.stepmx.com/auto/add_lang.php' >/dev/null 2>&1
+
+55 7 * 1   curl --request GET 'http://www.stepmx.com/auto/dun.php' >/dev/null 2>&1
+59 7 * 1   curl --request GET 'http://www.stepmx.com/auto/dun.php' >/dev/null 2>&1
+
+
+
+
+
+
+
+7 8,10 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_3_befor.php' >/dev/null 2>&1
+8 8,10 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_4_befor.php' >/dev/null 2>&1
+9 8,10 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_5_befor.php' >/dev/null 2>&1
+10 8,10 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_6_befor.php' >/dev/null 2>&1
+11 8,10 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_7_befor.php' >/dev/null 2>&1
+12 8,10 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_8_befor.php' >/dev/null 2>&1
+13 8,10 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_9_befor.php' >/dev/null 2>&1
+14 8,10 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_10_befor.php' >/dev/null 2>&1
+
+
+5 8,10,12,14,16,18,20 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_1.php' >/dev/null 2>&1
+6 9,12,16,18,20,22 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_2.php' >/dev/null 2>&1
+7 12,14,16,18,20 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_3.php' >/dev/null 2>&1
+8 12,14,16,18,20 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_4.php' >/dev/null 2>&1
+9 12,14,16,18,20 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_5.php' >/dev/null 2>&1
+10 12,14,16,18,20 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_6.php' >/dev/null 2>&1
+11 12,14,16,18,20 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_7.php' >/dev/null 2>&1
+12 12,14,16,18,20 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_8.php' >/dev/null 2>&1
+13 12,14,16,18,20 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_9.php' >/dev/null 2>&1
+14 12,14,16,18,20 * * *   curl --request GET 'http://www.stepmx.com/auto/add/add_10.php' >/dev/null 2>&1
+
+
+21 * * * *   curl --request GET 'http://www.stepmx.com/auto/add_result.php' >/dev/null 2>&1
+25 6 * * *   curl --request GET 'http://www.stepmx.com/auto/del_data.php' >/dev/null 2>&1
+26 8,10,12,14,16,18,20,22 * * *   curl --request GET 'http://www.stepmx.com/auto/w_lang.php' >/dev/null 2>&1
+
+
+
+
+1 8,10,12,14,16,18,20,22,0,2,4,6 * * *   curl --request GET 'http://www.stepmx.com/auto/football_add_step.php' >/dev/null 2>&1
+3 8,10,12,14,16,18,20,22,0,2,4,6 * * *   curl --request GET 'http://www.stepmx.com/auto/football_write_step' >/dev/null 2>&1

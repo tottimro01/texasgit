@@ -1,0 +1,686 @@
+@charset "utf-8";
+.button, .button.nohover:hover {
+	background-image: url(../images/layout/button.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	color: #000000;
+	float:left;
+	height:19px;
+	padding-right: 4px;
+	margin-right:4px;
+	margin-left:4px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.button:focus {
+	outline: none;
+}
+.button span, .button.nohover:hover span {
+	background-color:transparent;
+	background-image: url(../images/layout/button.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	line-height: 19px;
+	padding-right: 0px;
+	padding-left: 4px;
+	margin-left:-5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 175px;
+	height: 19px;
+	vertical-align: top;
+	display:block;
+	text-align:center;
+	font-size:11px;
+}
+.button:hover { 
+    background-position: right -20px;
+	color: #fff;
+} 
+.button:hover span { 
+    background-position: left -20px; 
+}
+.button.disable { 
+    background-position: right -60px;
+	color: #8C8C8C;
+	cursor: default;
+} 
+.button.disable span { 
+    background-position: left -60px;
+}
+/*button mark */
+.button.mark, .button.mark.nohover:hover {
+    background-position: right -80px;
+	color:#FFFFFF;
+}
+.button.mark span, .button.mark.nohover:hover span {
+    background-position: left -80px;
+}
+.button.mark:hover, .button.light:hover {
+    background-position: right -100px;
+}
+.button.mark:hover span, .button.light:hover span {
+    background-position: left -100px;
+}
+.button.mark.disable {
+    background-position: right -60px;
+	color: #8C8C8C;
+}
+.button.mark.disable span {
+    background-position: left -60px;
+}
+.button.light {    background-position: right -121px;}
+.button.light span {    background-position: left -121px;}
+
+/*button select */
+.button.select.percent {
+    width: 92%;
+    margin: 4px 0 4px 4px;
+    float: none;
+}
+.button.select {
+    outline: none;
+    background-position: right -160px;
+	/*max-width:540px;*/
+}
+.button.select span {
+    background-position: left -160px;
+	max-width:none;
+	text-align: left;
+	padding-right:5px;
+	margin-right: 20px;
+}
+.button.select:hover {
+    background-position: right -180px;
+}
+.button.select:hover span {
+    background-position: left -180px;
+}
+.button.select.disable {
+    background-position: right -220px;
+}
+.button.select.disable span {
+    background-position: left -220px;
+}
+.button.select .submenu {
+	clear:both;
+	text-align:left;
+	visibility:hidden;
+	margin:0;
+	padding:0;
+	list-style:none;
+	position: relative;
+	margin-left: -5px;
+	margin-right: -4px;
+	background-color:#F2F2F2;
+	color:#000000;
+	line-height:12px;
+	-webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+	-webkit-border-radius: 3px;
+	border: #afb6bc 1px solid;
+	border-radius: 3px;
+	z-index:999999;
+	overflow:auto;
+	max-height: 300px;
+}
+.button.select.disable:hover .submenu {visibility: hidden !important;}
+
+/*2013/08/19*/
+.button.select.icon .submenu {position: absolute;}
+.icon_DL, .icon_SL, .icon_ST, .icon_NO, .icon_HT, .icon_FT, .icon_Dec, .icon_HK, .icon_MY, .icon_All, .icon_Main, .icon_MMR, .icon_2HT{
+	margin-bottom:-3px;
+	background-color:transparent;
+	background-image: url(../images/layout/icon_select.png);
+	background-repeat: no-repeat;
+	width:17px;
+	height:15px;
+	margin-right:2px;
+	display:inline-block;
+}
+.icon_DL{background-position: 0px -25px;}
+.icon_SL{background-position: -25px -25px;}
+.icon_ST{background-position: -100px -25px;}
+.icon_NO{background-position: -125px -25px;}
+.icon_HT{background-position: -50px -25px;}
+.icon_FT{background-position: -75px -25px;}
+.icon_Dec{background-position: -175px -25px;}
+.icon_HK{background-position: -200px -25px;}
+.icon_MY{background-position: -150px -25px;}
+.icon_All{background-position: -225px -25px;}
+.icon_Main{background-position: -250px -25px;}
+.icon_MMR {
+	background-position:-275px -25px;
+	position:relative;
+	left:1px;
+}
+.icon_2HT{background-position: -300px -25px;}
+
+.button.select:hover span div.icon_DL{background-position: 0px 0px;}
+.button.select:hover span div.icon_SL{background-position: -25px 0px;}
+.button.select:hover span div.icon_ST{background-position: -100px 0px;}
+.button.select:hover span div.icon_NO{background-position: -125px 0px;}
+.button.select:hover span div.icon_HT{background-position: -50px 0px;}
+.button.select:hover span div.icon_FT{background-position: -75px 0px;}
+.button.select:hover span div.icon_Dec{background-position: -175px 0px;}
+.button.select:hover span div.icon_HK{background-position: -200px 0px;}
+.button.select:hover span div.icon_MY{background-position: -150px 0px;}
+.button.select:hover span div.icon_All{background-position: -225px 0px;}
+.button.select:hover span div.icon_Main{background-position: -250px 0px;}
+.button.select:hover span div.icon_MMR {background-position:-275px 0;}
+.button.select:hover span div.icon_2HT {background-position:-300px 0;}
+
+.button.select.disable span div.icon_DL{background-position: 0px -50px;}
+.button.select.disable span div.icon_SL{background-position: -25px -50px;}
+.button.select.disable span div.icon_ST{background-position: -100px -50px;}
+.button.select.disable span div.icon_NO{background-position: -125px -50px;}
+.button.select.disable span div.icon_HT{background-position: -50px -50px;}
+.button.select.disable span div.icon_FT{background-position: -75px -50px;}
+.button.select.disable span div.icon_Dec{background-position: -175px -50px;}
+.button.select.disable span div.icon_HK{background-position: -200px -50px;}
+.button.select.disable span div.icon_MY{background-position: -150px -50px;}
+.button.select.disable span div.icon_All{background-position: -225px -50px;}
+.button.select.disable span div.icon_Main{background-position: -250px -50px;}
+.button.select.disable span div.icon_MMR {background-position:-275px -50px;}
+.button.select.disable span div.icon_2HT {background-position:-300px -50px;}
+
+.button.disable span div.icon_MMR {background-position:-275px -50px;}
+.button:hover span div.icon_MMR {background-position:-275px 0;}
+
+.icon span > div{margin-top:2px;margin-left:2px;}
+
+
+.submenu li {
+	padding: 5px;
+	padding-right: 20px;
+	cursor:pointer;
+	display:block;
+	white-space: nowrap;
+	overflow:hidden;
+	border: 1px transparent solid;
+}
+.submenu li.selected, .restyle .button .submenu li:hover {
+	/*color: #ff6a00;*/
+	color: #8c7531;
+	background-color:#FFF;
+	/*border: #ff6a00 1px solid;*/
+	border: #e5c567 1px solid;
+	/*padding:4px 19px 4px 4px;*/
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+}
+.submenu li a {
+	color:#2f4a77;
+}
+.submenu li a:hover {
+	color: #ff6a00;
+}
+/*button group*/
+a.button.group {
+	background-position: right -240px;
+	margin-right: 0px;
+}
+a.button.group:hover {	
+	background-position: right -260px;
+}
+a.button.group:hover + a.button span{	
+	background-position: left -280px;
+}
+a.button.group+a.button span {	
+	background-position: left -240px;
+}
+a.button.group+a.button:hover span {	
+	background-position: left -260px;
+}
+/*button tab*/
+.button.tab {
+	background-position: right -500px;
+	padding-right: 2px;
+}
+.button.tab span {
+	text-align:left;
+	max-width:200px;
+	background-position: left -500px;
+	padding-left: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	color:#FFF;
+}
+.icon-arrow {
+    background-image: url(../images/layout/icon_UI02.png);
+    background-position: -112px 0;
+    background-repeat: no-repeat;
+	float: left;
+	height: 15px;
+    margin: 2px 4px 0px 0px;
+    width: 15px;
+        
+}
+/*whatIsNew icon*/
+.icon-whatIsNew {
+    background-image: url(../images/layout/icon-whatIsNew.png);
+    background-repeat: no-repeat;
+	float: left;
+	width: 13px;
+    height: 10px;
+    margin: 5px 5px 0px 1px;
+}
+/*whatIsNew icon*/
+
+.sidebar .icon-arrow {
+    background-position: -96px -17px;
+	display: none;
+}
+/*Refresh button*/
+.button .icon-refresh {
+	display:inline-block;
+	*display: inline; /*IE7*/
+	*zoom : 1; /*IE7*/
+	margin-top:2px;
+	*margin-top:0px;/*IE7*/
+	vertical-align:top;
+}
+.button:hover .icon-refresh {background-position: 0px -18px;}
+
+
+#btnRefresh_L, #btnRefresh_D, #btnSwitchBack {
+	width:35px;
+}
+#btnRefresh_L .icon-refresh, a[name="btnRefresh_L"] .icon-refresh {
+	background-position: left -54px;
+}
+#btnRefresh_L:hover .icon-refresh, a[name="btnRefresh_L"]:hover .icon-refresh {
+	background-position: left -18px;
+}
+#btnRefresh_L.disable .icon-refresh, a[name="btnRefresh_L"].disable .icon-refresh {
+	background-image: url(../images/layout/icon_RefreshWait_L.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+#btnRefresh_D.disable .icon-refresh, a[name="btnRefresh_D"].disable .icon-refresh, a[name="btnRefresh"].disable .icon-refresh {
+	background-image: url(../images/layout/icon_RefreshWait.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+}
+
+/*icon button*/
+.btnIcon {
+	background-image: url(../images/layout/btn_UI01.png);
+	background-repeat: no-repeat;
+	background-position: left 0px;
+	width:16px;
+	height:16px;
+	display: block;
+	margin-left:2px;
+	cursor:pointer;
+}
+.btnIcon:hover {background-position: left -20px;}
+.btnIcon.disable {background-position: 0px -40px; cursor: default;}
+
+.btnIcon.mark {background-position: 0px -60px;}
+.btnIcon.mark:hover {background-position: left -80px;}
+.btnIcon.mark.disable {background-position: 0px -100px; cursor: default;}
+
+.btnIcon.black {background-position: 0px -120px;}
+.btnIcon.black:hover {background-position: left -140px;}
+.btnIcon.black.disable {background-position: 0px -160px; cursor: default;}
+
+.balance .icon-arrow{ margin-top: 1px;}
+.balance:hover .icon-arrow{ 
+	background-image: url(../images/layout/icon_UI02.png);
+    background-position: -112px -17px;
+    background-repeat: no-repeat;}
+.balance-open .icon-arrow{ 
+	background-image: url(../images/layout/icon_UI02.png);
+    background-position: -129px 0px;
+    background-repeat: no-repeat;
+	margin-top: 1px;}
+.balance-open:hover .icon-arrow{ 
+	background-image: url(../images/layout/icon_UI02.png);
+    background-position: -129px -17px;
+    background-repeat: no-repeat;}
+
+/* refresh icon (.icon-refresh) */
+.btnIcon:hover .icon-refresh { background-position: 0px -18px;}
+.btnIcon.disable .icon-refresh {	background-image: url(../images/layout/icon_RefreshWait.gif); background-position: 0px 0px;}
+.btnIcon.mark .icon-refresh { background-position: 0px -36px;}
+.btnIcon.mark:hover .icon-refresh { background-position: 0px -18px;}
+.btnIcon.mark.disable .icon-refresh {	background-image: url(../images/layout/icon_RefreshWait_M.gif); background-position: 0px 0px;}
+.btnIcon.black .icon-refresh { background-position: 0px -36px;}
+.btnIcon.black:hover .icon-refresh { background-position: 0px -18px;}
+.btnIcon.black.disable .icon-refresh {	background-image: url(../images/layout/icon_RefreshWait_B.gif); background-position: 0px 0px;}
+
+
+.icon-refresh, .icon-close, .icon-zoom, .icon-arrowsDown, .icon-arrowsUp,
+.button.selectLeague .icon, .icon-back {
+	background-image: url(../images/layout/icon_UI01.png);
+	background-repeat: no-repeat;
+	background-position: left 0px;
+	width:16px;
+	height:16px;
+	display: block;
+}
+
+.icon-close{background-position: -18px 0px;}
+.BetInfo .icon-close, .btnIcon .icon-close {background-position: -18px -36px;}
+#TVBox .btnIcon .icon-close {background-position: -18px 0px;}
+.icon-close:hover, .BetInfo .icon-close:hover{background-position: -18px -18px;}
+.icon-zoom{background-position: -36px 0px;}
+.icon-zoom:hover{background-position: -36px -18px;}
+.icon-arrowsUp{background-position: -54px 0;display:inline-block;margin-top:1px;}
+.icon-arrowsDown{background-position: -72px 0;display:inline-block;margin-top:1px;}
+.button:hover .icon-arrowsUp{background-position: -54px -18px;}
+.button:hover .icon-arrowsDown{background-position: -72px -18px;}
+
+/* Header News button - Personal Msg*/
+a.button.pMag {
+	margin: 0;
+	padding: 2px;
+	width: 34px;
+	height: 15px;
+	color: #ffffff;
+	background: url(../images/layout/newsIcon.png) no-repeat 0 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-indent: 17px;
+}
+a.button.pMag:hover {
+	background-position: 0 -20px;
+}
+
+
+
+
+#odd_manu a.button {background: url(../images/layout/newsIcon.png) no-repeat right -60px; color:#fff;}
+#odd_manu a span {background: url(../images/layout/newsIcon.png) no-repeat left -60px;}
+#odd_manu a.button:hover { 
+    background-position: right -100px;
+	color: #fff;
+} 
+#odd_manu a.button:hover span { 
+    background-position: left -100px; 
+}
+
+
+
+
+
+/* Header News button - "+"*/
+a.button.more {
+	color: #ffffff;
+	background: url(../images/layout/newsIcon.png) no-repeat -100px 0;
+	cursor: hand;
+	height: 19px;
+	width: 19px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 15px;
+	text-align: center;
+}
+a.button.more:hover {
+	background-position: -100px -20px;
+}
+
+
+/* select league button*/
+.button.selectLeague span {
+	vertical-align: middle;
+}
+.button.selectLeague span div {
+	display: inline-block;
+}
+.button.selectLeague .icon {
+	display: inline-block;
+	margin-left: -2px;
+	height: 14px;
+	background-position: -90px 1px;
+}
+.button.selectLeague:hover .icon {
+	background-position: -90px -17px;
+	height: 14px;
+}
+.button.selectLeague .events {
+	font-weight: bold;
+}
+.button.selectLeague .events .selected {
+	color: #3f6fbc;
+}
+.button:hover.selectLeague .events .selected {
+	color: #fff;
+}
+.normal {
+	font-weight: normal;
+}
+
+
+
+/* == switch == */
+.button.switch:hover { background-position:right 0;}
+.button.switch:hover span { background-position:0 0;}
+.button.switch:hover .icon_MMR { background-position:-275px -25px; }
+.button.switch .icon_MMR { margin:0; height:19px; vertical-align:text-bottom;}
+
+/* switch */
+.switch-gruop {
+	display:inline-block;
+	width:42px;
+	height:19px;
+	line-height:19px;
+	overflow:hidden;
+}
+.switch-gruop ul { 
+	width: 68px;
+	margin:0;
+	padding:0;
+	display:block;
+	-ms-transition:.1s ease-in-out;
+	-moz-transition:.1s ease-in-out;
+	-o-transition:.25s ease-in-out;
+	-webkit-transition:.25s ease-in-out;
+	transition:.25s ease-in-out;
+}
+.switch-gruop ul:after {
+	content: "";
+	clear:both;
+	display:table;
+}
+
+.switch-gruop .on {
+	margin-left:2px;
+}
+.switch-gruop .off {
+	margin-left:-25px;
+}
+
+.switch-gruop li {
+	position: relative;
+	float:left;
+	list-style:none;
+	width:34px;
+	height:19px;
+	line-height:19px;
+	background-image:url(../images/layout/button.png);
+}
+.switch-gruop .switch-btn-on {
+	color: #fff;
+	text-indent:-9px;
+	background-position: -1px -80px;
+}
+.switch-gruop .switch-btn-off {
+	color:#8C8C8C;
+	text-indent:9px;
+	background-position: -1px -00px;
+}
+
+/* switch hover */
+.switch-gruop ul:hover .switch-btn-on {
+	color:#fff;
+	background-position: -1px -100px;
+}
+.switch-gruop ul:hover .switch-btn-off {
+	color:#FF4E00;
+}
+
+/* switch button */
+.switch-gruop .switch-btn-on:before,
+.switch-gruop .switch-btn-off:before {
+	content: "";
+	display:block;
+	width:18px;
+	height:19px;
+	position: absolute;
+	border: solid 1px #bbb;
+	box-sizing: border-box;
+	background-image:url(../images/layout/button.png);
+	background-position: 19px -561px;
+}
+.switch-gruop .switch-btn-on:before {
+	right:-9px;
+}
+.switch-gruop .switch-btn-off:before {
+	left:-9px;
+}
+
+/* disable */
+.button.switch.disable{
+	background-position: right -220px;
+}
+.button.switch.disable span  {
+    background-position: left -220px;
+}
+.button.switch.disable:hover .icon_MMR {
+    background-position: -275px -50px;
+}
+.button.switch.disable ul li ,
+.button.switch.disable ul:hover li {
+	color: #8C8C8C;
+    background-position: -1px -60px;
+}
+.button.switch.disable .switch-btn-on:before,
+.button.switch.disable .switch-btn-off:before {
+	border-color: #d0d0d0;
+	background-position: 19px -581px;
+}
+
+/*Main TV*/
+.MiddleLiveHadder { overflow:hidden; background-color: #516fa0; border: #314c77 solid 1px; padding: 3px 5px; border-radius: 3px 3px 0 0;}
+.Switch {border: #3f5c8a solid 1px;  border-radius: 3px;}
+.Switch ul, .Switch li { margin: 0; padding: 0;}
+.Switch li { list-style:none; display:inline-block; background-color: #7897cd; color: #fff; padding: 0px 8px; font-weight: bold; cursor: pointer; line-height: 16px;}
+.Switch li:first-child { border-radius: 1px;}
+.Switch li:last-child { border-radius: 1px;}
+.Switch li + li {border-left: #3f5c8a solid 1px;}
+.Switch li:hover {background-color: #fa9544;}
+.Switch li.current {background-color: #2f4a76; color: #ffd400;cursor: default; }
+.Switch .iconOdds.tv, .Switch .iconOdds.liveInfo {margin-right:3px;}
+.Switch li.current .tv:hover, .Switch li.current .liveInfo:hover {cursor: default;}
+.Switch .iconOdds.tv, .Switch .iconOdds.tv:hover  {background-position: 0px -142px;}
+.Switch .iconOdds.liveInfo, .Switch .iconOdds.liveInfo:hover {background-position: -15px -142px; width:15px; height:13px;}
+.Switch li.current .iconOdds.liveInfo {background-position: -15px -157px;}
+
+.MiddleLiveHadder .btnIcon.mark { background-position: -20px 0px; width: 18px; height: 18px; }
+.MiddleLiveHadder .btnIcon.mark:hover { background-position: -20px -20px;}
+.MiddleLiveHadder .icon-close, .MiddleLiveHadder .icon-arrowsDown,.MiddleLiveHadder .icon-arrowsUp,.MiddleLiveHadder .icon-zoom{width:18px; height:18px;}
+.MiddleLiveHadder .icon-close {background-position: -126px 0px;}
+.MiddleLiveHadder .icon-arrowsDown {background-position: -126px -38px;}
+.MiddleLiveHadder .icon-arrowsUp {background-position: -126px -19px;}
+.MiddleLiveHadder .icon-zoom {background-position: -126px -54px;}
+.MiddleLiveHadder .icon-back {background-position: -90px -54px; display: inline-block;  margin-top: 1px;   vertical-align: top;}
+
+/*Fast Markets*/
+.tabtitle.restyle {line-height:24px; position: relative;}
+.tabtitle .restyle { font-weight:normal !important;}
+.restyle > div+div {margin-left: 15px; margin-right: 5px;}
+.restyle .button {margin-left: 11px; margin-top: 3px; }
+.restyle .button .submenu { 
+    position: absolute;
+    right: 4px;
+	}
+.restyle .button .submenu li, .restyle .button .submenu li:hover {
+	float: left;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 36px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;}
+.clear { clear: both;}
+.restyle .oddsTable th{ max-width: inherit !important;}
+.restyle .oddsTable { margin-bottom: 0px !important;}
+.restyle .oddsTable th.even, .restyle .oddsTable th.even+td{ border-bottom-width:0px;}
+.restyle li.disable, .restyle li.disable:hover {
+	background: #c7c7c7 !important;
+    color: #858585 !important;
+    cursor: default;
+	border: 1px transparent solid !important;
+	box-shadow: none !important;
+	border-radius: 0px!important;
+	}
+
+.lottoBall {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    color: #000;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 31px;
+    text-align: center;
+    background-image: url(../../../public/images/lotto_ball.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.lottoBall.red {
+    background-position: 0 0;
+}
+.lottoBall.blue {
+    background-position: 0 50%;
+}
+.lottoBall.disable {
+    color: #999;
+    background-position: 0 100%;
+}
+.lottoBall.small-ball {
+	width: 28px;
+	height: 28px;
+	line-height: 29px;
+}
+.lotto-bets .button i {
+	display: block;
+    width: 9px;
+    height: 19px;
+    background-image: url(../images/layout/icon_bets.png);
+}
+.lotto-bets .button + .button {
+	margin-right: 0;
+}
+.lotto-bets .min {
+    background-position: 0 -19px;
+}
+.lotto-bets .minus {
+    background-position: -10px -19px;
+}
+.lotto-bets .plus {
+    background-position: -20px -19px;
+}
+.lotto-bets .max {
+    background-position: -30px -19px;
+}
+.lotto-bets input {
+	float: left;
+	margin-left: 4px;
+	margin-right: 4px;
+	padding-top: 0;
+	padding-bottom: 0;
+	width: 16px;
+	height: 17px;
+	text-align: center
+}

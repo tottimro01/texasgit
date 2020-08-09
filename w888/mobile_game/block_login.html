@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<TITLE>::: OHOKING :::</TITLE>
+    <script type="text/javascript">
+var timeInSecs;
+var ticker;
+function startTimer(secs){
+timeInSecs = parseInt(secs)-1;
+ticker = setInterval("tick()",1000);   // every second
+}
+function tick() {
+var secs = timeInSecs;
+if (secs>0) {
+timeInSecs--;
+}
+else {
+clearInterval(ticker); 
+window.location='block_run.php';
+}
+document.getElementById("countdown").innerHTML = secs;
+}
+startTimer(180);
+</script> 
+<style type="text/css">
+body {
+	font: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background-color: #CCC;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+.main
+{
+	width: 300px;
+    height: 200px;
+    position: absolute;
+    top: -30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+</style>  
+</head>
+
+
+<body>
+<div align="center" class="main">
+<p><img src="../images/OpenBet-01.png" /></p>
+<h3>Have been suspended for 3 minutes because of login wrong.</h3>
+<p><h3><div style="background:url(../img/loding.gif) no-repeat; width:50px; height:10px; color:#f00;"><br><span id="countdown" >180</span></div></h3>
+</p><br>
+Contact call <strong>Agent</strong></div>
+</body>
+</html>

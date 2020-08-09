@@ -1,0 +1,674 @@
+@charset "utf-8";
+
+/* sidebar                                          (Begin)
+----------------------------------------------------------*/
+
+/* == promotion-banner == */
+/* - en - */
+body[lang='en'] .promotion-banner .gaming-content.bingo .title:before { content:"Bingo";}
+body[lang='en'] .promotion-banner .gaming-content.bingo .text01:before { content:"Everyone's a winner!";}
+body[lang='en'] .promotion-banner .gaming-content.bingo .text02:before { content:"Mark it and win with highest payout!";}
+
+body[lang='en'] .promotion-banner .gaming-content.casino .title:before { content:"Casino";}
+body[lang='en'] .promotion-banner .gaming-content.casino .text01:before { content:"Life is fun!";}
+body[lang='en'] .promotion-banner .gaming-content.casino .text02:before { content:"Looking for different online casino?";}
+
+body[lang='en'] .promotion-banner .gaming-content.liveCasino .title:before { content:"Live Casino";}
+body[lang='en'] .promotion-banner .gaming-content.liveCasino .text01:before { content:"Come 'N' Spark!";}
+body[lang='en'] .promotion-banner .gaming-content.liveCasino .text02:before { content:"Sweet smiles that will cheer and brighten your day";}
+
+body[lang='en'] .promotion-banner .gaming-content.numberGame .title:before { content:"Number Game";}
+body[lang='en'] .promotion-banner .gaming-content.numberGame .text01:before { content:"The party never sleep!";}
+body[lang='en'] .promotion-banner .gaming-content.numberGame .text02:before { content:"With huge bet types and best odds offered…";}
+
+body[lang='en'] .promotion-banner .gaming-content.miniGame .title:before { content:"Mini Game";}
+body[lang='en'] .promotion-banner .gaming-content.miniGame .text01:before { content:"Every moment counts!";}
+body[lang='en'] .promotion-banner .gaming-content.miniGame .text02:before { content:"Instant play on the same page";}
+
+/* - ch - */
+body[lang='ch'] .promotion-banner .gaming-content.bingo .title:before { content:"賓果";}
+body[lang='ch'] .promotion-banner .gaming-content.bingo .text01:before { content:"人人都是大贏家！";}
+body[lang='ch'] .promotion-banner .gaming-content.bingo .text02:before { content:"圈取並贏得最高的獎金賠付!";}
+
+body[lang='ch'] .promotion-banner .gaming-content.casino .title:before { content:"娛樂城";}
+body[lang='ch'] .promotion-banner .gaming-content.casino .text01:before { content:"生活就是娛樂!";}
+body[lang='ch'] .promotion-banner .gaming-content.casino .text02:before { content:"來體驗截然不同的娛樂城?";}
+
+body[lang='ch'] .promotion-banner .gaming-content.liveCasino .title:before { content:"真人娛樂場";}
+body[lang='ch'] .promotion-banner .gaming-content.liveCasino .text01:before { content:"擦出火花!";}
+body[lang='ch'] .promotion-banner .gaming-content.liveCasino .text02:before { content:"甜姐們將以迷人的笑容迎接嶄新的一天";}
+
+body[lang='ch'] .promotion-banner .gaming-content.numberGame .title:before { content:"百練賽";}
+body[lang='ch'] .promotion-banner .gaming-content.numberGame .text01:before { content:"狂歡永不眠";}
+body[lang='ch'] .promotion-banner .gaming-content.numberGame .text02:before { content:"提供您多種遊戲玩法和最佳盤口…";}
+
+body[lang='ch'] .promotion-banner .gaming-content.miniGame .title:before { content:"迷你遊戲";}
+body[lang='ch'] .promotion-banner .gaming-content.miniGame .text01:before { content:"分秒必爭!";}
+body[lang='ch'] .promotion-banner .gaming-content.miniGame .text02:before { content:"同頁隨點即玩";}
+
+/* - cs - */
+body[lang='cs'] .promotion-banner .gaming-content.bingo .title:before { content:"宾果";}
+body[lang='cs'] .promotion-banner .gaming-content.bingo .text01:before { content:"人人都是大赢家！";}
+body[lang='cs'] .promotion-banner .gaming-content.bingo .text02:before { content:"圈取并赢得最高的奖金给付!";}
+
+body[lang='cs'] .promotion-banner .gaming-content.casino .title:before { content:"娱乐城";}
+body[lang='cs'] .promotion-banner .gaming-content.casino .text01:before { content:"生活就是娱乐!";}
+body[lang='cs'] .promotion-banner .gaming-content.casino .text02:before { content:"来体验截然不同的娱乐城?";}
+
+body[lang='cs'] .promotion-banner .gaming-content.liveCasino .title:before { content:"真人娱乐场";}
+body[lang='cs'] .promotion-banner .gaming-content.liveCasino .text01:before { content:"擦出火花!";}
+body[lang='cs'] .promotion-banner .gaming-content.liveCasino .text02:before { content:"甜姐们将以迷人的笑容迎接崭新的一天";}
+
+body[lang='cs'] .promotion-banner .gaming-content.numberGame .title:before { content:"百练赛";}
+body[lang='cs'] .promotion-banner .gaming-content.numberGame .text01:before { content:"狂欢永不眠";}
+body[lang='cs'] .promotion-banner .gaming-content.numberGame .text02:before { content:"提供您多种游戏玩法和最佳盘口…";}
+
+body[lang='cs'] .promotion-banner .gaming-content.miniGame .title:before { content:"迷你游戏";}
+body[lang='cs'] .promotion-banner .gaming-content.miniGame .text01:before { content:"分秒必争!";}
+body[lang='cs'] .promotion-banner .gaming-content.miniGame .text02:before { content:"同页随点即玩";}
+
+/* - ko - */
+body[lang='ko'] .promotion-banner .gaming-content.bingo .title:before { content:"빙고";}
+body[lang='ko'] .promotion-banner .gaming-content.bingo .text01:before { content:"Everyone's a winner!";}
+body[lang='ko'] .promotion-banner .gaming-content.bingo .text02:before { content:"Mark it and win with highest payout!";}
+
+body[lang='ko'] .promotion-banner .gaming-content.casino .title:before { content:"카지노";}
+body[lang='ko'] .promotion-banner .gaming-content.casino .text01:before { content:"Life is fun!";}
+body[lang='ko'] .promotion-banner .gaming-content.casino .text02:before { content:"Looking for different online casino?";}
+
+body[lang='ko'] .promotion-banner .gaming-content.liveCasino .title:before { content:"라이브 카지노";}
+body[lang='ko'] .promotion-banner .gaming-content.liveCasino .text01:before { content:"Come 'N' Spark!";}
+body[lang='ko'] .promotion-banner .gaming-content.liveCasino .text02:before { content:"Sweet smiles that will cheer and brighten your day";}
+
+body[lang='ko'] .promotion-banner .gaming-content.numberGame .title:before { content:"라이브 넘버 게임";}
+body[lang='ko'] .promotion-banner .gaming-content.numberGame .text01:before { content:"The party never sleep!";}
+body[lang='ko'] .promotion-banner .gaming-content.numberGame .text02:before { content:"With huge bet types and best odds offered…";}
+
+body[lang='ko'] .promotion-banner .gaming-content.miniGame .title:before { content:"미니 게임";}
+body[lang='ko'] .promotion-banner .gaming-content.miniGame .text01:before { content:"Every moment counts!";}
+body[lang='ko'] .promotion-banner .gaming-content.miniGame .text02:before { content:"Instant play on the same page";}
+
+/* - th - */
+body[lang='th'] .promotion-banner .gaming-content.bingo .title:before { content:"บิงโก";}
+body[lang='th'] .promotion-banner .gaming-content.bingo .text01:before { content:"Everyone's a winner!";}
+body[lang='th'] .promotion-banner .gaming-content.bingo .text02:before { content:"Mark it and win with highest payout!";}
+
+body[lang='th'] .promotion-banner .gaming-content.casino .title:before { content:"คาสิโน";}
+body[lang='th'] .promotion-banner .gaming-content.casino .text01:before { content:"Life is fun!";}
+body[lang='th'] .promotion-banner .gaming-content.casino .text02:before { content:"Looking for different online casino?";}
+
+body[lang='th'] .promotion-banner .gaming-content.liveCasino .title:before { content:"คาสิโน ออนไลน์";}
+body[lang='th'] .promotion-banner .gaming-content.liveCasino .text01:before { content:"Come 'N' Spark!";}
+body[lang='th'] .promotion-banner .gaming-content.liveCasino .text02:before { content:"Sweet smiles that will cheer and brighten your day";}
+
+body[lang='th'] .promotion-banner .gaming-content.numberGame .title:before { content:"เกมหมายเลข";}
+body[lang='th'] .promotion-banner .gaming-content.numberGame .text01:before { content:"The party never sleep!";}
+body[lang='th'] .promotion-banner .gaming-content.numberGame .text02:before { content:"With huge bet types and best odds offered…";}
+
+body[lang='th'] .promotion-banner .gaming-content.miniGame .title:before { content:"มินิเกมส์";}
+body[lang='th'] .promotion-banner .gaming-content.miniGame .text01:before { content:"Every moment counts!";}
+body[lang='th'] .promotion-banner .gaming-content.miniGame .text02:before { content:"Instant play on the same page";}
+
+/* - vn - */
+body[lang='vn'] .promotion-banner .gaming-content.bingo .title:before { content:"Bingo";}
+body[lang='vn'] .promotion-banner .gaming-content.bingo .text01:before { content:"Everyone's a winner!";}
+body[lang='vn'] .promotion-banner .gaming-content.bingo .text02:before { content:"Mark it and win with highest payout!";}
+
+body[lang='vn'] .promotion-banner .gaming-content.casino .title:before { content:"Sòng bạc";}
+body[lang='vn'] .promotion-banner .gaming-content.casino .text01:before { content:"Life is fun!";}
+body[lang='vn'] .promotion-banner .gaming-content.casino .text02:before { content:"Looking for different online casino?";}
+
+body[lang='vn'] .promotion-banner .gaming-content.liveCasino .title:before { content:"Live Casino";}
+body[lang='vn'] .promotion-banner .gaming-content.liveCasino .text01:before { content:"Come 'N' Spark!";}
+body[lang='vn'] .promotion-banner .gaming-content.liveCasino .text02:before { content:"Sweet smiles that will cheer and brighten your day";}
+
+body[lang='vn'] .promotion-banner .gaming-content.numberGame .title:before { content:"Number Game";}
+body[lang='vn'] .promotion-banner .gaming-content.numberGame .text01:before { content:"The party never sleep!";}
+body[lang='vn'] .promotion-banner .gaming-content.numberGame .text02:before { content:"With huge bet types and best odds offered…";}
+
+body[lang='vn'] .promotion-banner .gaming-content.miniGame .title:before { content:"Trò chơi Mini";}
+body[lang='vn'] .promotion-banner .gaming-content.miniGame .text01:before { content:"Every moment counts!";}
+body[lang='vn'] .promotion-banner .gaming-content.miniGame .text02:before { content:"Instant play on the same page";}
+
+/* - 共用翻譯 - */
+/* - id - */
+body[lang='id'] .promotion-banner .gaming-content.bingo .title:before { content:"Bingo";}
+body[lang='id'] .promotion-banner .gaming-content.bingo .text01:before { content:"Everyone's a winner!";}
+body[lang='id'] .promotion-banner .gaming-content.bingo .text02:before { content:"Mark it and win with highest payout!";}
+
+body[lang='id'] .promotion-banner .gaming-content.casino .title:before { content:"Kasino";}
+body[lang='id'] .promotion-banner .gaming-content.casino .text01:before { content:"Life is fun!";}
+body[lang='id'] .promotion-banner .gaming-content.casino .text02:before { content:"Looking for different online casino?";}
+
+body[lang='id'] .promotion-banner .gaming-content.liveCasino .title:before { content:"Live Casino";}
+body[lang='id'] .promotion-banner .gaming-content.liveCasino .text01:before { content:"Come 'N' Spark!";}
+body[lang='id'] .promotion-banner .gaming-content.liveCasino .text02:before { content:"Sweet smiles that will cheer and brighten your day";}
+
+body[lang='id'] .promotion-banner .gaming-content.numberGame .title:before { content:"Permainan Angka";}
+body[lang='id'] .promotion-banner .gaming-content.numberGame .text01:before { content:"The party never sleep!";}
+body[lang='id'] .promotion-banner .gaming-content.numberGame .text02:before { content:"With huge bet types and best odds offered…";}
+
+body[lang='id'] .promotion-banner .gaming-content.miniGame .title:before { content:"Permainan Mini";}
+body[lang='id'] .promotion-banner .gaming-content.miniGame .text01:before { content:"Every moment counts!";}
+body[lang='id'] .promotion-banner .gaming-content.miniGame .text02:before { content:"Instant play on the same page";}
+
+/* - it - */
+body[lang='it'] .promotion-banner .gaming-content.bingo .title:before { content:"tombola";}
+body[lang='it'] .promotion-banner .gaming-content.bingo .text01:before { content:"Everyone's a winner!";}
+body[lang='it'] .promotion-banner .gaming-content.bingo .text02:before { content:"Mark it and win with highest payout!";}
+
+body[lang='it'] .promotion-banner .gaming-content.casino .title:before { content:"Casino";}
+body[lang='it'] .promotion-banner .gaming-content.casino .text01:before { content:"Life is fun!";}
+body[lang='it'] .promotion-banner .gaming-content.casino .text02:before { content:"Looking for different online casino?";}
+
+body[lang='it'] .promotion-banner .gaming-content.liveCasino .title:before { content:"Casino Live";}
+body[lang='it'] .promotion-banner .gaming-content.liveCasino .text01:before { content:"Come 'N' Spark!";}
+body[lang='it'] .promotion-banner .gaming-content.liveCasino .text02:before { content:"Sweet smiles that will cheer and brighten your day";}
+
+body[lang='it'] .promotion-banner .gaming-content.numberGame .title:before { content:"Numero";}
+body[lang='it'] .promotion-banner .gaming-content.numberGame .text01:before { content:"The party never sleep!";}
+body[lang='it'] .promotion-banner .gaming-content.numberGame .text02:before { content:"With huge bet types and best odds offered…";}
+
+body[lang='it'] .promotion-banner .gaming-content.miniGame .title:before { content:"Mini Game";}
+body[lang='it'] .promotion-banner .gaming-content.miniGame .text01:before { content:"Every moment counts!";}
+body[lang='it'] .promotion-banner .gaming-content.miniGame .text02:before { content:"Instant play on the same page";}
+
+/* - jp - */
+body[lang='jp'] .promotion-banner .gaming-content.bingo .title:before { content:"ビンゴ";}
+body[lang='jp'] .promotion-banner .gaming-content.bingo .text01:before { content:"Everyone's a winner!";}
+body[lang='jp'] .promotion-banner .gaming-content.bingo .text02:before { content:"Mark it and win with highest payout!";}
+
+body[lang='jp'] .promotion-banner .gaming-content.casino .title:before { content:"Casino";}
+body[lang='jp'] .promotion-banner .gaming-content.casino .text01:before { content:"Life is fun!";}
+body[lang='jp'] .promotion-banner .gaming-content.casino .text02:before { content:"Looking for different online casino?";}
+
+body[lang='jp'] .promotion-banner .gaming-content.liveCasino .title:before { content:"ライブカジノ";}
+body[lang='jp'] .promotion-banner .gaming-content.liveCasino .text01:before { content:"Come 'N' Spark!";}
+body[lang='jp'] .promotion-banner .gaming-content.liveCasino .text02:before { content:"Sweet smiles that will cheer and brighten your day";}
+
+body[lang='jp'] .promotion-banner .gaming-content.numberGame .title:before { content:"番号ゲーム";}
+body[lang='jp'] .promotion-banner .gaming-content.numberGame .text01:before { content:"The party never sleep!";}
+body[lang='jp'] .promotion-banner .gaming-content.numberGame .text02:before { content:"With huge bet types and best odds offered…";}
+
+body[lang='jp'] .promotion-banner .gaming-content.miniGame .title:before { content:"Mini Game";}
+body[lang='jp'] .promotion-banner .gaming-content.miniGame .text01:before { content:"Every moment counts!";}
+body[lang='jp'] .promotion-banner .gaming-content.miniGame .text02:before { content:"Instant play on the same page";}
+
+/* - ru - */
+body[lang='ru'] .promotion-banner .gaming-content.bingo .title:before { content:"Бинго";}
+body[lang='ru'] .promotion-banner .gaming-content.bingo .text01:before { content:"Everyone's a winner!";}
+body[lang='ru'] .promotion-banner .gaming-content.bingo .text02:before { content:"Mark it and win with highest payout!";}
+
+body[lang='ru'] .promotion-banner .gaming-content.casino .title:before { content:"Казино";}
+body[lang='ru'] .promotion-banner .gaming-content.casino .text01:before { content:"Life is fun!";}
+body[lang='ru'] .promotion-banner .gaming-content.casino .text02:before { content:"Looking for different online casino?";}
+
+body[lang='ru'] .promotion-banner .gaming-content.liveCasino .title:before { content:"Live Casino";}
+body[lang='ru'] .promotion-banner .gaming-content.liveCasino .text01:before { content:"Come 'N' Spark!";}
+body[lang='ru'] .promotion-banner .gaming-content.liveCasino .text02:before { content:"Sweet smiles that will cheer and brighten your day";}
+
+body[lang='ru'] .promotion-banner .gaming-content.numberGame .title:before { content:"Игра с числами";}
+body[lang='ru'] .promotion-banner .gaming-content.numberGame .text01:before { content:"The party never sleep!";}
+body[lang='ru'] .promotion-banner .gaming-content.numberGame .text02:before { content:"With huge bet types and best odds offered…";}
+
+body[lang='ru'] .promotion-banner .gaming-content.miniGame .title:before { content:"Mini Game";}
+body[lang='ru'] .promotion-banner .gaming-content.miniGame .text01:before { content:"Every moment counts!";}
+body[lang='ru'] .promotion-banner .gaming-content.miniGame .text02:before { content:"Instant play on the same page";}
+
+/* - fr - */
+body[lang='fr'] .promotion-banner .gaming-content.bingo .title:before { content:"Bingo";}
+body[lang='fr'] .promotion-banner .gaming-content.bingo .text01:before { content:"Everyone's a winner!";}
+body[lang='fr'] .promotion-banner .gaming-content.bingo .text02:before { content:"Mark it and win with highest payout!";}
+
+body[lang='fr'] .promotion-banner .gaming-content.casino .title:before { content:"Casino";}
+body[lang='fr'] .promotion-banner .gaming-content.casino .text01:before { content:"Life is fun!";}
+body[lang='fr'] .promotion-banner .gaming-content.casino .text02:before { content:"Looking for different online casino?";}
+
+body[lang='fr'] .promotion-banner .gaming-content.liveCasino .title:before { content:"Live Casino";}
+body[lang='fr'] .promotion-banner .gaming-content.liveCasino .text01:before { content:"Come 'N' Spark!";}
+body[lang='fr'] .promotion-banner .gaming-content.liveCasino .text02:before { content:"Sweet smiles that will cheer and brighten your day";}
+
+body[lang='fr'] .promotion-banner .gaming-content.numberGame .title:before { content:"Number Game";}
+body[lang='fr'] .promotion-banner .gaming-content.numberGame .text01:before { content:"The party never sleep!";}
+body[lang='fr'] .promotion-banner .gaming-content.numberGame .text02:before { content:"With huge bet types and best odds offered…";}
+
+body[lang='fr'] .promotion-banner .gaming-content.miniGame .title:before { content:"Mini Game";}
+body[lang='fr'] .promotion-banner .gaming-content.miniGame .text01:before { content:"Every moment counts!";}
+body[lang='fr'] .promotion-banner .gaming-content.miniGame .text02:before { content:"Instant play on the same page";}
+
+/* - pt - */
+body[lang='pt'] .promotion-banner .gaming-content.bingo .title:before { content:"Bingo";}
+body[lang='pt'] .promotion-banner .gaming-content.bingo .text01:before { content:"Everyone's a winner!";}
+body[lang='pt'] .promotion-banner .gaming-content.bingo .text02:before { content:"Mark it and win with highest payout!";}
+
+body[lang='pt'] .promotion-banner .gaming-content.casino .title:before { content:"Casino";}
+body[lang='pt'] .promotion-banner .gaming-content.casino .text01:before { content:"Life is fun!";}
+body[lang='pt'] .promotion-banner .gaming-content.casino .text02:before { content:"Looking for different online casino?";}
+
+body[lang='pt'] .promotion-banner .gaming-content.liveCasino .title:before { content:"Live Casino";}
+body[lang='pt'] .promotion-banner .gaming-content.liveCasino .text01:before { content:"Come 'N' Spark!";}
+body[lang='pt'] .promotion-banner .gaming-content.liveCasino .text02:before { content:"Sweet smiles that will cheer and brighten your day";}
+
+body[lang='pt'] .promotion-banner .gaming-content.numberGame .title:before { content:"Number Game";}
+body[lang='pt'] .promotion-banner .gaming-content.numberGame .text01:before { content:"The party never sleep!";}
+body[lang='pt'] .promotion-banner .gaming-content.numberGame .text02:before { content:"With huge bet types and best odds offered…";}
+
+body[lang='pt'] .promotion-banner .gaming-content.miniGame .title:before { content:"Mini Game";}
+body[lang='pt'] .promotion-banner .gaming-content.miniGame .text01:before { content:"Every moment counts!";}
+body[lang='pt'] .promotion-banner .gaming-content.miniGame .text02:before { content:"Instant play on the same page";}
+
+/* - es - */
+body[lang='es'] .promotion-banner .gaming-content.bingo .title:before { content:"Bingo";}
+body[lang='es'] .promotion-banner .gaming-content.bingo .text01:before { content:"Everyone's a winner!";}
+body[lang='es'] .promotion-banner .gaming-content.bingo .text02:before { content:"Mark it and win with highest payout!";}
+
+body[lang='es'] .promotion-banner .gaming-content.casino .title:before { content:"Casino";}
+body[lang='es'] .promotion-banner .gaming-content.casino .text01:before { content:"Life is fun!";}
+body[lang='es'] .promotion-banner .gaming-content.casino .text02:before { content:"Looking for different online casino?";}
+
+body[lang='es'] .promotion-banner .gaming-content.liveCasino .title:before { content:"Live Casino";}
+body[lang='es'] .promotion-banner .gaming-content.liveCasino .text01:before { content:"Come 'N' Spark!";}
+body[lang='es'] .promotion-banner .gaming-content.liveCasino .text02:before { content:"Sweet smiles that will cheer and brighten your day";}
+
+body[lang='es'] .promotion-banner .gaming-content.numberGame .title:before { content:"Number Game";}
+body[lang='es'] .promotion-banner .gaming-content.numberGame .text01:before { content:"The party never sleep!";}
+body[lang='es'] .promotion-banner .gaming-content.numberGame .text02:before { content:"With huge bet types and best odds offered…";}
+
+body[lang='es'] .promotion-banner .gaming-content.miniGame .title:before { content:"Mini Game";}
+body[lang='es'] .promotion-banner .gaming-content.miniGame .text01:before { content:"Every moment counts!";}
+body[lang='es'] .promotion-banner .gaming-content.miniGame .text02:before { content:"Instant play on the same page";}
+
+/* - zhcn - */
+body[lang='zhcn'] .promotion-banner .gaming-content.bingo .title:before { content:"宾果";}
+body[lang='zhcn'] .promotion-banner .gaming-content.bingo .text01:before { content:"人人都是大赢家！";}
+body[lang='zhcn'] .promotion-banner .gaming-content.bingo .text02:before { content:"圈取并赢得最高的奖金给付!";}
+
+body[lang='zhcn'] .promotion-banner .gaming-content.casino .title:before { content:"娱乐城";}
+body[lang='zhcn'] .promotion-banner .gaming-content.casino .text01:before { content:"生活就是娱乐!";}
+body[lang='zhcn'] .promotion-banner .gaming-content.casino .text02:before { content:"来体验截然不同的娱乐城?";}
+
+body[lang='zhcn'] .promotion-banner .gaming-content.liveCasino .title:before { content:"真人娱乐场";}
+body[lang='zhcn'] .promotion-banner .gaming-content.liveCasino .text01:before { content:"擦出火花!";}
+body[lang='zhcn'] .promotion-banner .gaming-content.liveCasino .text02:before { content:"甜姐们将以迷人的笑容迎接崭新的一天";}
+
+body[lang='zhcn'] .promotion-banner .gaming-content.numberGame .title:before { content:"百练赛";}
+body[lang='zhcn'] .promotion-banner .gaming-content.numberGame .text01:before { content:"狂欢永不眠";}
+body[lang='zhcn'] .promotion-banner .gaming-content.numberGame .text02:before { content:"提供您多种游戏玩法和最佳盘口…";}
+
+body[lang='zhcn'] .promotion-banner .gaming-content.miniGame .title:before { content:"迷你游戏";}
+body[lang='zhcn'] .promotion-banner .gaming-content.miniGame .text01:before { content:"分秒必争!";}
+body[lang='zhcn'] .promotion-banner .gaming-content.miniGame .text02:before { content:"同页随点即玩";}
+
+/* - mm - */
+body[lang='mm'] .promotion-banner .gaming-content.bingo .title:before { content:"Bingo";}
+body[lang='mm'] .promotion-banner .gaming-content.bingo .text01:before { content:"Everyone's a winner!";}
+body[lang='mm'] .promotion-banner .gaming-content.bingo .text02:before { content:"Mark it and win with highest payout!";}
+
+body[lang='mm'] .promotion-banner .gaming-content.casino .title:before { content:"Casino";}
+body[lang='mm'] .promotion-banner .gaming-content.casino .text01:before { content:"Life is fun!";}
+body[lang='mm'] .promotion-banner .gaming-content.casino .text02:before { content:"Looking for different online casino?";}
+
+body[lang='mm'] .promotion-banner .gaming-content.liveCasino .title:before { content:"Live Casino";}
+body[lang='mm'] .promotion-banner .gaming-content.liveCasino .text01:before { content:"Come 'N' Spark!";}
+body[lang='mm'] .promotion-banner .gaming-content.liveCasino .text02:before { content:"Sweet smiles that will cheer and brighten your day";}
+
+body[lang='mm'] .promotion-banner .gaming-content.numberGame .title:before { content:"Number Game";}
+body[lang='mm'] .promotion-banner .gaming-content.numberGame .text01:before { content:"The party never sleep!";}
+body[lang='mm'] .promotion-banner .gaming-content.numberGame .text02:before { content:"With huge bet types and best odds offered…";}
+
+body[lang='mm'] .promotion-banner .gaming-content.miniGame .title:before { content:"Mini Game";}
+body[lang='mm'] .promotion-banner .gaming-content.miniGame .text01:before { content:"Every moment counts!";}
+body[lang='mm'] .promotion-banner .gaming-content.miniGame .text02:before { content:"Instant play on the same page";}
+
+
+
+/* == promotion-banner == */
+/* - en - */
+body[lang='en'] .promotion-banner .corner-ribbon.sportsbook:after {content:"Sportsbook";}
+body[lang='en'] .promotion-banner .corner-ribbon.liveCasino:after {content:"Live Casino";}
+body[lang='en'] .promotion-banner .corner-ribbon.casino:after {content:"Casino";}
+
+/* - ch - */
+body[lang='ch'] .promotion-banner .corner-ribbon.sportsbook:after {content:"體育博彩";}
+body[lang='ch'] .promotion-banner .corner-ribbon.liveCasino:after {content:"真人娛樂場";}
+body[lang='ch'] .promotion-banner .corner-ribbon.casino:after {content:"娛樂城";}
+
+/* - cs - */
+body[lang='cs'] .promotion-banner .corner-ribbon.sportsbook:after {content:"体育博彩";}
+body[lang='cs'] .promotion-banner .corner-ribbon.liveCasino:after {content:"真人娱乐场";}
+body[lang='cs'] .promotion-banner .corner-ribbon.casino:after {content:"娱乐城";}
+
+/* - ko - */
+body[lang='ko'] .promotion-banner .corner-ribbon.sportsbook:after {content:"스포츠북";}
+body[lang='ko'] .promotion-banner .corner-ribbon.liveCasino:after {content:"라이브 카지노";}
+body[lang='ko'] .promotion-banner .corner-ribbon.casino:after {content:"카지노";}
+
+/* - th - */
+body[lang='th'] .promotion-banner .corner-ribbon.sportsbook:after {content:"สปอร์ตบุ๊ค";}
+body[lang='th'] .promotion-banner .corner-ribbon.liveCasino:after {content:"คาสิโน ออนไลน์";}
+body[lang='th'] .promotion-banner .corner-ribbon.casino:after {content:"คาสิโน";}
+
+/* - vn - */
+body[lang='vn'] .promotion-banner .corner-ribbon.sportsbook:after {content:"Thể Thao";}
+body[lang='vn'] .promotion-banner .corner-ribbon.liveCasino:after {content:"Live Casino";}
+body[lang='vn'] .promotion-banner .corner-ribbon.casino:after {content:"Sòng bạc";}
+
+/* - id - */
+body[lang='id'] .promotion-banner .corner-ribbon.sportsbook:after {content:"Buku Olahraga";}
+body[lang='id'] .promotion-banner .corner-ribbon.liveCasino:after {content:"Live Casino";}
+body[lang='id'] .promotion-banner .corner-ribbon.casino:after {content:"Kasino";}
+
+/* - it - */
+body[lang='it'] .promotion-banner .corner-ribbon.sportsbook:after {content:"Sportsbook";}
+body[lang='it'] .promotion-banner .corner-ribbon.liveCasino:after {content:"Live Casino";}
+body[lang='it'] .promotion-banner .corner-ribbon.casino:after {content:"Casino";}
+
+/* - jp - */
+body[lang='jp'] .promotion-banner .corner-ribbon.sportsbook:after {content:"Sportsbook";}
+body[lang='jp'] .promotion-banner .corner-ribbon.liveCasino:after {content:"Live Casino";}
+body[lang='jp'] .promotion-banner .corner-ribbon.casino:after {content:"Casino";}
+
+/* - ru - */
+body[lang='ru'] .promotion-banner .corner-ribbon.sportsbook:after {content:"Sportsbook";}
+body[lang='ru'] .promotion-banner .corner-ribbon.liveCasino:after {content:"Live Casino";}
+body[lang='ru'] .promotion-banner .corner-ribbon.casino:after {content:"Казино";}
+
+/* - fr - */
+body[lang='fr'] .promotion-banner .corner-ribbon.sportsbook:after {content:"Bookmaker";}
+body[lang='fr'] .promotion-banner .corner-ribbon.liveCasino:after {content:"Live Casino";}
+body[lang='fr'] .promotion-banner .corner-ribbon.casino:after {content:"Casino";}
+
+/* - pt - */
+body[lang='pt'] .promotion-banner .corner-ribbon.sportsbook:after {content:"Aposta esportiva";}
+body[lang='pt'] .promotion-banner .corner-ribbon.liveCasino:after {content:"Live Casino";}
+body[lang='pt'] .promotion-banner .corner-ribbon.casino:after {content:"Cassino";}
+
+/* - es - */
+body[lang='es'] .promotion-banner .corner-ribbon.sportsbook:after {content:"Apuestas deportivas";}
+body[lang='es'] .promotion-banner .corner-ribbon.liveCasino:after {content:"Live Casino";}
+body[lang='es'] .promotion-banner .corner-ribbon.casino:after {content:"Casino";}
+
+
+/* - zhcn - */
+body[lang='zhcn'] .promotion-banner .corner-ribbon.sportsbook:after {content:"体育博彩";}
+body[lang='zhcn'] .promotion-banner .corner-ribbon.liveCasino:after {content:"真人娱乐场";}
+body[lang='zhcn'] .promotion-banner .corner-ribbon.casino:after {content:"娱乐城";}
+
+/* - mm - */
+body[lang='mm'] .promotion-banner .corner-ribbon.sportsbook:after {content:"Sportsbook";}
+body[lang='mm'] .promotion-banner .corner-ribbon.liveCasino:after {content:"Live Casino";}
+body[lang='mm'] .promotion-banner .corner-ribbon.casino:after {content:"Casino";}
+
+/* sidebar                                            (End)                                    
+----------------------------------------------------------*/
+
+
+/* 產品升級 維護用
+======================================================== */
+.promotion-banner .gaming-content.Upgrade.liveCasino .btn a, 
+.promotion-banner .gaming-content.Upgrade.numberGame .btn a,
+.promotion-banner .gaming-content.Upgrade.bingo .btn a { position:relative; text-indent: -9999px;}
+
+.promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before,
+.promotion-banner .gaming-content.Upgrade.numberGame .btn a:before, 
+.promotion-banner .gaming-content.Upgrade.bingo .btn a:before { content:""; position:absolute; top:0; left:0; width:100%; text-indent:0;}
+
+@media \0screen { /* ie8 */
+.promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before,
+.promotion-banner .gaming-content.Upgrade.numberGame .btn a:before,     
+.promotion-banner .gaming-content.Upgrade.bingo .btn a:before { content:""; position:absolute; top:0; left:50%; width:200px; margin-left: -100px; text-indent: 0; text-align:center;}
+}
+
+.promotion-banner .gaming-content.Upgrade.liveCasino .text01,
+.promotion-banner .gaming-content.Upgrade.numberGame .text01,
+.promotion-banner .gaming-content.Upgrade.bingo .text01 { font-size:18px; color:#FFC000;}
+
+/*== liveCasino ==*/
+.promotion-banner .gaming-content.Upgrade.liveCasino dd { display: block; margin:0 0 10px 0; padding:0; line-height:18px; font-size:14px;}
+.promotion-banner .gaming-content.Upgrade.liveCasino dd + dt { margin-top:0;} 
+.promotion-banner .gaming-content.Upgrade.liveCasino .text04,
+.promotion-banner .gaming-content.Upgrade.liveCasino .text05 { display:none;}
+
+body[lang='ch'] .promotion-banner .gaming-content.Upgrade.liveCasino .text01:before { content:"產品維護";}
+body[lang='ch'] .promotion-banner .gaming-content.Upgrade.liveCasino .text02:before { content:"產品正在維護中";}
+body[lang='ch'] .promotion-banner .gaming-content.Upgrade.liveCasino .text03:before { content:"請耐心等待！謝謝！";}
+body[lang='cs'] .promotion-banner .gaming-content.Upgrade.liveCasino .text01:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.Upgrade.liveCasino .text01:before { content:"产品维护";}
+body[lang='cs'] .promotion-banner .gaming-content.Upgrade.liveCasino .text02:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.Upgrade.liveCasino .text02:before { content:"产品正在维护中";}
+body[lang='cs'] .promotion-banner .gaming-content.Upgrade.liveCasino .text03:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.Upgrade.liveCasino .text03:before { content:"请耐心等待! 谢谢！";}
+
+body[lang='en'] .promotion-banner .gaming-content.Upgrade.liveCasino .text01:before,
+body[lang='es'] .promotion-banner .gaming-content.Upgrade.liveCasino .text01:before,
+body[lang='fr'] .promotion-banner .gaming-content.Upgrade.liveCasino .text01:before,
+body[lang='it'] .promotion-banner .gaming-content.Upgrade.liveCasino .text01:before,
+body[lang='id'] .promotion-banner .gaming-content.Upgrade.liveCasino .text01:before,
+body[lang='jp'] .promotion-banner .gaming-content.Upgrade.liveCasino .text01:before,
+body[lang='ko'] .promotion-banner .gaming-content.Upgrade.liveCasino .text01:before,
+body[lang='pt'] .promotion-banner .gaming-content.Upgrade.liveCasino .text01:before,
+body[lang='ru'] .promotion-banner .gaming-content.Upgrade.liveCasino .text01:before,
+body[lang='th'] .promotion-banner .gaming-content.Upgrade.liveCasino .text01:before,
+body[lang='vn'] .promotion-banner .gaming-content.Upgrade.liveCasino .text01:before,
+body[lang='mm'] .promotion-banner .gaming-content.Upgrade.liveCasino .text01:before { content:"Product Maintenance";}
+
+body[lang='en'] .promotion-banner .gaming-content.Upgrade.liveCasino .text02:before,
+body[lang='es'] .promotion-banner .gaming-content.Upgrade.liveCasino .text02:before,
+body[lang='fr'] .promotion-banner .gaming-content.Upgrade.liveCasino .text02:before,
+body[lang='it'] .promotion-banner .gaming-content.Upgrade.liveCasino .text02:before,
+body[lang='id'] .promotion-banner .gaming-content.Upgrade.liveCasino .text02:before,
+body[lang='jp'] .promotion-banner .gaming-content.Upgrade.liveCasino .text02:before,
+body[lang='ko'] .promotion-banner .gaming-content.Upgrade.liveCasino .text02:before,
+body[lang='pt'] .promotion-banner .gaming-content.Upgrade.liveCasino .text02:before,
+body[lang='ru'] .promotion-banner .gaming-content.Upgrade.liveCasino .text02:before,
+body[lang='th'] .promotion-banner .gaming-content.Upgrade.liveCasino .text02:before,
+body[lang='vn'] .promotion-banner .gaming-content.Upgrade.liveCasino .text02:before,
+body[lang='mm'] .promotion-banner .gaming-content.Upgrade.liveCasino .text02:before  { content:"Product maintenance in progress, stay tuned";}
+
+body[lang='en'] .promotion-banner .gaming-content.Upgrade.liveCasino .text03:before,
+body[lang='es'] .promotion-banner .gaming-content.Upgrade.liveCasino .text03:before,
+body[lang='fr'] .promotion-banner .gaming-content.Upgrade.liveCasino .text03:before,
+body[lang='it'] .promotion-banner .gaming-content.Upgrade.liveCasino .text03:before,
+body[lang='id'] .promotion-banner .gaming-content.Upgrade.liveCasino .text03:before,
+body[lang='jp'] .promotion-banner .gaming-content.Upgrade.liveCasino .text03:before,
+body[lang='ko'] .promotion-banner .gaming-content.Upgrade.liveCasino .text03:before,
+body[lang='pt'] .promotion-banner .gaming-content.Upgrade.liveCasino .text03:before,
+body[lang='ru'] .promotion-banner .gaming-content.Upgrade.liveCasino .text03:before,
+body[lang='th'] .promotion-banner .gaming-content.Upgrade.liveCasino .text03:before,
+body[lang='vn'] .promotion-banner .gaming-content.Upgrade.liveCasino .text03:before
+body[lang='mm'] .promotion-banner .gaming-content.Upgrade.liveCasino .text03:before { content:"Thank you for your support";}
+
+
+/* btn */
+body[lang='ch'] .promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before { content:"類似遊戲：娛樂城";}
+body[lang='cs'] .promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before { content:"类似游戏: 娱乐城";}
+body[lang='en'] .promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before,
+body[lang='es'] .promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before,
+body[lang='fr'] .promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before,
+body[lang='it'] .promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before,
+body[lang='id'] .promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before,
+body[lang='jp'] .promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before,
+body[lang='ko'] .promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before,
+body[lang='pt'] .promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before,
+body[lang='ru'] .promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before,
+body[lang='th'] .promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before,
+body[lang='vn'] .promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before,
+body[lang='mm'] .promotion-banner .gaming-content.Upgrade.liveCasino .btn a:before { content:"Similar game : Casino";}
+
+/*== NumberGame ==*/
+.promotion-banner .gaming-content.Upgrade.numberGame .text04 { display:none;}
+
+body[lang='ch'] .promotion-banner .gaming-content.Upgrade.numberGame .text01:before { content:"產品維護";}
+body[lang='ch'] .promotion-banner .gaming-content.Upgrade.numberGame .text02:before { content:"產品正在維護中";}
+body[lang='ch'] .promotion-banner .gaming-content.Upgrade.numberGame .text03:before { content:"請耐心等待！謝謝！";}
+body[lang='cs'] .promotion-banner .gaming-content.Upgrade.numberGame .text01:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.Upgrade.numberGame .text01:before { content:"产品维护";}
+body[lang='cs'] .promotion-banner .gaming-content.Upgrade.numberGame .text02:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.Upgrade.numberGame .text02:before { content:"产品正在维护中";}
+body[lang='cs'] .promotion-banner .gaming-content.Upgrade.numberGame .text03:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.Upgrade.numberGame .text03:before { content:"请耐心等待! 谢谢！";}
+
+body[lang='en'] .promotion-banner .gaming-content.Upgrade.numberGame .text01:before,
+body[lang='es'] .promotion-banner .gaming-content.Upgrade.numberGame .text01:before,
+body[lang='fr'] .promotion-banner .gaming-content.Upgrade.numberGame .text01:before,
+body[lang='it'] .promotion-banner .gaming-content.Upgrade.numberGame .text01:before,
+body[lang='id'] .promotion-banner .gaming-content.Upgrade.numberGame .text01:before,
+body[lang='jp'] .promotion-banner .gaming-content.Upgrade.numberGame .text01:before,
+body[lang='ko'] .promotion-banner .gaming-content.Upgrade.numberGame .text01:before,
+body[lang='pt'] .promotion-banner .gaming-content.Upgrade.numberGame .text01:before,
+body[lang='ru'] .promotion-banner .gaming-content.Upgrade.numberGame .text01:before,
+body[lang='th'] .promotion-banner .gaming-content.Upgrade.numberGame .text01:before,
+body[lang='vn'] .promotion-banner .gaming-content.Upgrade.numberGame .text01:before,
+body[lang='mm'] .promotion-banner .gaming-content.Upgrade.numberGame .text01:before { content:"Product Maintenance";}
+
+body[lang='en'] .promotion-banner .gaming-content.Upgrade.numberGame .text02:before,
+body[lang='es'] .promotion-banner .gaming-content.Upgrade.numberGame .text02:before,
+body[lang='fr'] .promotion-banner .gaming-content.Upgrade.numberGame .text02:before,
+body[lang='it'] .promotion-banner .gaming-content.Upgrade.numberGame .text02:before,
+body[lang='id'] .promotion-banner .gaming-content.Upgrade.numberGame .text02:before,
+body[lang='jp'] .promotion-banner .gaming-content.Upgrade.numberGame .text02:before,
+body[lang='ko'] .promotion-banner .gaming-content.Upgrade.numberGame .text02:before,
+body[lang='pt'] .promotion-banner .gaming-content.Upgrade.numberGame .text02:before,
+body[lang='ru'] .promotion-banner .gaming-content.Upgrade.numberGame .text02:before,
+body[lang='th'] .promotion-banner .gaming-content.Upgrade.numberGame .text02:before,
+body[lang='vn'] .promotion-banner .gaming-content.Upgrade.numberGame .text02:before,
+body[lang='mm'] .promotion-banner .gaming-content.Upgrade.numberGame .text02:before { content:"Product maintenance in progress, stay tuned";}
+
+body[lang='en'] .promotion-banner .gaming-content.Upgrade.numberGame .text03:before,
+body[lang='es'] .promotion-banner .gaming-content.Upgrade.numberGame .text03:before,
+body[lang='fr'] .promotion-banner .gaming-content.Upgrade.numberGame .text03:before,
+body[lang='it'] .promotion-banner .gaming-content.Upgrade.numberGame .text03:before,
+body[lang='id'] .promotion-banner .gaming-content.Upgrade.numberGame .text03:before,
+body[lang='jp'] .promotion-banner .gaming-content.Upgrade.numberGame .text03:before,
+body[lang='ko'] .promotion-banner .gaming-content.Upgrade.numberGame .text03:before,
+body[lang='pt'] .promotion-banner .gaming-content.Upgrade.numberGame .text03:before,
+body[lang='ru'] .promotion-banner .gaming-content.Upgrade.numberGame .text03:before,
+body[lang='th'] .promotion-banner .gaming-content.Upgrade.numberGame .text03:before,
+body[lang='vn'] .promotion-banner .gaming-content.Upgrade.numberGame .text03:before,
+body[lang='mm'] .promotion-banner .gaming-content.Upgrade.numberGame .text03:before { content:"Thank you for your support";}
+
+/* btn */
+body[lang='ch'] .promotion-banner .gaming-content.Upgrade.numberGame .btn a:before { content:"類似遊戲: 快樂彩";}
+body[lang='cs'] .promotion-banner .gaming-content.Upgrade.numberGame .btn a:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.Upgrade.numberGame .btn a:before { content:"类似游戏: 快乐彩";}
+body[lang='en'] .promotion-banner .gaming-content.Upgrade.numberGame .btn a:before,
+body[lang='es'] .promotion-banner .gaming-content.Upgrade.numberGame .btn a:before,
+body[lang='fr'] .promotion-banner .gaming-content.Upgrade.numberGame .btn a:before,
+body[lang='it'] .promotion-banner .gaming-content.Upgrade.numberGame .btn a:before,
+body[lang='id'] .promotion-banner .gaming-content.Upgrade.numberGame .btn a:before,
+body[lang='jp'] .promotion-banner .gaming-content.Upgrade.numberGame .btn a:before,
+body[lang='ko'] .promotion-banner .gaming-content.Upgrade.numberGame .btn a:before,
+body[lang='pt'] .promotion-banner .gaming-content.Upgrade.numberGame .btn a:before,
+body[lang='ru'] .promotion-banner .gaming-content.Upgrade.numberGame .btn a:before,
+body[lang='th'] .promotion-banner .gaming-content.Upgrade.numberGame .btn a:before,
+body[lang='vn'] .promotion-banner .gaming-content.Upgrade.numberGame .btn a:before,
+body[lang='mm'] .promotion-banner .gaming-content.Upgrade.numberGame .btn a:before { content:"Similar game : Keno";}
+
+/*== Bingo ==*/
+body[lang='ch'] .promotion-banner .gaming-content.Upgrade.bingo .text01:before { content:"產品維護";}
+body[lang='ch'] .promotion-banner .gaming-content.Upgrade.bingo .text02:before { content:"產品正在維護中";}
+body[lang='ch'] .promotion-banner .gaming-content.Upgrade.bingo .text03:before { content:"請耐心等待！謝謝！";}
+body[lang='cs'] .promotion-banner .gaming-content.Upgrade.bingo .text01:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.Upgrade.bingo .text01:before { content:"产品维护";}
+body[lang='cs'] .promotion-banner .gaming-content.Upgrade.bingo .text02:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.Upgrade.bingo .text02:before { content:"产品正在维护中";}
+body[lang='cs'] .promotion-banner .gaming-content.Upgrade.bingo .text03:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.Upgrade.bingo .text03:before { content:"请耐心等待! 谢谢！";}
+
+body[lang='en'] .promotion-banner .gaming-content.Upgrade.bingo .text01:before,
+body[lang='es'] .promotion-banner .gaming-content.Upgrade.bingo .text01:before,
+body[lang='fr'] .promotion-banner .gaming-content.Upgrade.bingo .text01:before,
+body[lang='it'] .promotion-banner .gaming-content.Upgrade.bingo .text01:before,
+body[lang='id'] .promotion-banner .gaming-content.Upgrade.bingo .text01:before,
+body[lang='jp'] .promotion-banner .gaming-content.Upgrade.bingo .text01:before,
+body[lang='ko'] .promotion-banner .gaming-content.Upgrade.bingo .text01:before,
+body[lang='pt'] .promotion-banner .gaming-content.Upgrade.bingo .text01:before,
+body[lang='ru'] .promotion-banner .gaming-content.Upgrade.bingo .text01:before,
+body[lang='th'] .promotion-banner .gaming-content.Upgrade.bingo .text01:before,
+body[lang='vn'] .promotion-banner .gaming-content.Upgrade.bingo .text01:before,
+body[lang='mm'] .promotion-banner .gaming-content.Upgrade.bingo .text01:before { content:"Product Maintenance";}
+
+body[lang='en'] .promotion-banner .gaming-content.Upgrade.bingo .text02:before,
+body[lang='es'] .promotion-banner .gaming-content.Upgrade.bingo .text02:before,
+body[lang='fr'] .promotion-banner .gaming-content.Upgrade.bingo .text02:before,
+body[lang='it'] .promotion-banner .gaming-content.Upgrade.bingo .text02:before,
+body[lang='id'] .promotion-banner .gaming-content.Upgrade.bingo .text02:before,
+body[lang='jp'] .promotion-banner .gaming-content.Upgrade.bingo .text02:before,
+body[lang='ko'] .promotion-banner .gaming-content.Upgrade.bingo .text02:before,
+body[lang='pt'] .promotion-banner .gaming-content.Upgrade.bingo .text02:before,
+body[lang='ru'] .promotion-banner .gaming-content.Upgrade.bingo .text02:before,
+body[lang='th'] .promotion-banner .gaming-content.Upgrade.bingo .text02:before,
+body[lang='vn'] .promotion-banner .gaming-content.Upgrade.bingo .text02:before,
+body[lang='mm'] .promotion-banner .gaming-content.Upgrade.bingo .text02:before { content:"Product maintenance in progress, stay tuned";}
+
+body[lang='en'] .promotion-banner .gaming-content.Upgrade.bingo .text03:before,
+body[lang='es'] .promotion-banner .gaming-content.Upgrade.bingo .text03:before,
+body[lang='fr'] .promotion-banner .gaming-content.Upgrade.bingo .text03:before,
+body[lang='it'] .promotion-banner .gaming-content.Upgrade.bingo .text03:before,
+body[lang='id'] .promotion-banner .gaming-content.Upgrade.bingo .text03:before,
+body[lang='jp'] .promotion-banner .gaming-content.Upgrade.bingo .text03:before,
+body[lang='ko'] .promotion-banner .gaming-content.Upgrade.bingo .text03:before,
+body[lang='pt'] .promotion-banner .gaming-content.Upgrade.bingo .text03:before,
+body[lang='ru'] .promotion-banner .gaming-content.Upgrade.bingo .text03:before,
+body[lang='th'] .promotion-banner .gaming-content.Upgrade.bingo .text03:before,
+body[lang='vn'] .promotion-banner .gaming-content.Upgrade.bingo .text03:before,
+body[lang='mm'] .promotion-banner .gaming-content.Upgrade.bingo .text03:before { content:"Thank you for your support";}
+
+/* btn */
+body[lang='ch'] .promotion-banner .gaming-content.Upgrade.bingo .btn a:before { content:"類似遊戲: 快樂彩";}
+body[lang='cs'] .promotion-banner .gaming-content.Upgrade.bingo .btn a:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.Upgrade.bingo .btn a:before { content:"类似游戏: 快乐彩";}
+body[lang='en'] .promotion-banner .gaming-content.Upgrade.bingo .btn a:before,
+body[lang='es'] .promotion-banner .gaming-content.Upgrade.bingo .btn a:before,
+body[lang='fr'] .promotion-banner .gaming-content.Upgrade.bingo .btn a:before,
+body[lang='it'] .promotion-banner .gaming-content.Upgrade.bingo .btn a:before,
+body[lang='id'] .promotion-banner .gaming-content.Upgrade.bingo .btn a:before,
+body[lang='jp'] .promotion-banner .gaming-content.Upgrade.bingo .btn a:before,
+body[lang='ko'] .promotion-banner .gaming-content.Upgrade.bingo .btn a:before,
+body[lang='pt'] .promotion-banner .gaming-content.Upgrade.bingo .btn a:before,
+body[lang='ru'] .promotion-banner .gaming-content.Upgrade.bingo .btn a:before,
+body[lang='th'] .promotion-banner .gaming-content.Upgrade.bingo .btn a:before,
+body[lang='vn'] .promotion-banner .gaming-content.Upgrade.bingo .btn a:before,
+body[lang='mm'] .promotion-banner .gaming-content.Upgrade.bingo .btn a:before { content:"Similar game : Keno";}
+
+/* 20151112 producticon version
+--------------------------------------------------------
+/& == promotion-banner == &/
+/& - Turbo Numbergame - &/
+.promotion-banner .gaming-content.numberGame .title,
+.promotion-banner .gaming-content.numberGame .text02 {
+	color:#d453ff !important;
+	margin:0 0 10px -5px !important; 
+	line-height:30px !important; 
+	font-size:30px !important; 
+}
+.promotion-banner .gaming-content.numberGame .btn { margin-top:10px;}
+.promotion-banner .gaming-content.numberGame .text04 { margin-top:-10px;}
+body[lang='en'] .promotion-banner .gaming-content.numberGame .text02 { font-family:'Gilda Display', serif;}
+body[lang='ch'] .promotion-banner .gaming-content.numberGame .text02 { font-family:微軟正黑體, 'Microsoft JhengHei', 新細明體; font-weight:bold;}
+body[lang='cs'] .promotion-banner .gaming-content.numberGame .text02 { font-family:微软雅黑体, 'Microsoft YaHei', 宋体;}
+/& - en - &/
+.promotion-banner .gaming-content.numberGame .title:before { content:"Number Game";}
+.promotion-banner .gaming-content.numberGame .text01:before { content:"Partying 24/7 at Live Number Game with our attractive, young and wild Model. With Huge bet types and best odds offered";}
+.promotion-banner .gaming-content.numberGame .text02:before { content:"Turbo Number Game";}
+.promotion-banner .gaming-content.numberGame .text03:before { content:"We're giving you another fresh and improve excitement and it's now faster than you had before";}
+.promotion-banner .gaming-content.numberGame .text04:before { content:"Play, party and relax with us";}
+/& - ch - &/
+body[lang='ch'] .promotion-banner .gaming-content.numberGame .title:before { content:"百練賽";}
+body[lang='ch'] .promotion-banner .gaming-content.numberGame .text01:before { content:"我們有不間斷的遊戲，提供多種玩法和最佳盤口來和我們最獨具活力，魅力與超瘋狂的模特兒一同狂歡，只在百練賽...";}
+body[lang='ch'] .promotion-banner .gaming-content.numberGame .text02:before { content:"快速百練賽";}
+body[lang='ch'] .promotion-banner .gaming-content.numberGame .text03:before { content:"我們提供更新鮮更刺激的遊戲，比以前更快速";}
+body[lang='ch'] .promotion-banner .gaming-content.numberGame .text04:before { content:"趕快來跟我們一起狂歡跟放鬆";}
+/& - cs & zhcn - &/
+body[lang='cs'] .promotion-banner .gaming-content.numberGame .title:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.numberGame .title:before { content:"百练赛";}
+body[lang='cs'] .promotion-banner .gaming-content.numberGame .text01:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.numberGame .text01:before { content:"我们有不间断的游戏，提供多种玩法和最佳盘口来和我们最独具活力，魅力与超疯狂的模特儿一同狂欢，只在百练赛...";}
+body[lang='cs'] .promotion-banner .gaming-content.numberGame .text02:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.numberGame .text02:before { content:"快速百练赛";}
+body[lang='cs'] .promotion-banner .gaming-content.numberGame .text03:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.numberGame .text03:before { content:"我们提供更新鲜更刺激的游戏，比以前更快速";}
+body[lang='cs'] .promotion-banner .gaming-content.numberGame .text04:before,
+body[lang='zhcn'] .promotion-banner .gaming-content.numberGame .text04:before { content:"赶快来跟我们一起狂欢跟放松";}
+*/

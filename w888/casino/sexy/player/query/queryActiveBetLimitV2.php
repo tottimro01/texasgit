@@ -1,0 +1,1 @@
+{"message":[{"id":1,"maxBet":10000.0,"minBet":20.0,"tieMaxBet":250.0,"tieMinBet":5.0,"minChip":5.0},{"id":4,"maxBet":20000.0,"minBet":200.0,"tieMaxBet":2500.0,"tieMinBet":20.0,"minChip":20.0},{"id":6,"maxBet":100000.0,"minBet":1000.0,"tieMaxBet":12500.0,"tieMinBet":100.0,"minChip":100.0}],"status":"200"}

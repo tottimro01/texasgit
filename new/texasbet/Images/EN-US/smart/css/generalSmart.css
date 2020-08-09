@@ -1,0 +1,856 @@
+@charset "utf-8";
+* {
+
+	padding: 0px;
+	margin: 0px;
+}
+body {
+
+	font-family: "Barlow";
+	background-color: #000;
+
+}
+
+
+/* ------------------------------------------------- Nav Bar */
+
+.navbar {
+	margin: 0 auto;
+	max-width: 1200px;
+	border-radius: 0;
+	background-color: #2c1901;
+	color: red;
+	padding: 0px;
+	font-size: 1.2em;
+	border:0;
+}
+
+.navbar-header {
+		background-color: #000;
+}
+
+
+.navbar .navbar-nav {
+
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+.navbar .navbar-collapse {
+        text-align: center;
+    }
+
+.navbar-brand {
+	float: left;
+	min-height: 55px;
+	padding: 15px;
+	margin-bottom: 0px;
+}
+
+/*
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+	color: blue;
+	background-color: #FFC;
+}
+*/
+
+.navbar-inverse .navbar-nav li a {
+	color: #eadebf;
+	column-width: 150px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	color: #9f7d3e;
+}
+
+
+.navbar-toggle, .icon-bar{
+  color: #deaf33;
+  border: 2px solid #eadebf;
+  background-color: black;
+}
+
+
+
+/* END - Nav Bar */
+
+
+
+
+header {
+	margin: 0 auto;
+	width: 100%;
+	/* background-color: blue; */
+}
+
+
+#logo1 {
+	float: left;
+	margin-left: 20px;
+	    margin-top: 8px;
+	
+}
+
+
+#logo2 {
+	position: absolute;
+    left: 50%;
+    margin-left: -95px !important;  /* 50% of your logo width */
+    margin-top: 3px;
+}
+
+
+.logocontain {
+	padding: 20px;
+}
+
+
+#header-inner1 {
+	display: none;
+	max-width: 1200px;
+	background-color: #2c1901;
+	margin: 0 auto;
+}
+
+
+
+
+#myCarousel {
+	max-width: 1200px;
+	margin: 0 auto;
+	max-height:450px;
+}
+
+
+.item {
+	max-height:450px;
+}
+
+
+
+.inner-wrapper {  /* small thumbnail */
+		display: none;
+}
+
+
+.one-fifth {  /* small thumbnail */
+
+	width:19%;
+	margin: 3px;
+	padding-top: 10px;
+	display:inline-block;
+	font-size: 80%;
+}
+
+
+.responsive-image {
+  max-width: 32%;
+  height: auto;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+
+h3 {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #d28000;
+	margin-top: 5px;
+}
+
+.footer {
+  display: none;
+}
+
+
+.btn-wrapper {  
+    display: block;
+    width: 100%;
+    background-color: #191002;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.btn-wrapper-2 {   /* Form */
+  display: none;
+}
+
+
+.download-btn {  /* Download Button */
+	padding: 0px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------------Responsive */
+
+@media (max-width:800px) {
+
+	.login-btn {
+		display: inline-block;
+	}
+
+
+	.one-fifth {
+        /* background-color: #a9874a; */
+		width:48%;
+		margin: 10px 0px 0px 5px;
+		padding-top: 5px;
+		display:inline-block;
+		font-size: 80%;
+		}
+
+
+  .left {
+
+    display: inline-block;
+
+  }
+
+	.right {
+    margin-top: 10px;
+    display: inline-block;
+    float: right;
+	}
+
+
+
+
+.footer {
+  display: inline-block;
+  font-size: 0.9em;
+  color: #555;
+  width: 100%;
+  background-color: #000;
+  height: 50px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+
+	.btn-wrapper {
+  	display: block;
+    width: 100%;
+    background-color: #191002;
+    text-align: center;
+    padding: 10px;
+	}
+
+
+	.btn-wrapper-2 {
+  	display: block;
+    border-top: 2px solid #605333;
+    width: 100%;
+    background-color: #191002;
+    text-align: center;
+    padding: 5px;
+	}
+
+
+
+	.inner-wrapper {
+		display: block;
+		margin-top: -30px;
+		margin: 0
+		width: 100%;
+		text-align: center;
+		padding-bottom: 20px;
+		/* background: #ffffff url("../../../indexSmart/bg2.jpg") no-repeat right bottom; */
+		background-size: cover;
+    margin: 0 auto;
+    background: #191002;
+    text-align: center;
+    padding:10px;
+
+	}
+
+	#header-inner1 {
+		display: block;
+		max-width: 1200px;
+		background-color: #2c1901;
+		margin: 0 auto;
+	}
+
+
+	#header-inner2 {
+	display: none;
+	}
+
+
+    .main-content-agile {
+        margin: 0 auto;
+        
+        width: 95%;
+    }
+    .wthree-pro {
+        background: #eadebf;
+        background-size: cover;
+        border-radius: 25px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    .wthree-pro h2 {
+        font-size: 1.7em;
+        color: #000;
+        letter-spacing: 1px;
+        padding: 10px;
+        font-weight: 600;
+    }
+    .sub-main-w3{
+        position:relative;
+        padding: 10px;
+    }
+    .sub-main-w3 input[type="text"], .sub-main-w3 input[type="password"] {
+        outline: none;
+        font-size: 1em;
+        border: none;
+        border-bottom: 1px dotted #eadebf;
+        background: none;
+        width: 94%;
+        color: #eadebf;
+        padding: 0em 0 0.5em 0.8em;
+        letter-spacing: 1px;
+        font-family: 'Philosopher', sans-serif;
+    }
+    .sub-main-w3 input[type="password"], .sub-main-w3 input[id="Text1"] {
+        margin-top: 0.5em;
+    }
+    .loginbtn {
+        border-radius: 5px;
+        width: 48%;
+        color: #fff;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#bda157), to(#744a00));
+            background-image: -moz-linear-gradient(top left 90deg, #bda157 0%, #744a00 100%);
+            background-image: linear-gradient(top left 90deg, #bda157 0%, #744a00 100%);
+        border: none;
+        padding: 10px 0px;
+        outline: none;
+        font-size: 1.2em;
+        cursor: pointer;
+        letter-spacing: 1px;
+        margin: 0.9em 0em ;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        font-family: 'Philosopher', sans-serif;
+		display: inline-block;
+    }
+    .loginbtn:hover {
+        background: #cdaa50;
+        color: #000;
+    }
+
+
+
+
+    .languagepicker {
+        width: 44%;
+        background-color: #fff;
+        display: inline-block;
+
+        height: 40px;
+        overflow: hidden;
+        transition: all .3s ease;
+        margin: 15px 15px 15px 0px;
+
+        float: left;
+        border: 1px solid #dddddd;
+
+    }
+
+
+    .languagepicker:hover {
+        /* don't forget the 1px border */
+        height: 81px;
+    }
+
+    .languagepicker a{
+        color: #000;
+        text-decoration: none;
+        text-align: left;
+    }
+
+    .languagepicker li {
+        display: block;
+
+        line-height: 40px;
+        border-top: 1px solid #EEE;
+
+    }
+
+    .languagepicker li:hover{
+        background-color: #EEE;
+    }
+
+    .languagepicker a:first-child li {
+        border: none;
+    }
+
+    .languagepicker li img {
+        margin-top: 10px;
+        margin-left: 10px;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .roundborders {
+        border-radius: 5px;
+    }
+
+    .large:hover {
+        /* 
+        don't forget the 1px border!
+        The first language is 40px heigh, 
+        the others are 41px
+        */
+        height: 490px;
+    }
+
+
+        .rslides {
+      position: relative;
+      list-style: none;
+      overflow: hidden;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      }
+
+    .rslides li {
+      -webkit-backface-visibility: hidden;
+      position: absolute;
+      display: none;
+      width: 100%;
+      left: 0;
+      top: 0;
+      }
+
+    .rslides li:first-child {
+      position: relative;
+      display: block;
+      float: left;
+      }
+
+    .rslides img {
+      display: block;
+      height: auto;
+      float: left;
+      width: 100%;
+      border: 0;
+      }
+}
+
+
+
+
+@media  (min-width : 768px) and (max-width : 1200px) {/* ---------------------------------------------------------------------------------------------------------------Responsive 1200 */ 
+
+/* ------------------------------------------------- Nav Bar */
+
+.navbar {
+  margin: 0 auto;
+  max-width: 1200px;
+  border-radius: 0;
+  background: url("../../../indexSmart/bg1.jpg?1121");
+  color: red;
+  padding: 0px;
+  font-size: 1.2em;
+  border:0;
+}
+
+.navbar-header {
+    background-color: #000;   /*  Header Background */
+
+}
+
+
+.navbar .navbar-nav {
+
+    height: 45px;
+    margin-top: 55px;    
+    position: relative;
+    left: 4%;
+    margin-left: -95px !important;  /* 50% of your logo width */
+    }
+
+.navbar .navbar-collapse {
+        text-align: center;
+    }
+
+.navbar-brand {
+  float: left;
+  min-height: 55px;
+  padding: 15px;
+  margin-bottom: 0px;
+}
+
+/*
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+  color: blue;
+  background-color: #FFC;
+}
+*/
+
+.navbar-inverse .navbar-nav li a {
+  line-height: 50px;
+  display: inline;
+  color: #eadebf;
+  column-width: 100px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color: #9f7d3e;
+}
+
+
+.navbar-toggle, .icon-bar{    /* Menu Bar Line & Background */
+  color: #fff;
+  border: 2px solid #c5d5fc;
+  background-color: #333;
+}
+
+/* END - Nav Bar */
+
+
+
+
+header {
+  margin: 0 auto;
+  width: 100%;
+  /* background-color: blue; */
+}
+
+
+#logo1 {
+  float: left;
+  margin-left: 20px;
+      margin-top: 8px;
+  
+}
+
+
+#logo2 {
+  position: absolute;
+    left: 50%;
+    margin-left: -95px !important;  /* 50% of your logo width */
+    margin-top: 3px;
+}
+
+
+.logocontain {
+  padding: 20px;
+}
+
+
+#header-inner1 {
+  display: none;
+  max-width: 1200px;
+  background-color: #2c1901;
+  margin: 0 auto;
+}
+
+
+
+
+#myCarousel {
+  max-width: 1200px;
+  margin: 0 auto;
+  max-height:450px;
+}
+
+
+.item {
+  max-height:450px;
+}
+
+
+.one-fifth {  /* small thumbnail */
+
+  width:100%;
+  margin: 3px;
+  padding-top: 10px;
+  display:inline-block;
+}
+
+
+.responsive-image {
+  max-width: 33%;
+  height: auto;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #d28000;
+  margin-top: 5px;
+}
+
+.footer {
+  display: none;
+}
+
+
+.download-btn {  /* Download Button */
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+
+  .login-btn {
+    display: inline-block;
+  }
+
+
+  .one-fifth {
+        /* background-color: #a9874a; */
+    width:30%;
+    margin: 10px 0px 0px 5px;
+    padding-top: 5px;
+    display:inline-block;
+    font-size: 80%;
+    }
+
+
+  .left {
+
+    display: inline-block;
+
+  }
+
+  .right {
+    margin-top: 10px;
+    display: inline-block;
+    float: right;
+  }
+
+
+
+
+.footer {
+  display: inline-block;
+  font-size: 0.9em;
+  color: #555;
+  width: 100%;
+  background-color: #000;
+  height: 50px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+
+  .btn-wrapper {
+    display: block;
+    width: 100%;
+    background-color: #191002;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+  .btn-wrapper-2 {
+    display: block;
+    border-top: 2px solid #605333;
+    width: 100%;
+    background-color: #191002;
+    text-align: center;
+    padding: 5px;
+  }
+
+
+
+  .inner-wrapper {
+    display: block;
+    width: 100%;
+    background-color: #191002;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #header-inner1 {
+    display: block;
+    max-width: 1200px;
+    background-color: #2c1901;
+    margin: 0 auto;
+  }
+
+
+  #header-inner2 {
+  display: none;
+  }
+
+
+    .main-content-agile {
+        margin: 0 auto;
+        
+        width: 95%;
+    }
+    .wthree-pro {
+        background: #eadebf;
+        background-size: cover;
+        border-radius: 25px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    .wthree-pro h2 {
+        font-size: 1.7em;
+        color: #000;
+        letter-spacing: 1px;
+        padding: 10px;
+        font-weight: 600;
+    }
+    .sub-main-w3{
+        position:relative;
+        padding: 10px;
+    }
+    .sub-main-w3 input[type="text"], .sub-main-w3 input[type="password"] {
+        outline: none;
+        font-size: 1em;
+        border: none;
+        border-bottom: 1px dotted #eadebf;
+        background: none;
+        width: 94%;
+        color: #eadebf;
+        padding: 0em 0 0.5em 0.8em;
+        letter-spacing: 1px;
+        font-family: 'Philosopher', sans-serif;
+    }
+    .sub-main-w3 input[type="password"], .sub-main-w3 input[id="Text1"]{
+        margin-top: 0.5em;
+    }
+    .loginbtn {
+        border-radius: 5px;
+        width: 56%;
+        color: #fff;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#bda157), to(#744a00));
+            background-image: -moz-linear-gradient(top left 90deg, #bda157 0%, #744a00 100%);
+            background-image: linear-gradient(top left 90deg, #bda157 0%, #744a00 100%);
+        border: none;
+        padding: 10px 0px;
+        outline: none;
+        font-size: 1.2em;
+        cursor: pointer;
+        letter-spacing: 1px;
+        margin: 0.9em 0em ;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        font-family: 'Philosopher', sans-serif;
+		display: inline-block;
+    }
+    .loginbtn:hover {
+        background: #cdaa50;
+        color: #000;
+    }
+
+
+
+
+    .languagepicker {
+        width: 38%;
+        background-color: #fff;
+        display: inline-block;
+
+        height: 40px;
+        overflow: hidden;
+        transition: all .3s ease;
+        margin: 15px 15px 15px 0px;
+
+        float: left;
+        border: 1px solid #dddddd;
+
+    }
+
+
+    .languagepicker:hover {
+        /* don't forget the 1px border */
+        height: 81px;
+    }
+
+    .languagepicker a{
+        color: #000;
+        text-decoration: none;
+        text-align: left;
+    }
+
+    .languagepicker li {
+        display: block;
+
+        line-height: 40px;
+        border-top: 1px solid #EEE;
+
+    }
+
+    .languagepicker li:hover{
+        background-color: #EEE;
+    }
+
+    .languagepicker a:first-child li {
+        border: none;
+    }
+
+    .languagepicker li img {
+        margin-top: 10px;
+        margin-left: 10px;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .roundborders {
+        border-radius: 5px;
+    }
+
+    .large:hover {
+        /* 
+        don't forget the 1px border!
+        The first language is 40px heigh, 
+        the others are 41px
+        */
+        height: 490px;
+    }
+
+
+        .rslides {
+      position: relative;
+      list-style: none;
+      overflow: hidden;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      }
+
+    .rslides li {
+      -webkit-backface-visibility: hidden;
+      position: absolute;
+      display: none;
+      width: 100%;
+      }
+
+    .rslides li:first-child {
+      position: relative;
+      display: block;
+      }
+
+    .rslides img {
+      display: block;
+      height: auto;
+      width: 100%;
+      border: 0;
+      }
+}
+/* END - Responsive */

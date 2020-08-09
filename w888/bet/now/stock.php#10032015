@@ -1,0 +1,89 @@
+<? ob_start(); if (!isset($_SESSION)) { session_start(); } ?>
+<?php if(!$_SESSION['admin_viewer']){exit();}?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="viewer/css/style.css" type="text/css" >
+	<link rel="stylesheet" href="style2.css" type="text/css" >
+<script src="../../js/jquery-1.9.1.js"></script>
+<script>
+
+function set_active(val,acc,add){
+	$.post("ajax/set_active.php" , {'val': val, 'acc': acc, 'add': add },
+		function(data){
+
+			$("#active_check"+acc+add).html(data);
+	});	
+}
+</script>
+</head>
+<body>
+<h1>
+Stock of inactivated function
+</h1>
+<?
+	require('../inc/conn.php');
+	require('../inc/function.php');
+
+
+
+$sql_stock = "SELECT  `b_id` ,  `b_name_1` ,  `b_name_2` ,  `b_hdc` ,  `b_hdc_1` ,  `b_hdc_2` ,  `b_goal` ,  `b_goal_1` ,  `b_goal_2` ,  `b_add` ";
+$sql_stock = $sql_stock."  FROM  `pha_tb_ball_list_live` WHERE  `b_active` =0 AND b_numcode > 0";
+$q_stock = sql_query($sql_stock);
+$_num_stock = mysql_num_rows($q_stock);
+
+if($_num_stock > 0){
+	echo '<table id="stock" cellpadding="0" cellspacing="0" border="0" align="center">';
+	?>
+	<tr>
+            <th>ບ້ານ</th>
+            <th>ຢາມ</th>
+            <th>ແຕ້ມຕໍ່	</th>
+            <th>ລາຄາບ້ານ</th>
+            <th>ລາຄາຢາມ</th>
+            <th>ປະຕູ</th>
+            <th>ລາຄາສູງ</th>
+            <th>ລາຄາຕໍ່າ</th>
+            <th>Act</th>
+	</tr>
+	<?php
+	function res($x){
+
+	
+	if($x>0){
+      $result = $x+1;
+	}else{
+      $tot = 1+$x;
+      $result = $tot+2;
+	
+	}
+	$result = number_format($result,2, '.', '');
+	return $result;
+	}
+	?>
+	<?php
+	while($rw_stock = mysql_fetch_array($q_stock)){
+		
+		echo "<tr>
+				<!--<td>$rw_stock[b_id]</td>-->
+				<td>$rw_stock[b_name_1]</td>
+				<td>$rw_stock[b_name_2]</td>
+				<td>$rw_stock[b_hdc]</td>
+				<td>".res($rw_stock[b_hdc_1])."</td>
+				<td>".res($rw_stock[b_hdc_2])."</td>
+				<td>".$rw_stock[b_goal]."</td>
+				<td>".res($rw_stock[b_goal_1])."</td>
+				<td>".res($rw_stock[b_goal_2])."</td>
+				<td><span id='active_check$rw_stock[b_id]$rw_stock[b_add]'><a href='javascript:set_active(1,$rw_stock[b_id],$rw_stock[b_add]);' ><img src=\"img/active.png\"></a></span></td>
+			  </tr>";
+
+		
+	}
+	echo "</table>";	
+}else{
+	echo '<center>Stock not found...</center>';
+}
+?>
+<body>
+</html>

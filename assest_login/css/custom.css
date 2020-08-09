@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'DB SaiKrok X';
+    src: url('../fonts/DBSaiKrokX.woff2') format('woff2'),
+        url('../fonts/DBSaiKrokX.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.tf-log1 {
+    width: 130px;
+    float: left;
+}
+
+.tf-log2 {
+    width: 130px;
+    float: left;
+}
+
+.submit-log
+{
+	margin-right: 15px;
+}
+
+.img-logo {
+    margin-top: 16px;
+}
+
+#frmLogin
+{
+	margin-top: 25px;
+}
+
+.con2
+{
+    position: relative;
+}
+
+.div-login {
+    height: 60px;
+    margin-top: 35px;
+    margin-right: 0px;
+    margin-left: 0px;
+    float: right;
+}
+
+#main_menu {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 15px;
+}
+ #main_menu ul
+ {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    /*background: #75101082;*/
+    padding-left: 0;
+}
+
+ #main_menu ul li
+ {
+   display: inline-block;
+   list-style: none;
+   padding:12px 30px;
+   transition-duration: .2s;
+ }
+
+ #main_menu ul li:hover, #main_menu ul li.active
+ {
+ 	    border-bottom: 3px solid #3c5da4;
+ }
+
+ #main_menu ul li a
+{
+    color: #334a7f;
+    text-decoration: none;
+    font-family: 'DB SaiKrok X';
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+.image-4 {
+    margin-top:35px;
+}

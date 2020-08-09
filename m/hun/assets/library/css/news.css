@@ -1,0 +1,36 @@
+
+#FullBody {
+    background: #e0e0e0;
+}
+
+#news
+{
+	list-style-type: none;
+	padding-left: 0px;
+	margin: 5px;
+}
+.newsContent
+{
+	background-color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+
+}
+.newsA
+{
+	width: 100%;
+	float: left;
+	color: #6e6e6e;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.newsDate
+{
+	width: 100%;
+	text-align: right;
+	color: #a3a3a3;
+	font-size: 12px;
+	font-weight: bold;
+}

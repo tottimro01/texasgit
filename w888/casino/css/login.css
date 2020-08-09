@@ -1,0 +1,74 @@
+
+.main-bg{
+/*background: #735706; 
+background: -moz-linear-gradient(top,  #e8cf50 0%, #735706 100%); 
+background: -webkit-linear-gradient(top,  #e8cf50 0%,#735706 100%); 
+background: linear-gradient(to bottom,  #e8cf50 0%,#735706 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8cf50', endColorstr='#735706',GradientType=0 ); */
+    background: #c9a352;
+    background: -moz-linear-gradient(left, #c9a352 0%, #ca9a2b 45%, #8b691c 100%);
+    background: -webkit-linear-gradient(left, #c9a352 0%,#ca9a2b 45%,#8b691c 100%);
+    background: linear-gradient(to right, #c9a352 0%,#ca9a2b 45%,#8b691c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9a352', endColorstr='#8b691c',GradientType=1 );
+}
+
+.font-kanit{
+    font-family: 'Kanit', sans-serif;
+}
+
+.logo{
+	margin-top: 120px;
+	width: 220px;
+	display: block;
+}
+
+.formLogin{
+	margin-top: 80px;
+}
+
+.formLogin .input-group-text{
+	width: 50px;
+	background-color: #fff;
+}
+
+.formLogin input{
+}
+
+.formLogin button{
+	background-color: #e42416;
+    border: 0;
+}
+
+.formLogin button:hover{
+	background-color: #ff3f30;
+}
+
+.formLogin button:active{
+	background-color: #c31709;
+}
+
+select#changeLang{
+	background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+body.dl{
+	background-color: #f1f1f1;
+}
+
+.topbar-bg{
+	min-height: 180px;
+}
+
+.floatBox{
+    /*box-shadow: 0 .5rem 1rem rgba(0,0,0,.4)!important;*/
+    border-radius: .75rem!important;
+}
+
+.dl-icon{
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+}

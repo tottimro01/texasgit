@@ -1,0 +1,344 @@
+header{
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+.topnav{/*background: #e4c362;
+background: -webkit-linear-gradient(#e4c362 0%, #f2e0b0 50%, #fbf7ec 100%);
+background: -o-linear-gradient(#e4c362 0%, #f2e0b0 50%, #fbf7ec 100%);
+background: linear-gradient(#e4c362 0%, #f2e0b0 50%, #fbf7ec 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4c362', endColorstr='#fbf7ec',GradientType=0 );*/background: #ffdf83;background: -webkit-linear-gradient(#2d6bd6 0%, #003289 50%, #2d6bd6 100%);background: -o-linear-gradient(#ffdf83 0%, #fff3d4 50%, #fffdf6 100%);background: linear-gradient(#2d6bd6 0%, #003289 50%, #2d6bd6 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdf83', endColorstr='#fffdf6',GradientType=0 );border-bottom: 1px solid #e5c567;border-top: 4px solid #ffe084;}
+.container-alt,
+.topnav .topnav-container{
+    min-width: 100%;
+}
+.topnav .top-menu-row{
+  background: #2d6bd6;
+  background: -moz-linear-gradient(top,  #ca9a2b 0%, #8b691c 100%);
+  background: -webkit-linear-gradient(top,  #2d6bd6 0%,#003289 100%);
+  background: linear-gradient(to bottom,  #2d6bd6 0%,#003289 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca9a2b', endColorstr='#8b691c',GradientType=0 );
+}
+
+.topnav .navbar-brand,
+.topnav .navbar-nav .nav-link{
+  color: #ffffff;
+}
+
+.topnav .navbar-nav.page-selector .nav-link{
+  color: #ffedbd;
+}
+
+.topnav .navbar-brand:hover,
+.topnav .navbar-nav .nav-link:hover{
+  color: #ffe084;
+}
+
+.topnav .dropdown-item{
+  color: #333;
+}
+
+.topnav .nav-item.tm-active a{
+  position: relative;
+  z-index: 1;
+  color: #ffedbd;
+}
+
+.topnav .nav-item.tm-active a:hover{
+  color: #fff;
+}
+.topnav .nav-item.tm-active a:before{
+  content: "";
+  position: absolute;
+  height: 70%;
+  left: 0;
+  right: 0;
+  top: 15%;
+  /* border: 1px solid #8f6c1d; */
+  border-radius: 4px;
+  z-index: -1;
+
+  background: #ca9a2b;
+  background: -moz-linear-gradient(top, #ca9a2b 0%, #8b691c 100%);
+  background: -webkit-linear-gradient(top, #ca9a2b 0%,#8b691c 100%);
+  background: linear-gradient(to bottom, #ca9a2b 0%,#8b691c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca9a2b', endColorstr='#8b691c',GradientType=0 );
+}
+
+.topnav .dropdown-item:hover,
+.topnav .dropdown-item.m-active{
+  color: #8c7531;
+  background-color: #f2f2f2;
+}
+
+.topnav .dropdown-item:active{
+  background-color: #8c7531;
+  color: #ffffff;
+}
+
+.topnav .page-selector .nav-item{
+  position: relative;
+}
+
+.topnav .page-selector .nav-item .nav-link{
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.topnav .page-selector .nav-item:hover .nav-link,
+.topnav .page-selector .nav-item.m-active .nav-link{
+  color: #ffffff;
+  /*color: #8c7531;*/
+}
+
+.topnav .page-selector .nav-item.m-active:before{
+  content: "";
+  position: absolute;
+  height: 2px;
+  /*background: #8c7531;*/
+  background: #ffe084;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.m-sport-active{
+  color: #8c7531!important;
+  background-color: transparent!important;
+}
+
+.topnav .navbar{}
+
+.topnav .navbar-toggler{
+  margin: .25rem .75rem;
+  padding: 0;
+}
+
+.topnav .navbar-toggler:hover{
+  background-color: #b3953e;
+}
+
+.topnav .navbar-toggler .navbar-toggler-icon{
+  color: #fff;
+  line-height: 1.5;
+}
+
+.topnav .logo{
+  width: 130px;
+}
+
+.topnav_noti_num{
+    top: -4px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    z-index: 1;
+    line-height: 16px;
+    display: none;
+}
+/* ------------------------------------------------------------ */
+
+.sidenav-open .sivenav-back-cover{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.0);
+}
+
+.sidenav-open.onDragSportItem .sivenav-back-cover,
+.sivenav-back-cover
+{
+  display: none;
+}
+
+.sidenav{
+  position: fixed;
+  top: 0px;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #ffffff;
+  border-left: 1px solid #eaeaea;
+  border-right: 0;
+
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
+  
+  -webkit-transition: transform 500ms;
+  transition: transform 500ms;
+
+  z-index: 99;
+}
+
+.sidenav-open .sidenav{
+  transform: translate3d(0, 0, 0);
+}
+
+.sidenav .toggle-sidenav{
+  position: absolute;
+  width: 40px;
+  padding: 6px 0;
+  background: #c9992a;
+  left: -40px;
+  top: 22px;
+  text-align: center;
+  border-radius: 14px 0px 0px 14px;
+  border-right: 0;
+  cursor: pointer;
+  color: #fff;
+}
+
+.sidenav .toggle-sidenav > #toggleSidenav{
+  width: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+.form-search-sport-league{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#formSearchSportLeague{
+  padding: 10px;
+  background-color: #282828;
+  position: relative;
+}
+
+#formSearchSportLeague input{
+  /*padding-right: 36px;*/
+  padding: 4px;
+}
+
+#formSearchSportLeague button[type="submit"]{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 13px;
+  right: 13px;
+}
+
+.all-sport-list{
+  height: 100%;
+  overflow-y: auto; 
+  font-size: .8em;
+  background-color: #282828;
+}
+
+
+
+.all-sport-list .head .custom-switch{
+ /* position: absolute;
+  top: 2px;
+  right: 2px;*/
+  float: right;
+  margin-top: -3px;
+}
+
+.all-sport-list .head .custom-switch input{
+  width: 0;
+}
+
+.all-sport-list .head .custom-switch .custom-control-label{
+  cursor: pointer; 
+}
+
+.all-sport-list .sport-list-toggle{
+  margin: 0;
+  cursor: pointer;
+  /*display: block;*/
+}
+
+.all-sport-list .sport-list-toggle .lg-name{
+  margin-top: -5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+/* #SportListContainer > li:not(.lg-viewed) .sport-list-toggle .lg-name:after{
+  content: "";
+  background: red;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 6px;
+} */
+
+.all-sport-list > ul.sport-list-league > li{
+  border-bottom: 1px solid #fff;
+}
+
+.all-sport-list > ul.sport-list-league > li > .head{
+  padding: 5px 0px 5px 10px;
+  background-color: #383838;
+  color: #fff;
+}
+
+.all-sport-list > ul.sport-list-league > li > input[name="toggleSportList"]{
+  position: absolute;
+  width: 0;
+  opacity: 0;
+}
+
+.all-sport-list > ul.sport-list-league > li > input[name="toggleSportList"]:checked + ul.sport-list-team{
+  /*height: auto;*/
+  display: block;
+}
+
+.all-sport-list > ul.sport-list-league > li > ul.sport-list-team{
+  /*height: 0;*/
+  display: none;
+  overflow: hidden;
+  transition: all 100ms;
+  color: #fff;  
+}
+
+.all-sport-list > ul.sport-list-league > li > ul.sport-list-team > li > .head{
+  padding: 5px 10px 5px 20px;
+  border-bottom: 1px solid #383838;
+  background-color: #484848;
+  color: #fff;
+  font-size: .85em;
+}
+
+.SportNavOnDragItem{
+  padding: 5px 10px;
+  background-color: #383838;
+  color: #fff;
+  z-index: 10000!important;
+  /*position: absolute;*/
+}
+
+.sortableLeaguePlaceholder{
+  background-color: #cef1c6;
+}
+
+@media only screen and (min-width: 992px){
+  .container-alt,
+  .topnav .topnav-container{
+    min-width: auto;
+  }
+  .topnav .page-selector .nav-item.mn-main{
+    /*margin-right: 10px;*/
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+  }
+
+  .topnav .page-selector .nav-item:not(:last-child):after{
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: -1px;
+    width: 2px;
+    height: 50%;
+    border-left: 1px solid #84641c;
+    border-right: 1px solid #e5c567;
+  }
+}

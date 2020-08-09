@@ -1,0 +1,972 @@
+/* Happy 5 */
+
+.showElement{
+    display: block !important;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.oddsTable .iconOdds.info{
+    display: inline-block;
+}
+
+th a.icon-help{
+    display: inline-block;
+}
+
+th .iconOdds.help{
+    background-position: -135px -30px;
+}
+
+.icon-clock::before{
+    content: " ";
+    display: inline-block;
+    background-image: url(../images/layout/icon_odds.png);
+    background-position: -15px -91px;
+    width: 15px;
+    height: 16px;
+}
+
+/* .hint-absolute */
+.happy5-detail .hint-absolute, .txt-hint .hint-absolute{
+    position: absolute;
+    box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.8);
+    z-index: 35;
+    min-width: 15em;
+    white-space: normal;
+    background-color: #353c44;
+    color: #fff;
+}
+
+.happy5-detail .hint-absolute::before, .txt-hint .hint-absolute::before {
+    content: "";
+    position: absolute;
+    top: -.9em;
+    left: calc(100%/2 - 0.5em);
+    border-width: 0.5em;
+    border-color: transparent transparent #353c44 transparent;
+    border-style: solid;
+    z-index: 2;
+}
+
+.hint-absolute.arrowDown::before {
+    top: auto;
+    bottom: -.9em;
+    border-color: #353c44 transparent transparent transparent;
+}
+
+.hint-absolute.arrowDown::after {
+    top: auto;
+    bottom: -1em;
+    border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;
+}
+
+.hint-absolute.arrowDown {
+    box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.8);
+}
+
+.hint-absolute.arrowRight {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hint-absolute.arrowRight::before {
+    top: calc(100%/2 - 0.5em);
+    right: -.9em;
+    left: auto;
+    border-color: transparent transparent transparent #353c44;
+}
+
+.hint-absolute.arrowRight::after {
+    top: calc(100%/2 - 0.5em);
+    right: -1em;
+    left: auto;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.4);
+}
+
+.hint-absolute.arrowLeft {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hint-absolute.arrowLeft::before {
+    top: calc(100%/2 - 0.5em);
+    left: -.9em;
+    border-color: transparent #353c44 transparent transparent;
+}
+
+.hint-absolute.arrowLeft::after {
+    top: calc(100%/2 - 0.5em);
+    left: -1em;
+    border-color: transparent rgba(0, 0, 0, 0.4) transparent transparent;
+}
+
+.sport164 .txt-hint .hint-absolute.left {
+    left: -10px;
+    transform: translateX(0%);
+}
+
+.sport164 .txt-hint .hint-absolute.left::before, .sport164 .txt-hint .hint-absolute.left::after {
+    left: 15px;
+}
+
+ 
+.txt-hint {
+    cursor: default;
+    position: relative;
+}
+
+.txt-hint .hint-absolute {
+    display: none;
+    min-width: 6em;
+    white-space: nowrap;
+    padding: 3px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    margin-top: 3px;
+    z-index: 15;
+    font-weight: normal;
+}
+  
+.txt-hint .hint-absolute.arrowDown {
+    bottom: 100%;
+    margin-bottom: 3px;
+    margin-top: 0;
+    top: auto;
+}
+
+/* smallBtn */
+.smallBtn.icon-help::before{
+    background-image: url(../images/layout/icon_odds.png);
+    background-repeat: no-repeat;
+    background-position: -135px 0px;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    cursor: default;
+    line-height: 11px;
+    vertical-align: middle;
+    margin: 1px;
+    content:"";
+}
+
+.smallBtn.icon-help:hover::before{
+    background-position: -135px -15px;
+}
+
+
+.sport164 .odds {
+    padding: 0.18em 0.833em;
+}
+
+.sport164 .odds .txt {
+    float: left;
+}
+
+.sport164 .col4 .odds {
+    width: 25%;
+}
+
+.sport164 .col4 .subtxt-double {
+    width: 50%;
+}
+
+.sport164 .col3 .odds {
+    width: 33.33%;
+}
+
+.sport164 .col3 .subtxt-double {
+    width: 66.66%;
+}
+
+
+
+.sport164 .betArea > div:last-child {
+    padding-right: 0.5em;
+}
+
+.oddsTableNav-Item[class*="sport"] {
+    -ms-flex: 0 1 160px;
+        flex: 0 1 160px;
+    border-radius: 3px 3px 0 0;
+    padding: 3px 3px 6px;
+    padding-left: 0.833em;
+}
+
+.oddsTableNav-Item[class*="sport"].active {
+    padding-left: 0.833em;
+}
+
+.oddsTableNav-Item[class*="sport"] .mainTitle {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: left;
+        justify-content: left;
+}
+  
+.oddsTableNav-Item[class*="sport"] .mainTitle::before {
+    display: block;
+    transform: scale(1.2);
+    margin-right: .5em;
+}
+
+.oddsTableNav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    border-bottom: 3px solid #5574a7;
+    margin-bottom: 0.2em;
+    padding-left: 0; 
+}
+
+.oddsTableNav-Item {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 3px;
+    border-radius: 3px;
+    background: #7c7c7c;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 17px;
+}
+
+.oddsTableNav-Item + .oddsTableNav-Item{
+    margin-left: 4px;
+}
+
+.oddsTableNav-Item:hover {
+    background: #898989;
+}
+
+.active.oddsTableNav-Item {
+    background: #5574a7;
+    font-weight: bold;
+    cursor: default;
+    border-radius: 3px 3px 0 0;
+    padding: 3px 3px 6px;
+}
+
+.happy5-scoreBoard__head {
+    text-align: center;
+    color: #ffffff;
+    background-color: #5574a7;
+    border-bottom: 3px solid #5574a7;
+    height: 20px;
+    line-height: 20px;
+}
+  
+#Happy5 .smallBtn.icon-streaming::before{
+    background-image: url(../images/layout/icon_odds.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 11px;
+    vertical-align: middle;
+    margin: 1px;
+    content:" ";
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+}
+
+#Happy5 .smallBtn.primary.icon-result{
+    cursor: pointer;
+}
+
+#Happy5 .smallBtn.primary.icon-result::before{
+    background-image: url(../images/layout/icon_odds.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 11px;
+    vertical-align: middle;
+    margin: 1px;
+    content:" ";
+}
+
+.happy5 .icon-result {
+    font-weight: normal;
+}
+
+.is-tabs-theme--filter{
+    border: 1px solid #dfdfdf;
+    border-bottom: 0;
+}
+
+
+.tabs-nav{
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tabs-item {
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
+    position: relative;
+    padding: 0.5em;
+    padding-right: 0.25em;
+    cursor: pointer;
+}
+
+.tabs-item.active, .tabs-item.active:hover {
+    cursor: default;
+}
+
+.is-tabs-theme--filter > .tabs-nav .tabs-item {
+    color: black;
+    background: #ececec;
+    border-left: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 0.5em 0.833em;
+}
+
+.is-tabs-theme--filter > .tabs-nav .tabs-item:first-child{
+    border-left: 0;
+    -ms-flex: 1 1 24%;
+    flex: 1 1 24%;
+}
+
+.is-tabs-theme--filter > .tabs-nav .tabs-item:hover {
+    background: #f1f1f1;
+}
+
+.is-tabs-theme--filter > .tabs-nav .tabs-item.active {
+    color: #000000;
+    background: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.is-tabs-theme--filter .listTitle {
+    font-weight: bold;
+    position: relative;
+}
+
+.is-tabs-theme--filter .listTitle .countdown {
+    color: #ff0000;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.is-tabs-theme--filter .listTitle .countdown .flash {
+    padding-left: 3px;
+}
+
+.is-tabs-theme--filter .listTitle .countdown .flash.animation {
+    animation: flash 1s infinite alternate;
+}
+
+.is-tabs-theme--filter .listTitle-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 0.833em;
+    height: 27px;
+}
+
+.is-tabs-theme--filter .listTitle-content .text {
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 13px;
+    -ms-flex: 1 1 100px;
+    flex: 1 1 100px;
+    font-size: 13px;
+}
+
+.is-tabs-theme--filter .listTitle-content .ball {
+    text-align: right;
+    -ms-flex: 1 0 200px;
+    flex: 1 0 200px;
+}
+
+.is-tabs-theme--filter .tabs-content {
+    padding: 0.833em;
+    background: #ffffff;
+}
+
+.is-tabs-theme--filter .tabs-content .oddsTable{
+    margin-bottom: 0;
+}
+
+.is-tabs-theme--filter .tabs-content-title {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.is-tabs-theme--filter .tabs-content-title {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.is-tabs-theme--filter .tabs-content-title .text{
+    color: #b53f39;
+    -ms-flex: 1;
+    flex: 1;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+.is-tabs-theme--filter .ball > div{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+  
+@keyframes flash {
+    from,
+    50%,
+    to {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: .5;
+    }
+}
+
+
+.oddsTitle{
+    background: #5574a7;
+    border-color: #5574a7;
+    height: 26px;
+}
+
+.oddsTitle > div:nth-child(2n){
+    background-color: #6785b7;
+}
+
+.oddsTitle > div, .oddsTitle-accent > div, .oddsTitleSub > div {
+    color: #ffffff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.oddsTitle > div + div {
+    border-left: 1px solid;
+    border-color: #3b5174;
+}
+
+.oddsTitle, .oddsTitle-accent, .oddsTitleSub, .live-a, .live-b, .normal-a, .normal-b, .mmr-a, .mmr-b, .oddsTotal {
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+}
+
+.live-a, .live-b, .normal-a, .normal-b, .mmr-a, .mmr-b {
+    border-bottom: 1px solid;
+}
+
+.live-a {
+    background: #ffccbc;
+    border-bottom-color: #cea193;
+}
+
+.normal-a {
+    background: #c6d4f1;
+    border-bottom-color: #bbbbbb;
+}
+
+.oddsTable .odds, .oddsTable .others, .oddsTable .no, .oddsTable .unit {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.sport164 .odds {
+    padding: 0.18em 0.833em;
+    width: 25%;
+}
+
+.betArea{
+    text-align: right;
+    min-height: 1.5em;
+}
+
+.betArea .txt {
+    display: inline-block;
+    padding-right: 0.3em;
+    text-align: left;
+    font-weight: bold;
+    color: #545454;
+}
+
+.sport164 .betArea .txt {
+    position: relative;
+}
+
+.betArea .txt-hint, .oddsTable-happy5 .iconOdds.help {
+    cursor: default;
+}
+
+.oddsBet {
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    padding: 0 1px;
+    text-align: right;
+    cursor: pointer;
+    color: #01122b;
+    font-weight: bold;
+    min-height: 1.5em;
+    vertical-align: top;
+    min-width: 3.3em;
+}
+.oddsBet:hover{
+    background-color: #ffe00e!important;
+    border-radius: 2px;
+}
+
+.live-a .event + div, 
+.live-a .time, .live-a .others, 
+.sport164 .live-a > div
+{
+    border-left: 1px solid;
+    border-color: #cea193;
+}
+
+.normal-a .event + div, 
+.normal-a .time, .normal-a .others, 
+.sport164 .normal-a > div
+{
+    border-left: 1px solid;
+    border-color: #bbbbbb;
+}
+
+  
+.happy5-detail {
+    display: -ms-flexbox;
+    display: flex;
+}
+  
+.happy5-detail.filterBlock {
+    padding: 0.833em;
+    background: #ececec;
+    color: rgba(0, 0, 0, 0.75);
+    border: 1px solid #dfdfdf;
+    border-radius: 3px 3px 0 0;
+}
+
+.moreBetType.tag .happy5-detail.filterBlock{
+    margin: -8px;
+    border: 0;
+}
+
+.happy5-detail .oddsTableNav {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.happy5-detail .scroll-panel {
+    margin-bottom: 0;
+}
+
+.happy5-detail .listTitle {
+    padding: 0 0 10px;
+    color: black;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+  
+.happy5-detail .left-mask::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0));
+    z-index: 1;
+    pointer-events: none;
+}
+
+.happy5-detail .right-mask:after {
+    display: block;
+    clear: both;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    background: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0));
+    z-index: 1;
+    pointer-events: none;
+}
+
+.happy5-detail .top-mask::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0));
+    z-index: 1;
+}
+
+.happy5-detail .bottom-mask:after {
+    display: block;
+    clear: both;
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0));
+    z-index: 1;
+}
+  
+.happy5-scoreBoard {
+    -ms-flex: auto;
+        flex: auto;
+    width: 0;
+    position: relative;
+}
+
+.happy5-scoreBoard .scroll-panel, .happy5-scoreBoard .scroll-content{
+    height: 154px;
+    position: relative;
+}
+
+.happy5-scoreBoard .scroll-content {
+    display: -ms-flexbox;
+    display: flex;
+    direction: rtl;
+    position: relative;
+    background-image: linear-gradient(to top, #dfdfdf 1px, transparent 1px, transparent 100%);
+  }
+  
+
+.happy5-scoreBoard .text-red {
+    color: #ff4444;
+}
+
+.happy5-scoreBoard .text-blue {
+    color: #005bff;
+}
+
+.happy5-scoreBoard .text-green {
+    color: #00bc00;
+}
+
+.happy5-scoreBoard .text-yellow {
+    color: #eebb00;
+}
+  
+.happy5-scoreBoard__content {
+    position: relative;
+    border-radius: 0 0 3px 3px;
+}
+  
+[class*="happy5-scoreBoard__table"] {
+    background-color: #ffffff;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: stretch;
+        align-items: stretch;
+    z-index: 0;
+    min-height: 154px;
+    background-size: 24px 22px;
+    background-image: linear-gradient(to top, #dfdfdf 1px, transparent 1px, transparent 100%), linear-gradient(to right, #dfdfdf 1px, transparent 1px, transparent 100%);
+}
+
+body[lang="ch"] .happy5-scoreBoard__table-mome, body[lang="cs"] .happy5-scoreBoard__table-mome, body[lang="zhen"] .happy5-scoreBoard__table-mome, body[lang="ch"] .happy5-scoreBoard__table-combo, body[lang="cs"] .happy5-scoreBoard__table-combo, body[lang="zhen"] .happy5-scoreBoard__table-combo {
+    background-size: 30px 22px;
+}
+
+body[lang="ch"] .happy5-scoreBoard__table-mome::before, body[lang="cs"] .happy5-scoreBoard__table-mome::before, body[lang="zhen"] .happy5-scoreBoard__table-mome::before, body[lang="ch"] .happy5-scoreBoard__table-combo::before, body[lang="cs"] .happy5-scoreBoard__table-combo::before, body[lang="zhen"] .happy5-scoreBoard__table-combo::before {
+    background-size: 30px 22px;
+}
+
+body[lang="ch"] .happy5-scoreBoard__table-mome .happy5-scoreBoard__cell, body[lang="cs"] .happy5-scoreBoard__table-mome .happy5-scoreBoard__cell, body[lang="zhen"] .happy5-scoreBoard__table-mome .happy5-scoreBoard__cell, body[lang="ch"] .happy5-scoreBoard__table-combo .happy5-scoreBoard__cell, body[lang="cs"] .happy5-scoreBoard__table-combo .happy5-scoreBoard__cell, body[lang="zhen"] .happy5-scoreBoard__table-combo .happy5-scoreBoard__cell {
+    width: 30px;
+}
+  
+
+.happy5-scoreBoard__col {
+    position: relative;
+  }
+  
+  .happy5-scoreBoard__col:last-child::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -1px;
+    width: 1px;
+    height: 100%;
+    background-color: #dfdfdf;
+  }
+  
+  .happy5-scoreBoard__col:last-child .happy5-scoreBoard__cell:last-child::after {
+    background-color: #ffe7e0;
+  }
+  
+.happy5-scoreBoard__cell {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    position: relative;
+    width: 24px;
+    height: 22px;
+    box-sizing: border-box;
+}
+  
+.happy5-scoreBoard__cell::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: transparent;
+}
+  
+  
+.happy5-scoreBoard__cell.latest {
+    background-color: #ffe7e0;
+    border-bottom-color: #ffe7e0;
+    border-right-color: #ffe7e0;
+}
+
+.happy5-scoreBoard__cell:hover .hint-absolute {
+    display: block;
+}
+
+.happy5-scoreBoard__cell .hint-absolute {
+    display: none;
+    padding: .25em .5em;
+    min-width: auto;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.happy5-scoreBoard__cell .hint-absolute .content {
+    white-space: nowrap;
+  }
+
+.happy5-scoreBoard__cell .hint-absolute.arrowDown {
+    top: auto;
+    bottom: 100%;
+}
+
+.happy5-scoreBoard__cell .hint-absolute.arrowLeft {
+    left: 100%;
+}
+
+.happy5-scoreBoard__cell .hint-absolute.arrowRight {
+    right: 100%;
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+.happy5-scoreBoard__cell span {
+    cursor: default;
+}
+
+.happy5-result {
+    padding-left: 0.833em;
+    -ms-flex: 0 0 280px;
+        flex: 0 0 280px;
+    box-sizing: border-box;
+}
+  
+.happy5-result__content {
+    height: 204px;
+    background-color: #ffffff;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    position: relative;
+}
+  
+.happy5-result__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 8px 6px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.happy5-result__row.latest {
+    background-color: #ffe7e0;
+}
+  
+.happy5-result__no {
+    color: #323232;
+    padding: 8px;
+}
+  
+.happy5-result__ball > div {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+/* Color ball */
+.colorBall, .colorBall-primary, .colorBall-disable {
+    display: inline-block;
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    color: #01122b;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    background-image: url(../images/layout/colorball_white.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #e60012;
+    vertical-align: middle;
+    font-family: "Arial", "Tahoma", "pmingliu", "æ–°ç´°æ˜Žé«”";
+}
+
+.colorBall-primary {
+    background-color: #0069b1;
+}
+
+.colorBall-disable {
+    background-image: url(../images/layout/colorball_white_disable.png);
+    background-color: #dfdfdf;
+    color: #9e9e9e;
+}
+
+
+/* ä¸Šæ–¹ */
+.filterBlock-title {
+    background-color: #b1b1b1;
+    font-weight: bold;
+    color: #000000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0.833em;
+
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.filterBlock-title .mainTitle{
+    -ms-flex:  1 1 auto;
+    flex:  1 1 auto;
+    display: block;
+}
+
+.filterBlock-title.musicFilter{
+    padding: 2px .3em 3px .8333em;
+    box-sizing: border-box;
+}
+
+.musicFilter .floatRight{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:center;
+}
+
+.musicFilter .smallBtn.icon-result::before{
+    display: inline-block;
+    background-position: -60px 0px;
+    width: 13px;
+    height: 13px;
+}
+
+.musicFilter .smallBtn.icon-result:hover::before{
+    background-position: -60px -15px;
+}
+
+.musicFilter .smallBtn.icon-result{
+    margin-right: 8px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.musicFilter .btnBlock{
+    cursor: pointer;
+}
+
+.musicFilter .btnBlock:hover .icon-streaming::before{
+    background-position: -30px -15px;
+}
+
+.musicFilter .btnBlock .icon-streaming::before{
+    background-position: -30px 0;
+    margin-right: 5px;
+}
+
+
+#Happy5 .titleBar {
+    position: relative;
+    margin-bottom: 5px;
+    height: auto;
+}
+
+#Happy5 .titleBar .right{
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+
+.titleBar .oddsTableNav-Item{
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.titleBar .oddsTableNav-Item::before{
+    content: " ";
+    background-image: url(../images/layout/icon_happy5.png);
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.titleBar .oddsTableNav-Item.sport164::before{
+    background-position: 0 -20px;
+}
+
+
+.oddsTable-happy5 + .oddsTable-happy5 {
+    margin-top: -9px;
+}
+
+.oddsTable-happy5 + .oddsTable-happy5.oddsTable td.tabtitle{
+    border-radius: 0;
+}

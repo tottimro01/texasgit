@@ -1,0 +1,71 @@
+#title
+{
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+	margin-top: 10px;
+	color: #737373;
+}
+
+.boxContainer
+{
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+}
+.OpenContainer
+{
+	display: inline-block;
+	margin: 10px;
+}
+.OpenContainer img
+{
+	width: 40px;
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+}
+.OpenContainer .text
+{
+	display: inline-block;
+	float: right;
+	margin: 10px;
+}
+
+#addBtn
+{
+	background-image: url(http://m.lotzx.com/hun/assets/library/img/submit-login.png);
+    background-size: 100% 100%;
+    border-radius: 20px;
+}
+#inputSubpass
+{
+	width:94%;
+	margin-left: 3%;
+}
+
+#inputSubpass input
+{
+	width: 100%;
+	border-radius: 5px;
+	height: 35px;
+	border:solid 1px #777;
+	background-color: #fff3f3;
+	text-align: center;
+}
+#inputSubpass input:focus
+{
+	caret-color: #ff528c;
+	text-align: center;
+	background-color: #fff3f3;
+}	
+
+@media only screen and (min-device-aspect-ratio: 1/1) and (orientation: landscape) {
+
+	#FullBody
+	{
+		  overflow: auto;
+	}
+
+}

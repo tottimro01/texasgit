@@ -1,0 +1,43 @@
+#FullscreenContianer
+{
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+
+}
+
+#addok
+{
+	background-image: url(http://m.lotzx.com/hun/assets/library/img/submit-login.png);
+    background-size: 100% 100%;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 25%;
+    height: 40px;
+    box-shadow: none!important;
+    padding-top: 10px;
+}
+
+#inputsubpassBox
+{
+	width: 50%;
+	margin-left: 25%;
+    position: absolute;
+    top: 35%;
+}
+
+#inputsubpassBox input
+{
+	width: 100%;
+	border-radius: 5px;
+	height: 30px;
+	border:solid 1px #fb2e2e;
+	background-color: #fff3f3;
+	text-align: center;
+}
+#inputsubpassBox input:focus
+{
+	caret-color: #ff528c;
+	text-align: center;
+	background-color: #fff3f3;
+}	

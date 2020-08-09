@@ -1,0 +1,60 @@
+#FullBody
+{
+	background: #fff;
+    border-radius: 8px;
+    width: 96%;
+    height: 96%;
+    margin-left: 2%;
+    margin-top: 2%;
+    border:1px solid #b7b7b7;
+}
+#FullBigotitle
+{
+	width: 100%;
+    height: 33px;
+    padding-top: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+.lot_typeTitle
+{
+	background-color: #6e6e70;
+	width:100%;
+	height: 30px;
+	color: #fff;
+	text-align: left;
+	padding-top: 5px;
+}
+.lot_type
+{
+	margin-left: 5px;
+	
+}
+.lot_body_text
+{
+	min-height: 80px;
+	width:100%;
+    word-wrap: break-word;
+    color: red;
+    font-weight: bold;
+}
+#mainFullContain
+{
+    width:100%;
+    /*overflow-y:auto;*/
+    /*-webkit-overflow-scrolling: touch;*/
+
+}
+
+
+@media all and (orientation: landscape) 
+{
+   #FullBody
+   {
+    height: 85%;
+   }
+}    

@@ -1,0 +1,33 @@
+#payDataTable
+{
+	width: 100%;
+	
+}
+
+#payDataTable th
+{
+	background: #6e6e6f;
+	height: 30px;
+	color: #fff;
+}
+#payDataTable td
+{
+	text-align: center;
+	padding-top: 5px;
+	height: 40px;
+	font-weight: bold;
+	color: #7b7b7b;
+}
+#mainFullContain
+{
+	background: #e0e0e0;
+}
+
+@media all and (orientation: landscape) 
+{
+	#mainFullContain {
+	    width: 100%;
+	     overflow-y: auto; 
+	     -webkit-overflow-scrolling: touch; 
+	}
+}

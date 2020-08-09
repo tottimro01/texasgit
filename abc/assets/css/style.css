@@ -1,0 +1,336 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  /*font-size: 62.5%;*/
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  min-width: 300px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  /*font-size: 1.6em; default font size for ducument body*/
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+form {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+textarea,
+select {
+  border: 1px;
+  border-style: solid;
+  border-color: #bbbbbb;
+  background-color: #ffffff;
+  padding: 0 10px;
+  /*width: 100%;*/
+}
+
+input,
+select,
+button
+{
+  /*height: 36px;*/
+  /*display: block;*/
+}
+
+textarea {
+  vertical-align: top;
+  resize: none;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button[type="submit"] {
+  cursor: pointer;
+  border-style: hidden;
+  /*background-color: #dddddd;*/
+}
+
+canvas { display: block; }
+
+/*input read only background */
+input:-moz-read-only { background-color: #eeeeee; }
+input:read-only { background-color: #eeeeee; }
+
+/*remove arrow from input date*/
+input[type=date]::-webkit-outer-spin-button,
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+input[type="date"]::-ms-clear {
+    display: none;
+}
+
+/*input place holder font color*/
+::-webkit-input-placeholder { color: #888888; }
+::-moz-placeholder { color: #888888; }
+:-ms-input-placeholder { color: #888888; }
+:-moz-placeholder { color: #888888; }
+
+/*input place holder background color*/
+:-webkit-autofill {
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 0 0px 9999px white;
+}
+
+/*a { color: #333333; }
+
+a:hover { color: #555555; }*/
+
+ul.hide-order, 
+ul.hide-order > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+table.fixed-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 0;
+}
+/*
+.img_fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.img_fill img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.img_fill img.hrzImg {
+  width: auto!important;
+  height: 100%!important;
+  max-width: none!important;
+}
+*/
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.clickable { cursor: pointer; }
+
+.small--1{
+  font-size: 70%;
+}
+
+.small-1{
+  font-size: 75%;
+}
+
+
+.b{
+  font-weight: bold;
+}
+
+.txt-red{
+  color: #B50000;
+}
+
+.txt-blue{
+  color: #0000FF;
+}
+
+.bg-m-1{
+  background-color: #2d6bd6;
+}
+.bg-m-2{
+  background-color: #003289;
+}
+
+.bd-m-1{
+  border: 1px solid #003289;
+}
+
+.bd-c-1{
+  border: 1px solid #b1b1b1;
+}
+
+.chk-item{
+  display: inline;
+  position: relative;
+  vertical-align: top;
+  padding-left: 1.2em;
+}
+
+.chk-item.with-label{
+  padding-left: 1.4em;
+  margin-right: 0.2em;
+}
+
+
+.chk-item > input{
+  position: absolute;
+  width: 0;
+  opacity: 0;
+}
+
+.chk-item > .checkmark{
+  margin-bottom: 0;
+  /*padding-left: 1.2em;*/
+}
+
+
+.chk-item > .checkmark:before{
+  content: "";
+  background-color: #fff;
+  width: 1.2em;
+  height: 1.2em;
+  border: 1px solid #b1b1b1;
+  border-radius: .2em;
+  margin-bottom: 0;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.chk-item.rdo > .checkmark:before{
+  border-radius: 1em;
+}
+
+.chk-item > input:checked + .checkmark:before{
+  background-color: #8c7531;
+  background-image: url(../img/ui/checkmark.svg);
+  border-color: #8c7531;
+  background-size: .8em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.chk-item.rdo > input:checked + .checkmark:before{
+  background-image: url(../img/ui/dot.svg);
+  background-size: .65em;
+}
+
+.chk-item > input:disabled + .checkmark:before{
+  background-color: #b1b1b1;
+}
+
+select.no-outline:focus, 
+textarea.no-outline:focus, 
+textarea.form-control.no-outline:focus, 
+input.form-control.no-outline:focus, 
+button.btn.no-outline:focus, 
+input[type=text].no-outline:focus, 
+input[type=password].no-outline:focus, 
+input[type=email].no-outline:focus, 
+input[type=number].no-outline:focus, 
+input[type=checkbox].no-outline:focus, 
+input[type=radio].no-outline:focus, 
+input[type=submit].no-outline:focus, 
+[type=text].form-control.no-outline:focus, 
+[type=password].form-control.no-outline:focus, 
+[type=email].form-control.no-outline:focus, 
+[type=tel].form-control.no-outline:focus, 
+[type=checkbox].form-control.no-outline:focus, 
+[type=radio].form-control.no-outline:focus, 
+[type=submit].form-control.no-outline:focus, 
+[contenteditable].form-control.no-outline:focus,
+.custom-control-input.no-outline:focus~.custom-control-label::before{
+  box-shadow: none!important;
+}
+
+select.control-oho:focus, 
+textarea.control-oho:focus, 
+textarea.form-control.control-oho:focus, 
+input.form-control.control-oho:focus, 
+button.btn.control-oho:focus, 
+input[type=text].control-oho:focus, 
+input[type=password].control-oho:focus, 
+input[type=email].control-oho:focus, 
+input[type=number].control-oho:focus, 
+input[type=checkbox].control-oho:focus, 
+input[type=radio].control-oho:focus, 
+input[type=submit].control-oho:focus, 
+[type=text].form-control.control-oho:focus, 
+[type=password].form-control.control-oho:focus, 
+[type=email].form-control.control-oho:focus, 
+[type=tel].form-control.control-oho:focus, 
+[type=checkbox].form-control.control-oho:focus, 
+[type=radio].form-control.control-oho:focus, 
+[type=submit].form-control.control-oho:focus, 
+[contenteditable].form-control.control-oho:focus,
+.custom-control-input.control-oho:focus~.custom-control-label::before{
+  border-color: #8c7531;
+}
+.custom-control-input.control-oho:checked~.custom-control-label::before {
+  border-color: #8c7531;
+  background-color: #8c7531;
+}
+
+input[type=submit].control-oho, 
+[type=submit].form-control.control-oho, 
+button.control-oho{
+  background-color: #988242;
+}
+input[type=submit].control-oho:hover, 
+[type=submit].form-control.control-oho:hover, 
+button.control-oho:hover{
+  background-color: #c4a854;
+}
+input[type=submit].control-oho:focus, 
+[type=submit].form-control.control-oho:focus, 
+button.control-oho:focus{
+  box-shadow: 0 0 0 0.2rem rgba(158, 135, 68, .5);
+}
+
+input[type=submit].control-oho,
+input[type=submit].control-oho:hover,
+input[type=submit].control-oho:focus,
+[type=submit].form-control.control-oho,
+[type=submit].form-control.control-oho:hover,
+[type=submit].form-control.control-oho:focus,
+button.control-oho,
+button.control-oho:hover,
+button.control-oho:focus{
+  color: #fff;
+}

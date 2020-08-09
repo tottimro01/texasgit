@@ -1,0 +1,136 @@
+.logo {
+		width: 170px;
+		padding: 0 10px;
+		margin-top: 20px;
+  	}
+  	.logo img {
+  		width: 100%;
+  	}
+
+  	.w-container {
+    	width: 96%;
+    	max-width: 940px!important;
+    	margin: 0 auto;
+    }
+
+    .contentBox {
+    	margin-bottom: 10px;
+    }
+
+    h3.title {
+    	text-align: center;
+    }
+
+    .font-kanit{
+      font-family: 'Kanit', sans-serif;
+    }
+
+    #ccontent form {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .input-wrapper {
+      /*display: flex;*/
+      padding: 2px 0;
+    }
+
+    .input-wrapper span {
+      line-height: 30px;
+    }
+
+    .input-wrapper .lb {
+    	min-width: 130px;
+    	text-align: right;
+    	font-weight: bold;
+    	padding-right: 10px;
+    }
+
+    .input-wrapper .ip {
+    	flex: 1;
+    }
+
+	.input-wrapper .ip input,
+	.input-wrapper .ip select {
+    	width: 100%;
+    	border: 1px solid #777;
+    	background-color: #fff;
+    	height: 30px;
+    	padding: 0 10px;
+    }
+
+    .input-wrapper .ip.uname {
+      font-weight: bold;
+      color: #1565C0;
+    }
+
+    .warning {
+    	color: #f00;
+    	margin: 4px 0;
+    	width: 100%;
+    	text-align: center;
+    }
+
+    .red-bt {
+    	background-color: #D32F2F;
+    	line-height: 36px;
+    	color: #fff;
+    	text-shadow: 1px 1px 1px #4f1515;
+    	border: 2px solid #e7ca71;
+    	width: 100%;
+    	margin: 0 auto;
+      cursor: pointer;
+    }
+
+    .red-bt:hover {
+    	background-color: #b22525;
+    }
+
+    .regis-btn{
+      background-color: #D32F2F;
+      line-height: 36px;
+      color: #fff;
+      text-shadow: 1px 1px 1px #4f1515;
+      border: 2px solid #e7ca71;
+      width: 100%;
+      margin: 0 auto;
+      cursor: pointer;
+    } 
+
+    .formRegisBox{
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.4)!important;
+      border-radius: .75rem!important;
+    }
+
+    .topbar-bg{
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c9a352+0,ca9a2b+45,8b691c+100 */
+background: #003289; /* Old browsers */
+background: -moz-linear-gradient(left,  #2d6bd6 0%, #003289 45%, #003289 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #2d6bd6 0%,#003289 45%,#003289 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #2d6bd6 0%,#003289 45%,#003289 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9a352', endColorstr='#003289',GradientType=1 ); /* IE6-9 */
+min-height: 180px;
+    }
+
+    .input-group-prepend{
+      width: 44px;
+    }
+
+    .input-group-prepend > .input-group-text{
+      width: 100%;
+    }
+
+    .input-group-prepend > .input-group-text > i{
+      margin: 0 auto;
+    }
+    
+    @media only screen and (min-width: 500px) {
+      .input-wrapper {
+        display: flex;
+      }
+      .red-bt {
+        width: auto;
+        min-width: 200px;
+      }
+    }

@@ -1,0 +1,132 @@
+<?php ob_start(); if (!isset($_SESSION)) { session_start(); } ?>
+<?php 
+if($_SESSION["rid"]=="" and $_SESSION["uu_id"]==""){exit();}
+require('../inc/ag_function.php');
+$r_sport_nam_tor   = explode(",", $_SESSION["agent_data"]["r_sport_nam_tor"]);
+$r_sport_nam_rong   = explode(",", $_SESSION["agent_data"]["r_sport_nam_rong"]);       
+$r_sport_dis   = explode(",", $_SESSION["agent_data"]["r_sport_dis"]);
+$r_sport_max   = explode(",", $_SESSION["agent_data"]["r_sport_max"]);
+$r_sport_min   = explode(",", $_SESSION["agent_data"]["r_sport_min"]);
+ 
+$r_sport_step_max   = explode(",", $_SESSION["agent_data"]["r_sport_step_max"]);
+$r_sport_step_min   = explode(",", $_SESSION["agent_data"]["r_sport_step_min"]);
+
+$r_sport_step_max   = explode(",", $_SESSION["agent_data"]["r_sport_step_max"]);
+$r_sport_step_min   = explode(",", $_SESSION["agent_data"]["r_sport_step_min"]);
+$r_sport_step_day   = explode(",", $_SESSION["agent_data"]["r_sport_step_day"]);
+$r_sport_step2   = explode(",", $_SESSION["agent_data"]["r_sport_step2"]);
+
+$r_sport_share   = explode(",", $_SESSION["agent_data"]["r_sport_share"]);
+$r_sport_share_live   = explode(",", $_SESSION["agent_data"]["r_sport_share_live"]);
+
+$r_lotto_share   = explode(",", $_SESSION["agent_data"]["r_lotto_share"]);
+$r_lotto_pay1   = explode(",", $_SESSION["agent_data"]["r_lotto_pay1"]);
+$r_lotto_dis1   = explode(",", $_SESSION["agent_data"]["r_lotto_dis1"]);
+
+$r_lotto_hun_share   = explode(",", $_SESSION["agent_data"]["r_lotto_hun_share"]);
+$r_lotto_hun_pay1   = explode(",", $_SESSION["agent_data"]["r_lotto_hun_pay1"]);
+$r_lotto_hun_dis1   = explode(",", $_SESSION["agent_data"]["r_lotto_hun_dis1"]);
+
+$r_lotto_hun_set_pay   = explode(",", $_SESSION["agent_data"]["r_lotto_hun_set_pay"]);
+$r_lotto_hun_set_price   = explode(",", $_SESSION["agent_data"]["r_lotto_hun_set_price"]);
+
+$r_games_dis   = explode(",", $_SESSION["agent_data"]["r_games_dis"]);
+$r_games_share   = explode(",", $_SESSION["agent_data"]["r_games_share"]);
+$r_games_myshare   = explode(",", $_SESSION["agent_data"]["r_games_myshare"]);
+
+$r_casino_share = explode(",", $_SESSION["agent_data"]["r_casino_share"]);
+$r_casino_max   = explode(",", $_SESSION["agent_data"]["r_casino_max"]);
+
+
+$array_data = $_POST["arr"];  
+
+$r_open_agent = $array_data["r_open_agent"];
+$lotto_lao_active = ($array_data["lotto_lao_active"] == 1) ? "checked=''" : "";
+
+	$data["arr"]["lottoLao"] = $array_data;
+	$data["lotto_type"] = $lang_g["setpay"];
+
+	$data["temp"] = "<div id='lotto_lao' class='widget-main no-padding'>
+	<div class='form-group'>
+                        <div class='col-xs-12 col-sm-12 col-md-12'>
+                          <div class='form-inline pull-left'>
+														<label class='inline'>
+														<div id='lotto_lao_today'>
+                              <input type='checkbox' class='ace' id='lotto_lao_active' name='lotto_lao_active' {$lotto_lao_active}>
+															<span class='lbl'> {$lang_memberMember[19]} </span>
+															</div>
+                            </label>
+                          </div>
+                          <div id='setMax_lotto_lao' class='form-inline pull-right'>
+                            <button type='button' class='btn btn-white btn-warning btn-bold btn-sm' onclick=\"setMax('lotto_lao');\">{$lang_memberMember[24]}</button>
+                          </div>
+                        </div>
+											</div>
+											<div id='lotto_lao_body'>
+					    <div class='form-group'>";				        
+			$data["temp"] .= "<div class='col-xs-12 col-sm-12 col-md-12'>
+			<div class='widget-box'>
+			  <div class='widget-body'>";
+				
+				$data["temp"] .= "<div class='table-responsive'>
+				  <table class='table table-striped table-bordered table-hover' style='width: 99.9%;'>
+					<thead>
+					  <tr>
+						<th class='text-center'>{$lang_memberMember[48]}</th>
+						<th class='text-center'>{$lang_memberMember[51]}</th>
+						<th class='text-center'>{$lang_memberMember[52]}</th>
+					  </tr>
+					</thead>
+					<tbody>";
+
+					               
+                                    foreach ($data["lotto_type"] as $key => $value) {
+                                    	$index = ($key+1);
+										$data["temp"] .= "<tr class='text-center'>
+                                      <td width='35%'>".$value."</td>
+                                      <td width='35%' class='lotto_lao_Input'>
+                                        <input type='text' name='lot_hun_set_pay".$index."' id='lot_hun_set_pay".$index."' class='numeric maxLimit input-num2digt' value='".addCommas($array_data["lot_hun_set_pay"][$index])."' onblur=\"chkMinMax(this,0,".$r_lotto_hun_set_pay[$index].");\">
+                                        <span class='text-danger label-sm maxtransfer' id='lot_hun_set_pay_info' data-json='".addCommas($r_lotto_hun_set_pay[$index])."'>(0-".addCommas($r_lotto_hun_set_pay[$index]).") </span>
+                                      </td>";
+                                     if($index == 1){
+                                        $data["temp"] .= "<td width='35%' rowspan='100%' style='vertical-align: top;' class='lotto_lao_Input'>
+                                        <input type='text' name='lot_hun_set_price".$index."' id='lot_hun_set_price".$index."' class='numeric maxLimit' value='".addCommas($array_data["lot_hun_set_price"][$index])."' onblur=\"chkMinMax(this,0,".$r_lotto_hun_set_price[$index].");\">
+                                        <span class='text-danger label-sm maxtransfer' id='lot_hun_set_price_info' data-json='".addCommas($r_lotto_hun_set_price[$index])."'>(0 - ".addCommas($r_lotto_hun_set_price[$index]).") </span>
+                                      </td>";
+                                    } 
+                                    $data["temp"] .="</tr>";
+								   }
+								
+					           	$data["temp"] .= "</tbody>
+					                        </table>
+					                    </div>
+					                </div>
+					            </div>
+					        </div>";
+
+				if($is_row_divide)
+				{
+					
+				}	
+		$data["temp"] .= "</div>
+					</div>
+					</div>
+					<div id='lotto_lao_alerts'></div>
+					<script>
+					var r_open_agent = '{$r_open_agent}';
+                    if(r_open_agent == 1){
+                      $('#lotto_lao_body').show();
+                      $('#lotto_lao_alerts').hide();
+                    }
+                    else{
+                      $('#lotto_lao_today').hide();
+                      $('#setMax_lotto_lao').hide();
+                      $('#lotto_lao_body').hide();
+                      $('#lotto_lao_alerts').append(html_alerts);
+                    }
+					</script>
+					";
+
+			echo json_encode($data);
+
+ ?>

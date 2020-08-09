@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^ohobet.com [NC]
+RewriteRule ^(.*)$ http://www.ohobet.com/$1 [L,R=301]
+
+#RewriteCond %{HTTPS} on
+#RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI}

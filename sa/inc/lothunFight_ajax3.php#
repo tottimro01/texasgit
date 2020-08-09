@@ -1,0 +1,29 @@
+<?
+  include "inc_head_bySession.php";
+  if($_GET[zone]!=""){ $kzone="  and lot_zone='$_GET[zone]' ";}else{ $kzone="  and lot_zone='2' "; }
+  if($_GET[rob]!=""){ $krob="  and lot_rob='$_GET[rob]' ";}else{ $krob="  and lot_rob='1' "; }
+?>
+
+<table class="table table-bordered table-hover">
+  <tr>
+      <th class="vaign_m" width="30%" height=25>วันที่</th>
+      <th class="vaign_m" width="70%" >ผลรางวัล</th>
+  </tr>
+  <?
+    $x=1;
+    $sql="select * from bom_tb_lotto_ok  where 1  $kzone $krob order by ok_id desc limit 11";
+    $re=sql_query($sql);
+    while($rs=sql_fetch($re)){
+        $enum=explode(',',$rs[o_number]);
+  ?>   
+    <tr height="30" class="txt_back11n" bgcolor='#ffffff' onmouseover=this.bgColor='#FFFF66' onmouseout=this.bgColor='#ffffff'>
+      <td align="center"><?=date("d-m-Y",$rs[o_limit_time])?></td>
+      <td align="center">
+        บน : <b class="cbu"><?=$enum[0];?></b> &nbsp;&nbsp;,&nbsp;&nbsp;   ล่าง: <b class="cbu"><?=$enum[1];?></b>      
+      </td>
+    </tr>
+    <? 
+      $x++;
+    } 
+    ?>
+</table>

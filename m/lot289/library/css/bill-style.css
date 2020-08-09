@@ -1,0 +1,251 @@
+    .bill-result-wrapper * {
+      text-align: left;
+      box-sizing: border-box;
+
+      /* use default font because firefox not render font in mobile  */
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    .share-wrapper {
+      width: 100%;
+      padding: 10px;
+      margin: 0 auto;
+      background-color: #fff;
+      position: fixed;
+      bottom: 0px;
+      box-shadow: 0px -1px 4px #777;
+    }
+
+    .share-wrapper div {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+
+    .link-btn {
+      background-color: #EC407A;
+      color: #fff;
+      text-decoration: none;
+      padding: 0 10px;
+      line-height: 34px;
+      display: inline-block;
+      border-radius: 4px;
+    }
+
+    .bill-img {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+      margin: 0 auto;
+    }
+
+    .bill-img img {
+      width: 100%;
+    }
+
+    .bill-result-wrapper {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      background-color: transparent;
+    }
+
+    .bill-result-top {
+      background-color: #fff;
+      border-radius: 10px 10px 0 0;
+      position: relative;
+      padding-top: 16px;
+    }
+
+    .bet-result-top-section {
+      border-bottom: 1px solid #333;
+      padding: 10px;
+    }
+
+    .bet-result-top-info {
+      font-size: 20px;
+      line-height: 28px;
+      display: table;
+      margin: 0 auto;
+    }
+
+    .bill-result-title {
+      display: table;
+      margin: 0 auto;
+      font-size: 40px;
+    }
+
+    .bill-result-body {
+      background-color: #fff;
+      flex: 1;
+      min-height: 120px;
+    }
+    .bill-result {
+      height: 100%;
+      padding: 10px 20px;
+    }
+
+    .bill-result div {
+      line-height: 30px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .bill-result .success {
+      color: #1B5E20;
+    }
+
+    .bill-result .fail {
+      color: #D32F2F;
+    }
+
+    .bill-result-bottom {
+      background-color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 24px;
+      font-weight: 600;  
+      padding: 20px;
+      border-radius: 0 0 10px 10px;
+    }
+    /*      * {
+           text-align: left;
+           box-sizing: border-box;
+         }
+    
+         body {
+          font-family: "Noto Sans Thai UI Alpha", Tahoma, system-ui, -apple-system, BlinkMacSystemFont, 
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, monospace, sans-serif;
+         width: 100%;
+         height: 100%;
+         background-color: #065ba0;
+         overflow-x: auto;
+         padding: 0;
+        margin: 0;
+       }
+    
+         @font-face {
+          font-family: 'Noto Sans Thai UI Alpha';
+          font-style: normal;
+          font-weight: 400;
+          src: url("library/font/noto/NotoSansThaiUI-Regular.woff2") format("woff2"), 
+          url("library/font/noto/NotoSansThaiUI-Regular.woff") format("woff"), 
+          url("library/font/noto/NotoSansThaiUI-Regular.ttf") format("truetype");
+        }
+    
+        @font-face {
+          font-family: 'Noto Sans Thai UI Alpha';
+          font-style: normal;
+          font-weight: 600;
+          src: url("library/font/noto/NotoSansThaiUI-Bold.woff2") format("woff2"), 
+          url("library/font/noto/NotoSansThaiUI-Bold.woff") format("woff"), 
+          url("library/font/noto/NotoSansThaiUI-Bold.ttf") format("truetype");
+        }
+    
+        .share-wrapper {
+          width: 100%;
+          padding: 10px;
+          margin: 0 auto;
+          background-color: #fff;
+          position: fixed;
+          bottom: 0px;
+          box-shadow: 0px -1px 4px #777;
+        }
+    
+        .share-wrapper div {
+          width: 100%;
+          max-width: 400px;
+          margin: 0 auto;
+          padding: 0 10px;
+        }
+    
+        .link-btn {
+          background-color: #EC407A;
+          color: #fff;
+          text-decoration: none;
+          padding: 0 10px;
+          line-height: 34px;
+          display: inline-block;
+          border-radius: 4px;
+        }
+    
+        .bill-img {
+          width: 100%;
+          max-width: 400px;
+          padding: 10px;
+          margin: 0 auto;
+        }
+    
+        .bill-img img {
+          width: 100%;
+        }
+    
+         .bill-result-wrapper {
+           width: 500px;
+           height: auto;
+          display: flex;
+          flex-direction: column;
+          background-color: transparent;
+         }
+    
+         .bill-result-top {
+           background-color: #fff;
+          border-radius: 10px 10px 0 0;
+          position: relative;
+          padding-top: 16px;
+         }
+    
+        .bet-result-top-section {
+          border-bottom: 1px solid #333;
+          padding: 10px;
+        }
+    
+        .bet-result-top-info {
+          font-size: 20px;
+          line-height: 28px;
+          display: table;
+          margin: 0 auto;
+        }
+    
+         .bill-result-title {
+           display: table;
+           margin: 0 auto;
+           font-size: 40px;
+         }
+    
+         .bill-result-body {
+           background-color: #fff;
+          flex: 1;
+          min-height: 120px;
+         }
+         .bill-result {
+          height: 100%;
+          padding: 10px 20px;
+         }
+    
+         .bill-result div {
+           line-height: 30px;
+          font-size: 20px;
+          font-weight: 600;
+         }
+    
+         .bill-result .success {
+           color: #1B5E20;
+         }
+    
+         .bill-result .fail {
+           color: #D32F2F;
+         }
+    
+        .bill-result-bottom {
+          background-color: #fff;
+          display: flex;
+          justify-content: flex-end;
+          font-size: 24px;
+          font-weight: 600;  
+          padding: 20px;
+          border-radius: 0 0 10px 10px;
+        } */
